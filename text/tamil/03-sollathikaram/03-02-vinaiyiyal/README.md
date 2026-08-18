@@ -2,16 +2,36 @@
 
 Canonical source range: **320–351**.
 
-Status: **NEXT CANONICAL BATCH**.
+Status: **CANONICALIZED AND AUDITED**.
 
-The current Project Madurai Unicode webpage remains the controlling witness.
-
-Planned canonical file:
+Canonical file:
 
 `vinaiyiyal-320-351.md`
 
-The source begins this இயல் at நூற்பா **320** immediately after பெயரியல் ends at 319.
+The current Project Madurai Unicode webpage remains the controlling witness.
 
-Known source-supported headings visible in this இயல் include `வினைச் சொல்`, `முற்று வினை`, `பெயரெச்சம்`, `வினையெச்சம்`, and `ஒழிபு`; verify all headings against the controlling webpage during ingestion.
+## Source structure preserved
 
-Do not normalize source wording, silently repair numbering, or import readings from a secondary witness. Any discrepancy found during extraction must be recorded under `audit/` before editorial intervention.
+- `வினைச் சொல்`
+- `முற்று வினை`
+- `பெயரெச்சம்`
+- `வினையெச்சம்`
+- `ஒழிபு`
+
+## Verification
+
+- numbering 320–351 is continuous;
+- 32 numbered நூற்பாக்கள் are displayed;
+- no missing or duplicated number was observed;
+- source-supported unusual forms were preserved without normalization.
+
+Two textual witness differences are documented in `audit/SOURCE_VARIANTS.md`:
+
+- `PM147-V004` — 343: current `செய்தனெ` vs historical `செய்தென`;
+- `PM147-V005` — 344: current trailing `"` after `பிற` vs no trailing quote in the historical mirror.
+
+The canonical file follows the current webpage in both cases.
+
+Audit record: `audit/CANONICAL_INGEST_320_351.md`.
+
+Next canonical batch: **3.3 பொதுவியல் 352–419**.
