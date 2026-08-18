@@ -43,7 +43,8 @@ nannul/
 │       │   ├── 02-01-ezhuththu-iyal/
 │       │   ├── 02-02-pathaviyal/
 │       │   ├── 02-03-uyireetru-punariyal/
-│       │   └── 02-04-meyyeetru-punariyal/
+│       │   ├── 02-04-meyyeetru-punariyal/
+│       │   └── 02-05-urupu-punariyal/
 │       └── 03-sollathikaram/
 ├── structure/
 │   ├── README.md
@@ -59,7 +60,9 @@ nannul/
     ├── CANONICAL_INGEST_056_127.md
     ├── CANONICAL_INGEST_128_150.md
     ├── CANONICAL_INGEST_151_203.md
-    └── CANONICAL_INGEST_204_239.md
+    ├── CANONICAL_INGEST_204_239.md
+    ├── CANONICAL_INGEST_240_257.md
+    └── EZHUTHTHATHIKARAM_COMPLETION.md
 ```
 
 ## Source structure
@@ -77,25 +80,36 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 
 - சிறப்புப்பாயிரம் — **canonicalized**
 - பொதுப்பாயிரம் 1–55 — **canonicalized**
-- எழுத்ததிகாரம்:
-  - எழுத்து இயல் 56–127 — **canonicalized and audited**
-  - பதவியல் 128–150 — **canonicalized and audited**
-  - உயிரீற்றுப் புணரியல் 151–203 — **canonicalized and audited**
-  - மெய்யீற்றுப் புணரியல் 204–239 — **canonicalized and audited**
-  - உருபு புணரியல் 240–257 — **next**
-- சொல்லதிகாரம் 258–462 — pending
+- எழுத்ததிகாரம் 56–257 — **canonicalized and audited in full**
+  - எழுத்து இயல் 56–127 — complete
+  - பதவியல் 128–150 — complete
+  - உயிரீற்றுப் புணரியல் 151–203 — complete
+  - மெய்யீற்றுப் புணரியல் 204–239 — complete
+  - உருபு புணரியல் 240–257 — complete
+- சொல்லதிகாரம் 258–462:
+  - பெயரியல் 258–319 — **next**
+  - வினையியல் 320–351 — pending
+  - பொதுவியல் 352–419 — pending
+  - இடையியல் 420–441 — pending
+  - உரியியல் 442–462 — pending
 
-Current canonical boundary: **நூற்பா 239**.
+Current canonical boundary: **நூற்பா 257**.
 
-## Documented source-version gaps
+## Documented source-version findings
 
 The controlling current webpage omits displayed numbered units at:
 
 - 73 — between 72 and 74;
 - 176 — between 175 and 177.
 
-The canonical text preserves those source states and does not import the historical-witness readings. See `audit/SOURCE_VARIANTS.md`.
+The canonical text preserves those source states and does not import the historical-witness readings.
 
-A historical Project Madurai mirror also has a known numbering anomaly around 240–242. The current webpage displays 240, 241, 242 continuously and will control the final எழுத்ததிகாரம் batch.
+The historical Project Madurai mirror also has a numbering anomaly around 240–242. The current webpage displays **240, 241, 242** continuously; that sequence is canonical and has been applied in `2.5 உருபு புணரியல்`.
+
+See `audit/SOURCE_VARIANTS.md` and `audit/EZHUTHTHATHIKARAM_COMPLETION.md`.
+
+## Next canonical activity
+
+Proceed with **3.1 பெயரியல், நூற்பாக்கள் 258–319**, under சொல்லதிகாரம், using the current Project Madurai Unicode webpage as the controlling witness.
 
 The complete raw current webpage has not yet been vendored byte-for-byte into the repository; provenance/header material is preserved under `sources/`, and canonical transcription proceeds directly against the controlling webpage with batch audit records.
