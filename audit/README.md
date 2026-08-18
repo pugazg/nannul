@@ -20,6 +20,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `CANONICAL_INGEST_442_462.md` — உரியியல் 442–462.
 - `SOLLATHIKARAM_COMPLETION.md` — authority-level completion audit for சொல்லதிகாரம் 258–462.
 - `NANNUL_CANONICAL_COMPLETION.md` — end-to-end canonical completion audit for the full work.
+- `RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md` — exact-byte Project Madurai raw-source retrieval attempt and unresolved materialization state.
 
 ## Documented source findings
 
@@ -46,4 +47,13 @@ Current canonical boundary: **462 / `நன்னூல் முற்றிற
 
 The nominal numbered span is 1–462, while the controlling webpage displays 460 numbered units because 73 and 176 are absent. This state is preserved rather than editorially reconstructed.
 
-The full current raw Project Madurai HTML remains unvendored byte-for-byte; this is separate from canonical transcription completion.
+## Raw-source preservation status
+
+- exact-byte preservation protocol: **documented**;
+- reproducible GitHub Actions retrieval workflow: **installed**;
+- current raw Project Madurai HTML committed to `main`: **not yet verified / not present**;
+- SHA-256 provenance for current raw HTML: **not yet available**.
+
+See `RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md` and `sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md`.
+
+Raw-source preservation remains a separate archival state from the completed canonical transcription.
