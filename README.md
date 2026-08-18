@@ -40,7 +40,8 @@ nannul/
 │       ├── 00-sirappuppayiram.md
 │       ├── 01-pothuppayiram/
 │       ├── 02-ezhuththathikaram/
-│       │   └── 02-01-ezhuththu-iyal/
+│       │   ├── 02-01-ezhuththu-iyal/
+│       │   └── 02-02-pathaviyal/
 │       └── 03-sollathikaram/
 ├── structure/
 │   ├── README.md
@@ -53,7 +54,8 @@ nannul/
 └── audit/
     ├── README.md
     ├── SOURCE_VARIANTS.md
-    └── CANONICAL_INGEST_056_127.md
+    ├── CANONICAL_INGEST_056_127.md
+    └── CANONICAL_INGEST_128_150.md
 ```
 
 ## Source structure
@@ -73,13 +75,13 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 - பொதுப்பாயிரம் 1–55 — **canonicalized**
 - எழுத்ததிகாரம்:
   - எழுத்து இயல் 56–127 — **canonicalized and audited**
-  - பதவியல் 128–150 — **next**
-  - உயிரீற்றுப் புணரியல் 151–203 — pending
+  - பதவியல் 128–150 — **canonicalized and audited**
+  - உயிரீற்றுப் புணரியல் 151–203 — **next**
   - மெய்யீற்றுப் புணரியல் 204–239 — pending
   - உருபு புணரியல் 240–257 — pending
 - சொல்லதிகாரம் 258–462 — pending
 
-Current canonical boundary: **நூற்பா 127**.
+Current canonical boundary: **நூற்பா 150**.
 
 The controlling webpage has a documented numbering gap at 73; the canonical text preserves that source state. See `audit/SOURCE_VARIANTS.md`.
 
