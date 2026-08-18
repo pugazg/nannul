@@ -32,27 +32,31 @@ nannul/
 ├── sources/
 │   └── project-madurai/
 │       └── pmuni0147/
-│           └── README.md
+│           ├── README.md
+│           ├── CURRENT_WEB_HEADER.txt
+│           └── SOURCE_MANIFEST.yml
 ├── text/
 │   └── tamil/
-│       └── README.md
+│       ├── 00-sirappuppayiram.md
+│       ├── 01-pothuppayiram/
+│       ├── 02-ezhuththathikaram/
+│       │   └── 02-01-ezhuththu-iyal/
+│       └── 03-sollathikaram/
 ├── structure/
 │   ├── README.md
 │   └── sections.yml
 ├── indexes/
-│   └── README.md
 ├── data/
-│   └── README.md
 ├── commentaries/
-│   └── README.md
 ├── translations/
 │   └── en/
-│       └── README.md
 └── audit/
-    └── README.md
+    ├── README.md
+    ├── SOURCE_VARIANTS.md
+    └── CANONICAL_INGEST_056_127.md
 ```
 
-## Initial source structure
+## Source structure
 
 The Project Madurai eText presents:
 
@@ -63,6 +67,20 @@ The Project Madurai eText presents:
 
 Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 
-## Status
+## Canonical status
 
-Repository initialized. Source ingestion and canonical text segmentation have not yet been declared complete.
+- சிறப்புப்பாயிரம் — **canonicalized**
+- பொதுப்பாயிரம் 1–55 — **canonicalized**
+- எழுத்ததிகாரம்:
+  - எழுத்து இயல் 56–127 — **canonicalized and audited**
+  - பதவியல் 128–150 — **next**
+  - உயிரீற்றுப் புணரியல் 151–203 — pending
+  - மெய்யீற்றுப் புணரியல் 204–239 — pending
+  - உருபு புணரியல் 240–257 — pending
+- சொல்லதிகாரம் 258–462 — pending
+
+Current canonical boundary: **நூற்பா 127**.
+
+The controlling webpage has a documented numbering gap at 73; the canonical text preserves that source state. See `audit/SOURCE_VARIANTS.md`.
+
+The complete raw current webpage has not yet been vendored byte-for-byte into the repository; provenance/header material is preserved under `sources/`, and canonical transcription proceeds directly against the controlling webpage with batch audit records.
