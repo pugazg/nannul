@@ -34,10 +34,13 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/grammatical-terminology-review-validation.json reviews/terminology/batch-001-decisions.md
+          git add \
+            data/grammatical-terminology-review-validation.json \
+            reviews/terminology/batch-001-decisions.md \
+            reviews/terminology/batch-002-decisions.md
           if git diff --cached --quiet; then
             echo 'Terminology review validation outputs unchanged.'
             exit 0
           fi
-          git commit -m 'Validate Nannul terminology Batch 1 review'
+          git commit -m 'Validate Nannul terminology review through Batch 2'
           git push origin HEAD:main
