@@ -44,15 +44,13 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 
 Current canonical boundary: **நூற்பா 462 / `நன்னூல் முற்றிற்று`**.
 
+The nominal numbered span is 1–462. The controlling current webpage does not display numbered 73 or 176, so the completed canonical layer contains **460 displayed numbered நூற்பாக்கள்**, plus the unnumbered சிறப்புப்பாயிரம். Those source-version gaps are preserved rather than reconstructed.
+
 ## Stable identifier / index status
 
 **STABLE நூற்பா IDENTIFIER LAYER: ESTABLISHED AND AUDITED**
 
-Numbered positions use `nannul-%04d`, for example `nannul-0001`, `nannul-0056`, `nannul-0258`, and `nannul-0462`.
-
-The unnumbered சிறப்புப்பாயிரம் uses `nannul-sirappu-payiram`.
-
-Because the controlling current webpage does not display numbered 73 or 176, `nannul-0073` and `nannul-0176` are reserved as **source-gap positions** and never point to reconstructed canonical text.
+Numbered positions use `nannul-%04d`; `nannul-0073` and `nannul-0176` are reserved `source-gap` positions. The unnumbered சிறப்புப்பாயிரம் uses `nannul-sirappu-payiram`.
 
 Primary artifacts:
 
@@ -68,138 +66,126 @@ Primary artifacts:
 Primary artifacts:
 
 - `data/nurpa.json` — **460 canonical numbered records**;
-- `data/nurpa.ndjson` — one canonical record per line;
-- `data/nurpa-validation.json` — deterministic coverage/count/hash validation;
-- `data/nurpa.schema.json` — JSON Schema contract;
-- `scripts/generate_nurpa_dataset.py` — deterministic generator;
-- `.github/workflows/generate-nurpa-dataset.yml` — reproducible workflow;
-- `audit/CANONICAL_UNIT_DATASET.md` — dataset audit.
+- `data/nurpa.ndjson`;
+- `data/nurpa-validation.json`;
+- `data/nurpa.schema.json`;
+- `scripts/generate_nurpa_dataset.py`;
+- `.github/workflows/generate-nurpa-dataset.yml`;
+- `audit/CANONICAL_UNIT_DATASET.md`.
 
-Validated invariant:
-
-- nominal numbered positions: **462**;
-- canonical numbered records: **460**;
-- reserved source gaps: **73, 176**;
-- missing expected canonical records: **none**;
-- unexpected records: **none**.
+Validated invariant: **462 nominal numbered positions = 460 canonical records + source gaps 73 and 176**.
 
 ## Source-heading / lexical concordance status
 
 **SOURCE-HEADING + EXACT-SURFACE LEXICAL CONCORDANCE: GENERATED, CORRECTED, VALIDATED, AND AUDITED**
 
-Heading layer:
-
 - `data/source-heading-index.json` — **65 actual non-empty source-heading occurrences**;
-- `indexes/source-heading-index.md` — human-facing heading index;
-- one explicit unheaded span covers நூற்பாக்கள் **56–57**, before `எண்` begins at 58;
-- no blank or fabricated heading is assigned to that span.
-
-Lexical layer:
-
+- one explicit unheaded span covers நூற்பாக்கள் **56–57** before `எண்` begins at 58;
 - `data/word-form-concordance.json` — **2,837 unique exact surface forms**;
 - `data/token-occurrences.ndjson` — **5,431 exact token occurrences**;
-- `data/concordance-validation.json` — **PASS** validation with output fingerprints;
-- `scripts/generate_concordance.py` — deterministic generator;
-- `.github/workflows/generate-concordance.yml` — reproducible workflow;
-- `audit/HEADING_LEXICAL_CONCORDANCE.md` — formal audit.
+- `data/concordance-validation.json` — **PASS**;
+- `audit/HEADING_LEXICAL_CONCORDANCE.md`.
 
-Tokenization is deliberately lossless at the surface level: each token is an exact non-whitespace substring (`\S+`) of canonical `text_ta`. No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied.
+Tokenization is lossless exact non-whitespace extraction (`\S+`), with no punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting.
 
 ## Exact-surface frequency/profile status
 
 **SECTION / இயல் / SOURCE-HEADING FREQUENCY PROFILES: GENERATED, VALIDATED, AND AUDITED**
 
-Primary artifacts:
-
-- `data/frequency-profiles.json`
-- `data/frequency-tables.json`
-- `indexes/frequency-profiles.md`
-- `data/frequency-profiles-validation.json`
-- `scripts/generate_frequency_profiles.py`
-- `.github/workflows/generate-frequency-profiles.yml`
-- `audit/FREQUENCY_PROFILES.md`
-
-Validated whole-work counts:
-
-- canonical numbered records: **460**;
-- exact token occurrences: **5,431**;
+- canonical records: **460**;
+- token occurrences: **5,431**;
 - unique exact surface forms: **2,837**;
-- hapax exact surface forms: **2,037**.
-
-Validated profile dimensions:
-
-- source-section / அதிகார-level profiles: **3**;
+- hapax exact surface forms: **2,037**;
+- source-section profiles: **3**;
 - இயல் / structural-unit profiles: **17**;
 - actual source-heading profiles: **65**;
 - explicit unheaded-span profiles: **1**.
 
-Frequency remains a purely descriptive mechanical layer. No frequent lexical form is automatically classified as a grammatical term.
+Primary artifacts include `data/frequency-profiles.json`, `data/frequency-tables.json`, `indexes/frequency-profiles.md`, `data/frequency-profiles-validation.json`, and `audit/FREQUENCY_PROFILES.md`.
+
+Frequency remains descriptive only and never constitutes automatic grammatical classification.
 
 ## Grammatical-terminology candidate discovery status
 
-**PHASE 1 — CANDIDATE DISCOVERY: COMPLETE, VALIDATED, AUDITED; ALL CANDIDATES UNREVIEWED**
-
-Primary generated artifacts:
-
-- `data/grammatical-terminology-candidates.json` — provenance-rich candidate dataset;
-- `data/grammatical-terminology-candidates.ndjson` — streaming candidate queue;
-- `indexes/grammatical-terminology-review-queue.md` — ranked human-facing queue;
-- `data/grammatical-terminology-candidates-validation.json` — **PASS** validation;
-- `data/grammatical-terminology-candidates.schema.json` — generated-layer schema;
-- `scripts/generate_terminology_candidates.py` — deterministic discovery generator;
-- `.github/workflows/generate-terminology-candidates.yml` — reproducible self-committing workflow;
-- `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md` — formal Phase-1 audit.
+**PHASE 1 — CANDIDATE DISCOVERY: COMPLETE, VALIDATED, AND AUDITED**
 
 Discovery rule:
 
 - exact surface occurrence count >= **3**, **or**
 - exact non-whitespace token match in a source-supported heading.
 
-Validated result:
+Validated discovery result:
 
 - exact surface forms considered: **2,837**;
 - candidates: **455**;
 - frequency-selected candidates: **443**;
-- heading-matched candidates: **37**;
-- reviewed: **0**;
-- accepted: **0**;
-- rejected: **0**.
+- heading-matched candidates: **37**.
 
-The frequency and heading sets overlap.
+Primary generated artifacts:
 
-Candidate identity is stable across rank changes: each ID is `nannul-term-candidate-<16 hex>`, using the first 16 hexadecimal characters of SHA-256 over the exact UTF-8 surface form.
+- `data/grammatical-terminology-candidates.json`;
+- `data/grammatical-terminology-candidates.ndjson`;
+- `indexes/grammatical-terminology-review-queue.md`;
+- `data/grammatical-terminology-candidates-validation.json`;
+- `data/grammatical-terminology-candidates.schema.json`;
+- `scripts/generate_terminology_candidates.py`;
+- `.github/workflows/generate-terminology-candidates.yml`;
+- `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
-Review priority is only a mechanical ordering signal. Every generated candidate is explicitly `unreviewed`, with no automatic decision or grammatical category.
+Candidate identity is stable across ranking changes: each ID is `nannul-term-candidate-<16 hex>`, derived from SHA-256 over the exact UTF-8 surface form.
+
+Generated candidate rows remain `unreviewed` by design. They are discovery artifacts and are never overwritten with human semantic decisions.
 
 ## Grammatical-terminology contextual review status
 
-**PHASE 2 — HUMAN/CONTEXTUAL REVIEW: NOT STARTED**
+**PHASE 2 — HUMAN/CONTEXTUAL REVIEW: IN PROGRESS**
 
 Review policy:
 
-- `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`
+- `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
 
-Separate decision ledger:
+Human decision ledger:
 
-- `data/grammatical-terminology-review.json`
-- schema: `data/grammatical-terminology-review.schema.json`
+- `data/grammatical-terminology-review.json`;
+- schema: `data/grammatical-terminology-review.schema.json`.
 
-Current review ledger:
+### Batch 001 — complete and audited
 
-- candidates: **455**;
-- reviewed: **0**;
-- accepted: **0**;
-- rejected: **0**;
+Selection: first **20** mechanically ranked candidates carrying exact source-heading-token evidence.
+
+Result:
+
+- total candidates: **455**;
+- reviewed: **20**;
+- accepted: **19**;
+- rejected: **1**;
 - needs-context: **0**;
-- unreviewed: **455**.
+- unreviewed: **435**.
 
-Human decisions must never be written into regenerated discovery files. Allowed decisions are `accepted`, `rejected`, and `needs-context`, each requiring contextual evidence and rationale.
+The only rejected exact form is `முன்`: internal Nannūl evidence supports it as an ordinary relational expression inside technical grammatical rules/headings rather than as a standalone grammatical term.
 
-## Numbering state of the controlling source
+Accepted forms are context-bounded when necessary. The ledger explicitly distinguishes technical and known ordinary uses for mixed forms such as `உயிர்`, `எண்`, `வேற்றுமை`, `மெய்`, `சொல்`, and `மாத்திரை` rather than declaring every occurrence technical.
 
-The nominal numbered span is **1–462**. The current Project Madurai webpage does not display numbered **73** or **176**, so the completed canonical layer contains **460 displayed numbered நூற்பாக்கள்**, plus the unnumbered சிறப்புப்பாயிரம்.
+Review evidence/tooling:
 
-Those source-version gaps are preserved rather than silently reconstructed.
+- `reviews/terminology/batch-001-contexts.json`;
+- `reviews/terminology/batch-001-contexts.md`;
+- `reviews/terminology/batch-001-candidate-01.md` through `batch-001-candidate-20.md`;
+- `scripts/generate_terminology_review_packet.py`;
+- `scripts/split_terminology_review_packet.py`;
+- `.github/workflows/generate-terminology-review-packet.yml`.
+
+The review packet distinguishes **heading-only evidence** from exact body-token evidence and never fabricates a body occurrence merely because a source heading contains the candidate.
+
+Review validation:
+
+- `scripts/validate_terminology_review.py`;
+- `.github/workflows/validate-terminology-review.yml`;
+- `data/grammatical-terminology-review-validation.json` — **PASS**;
+- `reviews/terminology/batch-001-decisions.md` — human-readable decision summary;
+- `audit/TERMINOLOGY_REVIEW_BATCH_001.md` — formal audit.
+
+The terminology layer is **not complete**: **435 candidates remain unreviewed**.
 
 ## Documented source-version findings
 
@@ -223,6 +209,7 @@ See `audit/SOURCE_VARIANTS.md`. No secondary-witness reading is silently importe
 - `audit/HEADING_LEXICAL_CONCORDANCE.md`
 - `audit/FREQUENCY_PROFILES.md`
 - `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_001.md`
 
 ## Raw-source preservation
 
@@ -233,14 +220,12 @@ Infrastructure present:
 - `.github/workflows/vendor-project-madurai-source.yml`
 - `sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md`
 - `audit/RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md`
-- raw-preservation state in `SOURCE_MANIFEST.yml`
+- raw-preservation state in `SOURCE_MANIFEST.yml`.
 
-Current raw-source status: **workflow/protocol configured, raw snapshot not yet materialized and hash-verified on `main`**.
-
-Accordingly, `full_current_html_vendored` remains `false`. Parsed web text and the historical GitHub mirror are not substitutes for the controlling HTTP response bytes.
+Current raw-source status: **workflow/protocol configured, raw snapshot not yet materialized and hash-verified on `main`**. `full_current_html_vendored` therefore remains `false`.
 
 ## Next analytical activity
 
-Begin **Phase 2 contextual terminology review — Batch 1**, preferably the highest-priority source-heading-supported candidates first.
+Continue **Phase 2 contextual terminology review** with the remaining source-heading-supported candidates before moving to candidates supported only by frequency.
 
-Review should proceed in a small batch (roughly 20–30 candidates), inspect stable நூற்பா contexts, and record only evidence-backed `accepted`, `rejected`, or `needs-context` decisions in the separate review ledger. Discovery rank must never be converted automatically into a semantic decision.
+The next batch should use the same boundaries established in Batch 001: stable candidate identity, internal canonical contexts first, explicit heading/body evidence distinction, mixed-use recording, separate human decision ledger, and post-review structural/provenance validation.
