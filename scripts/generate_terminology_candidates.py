@@ -47,6 +47,7 @@ EXPECTED_GAPS = {73, 176}
 MIN_FREQUENCY = 3
 HEADING_TOKEN_RE = re.compile(r"\S+", re.UNICODE)
 SAMPLE_LIMIT = 8
+CANDIDATE_HASH_HEX = 16
 
 
 def load_json(path: Path) -> dict:
@@ -78,6 +79,11 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: f.read(1024 * 1024), b""):
             h.update(chunk)
     return h.hexdigest()
+
+
+def stable_candidate_id(surface: str) -> str:
+    digest = hashlib.sha256(surface.encode("utf-8")).hexdigest()[:CANDIDATE_HASH_HEX]
+    return f"nannul-term-candidate-{digest}"
 
 
 def priority_score(total_count: int, section_count: int, unit_count: int, heading_match: bool) -> tuple[int, list[str]]:
@@ -163,6 +169,7 @@ def main() -> None:
 
     headings = load_json(HEADINGS)
     heading_by_token, heading_tokens = heading_evidence(headings)
+    known_heading_texts = {x["heading_text_ta"] for x in headings["heading_occurrences"]}
 
     form_counts: Counter[str] = Counter()
     form_occurrences: dict[str, list[dict]] = defaultdict(list)
@@ -218,7 +225,7 @@ def main() -> None:
             discovery_reasons.append("exact-source-heading-token-match")
 
         candidates.append({
-            "candidate_id": "",
+            "candidate_id": stable_candidate_id(surface),
             "surface_form_ta": surface,
             "review_status": "unreviewed",
             "term_decision": None,
@@ -273,11 +280,10 @@ def main() -> None:
         c["surface_form_ta"],
     ))
     for index, candidate in enumerate(candidates, start=1):
-        candidate["candidate_id"] = f"nannul-term-candidate-{index:04d}"
         candidate["review_rank"] = index
 
     output = {
-        "schema_version": 1,
+        "schema_version": 2,
         "work_id": "nannul",
         "layer_status": "candidate-discovery-unreviewed",
         "source_layers": {
@@ -291,6 +297,7 @@ def main() -> None:
             "minimum_frequency": MIN_FREQUENCY,
             "selection_rule": f"exact occurrence count >= {MIN_FREQUENCY} OR exact non-whitespace token match in a source-supported heading",
             "heading_matching": "exact non-whitespace token equality; no normalization",
+            "candidate_id": f"nannul-term-candidate- + first {CANDIDATE_HASH_HEX} hex characters of SHA-256(exact UTF-8 surface_form_ta); stable across ranking changes",
             "priority_score": "mechanical review ordering only; NOT probability/confidence of termhood",
             "default_review_status": "unreviewed",
             "automatic_term_acceptance": False,
@@ -315,13 +322,14 @@ def main() -> None:
         for candidate in candidates:
             f.write(json.dumps(candidate, ensure_ascii=False, separators=(",", ":")) + "\n")
 
-    # Human-facing review queue: deliberately evidence-first and decision-empty.
     lines = [
         "# Nannūl Grammatical-Terminology Candidate Review Queue",
         "",
         "**Phase 1: candidate discovery only. Nothing in this file is automatically accepted as a grammatical technical term.**",
         "",
         f"Candidates enter this queue when their exact surface form occurs at least **{MIN_FREQUENCY}** times in canonical token data or exactly matches a non-whitespace token in a source-supported heading.",
+        "",
+        "Candidate IDs are stable hashes of the exact UTF-8 surface form; review rank is separate and may change when evidence changes.",
         "",
         "Ranking is mechanical review priority, not semantic confidence. Every candidate begins `unreviewed` with no category or term decision.",
         "",
@@ -351,8 +359,8 @@ def main() -> None:
     OUT_MD.parent.mkdir(parents=True, exist_ok=True)
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    # Validation.
     candidate_forms = [c["surface_form_ta"] for c in candidates]
+    candidate_ids = [c["candidate_id"] for c in candidates]
     expected_selected = {
         form for form, count in form_counts.items()
         if count >= MIN_FREQUENCY or form in heading_tokens
@@ -360,9 +368,11 @@ def main() -> None:
     evidence_failures: list[dict] = []
     for c in candidates:
         form = c["surface_form_ta"]
+        if c["candidate_id"] != stable_candidate_id(form):
+            evidence_failures.append({"candidate_id": c["candidate_id"], "reason": "candidate-id-does-not-match-exact-surface-hash"})
         if c["evidence"]["occurrence_count"] != form_counts[form]:
             evidence_failures.append({"candidate_id": c["candidate_id"], "reason": "occurrence-count-mismatch"})
-        if any(h["heading_text_ta"] not in {x["heading_text_ta"] for x in headings["heading_occurrences"]} for h in c["evidence"]["source_heading_matches"]):
+        if any(h["heading_text_ta"] not in known_heading_texts for h in c["evidence"]["source_heading_matches"]):
             evidence_failures.append({"candidate_id": c["candidate_id"], "reason": "unknown-heading-evidence"})
         if c["review_status"] != "unreviewed" or c["term_decision"] is not None or c["term_category"] is not None:
             evidence_failures.append({"candidate_id": c["candidate_id"], "reason": "candidate-was-auto-classified"})
@@ -374,6 +384,8 @@ def main() -> None:
         "input_token_occurrence_count_is_5431": len(token_rows) == EXPECTED_TOKEN_COUNT,
         "token_links_and_offsets_match_canonical_records": not token_link_failures,
         "candidate_forms_unique": len(candidate_forms) == len(set(candidate_forms)),
+        "candidate_ids_unique": len(candidate_ids) == len(set(candidate_ids)),
+        "candidate_ids_match_exact_surface_hashes": all(c["candidate_id"] == stable_candidate_id(c["surface_form_ta"]) for c in candidates),
         "candidate_set_exactly_matches_discovery_rule": set(candidate_forms) == expected_selected,
         "all_candidates_unreviewed": all(c["review_status"] == "unreviewed" for c in candidates),
         "no_candidate_has_automatic_term_decision": all(c["term_decision"] is None for c in candidates),
