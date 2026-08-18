@@ -74,6 +74,33 @@ Structural/index artifacts:
 
 This layer is derived metadata only; canonical Tamil files were not rewritten to insert IDs.
 
+## Canonical unit dataset status
+
+**ONE-RECORD-PER-CANONICAL-UNIT DATASET: GENERATED, VALIDATED, AND AUDITED**
+
+Primary artifacts:
+
+- `data/nurpa.json` — complete dataset object with **460 canonical numbered records**;
+- `data/nurpa.ndjson` — one canonical record per line;
+- `data/nurpa-validation.json` — deterministic coverage/count/hash validation;
+- `data/nurpa.schema.json` — JSON Schema contract;
+- `scripts/generate_nurpa_dataset.py` — deterministic generator;
+- `.github/workflows/generate-nurpa-dataset.yml` — reproducible generation workflow;
+- `audit/CANONICAL_UNIT_DATASET.md` — completed dataset audit.
+
+Each record carries stable ID, source number, exact canonical Tamil text, structural parents, nearest source-supported topic heading, canonical-file provenance, controlling-source status, and applicable source-variant references.
+
+Validated invariant:
+
+- nominal numbered positions: **462**;
+- canonical numbered records: **460**;
+- reserved source gaps: **73, 176**;
+- missing expected canonical records: **none**;
+- unexpected records: **none**;
+- unique stable IDs: **460**.
+
+The dataset does not reconstruct either source gap and does not alter canonical Tamil.
+
 ## Numbering state of the controlling source
 
 The nominal numbered span is **1–462**. The current Project Madurai webpage does not display numbered **73** or **176**, so the completed canonical layer contains **460 displayed numbered நூற்பாக்கள்**, plus the unnumbered சிறப்புப்பாயிரம்.
@@ -98,6 +125,7 @@ See `audit/SOURCE_VARIANTS.md` and the batch audit files. No secondary-witness r
 - `audit/SOLLATHIKARAM_COMPLETION.md`
 - `audit/NANNUL_CANONICAL_COMPLETION.md`
 - `audit/STABLE_IDENTIFIER_INDEX.md`
+- `audit/CANONICAL_UNIT_DATASET.md`
 
 ## Raw-source preservation
 
@@ -116,6 +144,10 @@ Accordingly, `full_current_html_vendored` remains `false`. Parsed web text and t
 
 ## Next derived-data activity
 
-The next independent structural/data milestone is a **one-record-per-canonical-unit dataset** containing stable ID, source number, structural parents, canonical file path, and provenance status for all 460 displayed numbered units, with the two reserved source-gap positions represented separately and explicitly.
+With stable IDs and the 460-record canonical dataset established, the next safe source-derived milestone is a **source-supported topic-heading / concordance layer**:
 
-That dataset must be generated from the audited canonical layer and stable-ID rules without altering source text.
+1. index every distinct source heading and the stable நூற்பா IDs governed by it;
+2. build a lossless lexical concordance from the canonical `text_ta` field without spelling normalization;
+3. keep later grammatical-term interpretation separate from this purely derived lexical layer.
+
+That will provide a reliable basis for search, terminology study, commentary linking, and later comparison with Tolkāppiyam or other Tamil grammatical works without changing the canonical source layer.
