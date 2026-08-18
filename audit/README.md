@@ -21,6 +21,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `SOLLATHIKARAM_COMPLETION.md` — authority-level completion audit for சொல்லதிகாரம் 258–462.
 - `NANNUL_CANONICAL_COMPLETION.md` — end-to-end canonical completion audit for the full work.
 - `RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md` — exact-byte Project Madurai raw-source retrieval attempt and unresolved materialization state.
+- `STABLE_IDENTIFIER_INDEX.md` — stable நூற்பா identifier namespace and canonical segment-index audit.
 
 ## Documented source findings
 
@@ -42,10 +43,11 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - எழுத்ததிகாரம் 56–257: **canonicalized and fully batch-audited**.
 - சொல்லதிகாரம் 258–462: **canonicalized and fully batch-audited**.
 - full source-derived canonical Tamil layer: **COMPLETE**.
+- stable identifier / range index layer: **ESTABLISHED AND AUDITED**.
 
 Current canonical boundary: **462 / `நன்னூல் முற்றிற்று`**.
 
-The nominal numbered span is 1–462, while the controlling webpage displays 460 numbered units because 73 and 176 are absent. This state is preserved rather than editorially reconstructed.
+The nominal numbered span is 1–462, while the controlling webpage displays 460 numbered units because 73 and 176 are absent. The stable namespace reserves those two positions as `source-gap`; it does not reconstruct them.
 
 ## Raw-source preservation status
 
@@ -56,4 +58,4 @@ The nominal numbered span is 1–462, while the controlling webpage displays 460
 
 See `RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md` and `sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md`.
 
-Raw-source preservation remains a separate archival state from the completed canonical transcription.
+Raw-source preservation remains a separate archival state from the completed canonical transcription and stable-ID layer.
