@@ -1,16 +1,17 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "work_id": "nannul",
   "source_dataset": "data/nurpa.json",
-  "derivation_policy": "contiguous occurrences of exact topic_heading_ta values already derived from audited canonical Markdown headings",
+  "derivation_policy": "contiguous occurrences of exact non-empty topic_heading_ta values already derived from audited canonical Markdown headings; records before any internal heading are represented separately as unheaded spans",
   "counts": {
     "canonical_records": 460,
-    "heading_occurrences": 66,
-    "distinct_heading_texts": 66
+    "heading_occurrences": 65,
+    "distinct_heading_texts": 65,
+    "unheaded_spans": 1,
+    "unheaded_records": 2
   },
   "heading_occurrences": [
     {
-      "heading_id": "nannul-heading-001",
       "heading_text_ta": "1.0 பொதுப் பாயிரம் (1–3)",
       "section_id": "pothu-payiram",
       "section_label_ta": "பொதுப்பாயிரம்",
@@ -24,10 +25,10 @@
         "nannul-0002",
         "nannul-0003"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-001"
     },
     {
-      "heading_id": "nannul-heading-002",
       "heading_text_ta": "1.1 நூலினது வரலாறு (4–25)",
       "section_id": "pothu-payiram",
       "section_label_ta": "பொதுப்பாயிரம்",
@@ -60,10 +61,10 @@
         "nannul-0024",
         "nannul-0025"
       ],
-      "record_count": 22
+      "record_count": 22,
+      "heading_id": "nannul-heading-002"
     },
     {
-      "heading_id": "nannul-heading-003",
       "heading_text_ta": "1.2 ஆசிரியனது வரலாறு (26–35)",
       "section_id": "pothu-payiram",
       "section_label_ta": "பொதுப்பாயிரம்",
@@ -84,10 +85,10 @@
         "nannul-0034",
         "nannul-0035"
       ],
-      "record_count": 10
+      "record_count": 10,
+      "heading_id": "nannul-heading-003"
     },
     {
-      "heading_id": "nannul-heading-004",
       "heading_text_ta": "1.3 பாடஞ் சொல்லலினது வரலாறு (36–37)",
       "section_id": "pothu-payiram",
       "section_label_ta": "பொதுப்பாயிரம்",
@@ -100,10 +101,10 @@
         "nannul-0036",
         "nannul-0037"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-004"
     },
     {
-      "heading_id": "nannul-heading-005",
       "heading_text_ta": "1.4 மாணாக்கனது வரலாறு (38–39)",
       "section_id": "pothu-payiram",
       "section_label_ta": "பொதுப்பாயிரம்",
@@ -116,10 +117,10 @@
         "nannul-0038",
         "nannul-0039"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-005"
     },
     {
-      "heading_id": "nannul-heading-006",
       "heading_text_ta": "1.5 பாடங் கேட்டலின் வரலாறு (40–46)",
       "section_id": "pothu-payiram",
       "section_label_ta": "பொதுப்பாயிரம்",
@@ -137,10 +138,10 @@
         "nannul-0045",
         "nannul-0046"
       ],
-      "record_count": 7
+      "record_count": 7,
+      "heading_id": "nannul-heading-006"
     },
     {
-      "heading_id": "nannul-heading-007",
       "heading_text_ta": "1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)",
       "section_id": "pothu-payiram",
       "section_label_ta": "பொதுப்பாயிரம்",
@@ -160,26 +161,10 @@
         "nannul-0054",
         "nannul-0055"
       ],
-      "record_count": 9
+      "record_count": 9,
+      "heading_id": "nannul-heading-007"
     },
     {
-      "heading_id": "nannul-heading-008",
-      "heading_text_ta": null,
-      "section_id": "ezhuththathikaram",
-      "section_label_ta": "எழுத்ததிகாரம்",
-      "unit_id": "ezhuthu-iyal",
-      "unit_label_ta": "எழுத்து இயல்",
-      "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
-      "start_number": 56,
-      "end_number": 57,
-      "record_ids": [
-        "nannul-0056",
-        "nannul-0057"
-      ],
-      "record_count": 2
-    },
-    {
-      "heading_id": "nannul-heading-009",
       "heading_text_ta": "எண்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -194,10 +179,10 @@
         "nannul-0060",
         "nannul-0061"
       ],
-      "record_count": 4
+      "record_count": 4,
+      "heading_id": "nannul-heading-008"
     },
     {
-      "heading_id": "nannul-heading-010",
       "heading_text_ta": "பெயர்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -219,10 +204,10 @@
         "nannul-0071",
         "nannul-0072"
       ],
-      "record_count": 11
+      "record_count": 11,
+      "heading_id": "nannul-heading-009"
     },
     {
-      "heading_id": "nannul-heading-011",
       "heading_text_ta": "பிறப்பு",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -257,10 +242,10 @@
         "nannul-0096",
         "nannul-0097"
       ],
-      "record_count": 24
+      "record_count": 24,
+      "heading_id": "nannul-heading-010"
     },
     {
-      "heading_id": "nannul-heading-012",
       "heading_text_ta": "உருவம்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -272,10 +257,10 @@
       "record_ids": [
         "nannul-0098"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-011"
     },
     {
-      "heading_id": "nannul-heading-013",
       "heading_text_ta": "மாத்திரை",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -289,10 +274,10 @@
         "nannul-0100",
         "nannul-0101"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-012"
     },
     {
-      "heading_id": "nannul-heading-014",
       "heading_text_ta": "முதனிலை",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -308,10 +293,10 @@
         "nannul-0105",
         "nannul-0106"
       ],
-      "record_count": 5
+      "record_count": 5,
+      "heading_id": "nannul-heading-013"
     },
     {
-      "heading_id": "nannul-heading-015",
       "heading_text_ta": "இறுதிநிலை",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -325,10 +310,10 @@
         "nannul-0108",
         "nannul-0109"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-014"
     },
     {
-      "heading_id": "nannul-heading-016",
       "heading_text_ta": "இடைநிலை மயக்கம்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -351,10 +336,10 @@
         "nannul-0120",
         "nannul-0121"
       ],
-      "record_count": 12
+      "record_count": 12,
+      "heading_id": "nannul-heading-015"
     },
     {
-      "heading_id": "nannul-heading-017",
       "heading_text_ta": "போலி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -371,10 +356,10 @@
         "nannul-0126",
         "nannul-0127"
       ],
-      "record_count": 6
+      "record_count": 6,
+      "heading_id": "nannul-heading-016"
     },
     {
-      "heading_id": "nannul-heading-018",
       "heading_text_ta": "பதம்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -391,10 +376,10 @@
         "nannul-0132",
         "nannul-0133"
       ],
-      "record_count": 6
+      "record_count": 6,
+      "heading_id": "nannul-heading-017"
     },
     {
-      "heading_id": "nannul-heading-019",
       "heading_text_ta": "பகுதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -411,10 +396,10 @@
         "nannul-0138",
         "nannul-0139"
       ],
-      "record_count": 6
+      "record_count": 6,
+      "heading_id": "nannul-heading-018"
     },
     {
-      "heading_id": "nannul-heading-020",
       "heading_text_ta": "விகுதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -426,10 +411,10 @@
       "record_ids": [
         "nannul-0140"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-019"
     },
     {
-      "heading_id": "nannul-heading-021",
       "heading_text_ta": "இடைநிலை",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -445,10 +430,10 @@
         "nannul-0144",
         "nannul-0145"
       ],
-      "record_count": 5
+      "record_count": 5,
+      "heading_id": "nannul-heading-020"
     },
     {
-      "heading_id": "nannul-heading-022",
       "heading_text_ta": "வடமொழியாக்கம்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -464,10 +449,10 @@
         "nannul-0149",
         "nannul-0150"
       ],
-      "record_count": 5
+      "record_count": 5,
+      "heading_id": "nannul-heading-021"
     },
     {
-      "heading_id": "nannul-heading-023",
       "heading_text_ta": "புணர்ச்சி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -485,10 +470,10 @@
         "nannul-0156",
         "nannul-0157"
       ],
-      "record_count": 7
+      "record_count": 7,
+      "heading_id": "nannul-heading-022"
     },
     {
-      "heading_id": "nannul-heading-024",
       "heading_text_ta": "பொதுப்புணர்ச்சி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -503,10 +488,10 @@
         "nannul-0160",
         "nannul-0161"
       ],
-      "record_count": 4
+      "record_count": 4,
+      "heading_id": "nannul-heading-023"
     },
     {
-      "heading_id": "nannul-heading-025",
       "heading_text_ta": "உயிரீற்றுச் சிறப்புப் புணர்ச்சி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -520,10 +505,10 @@
         "nannul-0163",
         "nannul-0164"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-024"
     },
     {
-      "heading_id": "nannul-heading-026",
       "heading_text_ta": "உயிரீற்று முன் வல்லினம்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -536,10 +521,10 @@
         "nannul-0165",
         "nannul-0166"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-025"
     },
     {
-      "heading_id": "nannul-heading-027",
       "heading_text_ta": "அகர வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -554,10 +539,10 @@
         "nannul-0169",
         "nannul-0170"
       ],
-      "record_count": 4
+      "record_count": 4,
+      "heading_id": "nannul-heading-026"
     },
     {
-      "heading_id": "nannul-heading-028",
       "heading_text_ta": "ஆகார வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -570,10 +555,10 @@
         "nannul-0171",
         "nannul-0172"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-027"
     },
     {
-      "heading_id": "nannul-heading-029",
       "heading_text_ta": "இகர வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -587,10 +572,10 @@
         "nannul-0174",
         "nannul-0175"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-028"
     },
     {
-      "heading_id": "nannul-heading-030",
       "heading_text_ta": "ஈகார வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -603,10 +588,10 @@
         "nannul-0177",
         "nannul-0178"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-029"
     },
     {
-      "heading_id": "nannul-heading-031",
       "heading_text_ta": "முற்றுகர வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -619,10 +604,10 @@
         "nannul-0179",
         "nannul-0180"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-030"
     },
     {
-      "heading_id": "nannul-heading-032",
       "heading_text_ta": "குற்றுகர வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -652,10 +637,10 @@
         "nannul-0198",
         "nannul-0199"
       ],
-      "record_count": 19
+      "record_count": 19,
+      "heading_id": "nannul-heading-031"
     },
     {
-      "heading_id": "nannul-heading-033",
       "heading_text_ta": "ஊகார வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -667,10 +652,10 @@
       "record_ids": [
         "nannul-0200"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-032"
     },
     {
-      "heading_id": "nannul-heading-034",
       "heading_text_ta": "ஏகார வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -682,10 +667,10 @@
       "record_ids": [
         "nannul-0201"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-033"
     },
     {
-      "heading_id": "nannul-heading-035",
       "heading_text_ta": "ஐகார வீற்றுச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -698,10 +683,10 @@
         "nannul-0202",
         "nannul-0203"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-034"
     },
     {
-      "heading_id": "nannul-heading-036",
       "heading_text_ta": "மெய்யீற்றின் முன் உயிர்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -714,10 +699,10 @@
         "nannul-0204",
         "nannul-0205"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-035"
     },
     {
-      "heading_id": "nannul-heading-037",
       "heading_text_ta": "மெய்யீற்றின் முன் மெய்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -731,10 +716,10 @@
         "nannul-0207",
         "nannul-0208"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-036"
     },
     {
-      "heading_id": "nannul-heading-038",
       "heading_text_ta": "ணகர னகரவீறு",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -755,10 +740,10 @@
         "nannul-0217",
         "nannul-0218"
       ],
-      "record_count": 10
+      "record_count": 10,
+      "heading_id": "nannul-heading-037"
     },
     {
-      "heading_id": "nannul-heading-039",
       "heading_text_ta": "மகரவீறு",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -774,10 +759,10 @@
         "nannul-0222",
         "nannul-0223"
       ],
-      "record_count": 5
+      "record_count": 5,
+      "heading_id": "nannul-heading-038"
     },
     {
-      "heading_id": "nannul-heading-040",
       "heading_text_ta": "ய ர ழ வீறு",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -791,10 +776,10 @@
         "nannul-0225",
         "nannul-0226"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-039"
     },
     {
-      "heading_id": "nannul-heading-041",
       "heading_text_ta": "லகர ளகர வீறு",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -813,10 +798,10 @@
         "nannul-0233",
         "nannul-0234"
       ],
-      "record_count": 8
+      "record_count": 8,
+      "heading_id": "nannul-heading-040"
     },
     {
-      "heading_id": "nannul-heading-042",
       "heading_text_ta": "வகர வீறு",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -829,10 +814,10 @@
         "nannul-0235",
         "nannul-0236"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-041"
     },
     {
-      "heading_id": "nannul-heading-043",
       "heading_text_ta": "வருமொழித் தகர நகரத் திரிபு",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -844,10 +829,10 @@
       "record_ids": [
         "nannul-0237"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-042"
     },
     {
-      "heading_id": "nannul-heading-044",
       "heading_text_ta": "வேற்றுமைப் பொருட் புணர்ச்சியை உருபு புணர்ச்சியோடு மாட்டெறிதல்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -859,10 +844,10 @@
       "record_ids": [
         "nannul-0238"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-043"
     },
     {
-      "heading_id": "nannul-heading-045",
       "heading_text_ta": "புணரியல்களுக்குப் புறனடை",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -874,10 +859,10 @@
       "record_ids": [
         "nannul-0239"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-044"
     },
     {
-      "heading_id": "nannul-heading-046",
       "heading_text_ta": "உருபுகள்",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -891,10 +876,10 @@
         "nannul-0241",
         "nannul-0242"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-045"
     },
     {
-      "heading_id": "nannul-heading-047",
       "heading_text_ta": "சாரியை",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -907,10 +892,10 @@
         "nannul-0243",
         "nannul-0244"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-046"
     },
     {
-      "heading_id": "nannul-heading-048",
       "heading_text_ta": "உருபு புணர்ச்சிக்குச் சிறப்புவிதி",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -929,10 +914,10 @@
         "nannul-0251",
         "nannul-0252"
       ],
-      "record_count": 8
+      "record_count": 8,
+      "heading_id": "nannul-heading-047"
     },
     {
-      "heading_id": "nannul-heading-049",
       "heading_text_ta": "புறனடை",
       "section_id": "ezhuththathikaram",
       "section_label_ta": "எழுத்ததிகாரம்",
@@ -948,10 +933,10 @@
         "nannul-0256",
         "nannul-0257"
       ],
-      "record_count": 5
+      "record_count": 5,
+      "heading_id": "nannul-heading-048"
     },
     {
-      "heading_id": "nannul-heading-050",
       "heading_text_ta": "பெயரியல்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -963,10 +948,10 @@
       "record_ids": [
         "nannul-0258"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-049"
     },
     {
-      "heading_id": "nannul-heading-051",
       "heading_text_ta": "சொல்லின் பொதுவிலக்கணம்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -988,10 +973,10 @@
         "nannul-0268",
         "nannul-0269"
       ],
-      "record_count": 11
+      "record_count": 11,
+      "heading_id": "nannul-heading-050"
     },
     {
-      "heading_id": "nannul-heading-052",
       "heading_text_ta": "சொற் பாகுபாடு",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1007,10 +992,10 @@
         "nannul-0273",
         "nannul-0274"
       ],
-      "record_count": 5
+      "record_count": 5,
+      "heading_id": "nannul-heading-051"
     },
     {
-      "heading_id": "nannul-heading-053",
       "heading_text_ta": "பெயர்ச் சொல்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1037,10 +1022,10 @@
         "nannul-0289",
         "nannul-0290"
       ],
-      "record_count": 16
+      "record_count": 16,
+      "heading_id": "nannul-heading-052"
     },
     {
-      "heading_id": "nannul-heading-054",
       "heading_text_ta": "வேற்றுமை",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1080,10 +1065,10 @@
         "nannul-0318",
         "nannul-0319"
       ],
-      "record_count": 29
+      "record_count": 29,
+      "heading_id": "nannul-heading-053"
     },
     {
-      "heading_id": "nannul-heading-055",
       "heading_text_ta": "வினைச் சொல்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1097,10 +1082,10 @@
         "nannul-0321",
         "nannul-0322"
       ],
-      "record_count": 3
+      "record_count": 3,
+      "heading_id": "nannul-heading-054"
     },
     {
-      "heading_id": "nannul-heading-056",
       "heading_text_ta": "முற்று வினை",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1128,10 +1113,10 @@
         "nannul-0338",
         "nannul-0339"
       ],
-      "record_count": 17
+      "record_count": 17,
+      "heading_id": "nannul-heading-055"
     },
     {
-      "heading_id": "nannul-heading-057",
       "heading_text_ta": "பெயரெச்சம்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1144,10 +1129,10 @@
         "nannul-0340",
         "nannul-0341"
       ],
-      "record_count": 2
+      "record_count": 2,
+      "heading_id": "nannul-heading-056"
     },
     {
-      "heading_id": "nannul-heading-058",
       "heading_text_ta": "வினையெச்சம்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1163,10 +1148,10 @@
         "nannul-0345",
         "nannul-0346"
       ],
-      "record_count": 5
+      "record_count": 5,
+      "heading_id": "nannul-heading-057"
     },
     {
-      "heading_id": "nannul-heading-059",
       "heading_text_ta": "ஒழிபு",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1182,10 +1167,10 @@
         "nannul-0350",
         "nannul-0351"
       ],
-      "record_count": 5
+      "record_count": 5,
+      "heading_id": "nannul-heading-058"
     },
     {
-      "heading_id": "nannul-heading-060",
       "heading_text_ta": "பொதுவியல்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1205,10 +1190,10 @@
         "nannul-0359",
         "nannul-0360"
       ],
-      "record_count": 9
+      "record_count": 9,
+      "heading_id": "nannul-heading-059"
     },
     {
-      "heading_id": "nannul-heading-061",
       "heading_text_ta": "தொகைநிலைத் தொடர்மொழி",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1232,10 +1217,10 @@
         "nannul-0372",
         "nannul-0373"
       ],
-      "record_count": 13
+      "record_count": 13,
+      "heading_id": "nannul-heading-060"
     },
     {
-      "heading_id": "nannul-heading-062",
       "heading_text_ta": "தொகாநிலைத் தொடர்மொழி",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1247,10 +1232,10 @@
       "record_ids": [
         "nannul-0374"
       ],
-      "record_count": 1
+      "record_count": 1,
+      "heading_id": "nannul-heading-061"
     },
     {
-      "heading_id": "nannul-heading-063",
       "heading_text_ta": "வழாநிலை வழுவமைதி",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1297,10 +1282,10 @@
         "nannul-0409",
         "nannul-0410"
       ],
-      "record_count": 36
+      "record_count": 36,
+      "heading_id": "nannul-heading-062"
     },
     {
-      "heading_id": "nannul-heading-064",
       "heading_text_ta": "பொருள்கோள்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1320,10 +1305,10 @@
         "nannul-0418",
         "nannul-0419"
       ],
-      "record_count": 9
+      "record_count": 9,
+      "heading_id": "nannul-heading-063"
     },
     {
-      "heading_id": "nannul-heading-065",
       "heading_text_ta": "இடையியல்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1356,10 +1341,10 @@
         "nannul-0440",
         "nannul-0441"
       ],
-      "record_count": 22
+      "record_count": 22,
+      "heading_id": "nannul-heading-064"
     },
     {
-      "heading_id": "nannul-heading-066",
       "heading_text_ta": "உரியியல்",
       "section_id": "sollathikaram",
       "section_label_ta": "சொல்லதிகாரம்",
@@ -1391,7 +1376,26 @@
         "nannul-0461",
         "nannul-0462"
       ],
-      "record_count": 21
+      "record_count": 21,
+      "heading_id": "nannul-heading-065"
+    }
+  ],
+  "unheaded_spans": [
+    {
+      "section_id": "ezhuththathikaram",
+      "section_label_ta": "எழுத்ததிகாரம்",
+      "unit_id": "ezhuthu-iyal",
+      "unit_label_ta": "எழுத்து இயல்",
+      "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+      "start_number": 56,
+      "end_number": 57,
+      "record_ids": [
+        "nannul-0056",
+        "nannul-0057"
+      ],
+      "record_count": 2,
+      "unheaded_span_id": "nannul-unheaded-001",
+      "status": "no-internal-source-heading"
     }
   ]
 }
