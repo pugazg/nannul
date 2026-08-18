@@ -2,9 +2,9 @@
 
 Canonical range: **258–462**.
 
-Status: **IN PROGRESS**.
+Status: **CANONICALIZED AND AUDITED IN FULL**.
 
-The current Project Madurai Unicode webpage remains the controlling witness.
+The current Project Madurai Unicode webpage is the controlling witness.
 
 ## இயல் folders/files
 
@@ -12,29 +12,31 @@ The current Project Madurai Unicode webpage remains the controlling witness.
 - `03-02-vinaiyiyal/` — 320–351 — **canonicalized and audited**
 - `03-03-pothuviyal/` — 352–419 — **canonicalized and audited**
 - `03-04-idaiyiyal/` — 420–441 — **canonicalized and audited**
-- `03-05-uriyiyal/` — 442–462 — **next**
+- `03-05-uriyiyal/` — 442–462 — **canonicalized and audited**
 
-## Current status
+## Completion status
 
-Canonical சொல்லதிகாரம் now reaches நூற்பா **441**.
+Canonical சொல்லதிகாரம் reaches நூற்பா **462** and is complete across all five இயல்கள்.
 
-Completed batches:
+The entire range **258–462 is continuously numbered** in the controlling webpage, giving **205 displayed numbered units** with no missing or duplicated number.
 
-- `3.1 பெயரியல்` — 258–319
-- `3.2 வினையியல்` — 320–351
-- `3.3 பொதுவியல்` — 352–419
-- `3.4 இடையியல்` — 420–441
+The webpage then displays the terminal source marker:
 
-The இடையியல் range is continuously numbered in the controlling webpage with 22 displayed numbered units. See `audit/CANONICAL_INGEST_420_441.md`.
+`நன்னூல் முற்றிற்று`
 
-Previously documented witness differences remain recorded in `audit/SOURCE_VARIANTS.md`; canonical text follows the current webpage.
+That marker is retained at the end of the final canonical உரியியல் file.
 
-## Previous milestone
+## Audits
 
-**எழுத்ததிகாரம் 56–257 is canonicalized and audited in full.** See `audit/EZHUTHTHATHIKARAM_COMPLETION.md`.
+- `audit/CANONICAL_INGEST_258_319.md`
+- `audit/CANONICAL_INGEST_320_351.md`
+- `audit/CANONICAL_INGEST_352_419.md`
+- `audit/CANONICAL_INGEST_420_441.md`
+- `audit/CANONICAL_INGEST_442_462.md`
+- `audit/SOLLATHIKARAM_COMPLETION.md`
 
-## Next canonical activity
+Previously documented witness differences at 343 and 344 remain in `audit/SOURCE_VARIANTS.md`; canonical text follows the current webpage.
 
-Proceed with **3.5 உரியியல், நூற்பாக்கள் 442–462**.
+## Whole-work status
 
-Completing that batch will complete the canonical சொல்லதிகாரம் and the full numbered source through நூற்பா 462.
+**The source-derived canonical Tamil ingestion of Nannūl is complete end-to-end.** See `audit/NANNUL_CANONICAL_COMPLETION.md`.
