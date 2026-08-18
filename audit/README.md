@@ -24,6 +24,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `STABLE_IDENTIFIER_INDEX.md` — stable நூற்பா identifier namespace and canonical segment-index audit.
 - `CANONICAL_UNIT_DATASET.md` — reproducible 460-record canonical unit dataset audit.
 - `HEADING_LEXICAL_CONCORDANCE.md` — source-supported heading index and exact-surface lexical concordance audit.
+- `FREQUENCY_PROFILES.md` — deterministic exact-surface frequency/profile aggregation audit.
 
 ## Documented source findings
 
@@ -48,6 +49,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - stable identifier / range index layer: **ESTABLISHED AND AUDITED**.
 - one-record-per-canonical-unit data layer: **GENERATED, VALIDATED, AND AUDITED**.
 - source-heading / exact-surface lexical concordance layer: **GENERATED, CORRECTED, VALIDATED, AND AUDITED**.
+- exact-surface frequency/profile layer: **GENERATED, VALIDATED, AND AUDITED**.
 
 Current canonical boundary: **462 / `நன்னூல் முற்றிற்று`**.
 
@@ -83,6 +85,34 @@ Generated artifacts:
 Tokenization is exact `\S+` surface extraction with no punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting.
 
 See `HEADING_LEXICAL_CONCORDANCE.md`.
+
+## Frequency/profile status
+
+Generated artifacts:
+
+- `data/frequency-profiles.json` — top-20 exact-surface summaries for the whole work and every source-supported grouping;
+- `data/frequency-tables.json` — complete exact-surface frequency tables for every group;
+- `indexes/frequency-profiles.md` — human-readable whole-work/section/இயல்/heading profiles;
+- `data/frequency-profiles-validation.json` — **PASS** reconciliation/integrity validation;
+- `scripts/generate_frequency_profiles.py` — deterministic aggregation generator;
+- `.github/workflows/generate-frequency-profiles.yml` — reproducible self-committing generation workflow.
+
+Validated profile counts:
+
+- canonical records: **460**;
+- token occurrences: **5,431**;
+- unique exact surface forms: **2,837**;
+- hapax exact surface forms: **2,037**;
+- source-section / அதிகார-level profiles: **3**;
+- இயல் / structural-unit profiles: **17**;
+- source-heading profiles: **65**;
+- unheaded-span profiles: **1**.
+
+Every token link and character offset was rechecked against canonical `text_ta`, and section, இயல், and heading-plus-unheaded totals all reconcile exactly to the global 5,431 occurrences.
+
+Frequency remains descriptive only; no repeated surface form is promoted automatically to grammatical-term status.
+
+See `FREQUENCY_PROFILES.md`.
 
 ## Raw-source preservation status
 
