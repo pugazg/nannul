@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "source_dataset": "data/nurpa.json",
+  "checks": {
+    "record_count_is_460": true,
+    "record_ids_unique": true,
+    "numbers_unique": true,
+    "numbers_match_expected_canonical_set": true,
+    "source_gaps_absent_from_records": true,
+    "heading_index_covers_records_in_source_order_exactly_once": true,
+    "surface_form_substrings_match_exact_text": true,
+    "sum_of_concordance_counts_matches_occurrences": true,
+    "all_surface_forms_nonempty": true
+  },
+  "counts": {
+    "canonical_records": 460,
+    "heading_occurrences": 66,
+    "distinct_heading_texts": 66,
+    "token_occurrences": 5431,
+    "unique_surface_forms": 2837
+  },
+  "reserved_source_gaps": [
+    73,
+    176
+  ],
+  "missing_expected_canonical_numbers": [],
+  "unexpected_numbers": [],
+  "substring_validation_failures": [],
+  "outputs": {
+    "heading_json": "data/source-heading-index.json",
+    "heading_markdown": "indexes/source-heading-index.md",
+    "word_form_concordance": "data/word-form-concordance.json",
+    "token_occurrences_ndjson": "data/token-occurrences.ndjson"
+  },
+  "hashes": {
+    "data/source-heading-index.json": "5a31f9fa4cb68c06e45e7412d5860d3551c24b0d098213e223b30f3208252d08",
+    "indexes/source-heading-index.md": "98123c4f2eda8c5c5f3c16554e07c1879f12ee8c0c57ac745f3c2b7517d12d99",
+    "data/word-form-concordance.json": "22e5baf46580c80a7c54cf2fa5c463c7b82561cb84ed47be656eeef61ddf3a86",
+    "data/token-occurrences.ndjson": "d4a2049fd0bbda63a37e7e911aa636250adf308768506f18d28d140ce5706fd7"
+  },
+  "derivation_status": "derived only from validated data/nurpa.json; no canonical Tamil text modified"
+}
