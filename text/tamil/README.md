@@ -10,15 +10,15 @@ This folder contains the repository's source-faithful Tamil text derived from th
 - சொல்லதிகாரம் 258–462:
   - பெயரியல் 258–319: **canonicalized and audited**
   - வினையியல் 320–351: **canonicalized and audited**
-  - பொதுவியல் 352–419: **next**
-  - இடையியல் 420–441: pending
+  - பொதுவியல் 352–419: **canonicalized and audited**
+  - இடையியல் 420–441: **next**
   - உரியியல் 442–462: pending
 
 ## Current boundary
 
-Canonical Tamil currently reaches source நூற்பா **351**.
+Canonical Tamil currently reaches source நூற்பா **419**.
 
-The next source unit is **352**, beginning `3.3 பொதுவியல்`.
+The next source unit is **420**, beginning `3.4 இடையியல்`.
 
 ## Source-variant status
 
@@ -28,6 +28,8 @@ Within வினையியல்:
 
 - 343 is `செய்தனெ` in the current webpage but `செய்தென` in the historical mirror;
 - 344 ends with `பிற"` in the current webpage while the historical mirror lacks that trailing quotation mark.
+
+பொதுவியல் 352–419 is continuously numbered in the controlling webpage and introduces no new numbering anomaly.
 
 The canonical layer follows the controlling current webpage. See `audit/SOURCE_VARIANTS.md` and the relevant batch audits.
 
