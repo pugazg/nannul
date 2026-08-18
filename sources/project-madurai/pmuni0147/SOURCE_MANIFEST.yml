@@ -1,0 +1,45 @@
+work:
+  title_ta: "நன்னூல்"
+  author_ta: "பவணந்தி முனிவர்"
+  genre: "Tamil grammar"
+
+controlling_source:
+  provider: "Project Madurai"
+  identifier: "pmuni0147"
+  url: "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0147.html"
+  format: "HTML"
+  rendered_encoding: "Unicode Tamil"
+  first_published: "2002-03-26"
+  last_revised_displayed: "2021-08-31"
+  role: "controlling"
+
+edition_statement_from_header:
+  etext_preparation: "Dr. Thomas Malten, Institute of Indology and Tamil Studies, University of Cologne"
+  conversion: "Initially transliterated eText converted to Unicode using Mani Manivannan's TextConvertor"
+  base_edition_editor: "Mani Thirunavukkarasu Mudaliar"
+  base_edition_publisher: "Vavilla Ramasamy Sastrulu & Sons, Madras"
+  base_edition_year: 1926
+  proofreader: "N. D. Logasundaram"
+
+redistribution_note: "Project Madurai permits free distribution provided the header page is kept intact."
+
+secondary_witnesses:
+  - provider: "Project Madurai official GitHub mirror"
+    repository: "project-madurai/pm-repo-html"
+    path: "html/pmuni0147.html"
+    branch: "master"
+    blob_sha: "1ebf6e496a39520391830733f9c25de173b1f5b6"
+    role: "historical-secondary"
+    note: "Older HTML witness; wording/segmentation differs from the currently rendered 2021 webpage and must not silently replace the controlling source."
+
+canonical_scope:
+  numbered_nurpas: "1-462"
+  unnumbered_front_matter: "சிறப்புப்பாயிரம்"
+
+status:
+  provenance_verified: true
+  rendered_header_captured: true
+  full_current_html_vendored: false
+  canonical_payiram_1_55: true
+  canonical_full_text: false
+  source_discrepancy_audit_started: true
