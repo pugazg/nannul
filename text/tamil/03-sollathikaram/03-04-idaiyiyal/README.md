@@ -2,16 +2,23 @@
 
 Canonical source range: **420–441**.
 
-Status: **NEXT CANONICAL BATCH**.
+Status: **CANONICALIZED AND AUDITED**.
 
-The current Project Madurai Unicode webpage remains the controlling witness.
-
-Planned canonical file:
+Canonical file:
 
 `idaiyiyal-420-441.md`
 
-The source begins this இயல் at நூற்பா **420** immediately after பொதுவியல் ends at 419, and ends at **441** before `3.5 உரியியல்` begins at 442.
+The current Project Madurai Unicode webpage is the controlling witness.
 
-The controlling webpage currently presents this இயல் under the single source heading `இடையியல்`; verify the full 420–441 sequence against the webpage during ingestion.
+## Verification status
 
-Do not normalize source wording, silently repair punctuation or numbering, or import readings from a secondary witness. Any discrepancy found during extraction must be recorded under `audit/` before editorial intervention.
+- starts at நூற்பா **420**;
+- ends at நூற்பா **441**;
+- all 22 numbered units 420–441 are displayed continuously in the controlling webpage;
+- no missing or duplicated number was observed;
+- the source presents this இயல் under the single heading `இடையியல்`;
+- `3.5 உரியியல்` begins at **442** and is not included here.
+
+Batch audit: `audit/CANONICAL_INGEST_420_441.md`.
+
+No source wording, punctuation, numbering, or spacing was silently normalized, and no secondary-witness reading was imported.
