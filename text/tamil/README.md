@@ -16,26 +16,35 @@ text/tamil/
 │   │   └── pathaviyal-128-150.md
 │   ├── 02-03-uyireetru-punariyal/
 │   │   └── uyireetru-punariyal-151-203.md
-│   └── 02-04-meyyeetru-punariyal/
-│       └── meyyeetru-punariyal-204-239.md
-└── 03-sollathikaram/            # later canonical stage
+│   ├── 02-04-meyyeetru-punariyal/
+│   │   └── meyyeetru-punariyal-204-239.md
+│   └── 02-05-urupu-punariyal/
+│       └── urupu-punariyal-240-257.md
+└── 03-sollathikaram/
 ```
 
 ## Canonical status
 
 - சிறப்புப்பாயிரம்: **complete from controlling source**
 - பொதுப்பாயிரம் 1–55: **complete from controlling source**
-- எழுத்ததிகாரம் 56–257:
-  - எழுத்து இயல் 56–127: **canonicalized and audited**
-  - பதவியல் 128–150: **canonicalized and audited**
-  - உயிரீற்றுப் புணரியல் 151–203: **canonicalized and audited**
-  - மெய்யீற்றுப் புணரியல் 204–239: **canonicalized and audited**
-  - உருபு புணரியல் 240–257: **next**
-- சொல்லதிகாரம் 258–462: **not yet canonicalized**
+- எழுத்ததிகாரம் 56–257: **canonicalized and audited in full**
+  - எழுத்து இயல் 56–127: complete
+  - பதவியல் 128–150: complete
+  - உயிரீற்றுப் புணரியல் 151–203: complete
+  - மெய்யீற்றுப் புணரியல் 204–239: complete
+  - உருபு புணரியல் 240–257: complete
+- சொல்லதிகாரம் 258–462:
+  - பெயரியல் 258–319: **next**
+  - வினையியல் 320–351: pending
+  - பொதுவியல் 352–419: pending
+  - இடையியல் 420–441: pending
+  - உரியியல் 442–462: pending
 
 ## Current boundary
 
-Canonical Tamil currently reaches source நூற்பா **239**.
+Canonical Tamil currently reaches source நூற்பா **257**.
+
+The next source unit is **258**, beginning `3.1 பெயரியல்` under சொல்லதிகாரம்.
 
 ## Controlling-source numbering gaps
 
@@ -44,11 +53,11 @@ The current Project Madurai webpage does not display:
 - numbered 73 between 72 and 74;
 - numbered 176 between 175 and 177.
 
-The canonical layer preserves those source states rather than importing readings from the historical Project Madurai witness. See `audit/SOURCE_VARIANTS.md`, `audit/CANONICAL_INGEST_056_127.md`, and `audit/CANONICAL_INGEST_151_203.md`.
+The canonical layer preserves those source states rather than importing readings from the historical Project Madurai witness.
 
-The பதவியல் range 128–150 and மெய்யீற்றுப் புணரியல் range 204–239 are continuous and are documented in their respective batch audits.
+The older witness also has a numbering anomaly around 240–242; the current webpage's continuous **240, 241, 242** sequence is canonical.
 
-The next range, உருபு புணரியல் 240–257, has a previously documented historical-witness numbering anomaly around 240–242; the current webpage controls the canonical sequence.
+See `audit/SOURCE_VARIANTS.md` and `audit/EZHUTHTHATHIKARAM_COMPLETION.md`.
 
 ## Rules
 
