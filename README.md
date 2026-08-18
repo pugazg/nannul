@@ -73,8 +73,23 @@ See `audit/SOURCE_VARIANTS.md` and the batch audit files. No secondary-witness r
 - `audit/SOLLATHIKARAM_COMPLETION.md`
 - `audit/NANNUL_CANONICAL_COMPLETION.md`
 
+## Raw-source preservation
+
+Exact-byte preservation of the **current** Project Madurai HTML is tracked separately from canonical completion.
+
+Infrastructure now present:
+
+- `.github/workflows/vendor-project-madurai-source.yml` — reproducible direct-HTTP fetch/checksum workflow;
+- `sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md` — archival protocol and completion gate;
+- `audit/RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md` — dated retrieval-attempt audit;
+- `SOURCE_MANIFEST.yml` raw-preservation state and target paths.
+
+Current raw-source status: **workflow/protocol configured, raw snapshot not yet materialized and hash-verified on `main`**.
+
+Accordingly, `full_current_html_vendored` remains `false`. Parsed web text and the historical GitHub mirror are not accepted as substitutes for the controlling HTTP response bytes.
+
 ## Remaining work outside canonical transcription
 
-The full current Project Madurai HTML has **not yet been vendored byte-for-byte**. Provenance and rendered header material are preserved under `sources/project-madurai/pmuni0147/`.
+The immediate unresolved archival gate is materializing and SHA-256-verifying the current raw Project Madurai HTML under `sources/project-madurai/pmuni0147/raw/`.
 
-Future work can proceed in separate layers: raw-source preservation, stable நூற்பா IDs and indexes, machine-readable structured data, commentary, comparative grammar, translations, and critical/source comparison. These must not silently alter the completed canonical Tamil layer.
+After that gate passes, future work can proceed in separate layers such as stable நூற்பா IDs and indexes, machine-readable structured data, commentary, comparative grammar, translations, and critical/source comparison. These must not silently alter the completed canonical Tamil layer.
