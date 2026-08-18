@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """Generate source-heading and exact-surface lexical concordances for Nannul.
 
-Derived inputs only:
-- data/nurpa.json
+Input: data/nurpa.json only.
 
-This script never edits canonical Tamil files. Lexical tokens are exact non-whitespace
-substrings of each record's text_ta. No Unicode normalization, punctuation stripping,
-stemming, sandhi splitting, case folding, or spelling normalization is applied.
+Canonical Tamil is never edited. Lexical tokens are exact non-whitespace substrings
+of text_ta. No Unicode normalization, punctuation stripping, stemming, sandhi
+splitting, case folding, or spelling normalization is applied.
 """
 
 from __future__ import annotations
@@ -45,24 +44,25 @@ def sha256(path: Path) -> str:
 
 
 def build_heading_index(records: list[dict]) -> dict:
-    occurrences: list[dict] = []
+    raw_spans: list[dict] = []
     current: dict | None = None
 
+    def flush() -> None:
+        nonlocal current
+        if current is not None:
+            current.pop("_key")
+            current["record_count"] = len(current["record_ids"])
+            raw_spans.append(current)
+            current = None
+
     for rec in records:
-        key = (
-            rec["canonical_file"],
-            rec["section_id"],
-            rec["unit_id"],
-            rec.get("topic_heading_ta"),
-        )
+        heading = rec.get("topic_heading_ta")
+        key = (rec["canonical_file"], rec["section_id"], rec["unit_id"], heading)
         if current is None or current["_key"] != key:
-            if current is not None:
-                current.pop("_key")
-                occurrences.append(current)
+            flush()
             current = {
                 "_key": key,
-                "heading_id": f"nannul-heading-{len(occurrences) + 1:03d}",
-                "heading_text_ta": rec.get("topic_heading_ta"),
+                "heading_text_ta": heading,
                 "section_id": rec["section_id"],
                 "section_label_ta": rec["section_label_ta"],
                 "unit_id": rec["unit_id"],
@@ -75,60 +75,78 @@ def build_heading_index(records: list[dict]) -> dict:
         else:
             current["end_number"] = rec["number"]
             current["record_ids"].append(rec["id"])
+    flush()
 
-    if current is not None:
-        current.pop("_key")
-        occurrences.append(current)
+    heading_occurrences: list[dict] = []
+    unheaded_spans: list[dict] = []
+    for span in raw_spans:
+        if span["heading_text_ta"]:
+            span["heading_id"] = f"nannul-heading-{len(heading_occurrences) + 1:03d}"
+            heading_occurrences.append(span)
+        else:
+            span.pop("heading_text_ta", None)
+            span["unheaded_span_id"] = f"nannul-unheaded-{len(unheaded_spans) + 1:03d}"
+            span["status"] = "no-internal-source-heading"
+            unheaded_spans.append(span)
 
-    for item in occurrences:
-        item["record_count"] = len(item["record_ids"])
-
-    distinct_texts = []
-    seen = set()
-    for item in occurrences:
-        text = item["heading_text_ta"]
-        if text not in seen:
-            seen.add(text)
-            distinct_texts.append(text)
+    distinct_heading_texts = list(dict.fromkeys(h["heading_text_ta"] for h in heading_occurrences))
 
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "work_id": "nannul",
         "source_dataset": "data/nurpa.json",
-        "derivation_policy": "contiguous occurrences of exact topic_heading_ta values already derived from audited canonical Markdown headings",
+        "derivation_policy": (
+            "contiguous occurrences of exact non-empty topic_heading_ta values already derived from audited canonical Markdown headings; "
+            "records before any internal heading are represented separately as unheaded spans"
+        ),
         "counts": {
             "canonical_records": len(records),
-            "heading_occurrences": len(occurrences),
-            "distinct_heading_texts": len(distinct_texts),
+            "heading_occurrences": len(heading_occurrences),
+            "distinct_heading_texts": len(distinct_heading_texts),
+            "unheaded_spans": len(unheaded_spans),
+            "unheaded_records": sum(s["record_count"] for s in unheaded_spans),
         },
-        "heading_occurrences": occurrences,
+        "heading_occurrences": heading_occurrences,
+        "unheaded_spans": unheaded_spans,
     }
 
 
 def write_heading_markdown(index: dict) -> None:
+    c = index["counts"]
     lines = [
         "# Nannūl Source Heading Index",
         "",
-        "This index is derived from the source-supported Markdown headings already attached to canonical records in `data/nurpa.json`.",
+        "This index is derived from source-supported Markdown headings already attached to canonical records in `data/nurpa.json`.",
         "",
-        "It records **heading occurrences**, not editorial topics. Identical heading text appearing in different structural locations remains separately addressable.",
+        "It records **actual non-empty heading occurrences**, not editorial topics. Identical text in different structural locations would remain separately addressable.",
+        "",
+        "Records that occur before an internal source heading are listed separately as **unheaded source spans**; an empty heading is never invented.",
         "",
         "No heading wording is normalized or translated.",
         "",
-        f"- Canonical records covered: **{index['counts']['canonical_records']}**",
-        f"- Heading occurrences: **{index['counts']['heading_occurrences']}**",
-        f"- Distinct exact heading texts: **{index['counts']['distinct_heading_texts']}**",
+        f"- Canonical records covered: **{c['canonical_records']}**",
+        f"- Source-heading occurrences: **{c['heading_occurrences']}**",
+        f"- Distinct exact heading texts: **{c['distinct_heading_texts']}**",
+        f"- Unheaded source spans: **{c['unheaded_spans']}** ({c['unheaded_records']} records)",
         "",
         "| Heading ID | Exact source-supported heading | Structural unit | Numbers | Records |",
         "|---|---|---|---:|---:|",
     ]
     for h in index["heading_occurrences"]:
-        heading = (h["heading_text_ta"] or "").replace("|", "\\|")
+        heading = h["heading_text_ta"].replace("|", "\\|")
         unit = h["unit_label_ta"].replace("|", "\\|")
         numbers = str(h["start_number"]) if h["start_number"] == h["end_number"] else f"{h['start_number']}–{h['end_number']}"
+        lines.append(f"| `{h['heading_id']}` | {heading} | {unit} | {numbers} | {h['record_count']} |")
+
+    lines.extend(["", "## Unheaded source spans", ""])
+    for s in index["unheaded_spans"]:
+        numbers = str(s["start_number"]) if s["start_number"] == s["end_number"] else f"{s['start_number']}–{s['end_number']}"
         lines.append(
-            f"| `{h['heading_id']}` | {heading} | {unit} | {numbers} | {h['record_count']} |"
+            f"- `{s['unheaded_span_id']}` — {s['unit_label_ta']} — நூற்பாக்கள் {numbers} — no internal source heading precedes these records in the canonical file."
         )
+    if not index["unheaded_spans"]:
+        lines.append("- None.")
+
     lines.extend([
         "",
         "Machine-readable form: `data/source-heading-index.json`.",
@@ -139,36 +157,25 @@ def write_heading_markdown(index: dict) -> None:
     HEADING_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def build_lexical_concordance(records: list[dict]) -> tuple[dict, list[dict], dict]:
+def build_lexical_concordance(records: list[dict]) -> tuple[dict, list[dict], list[dict]]:
     forms: OrderedDict[str, dict] = OrderedDict()
     all_occurrences: list[dict] = []
-    record_token_counts: dict[str, int] = {}
-    substring_validation_failures: list[dict] = []
-
+    substring_failures: list[dict] = []
     global_index = 0
+
     for rec in records:
         text = rec["text_ta"]
         per_line_token_index: defaultdict[int, int] = defaultdict(int)
-        record_count = 0
-
         for match in TOKEN_RE.finditer(text):
             surface = match.group(0)
-            start = match.start()
-            end = match.end()
+            start, end = match.start(), match.end()
             line_number = text.count("\n", 0, start) + 1
             line_start = text.rfind("\n", 0, start) + 1
-            column_start = start - line_start + 1
             per_line_token_index[line_number] += 1
             global_index += 1
-            record_count += 1
 
             if text[start:end] != surface:
-                substring_validation_failures.append({
-                    "record_id": rec["id"],
-                    "start": start,
-                    "end": end,
-                    "surface_form": surface,
-                })
+                substring_failures.append({"record_id": rec["id"], "start": start, "end": end, "surface_form": surface})
 
             occurrence = {
                 "occurrence_index": global_index,
@@ -181,7 +188,7 @@ def build_lexical_concordance(records: list[dict]) -> tuple[dict, list[dict], di
                 "character_start": start,
                 "character_end": end,
                 "line_number": line_number,
-                "column_start": column_start,
+                "column_start": start - line_start + 1,
                 "token_index_in_line": per_line_token_index[line_number],
             }
             all_occurrences.append(occurrence)
@@ -194,9 +201,8 @@ def build_lexical_concordance(records: list[dict]) -> tuple[dict, list[dict], di
                     "first_seen_record_id": rec["id"],
                     "occurrences": [],
                 }
-            entry = forms[surface]
-            entry["count"] += 1
-            entry["occurrences"].append({
+            forms[surface]["count"] += 1
+            forms[surface]["occurrences"].append({
                 "record_id": rec["id"],
                 "number": rec["number"],
                 "character_start": start,
@@ -204,8 +210,6 @@ def build_lexical_concordance(records: list[dict]) -> tuple[dict, list[dict], di
                 "line_number": line_number,
                 "token_index_in_line": per_line_token_index[line_number],
             })
-
-        record_token_counts[rec["id"]] = record_count
 
     concordance = {
         "schema_version": 1,
@@ -227,12 +231,7 @@ def build_lexical_concordance(records: list[dict]) -> tuple[dict, list[dict], di
         },
         "forms": list(forms.values()),
     }
-
-    validation = {
-        "record_token_counts": record_token_counts,
-        "substring_validation_failures": substring_validation_failures,
-    }
-    return concordance, all_occurrences, validation
+    return concordance, all_occurrences, substring_failures
 
 
 def write_token_ndjson(occurrences: list[dict]) -> None:
@@ -242,47 +241,48 @@ def write_token_ndjson(occurrences: list[dict]) -> None:
             f.write(json.dumps(occurrence, ensure_ascii=False, separators=(",", ":")) + "\n")
 
 
-def validate_dataset(records: list[dict], heading_index: dict, concordance: dict, lexical_validation: dict) -> dict:
+def validate(records: list[dict], heading_index: dict, concordance: dict, substring_failures: list[dict]) -> dict:
     numbers = [r["number"] for r in records]
     ids = [r["id"] for r in records]
     number_set = set(numbers)
 
-    heading_record_ids = [rid for h in heading_index["heading_occurrences"] for rid in h["record_ids"]]
-    heading_coverage_ok = heading_record_ids == ids
+    all_spans = heading_index["heading_occurrences"] + heading_index["unheaded_spans"]
+    all_spans.sort(key=lambda s: (s["start_number"], s["end_number"]))
+    covered_ids = [rid for span in all_spans for rid in span["record_ids"]]
 
-    total_form_counts = sum(item["count"] for item in concordance["forms"])
     token_occurrences = concordance["counts"]["token_occurrences"]
+    total_form_counts = sum(item["count"] for item in concordance["forms"])
 
-    status = "PASS"
     checks = {
         "record_count_is_460": len(records) == EXPECTED_RECORD_COUNT,
         "record_ids_unique": len(ids) == len(set(ids)),
         "numbers_unique": len(numbers) == len(number_set),
         "numbers_match_expected_canonical_set": number_set == EXPECTED_NUMBERS,
         "source_gaps_absent_from_records": EXPECTED_GAPS.isdisjoint(number_set),
-        "heading_index_covers_records_in_source_order_exactly_once": heading_coverage_ok,
-        "surface_form_substrings_match_exact_text": not lexical_validation["substring_validation_failures"],
+        "heading_and_unheaded_spans_cover_records_in_source_order_exactly_once": covered_ids == ids,
+        "all_heading_occurrences_have_nonempty_source_heading": all(h["heading_text_ta"] for h in heading_index["heading_occurrences"]),
+        "surface_form_substrings_match_exact_text": not substring_failures,
         "sum_of_concordance_counts_matches_occurrences": total_form_counts == token_occurrences,
         "all_surface_forms_nonempty": all(item["surface_form"] for item in concordance["forms"]),
     }
-    if not all(checks.values()):
-        status = "FAIL"
 
     return {
-        "status": status,
+        "status": "PASS" if all(checks.values()) else "FAIL",
         "source_dataset": "data/nurpa.json",
         "checks": checks,
         "counts": {
             "canonical_records": len(records),
             "heading_occurrences": heading_index["counts"]["heading_occurrences"],
             "distinct_heading_texts": heading_index["counts"]["distinct_heading_texts"],
+            "unheaded_spans": heading_index["counts"]["unheaded_spans"],
+            "unheaded_records": heading_index["counts"]["unheaded_records"],
             "token_occurrences": token_occurrences,
             "unique_surface_forms": concordance["counts"]["unique_surface_forms"],
         },
         "reserved_source_gaps": sorted(EXPECTED_GAPS),
         "missing_expected_canonical_numbers": sorted(EXPECTED_NUMBERS - number_set),
         "unexpected_numbers": sorted(number_set - EXPECTED_NUMBERS),
-        "substring_validation_failures": lexical_validation["substring_validation_failures"],
+        "substring_validation_failures": substring_failures,
         "outputs": {
             "heading_json": str(HEADING_JSON.relative_to(ROOT)),
             "heading_markdown": str(HEADING_MD.relative_to(ROOT)),
@@ -297,7 +297,6 @@ def validate_dataset(records: list[dict], heading_index: dict, concordance: dict
 def main() -> None:
     dataset = json.loads(DATASET.read_text(encoding="utf-8"))
     records = dataset["records"]
-
     if len(records) != EXPECTED_RECORD_COUNT:
         raise SystemExit(f"Expected {EXPECTED_RECORD_COUNT} records, found {len(records)}")
 
@@ -305,18 +304,17 @@ def main() -> None:
     dump_json(HEADING_JSON, heading_index)
     write_heading_markdown(heading_index)
 
-    concordance, occurrences, lexical_validation = build_lexical_concordance(records)
+    concordance, occurrences, substring_failures = build_lexical_concordance(records)
     dump_json(CONCORDANCE_JSON, concordance)
     write_token_ndjson(occurrences)
 
-    validation = validate_dataset(records, heading_index, concordance, lexical_validation)
+    validation = validate(records, heading_index, concordance, substring_failures)
     for path in (HEADING_JSON, HEADING_MD, CONCORDANCE_JSON, TOKEN_NDJSON):
         validation["hashes"][str(path.relative_to(ROOT))] = sha256(path)
     dump_json(VALIDATION_JSON, validation)
 
     if validation["status"] != "PASS":
         raise SystemExit("Concordance validation failed; inspect data/concordance-validation.json")
-
     print(json.dumps(validation, ensure_ascii=False, indent=2))
 
 
