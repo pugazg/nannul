@@ -1,4 +1,4 @@
-# Nannūl Grammatical Terminology Review — 002 Decisions
+# Nannūl Grammatical Terminology Review — Batch 002 Decisions
 
 Human/contextual review under `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
 

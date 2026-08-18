@@ -9,15 +9,16 @@
     "ledger_counts_reconcile": true,
     "layer_status_matches_coverage": true,
     "batch_001_has_20_decisions": true,
-    "batch_002_has_17_decisions": true
+    "batch_002_has_17_decisions": true,
+    "batch_003_has_25_decisions": true
   },
   "counts": {
     "candidate_surface_forms": 455,
-    "reviewed": 37,
-    "accepted": 33,
-    "rejected": 4,
+    "reviewed": 62,
+    "accepted": 51,
+    "rejected": 11,
     "needs_context": 0,
-    "unreviewed": 418
+    "unreviewed": 393
   },
   "batches": {
     "NANNUL-TERM-REVIEW-001": {
@@ -31,18 +32,26 @@
       "accepted": 14,
       "rejected": 3,
       "needs_context": 0
+    },
+    "NANNUL-TERM-REVIEW-003": {
+      "decision_count": 25,
+      "accepted": 18,
+      "rejected": 7,
+      "needs_context": 0
     }
   },
   "accepted_category_counts": {
     "case": 2,
-    "meta-grammar": 4,
-    "morphology": 6,
+    "meta-grammar": 5,
+    "morphology": 11,
     "noun": 1,
     "orthography": 1,
-    "other-grammar": 2,
-    "phonology-letter-class": 8,
+    "other-grammar": 3,
+    "particle": 2,
+    "phonology-letter-class": 16,
     "phonology-sound-process": 2,
     "prosodic-measure": 1,
+    "semantics": 1,
     "syntax": 1,
     "textual-pedagogy": 1,
     "verb": 4
@@ -50,8 +59,9 @@
   "failures": [],
   "interpretation_boundary": "PASS validates ledger identity, evidence links, decision structure, and counts; it does not replace human semantic review.",
   "hashes": {
-    "data/grammatical-terminology-review.json": "d8c461349249e9caa5ef0f340bc5433efcb34c2a9cb0ed4dba959198860af8de",
-    "reviews/terminology/batch-001-decisions.md": "ac8184c6f137487ff24614c3a33c92bf9d3ad168541a2a63e309c5d5574d7f03",
-    "reviews/terminology/batch-002-decisions.md": "43a42790afae4def88175ac43b4c9c8472984f37f73a6e7fd2cdd2ae31e9bb02"
+    "data/grammatical-terminology-review.json": "f5cd2034a9ce085a1311be0ba856e1954080439c20ec9b9472e313419f04f01e",
+    "reviews/terminology/batch-001-decisions.md": "2b5b7322bfd063bd341e2a12f484bd58b30725ab9b3c7f552bad683be50344fd",
+    "reviews/terminology/batch-002-decisions.md": "91b96f1ed72f10c4a20aafa5f4acee5146cfed0849eaa4bbfe78d9fe5144329f",
+    "reviews/terminology/batch-003-decisions.md": "c059af7db437b685e3bd4aba145840d16e252a764d2686a8e22cb9bc42e15dbd"
   }
 }
