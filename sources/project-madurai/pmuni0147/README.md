@@ -40,10 +40,11 @@ A historical copy also exists in Project Madurai's official GitHub mirror (`proj
 - Canonical சிறப்புப்பாயிரம் derived: **yes**
 - Canonical பொதுப்பாயிரம் 1–55 derived: **yes**
 - Canonical எழுத்ததிகாரம் 56–257 derived: **yes — complete and audited**
-- Canonical சொல்லதிகாரம் derived through: **351**
+- Canonical சொல்லதிகாரம் derived through: **419**
   - பெயரியல் 258–319: complete and audited
   - வினையியல் 320–351: complete and audited
-- Current canonical boundary: **351**
+  - பொதுவியல் 352–419: complete and audited
+- Current canonical boundary: **419**
 - Source-variant audit: **active**
 
 ## Documented source discrepancies
@@ -56,7 +57,9 @@ Differences already encountered between the controlling current webpage and the 
 - நூற்பா 343: current `செய்தனெ` vs historical `செய்தென`;
 - நூற்பா 344: current trailing `"` after `பிற` vs no trailing quote in the historical mirror.
 
-These are tracked in `audit/SOURCE_VARIANTS.md`. The canonical layer follows the current webpage and does not silently import readings from the historical witness.
+பொதுவியல் 352–419 is continuously numbered in the current controlling webpage and adds no new numbering discrepancy.
+
+These findings are tracked in `audit/SOURCE_VARIANTS.md` and batch audits. The canonical layer follows the current webpage and does not silently import readings from the historical witness.
 
 ## Ingestion rule
 
@@ -64,4 +67,4 @@ The controlling source must be preserved without editorial rewriting. Normalized
 
 ## Next source-derived canonical work
 
-Proceed with **3. சொல்லதிகாரம் → 3.3 பொதுவியல், நூற்பாக்கள் 352–419**.
+Proceed with **3. சொல்லதிகாரம் → 3.4 இடையியல், நூற்பாக்கள் 420–441**.
