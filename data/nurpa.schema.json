@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pugazg/nannul/data/nurpa.schema.json",
+  "title": "Nannul canonical numbered unit dataset",
+  "description": "Derived one-record-per-displayed-nurpa dataset from the audited canonical Tamil layer. Source-gap positions 73 and 176 are metadata only and never canonical records.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "work",
+    "derivation",
+    "counts",
+    "source_gaps",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "work": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title_ta", "author_ta"],
+      "properties": {
+        "id": {"const": "nannul"},
+        "title_ta": {"const": "நன்னூல்"},
+        "author_ta": {"const": "பவணந்தி முனிவர்"}
+      }
+    },
+    "derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_layer",
+        "controlling_source",
+        "identifier_policy",
+        "segment_index",
+        "canonical_completion_audit",
+        "generator",
+        "status"
+      ],
+      "properties": {
+        "source_layer": {"const": "text/tamil"},
+        "controlling_source": {"const": "project-madurai:pmuni0147"},
+        "identifier_policy": {"const": "structure/identifiers.yml"},
+        "segment_index": {"const": "data/nurpa-index.json"},
+        "canonical_completion_audit": {"const": "audit/NANNUL_CANONICAL_COMPLETION.md"},
+        "generator": {"const": "scripts/generate_nurpa_dataset.py"},
+        "status": {"const": "derived-from-audited-canonical-text"}
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nominal_numbered_positions",
+        "canonical_records",
+        "reserved_source_gap_positions"
+      ],
+      "properties": {
+        "nominal_numbered_positions": {"const": 462},
+        "canonical_records": {"const": 460},
+        "reserved_source_gap_positions": {"const": 2}
+      }
+    },
+    "source_gaps": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "number", "status", "source_variant", "canonical_text_present"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^nannul-[0-9]{4}$"},
+          "number": {"enum": [73, 176]},
+          "status": {"const": "source-gap"},
+          "source_variant": {"enum": ["PM147-V001", "PM147-V003"]},
+          "canonical_text_present": {"const": false}
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 460,
+      "maxItems": 460,
+      "items": {
+        "$ref": "#/$defs/nurpaRecord"
+      }
+    }
+  },
+  "$defs": {
+    "nurpaRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "number",
+        "text_ta",
+        "text_line_count",
+        "section_id",
+        "section_label_ta",
+        "unit_id",
+        "unit_label_ta",
+        "topic_heading_ta",
+        "canonical_file",
+        "source_status",
+        "controlling_source",
+        "source_variant_refs"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^nannul-[0-9]{4}$"
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 462,
+          "not": {"enum": [73, 176]}
+        },
+        "text_ta": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_line_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "section_id": {
+          "enum": ["pothu-payiram", "ezhuththathikaram", "sollathikaram"]
+        },
+        "section_label_ta": {
+          "enum": ["பொதுப்பாயிரம்", "எழுத்ததிகாரம்", "சொல்லதிகாரம்"]
+        },
+        "unit_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit_label_ta": {
+          "type": "string",
+          "minLength": 1
+        },
+        "topic_heading_ta": {
+          "type": ["string", "null"]
+        },
+        "canonical_file": {
+          "type": "string",
+          "pattern": "^text/tamil/.+\\.md$"
+        },
+        "source_status": {
+          "const": "canonical"
+        },
+        "controlling_source": {
+          "const": "project-madurai:pmuni0147"
+        },
+        "source_variant_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^PM147-V[0-9]{3}$"
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}
