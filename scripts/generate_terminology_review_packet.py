@@ -11,9 +11,13 @@ For each candidate the packet includes:
 - stable candidate ID and exact surface form;
 - discovery rank/score and all source-heading evidence;
 - complete occurrence coverage by record and structural unit;
-- representative full canonical contexts: first occurrence, one occurrence from
-  every structural unit, at least one candidate occurrence from every matching
-  source-heading range, and every occurrence in a source-variant-linked record.
+- representative full canonical contexts: first body occurrence, one body
+  occurrence from every structural unit, one governed canonical context for every
+  matching source-heading range, and every occurrence in a source-variant-linked
+  record.
+
+A heading token is allowed to be heading-only: the governed context need not repeat
+that exact token in its body. This distinction is recorded rather than forced.
 
 No canonical Tamil is changed or normalized.
 """
@@ -53,7 +57,9 @@ def main() -> None:
     candidates_obj = load_json(CANDIDATES)
     nurpa_obj = load_json(NURPA)
     token_rows = load_ndjson(TOKENS)
-    record_by_id = {r["id"]: r for r in nurpa_obj["records"]}
+    records = nurpa_obj["records"]
+    record_by_id = {r["id"]: r for r in records}
+    record_by_number = {r["number"]: r for r in records}
 
     selected = [
         c for c in candidates_obj["candidates"]
@@ -83,30 +89,67 @@ def main() -> None:
             units[rec["unit_id"]].append(rid)
 
         selected_context_ids: list[str] = []
-        # First occurrence.
-        selected_context_ids.append(occurrences[0]["record_id"])
-        # At least one occurrence from every structural unit.
+        context_roles: dict[str, set[str]] = defaultdict(set)
+
+        # First body occurrence.
+        first_rid = occurrences[0]["record_id"]
+        selected_context_ids.append(first_rid)
+        context_roles[first_rid].add("first-body-occurrence")
+
+        # At least one body occurrence from every structural unit.
         for unit_id in units:
-            selected_context_ids.append(units[unit_id][0])
-        # At least one candidate occurrence inside every matching source-heading range.
+            rid = units[unit_id][0]
+            selected_context_ids.append(rid)
+            context_roles[rid].add("structural-unit-representative")
+
+        # One governed canonical context for every source-heading match. Prefer a
+        # candidate body occurrence in the range; otherwise use the first extant
+        # canonical record in the governed range and mark it heading-context-only.
+        heading_contexts: list[dict] = []
         for heading in candidate["evidence"]["source_heading_matches"]:
-            heading_occurrence = next(
+            body_occurrence = next(
                 (
                     o for o in occurrences
                     if heading["start_number"] <= o["number"] <= heading["end_number"]
                 ),
                 None,
             )
-            if heading_occurrence is None:
-                raise SystemExit(
-                    f"Heading evidence for {surface} has no candidate occurrence in "
-                    f"{heading['start_number']}-{heading['end_number']}"
+            if body_occurrence is not None:
+                rid = body_occurrence["record_id"]
+                mode = "heading-range-with-body-occurrence"
+            else:
+                governed_record = next(
+                    (
+                        record_by_number[n]
+                        for n in range(heading["start_number"], heading["end_number"] + 1)
+                        if n in record_by_number
+                    ),
+                    None,
                 )
-            selected_context_ids.append(heading_occurrence["record_id"])
-        # Every candidate-occurrence record carrying a documented source variant.
+                if governed_record is None:
+                    raise SystemExit(
+                        f"Heading range {heading['start_number']}-{heading['end_number']} "
+                        f"for {surface} contains no canonical record"
+                    )
+                rid = governed_record["id"]
+                mode = "heading-context-only-token-not-repeated-in-selected-body"
+            selected_context_ids.append(rid)
+            context_roles[rid].add(mode)
+            heading_contexts.append({
+                "heading_id": heading["heading_id"],
+                "heading_text_ta": heading["heading_text_ta"],
+                "start_number": heading["start_number"],
+                "end_number": heading["end_number"],
+                "context_record_id": rid,
+                "context_mode": mode,
+            })
+
+        # Every body-occurrence record carrying a documented source variant.
         for rid in record_ids:
             if record_by_id[rid].get("source_variant_refs"):
                 selected_context_ids.append(rid)
+                context_roles[rid].add("source-variant-linked-body-occurrence")
+
         selected_context_ids = list(dict.fromkeys(selected_context_ids))
 
         contexts = []
@@ -128,6 +171,8 @@ def main() -> None:
                 "source_variant_refs": rec.get("source_variant_refs", []),
                 "text_ta": rec["text_ta"],
                 "candidate_offsets": offsets,
+                "context_roles": sorted(context_roles[rid]),
+                "candidate_present_in_body": bool(offsets),
             })
 
         packet_candidates.append({
@@ -147,17 +192,18 @@ def main() -> None:
                 for uid, rids in units.items()
             ],
             "source_heading_matches": candidate["evidence"]["source_heading_matches"],
+            "heading_contexts": heading_contexts,
             "source_variant_refs": candidate["evidence"]["source_variant_refs"],
             "representative_contexts": contexts,
         })
 
     packet = {
-        "schema_version": 2,
+        "schema_version": 3,
         "work_id": "nannul",
         "phase": "terminology-contextual-review",
         "batch_id": "NANNUL-TERM-REVIEW-001",
         "selection_policy": "first 20 mechanical-rank candidates carrying exact source-heading-token evidence",
-        "context_selection_policy": "first occurrence + one per structural unit + one in every matching source-heading range + all variant-linked candidate records",
+        "context_selection_policy": "first body occurrence + one body occurrence per structural unit + one governed context per matching source heading + all variant-linked body occurrences; heading-only evidence is preserved as heading-only",
         "decision_status": "context-packet-only-no-decisions",
         "candidate_count": len(packet_candidates),
         "candidates": packet_candidates,
@@ -173,15 +219,15 @@ def main() -> None:
         "",
         "Selection: first 20 mechanically ranked candidates with exact source-heading-token evidence.",
         "",
-        "For each candidate, all heading evidence and complete record-number coverage are listed; full canonical text is included for the first occurrence, one occurrence in every structural unit, at least one candidate occurrence inside every matching source-heading range, and any source-variant-linked occurrence.",
+        "For each candidate, all heading evidence and complete body-occurrence coverage are listed. Full canonical text is included for the first body occurrence, one body occurrence in every structural unit, one governed context for every matching source heading, and any source-variant-linked body occurrence. A heading token may be heading-only; the packet does not invent a body occurrence.",
         "",
     ]
     for c in packet_candidates:
         lines += [
             f"## {c['review_rank']}. `{c['surface_form_ta']}` — `{c['candidate_id']}`",
             "",
-            f"- Occurrences: **{c['occurrence_count']}**",
-            f"- Record numbers with the exact form: {', '.join(str(n) for n in c['numbers_all'])}",
+            f"- Body occurrences: **{c['occurrence_count']}**",
+            f"- Record numbers with the exact form in body text: {', '.join(str(n) for n in c['numbers_all'])}",
             f"- Structural units: {', '.join(u['unit_label_ta'] for u in c['structural_units'])}",
             f"- Source-heading matches: **{len(c['source_heading_matches'])}**",
             "",
@@ -193,10 +239,13 @@ def main() -> None:
         lines += ["", "### Representative canonical contexts", ""]
         for ctx in c["representative_contexts"]:
             variant = f"; variants: {', '.join(ctx['source_variant_refs'])}" if ctx["source_variant_refs"] else ""
+            presence = "candidate in body" if ctx["candidate_present_in_body"] else "heading-context only; candidate not repeated in this body"
+            roles = ", ".join(ctx["context_roles"])
             lines += [
                 f"#### {ctx['record_id']} — நூற்பா {ctx['number']} — {ctx['unit_label_ta']}{variant}",
                 "",
                 f"Source heading: {ctx['topic_heading_ta'] or '(none)'}",
+                f"Context role: {roles}; {presence}",
                 "",
                 "```text",
                 ctx["text_ta"],
