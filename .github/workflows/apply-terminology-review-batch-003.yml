@@ -1,5 +1,6 @@
 name: Apply Nannul terminology review Batch 003
 
+# Triggered for Batch 003 decision application.
 on:
   push:
     branches:
