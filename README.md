@@ -105,6 +105,38 @@ Lexical layer:
 
 Tokenization is deliberately lossless at the surface level: each token is an exact non-whitespace substring (`\S+`) of canonical `text_ta`. No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied. This keeps unusual and punctuation-bearing source forms visible rather than silently cleaning them.
 
+## Exact-surface frequency/profile status
+
+**SECTION / இயல் / SOURCE-HEADING FREQUENCY PROFILES: GENERATED, VALIDATED, AND AUDITED**
+
+Primary artifacts:
+
+- `data/frequency-profiles.json` — group summaries with top-20 exact surface forms;
+- `data/frequency-tables.json` — complete exact-surface frequency tables for every group;
+- `indexes/frequency-profiles.md` — human-facing whole-work and grouped profiles;
+- `data/frequency-profiles-validation.json` — **PASS** reconciliation/integrity validation;
+- `scripts/generate_frequency_profiles.py` — deterministic aggregation generator;
+- `.github/workflows/generate-frequency-profiles.yml` — reproducible self-committing workflow;
+- `audit/FREQUENCY_PROFILES.md` — formal audit.
+
+Validated whole-work counts:
+
+- canonical numbered records: **460**;
+- exact token occurrences: **5,431**;
+- unique exact surface forms: **2,837**;
+- hapax exact surface forms: **2,037**.
+
+Validated profile dimensions:
+
+- source-section / அதிகார-level profiles: **3**;
+- இயல் / structural-unit profiles: **17**;
+- actual source-heading profiles: **65**;
+- explicit unheaded-span profiles: **1**.
+
+All section, இயல், and heading-plus-unheaded token totals reconcile exactly to the global 5,431 occurrences, and token links/character offsets are revalidated against canonical `text_ta` during generation.
+
+Frequency remains a purely descriptive mechanical layer. No frequent lexical form is automatically classified as a grammatical term.
+
 ## Numbering state of the controlling source
 
 The nominal numbered span is **1–462**. The current Project Madurai webpage does not display numbered **73** or **176**, so the completed canonical layer contains **460 displayed numbered நூற்பாக்கள்**, plus the unnumbered சிறப்புப்பாயிரம்.
@@ -131,6 +163,7 @@ See `audit/SOURCE_VARIANTS.md`. No secondary-witness reading is silently importe
 - `audit/STABLE_IDENTIFIER_INDEX.md`
 - `audit/CANONICAL_UNIT_DATASET.md`
 - `audit/HEADING_LEXICAL_CONCORDANCE.md`
+- `audit/FREQUENCY_PROFILES.md`
 
 ## Raw-source preservation
 
@@ -149,6 +182,6 @@ Accordingly, `full_current_html_vendored` remains `false`. Parsed web text and t
 
 ## Next derived-data activity
 
-The next safe mechanical milestone is **frequency/profile summaries by அதிகாரம், இயல்/subsection, and source heading**, using only the validated exact-surface occurrence dataset.
+The next safe analytical milestone is a **reviewed grammatical-terminology candidate layer**.
 
-A later grammatical-terminology index should be treated separately as an analytical/reviewed layer: lexical frequency alone must not be misrepresented as grammatical classification.
+The first phase should remain candidate discovery only: derive potentially significant repeated exact forms and source-heading cues from the validated mechanical data, attach stable நூற்பா provenance and occurrence evidence, and mark every candidate `unreviewed`. Frequency alone must never be treated as proof that a form is a grammatical technical term.
