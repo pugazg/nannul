@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "work_id": "nannul",
+  "source_layer": "text/tamil",
+  "controlling_source": "project-madurai:pmuni0147",
+  "identifier_scheme": {
+    "numbered_pattern": "nannul-%04d",
+    "number_start": 1,
+    "number_end": 462,
+    "unnumbered_sirappuppayiram_id": "nannul-sirappu-payiram"
+  },
+  "counts": {
+    "nominal_numbered_positions": 462,
+    "canonical_displayed_numbered_units": 460,
+    "reserved_source_gap_positions": 2
+  },
+  "source_gaps": [
+    {
+      "id": "nannul-0073",
+      "number": 73,
+      "status": "source-gap",
+      "source_variant": "PM147-V001",
+      "canonical_text_present": false
+    },
+    {
+      "id": "nannul-0176",
+      "number": 176,
+      "status": "source-gap",
+      "source_variant": "PM147-V003",
+      "canonical_text_present": false
+    }
+  ],
+  "segments": [
+    {
+      "start": 1,
+      "end": 3,
+      "section_id": "pothu-payiram",
+      "unit_id": "pothu-payiram-intro",
+      "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md"
+    },
+    {
+      "start": 4,
+      "end": 25,
+      "section_id": "pothu-payiram",
+      "unit_id": "nool-varalaru",
+      "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md"
+    },
+    {
+      "start": 26,
+      "end": 35,
+      "section_id": "pothu-payiram",
+      "unit_id": "aasiriyan-varalaru",
+      "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md"
+    },
+    {
+      "start": 36,
+      "end": 37,
+      "section_id": "pothu-payiram",
+      "unit_id": "paadam-sollal-varalaru",
+      "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md"
+    },
+    {
+      "start": 38,
+      "end": 39,
+      "section_id": "pothu-payiram",
+      "unit_id": "maanakkar-varalaru",
+      "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md"
+    },
+    {
+      "start": 40,
+      "end": 46,
+      "section_id": "pothu-payiram",
+      "unit_id": "paadam-kettal-varalaru",
+      "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md"
+    },
+    {
+      "start": 47,
+      "end": 55,
+      "section_id": "pothu-payiram",
+      "unit_id": "sirappu-payira-ilakkanam",
+      "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md"
+    },
+    {
+      "start": 56,
+      "end": 127,
+      "section_id": "ezhuththathikaram",
+      "unit_id": "ezhuthu-iyal",
+      "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+      "reserved_source_gaps": [73]
+    },
+    {
+      "start": 128,
+      "end": 150,
+      "section_id": "ezhuththathikaram",
+      "unit_id": "pathaviyal",
+      "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md"
+    },
+    {
+      "start": 151,
+      "end": 203,
+      "section_id": "ezhuththathikaram",
+      "unit_id": "uyireetru-punariyal",
+      "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+      "reserved_source_gaps": [176]
+    },
+    {
+      "start": 204,
+      "end": 239,
+      "section_id": "ezhuththathikaram",
+      "unit_id": "meyyeetru-punariyal",
+      "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md"
+    },
+    {
+      "start": 240,
+      "end": 257,
+      "section_id": "ezhuththathikaram",
+      "unit_id": "urubu-punariyal",
+      "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md"
+    },
+    {
+      "start": 258,
+      "end": 319,
+      "section_id": "sollathikaram",
+      "unit_id": "peyariyal",
+      "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md"
+    },
+    {
+      "start": 320,
+      "end": 351,
+      "section_id": "sollathikaram",
+      "unit_id": "vinaiyiyal",
+      "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md"
+    },
+    {
+      "start": 352,
+      "end": 419,
+      "section_id": "sollathikaram",
+      "unit_id": "pothuviyal",
+      "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md"
+    },
+    {
+      "start": 420,
+      "end": 441,
+      "section_id": "sollathikaram",
+      "unit_id": "idaiyiyal",
+      "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md"
+    },
+    {
+      "start": 442,
+      "end": 462,
+      "section_id": "sollathikaram",
+      "unit_id": "uriyiyal",
+      "canonical_file": "text/tamil/03-sollathikaram/03-05-uriyiyal/uriyiyal-442-462.md"
+    }
+  ],
+  "expansion_rule": "For each integer n in 1..462, form id nannul-%04d. If n is 73 or 176, status is source-gap and no canonical text is attached; otherwise resolve n to exactly one segment and its canonical_file.",
+  "derivation_status": "derived from audited canonical structure; no canonical Tamil text modified"
+}
