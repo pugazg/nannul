@@ -14,8 +14,10 @@ text/tamil/
 │   │   └── ezhuththu-iyal-056-127.md
 │   ├── 02-02-pathaviyal/
 │   │   └── pathaviyal-128-150.md
-│   └── 02-03-uyireetru-punariyal/
-│       └── uyireetru-punariyal-151-203.md
+│   ├── 02-03-uyireetru-punariyal/
+│   │   └── uyireetru-punariyal-151-203.md
+│   └── 02-04-meyyeetru-punariyal/
+│       └── meyyeetru-punariyal-204-239.md
 └── 03-sollathikaram/            # later canonical stage
 ```
 
@@ -27,13 +29,13 @@ text/tamil/
   - எழுத்து இயல் 56–127: **canonicalized and audited**
   - பதவியல் 128–150: **canonicalized and audited**
   - உயிரீற்றுப் புணரியல் 151–203: **canonicalized and audited**
-  - மெய்யீற்றுப் புணரியல் 204–239: **next**
-  - உருபு புணரியல் 240–257: pending
+  - மெய்யீற்றுப் புணரியல் 204–239: **canonicalized and audited**
+  - உருபு புணரியல் 240–257: **next**
 - சொல்லதிகாரம் 258–462: **not yet canonicalized**
 
 ## Current boundary
 
-Canonical Tamil currently reaches source நூற்பா **203**.
+Canonical Tamil currently reaches source நூற்பா **239**.
 
 ## Controlling-source numbering gaps
 
@@ -44,7 +46,9 @@ The current Project Madurai webpage does not display:
 
 The canonical layer preserves those source states rather than importing readings from the historical Project Madurai witness. See `audit/SOURCE_VARIANTS.md`, `audit/CANONICAL_INGEST_056_127.md`, and `audit/CANONICAL_INGEST_151_203.md`.
 
-The பதவியல் range 128–150 is continuous and is documented in `audit/CANONICAL_INGEST_128_150.md`.
+The பதவியல் range 128–150 and மெய்யீற்றுப் புணரியல் range 204–239 are continuous and are documented in their respective batch audits.
+
+The next range, உருபு புணரியல் 240–257, has a previously documented historical-witness numbering anomaly around 240–242; the current webpage controls the canonical sequence.
 
 ## Rules
 
