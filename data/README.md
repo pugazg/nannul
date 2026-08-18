@@ -104,11 +104,11 @@ Each profile records record/token/form counts plus its top 20 exact surface form
 
 ### `frequency-tables.json`
 
-Complete exact-surface frequency tables for the whole work and every section, இயல், source-heading occurrence, and unheaded span. These tables retain all exact forms, not merely the top-20 profile summaries.
+Complete exact-surface frequency tables for the whole work and every section, இயல், source-heading occurrence, and unheaded span.
 
 ### `frequency-profiles-validation.json`
 
-**PASS** reconciliation/integrity report. It verifies canonical/token links and offsets, source-gap handling, total coverage, per-group reconciliation, and output fingerprints.
+**PASS** reconciliation/integrity report.
 
 Human-readable profile: `indexes/frequency-profiles.md`
 
@@ -122,17 +122,14 @@ Audit: `audit/FREQUENCY_PROFILES.md`
 
 ### `grammatical-terminology-candidates.json`
 
-Phase-1 **unreviewed candidate discovery** dataset.
+Phase-1 mechanically generated candidate-discovery dataset.
 
-Validated state:
+Validated discovery state:
 
 - all unique exact surface forms considered: **2,837**;
 - discovered candidate surface forms: **455**;
 - candidates meeting exact frequency >=3: **443**;
-- candidates with exact source-heading-token evidence: **37**;
-- reviewed: **0**;
-- accepted: **0**;
-- rejected: **0**.
+- candidates with exact source-heading-token evidence: **37**.
 
 The frequency and heading sets overlap. Candidate selection is deliberately broad and is not a grammatical-term assertion.
 
@@ -140,23 +137,25 @@ Candidate IDs are stable across ranking changes: `nannul-term-candidate-<16 hex>
 
 Each candidate carries exact-surface frequency, record/section/இயல் breadth, source-heading evidence when present, stable நூற்பா occurrence samples, variant references, and a mechanical review-priority score. The score is **not** semantic confidence.
 
+The generated discovery data deliberately retains its `unreviewed` status fields. Human decisions are stored separately and are never written back into generated candidate records.
+
 ### `grammatical-terminology-candidates.ndjson`
 
-Streaming form of the 455 unreviewed discovery candidates.
+Streaming form of the 455 discovery candidates.
 
 ### `grammatical-terminology-candidates-validation.json`
 
-**PASS** validation ensuring the discovery rule is reproduced exactly, stable candidate IDs match exact-surface hashes, evidence counts reconcile, and every generated candidate remains unreviewed with no automatic category or decision.
+**PASS** validation ensuring the discovery rule is reproduced exactly, stable candidate IDs match exact-surface hashes, evidence counts reconcile, and the generated layer contains no automatic semantic decision.
 
 ### `grammatical-terminology-candidates.schema.json`
 
-Schema contract for the generated discovery layer. It intentionally requires `review_status: unreviewed` and null automatic decisions/categories.
+Schema contract for the generated discovery layer.
 
 Generator: `scripts/generate_terminology_candidates.py`
 
 Workflow: `.github/workflows/generate-terminology-candidates.yml`
 
-Human review queue: `indexes/grammatical-terminology-review-queue.md`
+Human discovery queue: `indexes/grammatical-terminology-review-queue.md`
 
 Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`
 
@@ -164,23 +163,48 @@ Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`
 
 ### `grammatical-terminology-review.json`
 
-Separate human/editorial decision ledger. It is **not generated from frequency** and currently starts with:
+Separate human/editorial decision ledger. It is **not generated from frequency**.
+
+Current Phase-2 state after Batch 001:
 
 - candidates: **455**;
-- reviewed: **0**;
-- accepted: **0**;
-- rejected: **0**;
+- reviewed: **20**;
+- accepted: **19**;
+- rejected: **1**;
 - needs-context: **0**;
-- unreviewed: **455**.
+- unreviewed: **435**;
+- status: **review-in-progress**.
+
+The accepted/rejected decision applies to the exact surface form and documented reviewed contexts, not automatically to every occurrence or related spelling.
+
+Mixed-use candidates can carry both `term_use_record_ids` and `non_term_use_record_ids`, allowing technical and ordinary uses of the same exact form to remain distinct.
 
 Do not place human decisions in the generated candidate files. Review decisions belong only in this ledger under `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
 
 Schema: `grammatical-terminology-review.schema.json`.
 
-## Derivation policy
+### `grammatical-terminology-review-validation.json`
 
-Everything in `data/` is derived from the verified canonical Tamil and structural metadata. Derived or inferred fields must never be represented as if they were part of the source text.
+**PASS** structural/provenance validation of the human ledger.
 
-The mechanical layers deliberately distinguish frequency/candidate discovery from reviewed grammatical interpretation. A repeated or heading-linked exact form remains only an **unreviewed candidate** until a contextual decision is recorded in the separate review ledger.
+It checks candidate identity, canonical நூற்பா evidence links, source-gap exclusion, decision requirements, mixed-use evidence subsets, count reconciliation, review coverage/status, and Batch-001 decision count.
 
-Future relationship data may connect reviewed Nannūl concepts with Tolkāppiyam or other grammar works without changing the canonical source layer.
+Validator: `scripts/validate_terminology_review.py`
+
+Workflow: `.github/workflows/validate-terminology-review.yml`
+
+Human-readable Batch-001 decision summary: `reviews/terminology/batch-001-decisions.md`.
+
+Audit: `audit/TERMINOLOGY_REVIEW_BATCH_001.md`.
+
+Current Batch-001 decision result: **19 accepted / 1 rejected / 0 needs-context**. The only rejection is exact form `முன்`, which the reviewed Nannūl contexts support as an ordinary relational word embedded inside technical grammatical statements rather than a standalone technical term.
+
+## Derivation and interpretation policy
+
+Everything in `data/` remains separated by evidentiary role:
+
+- canonical-derived mechanical datasets preserve or aggregate source-supported data;
+- candidate discovery prioritizes possible terms without deciding termhood;
+- the review ledger is a distinct human analytical layer with explicit provenance and rationale.
+
+Derived or inferred fields must never be represented as if they were part of the source text. External comparison with Tolkāppiyam, commentaries, dictionaries, or later grammar works must be tagged separately if introduced in later phases.
