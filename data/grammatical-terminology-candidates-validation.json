@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": {
+    "upstream_validation_is_pass": true,
+    "canonical_record_count_is_460": true,
+    "reserved_source_gaps_absent": true,
+    "input_token_occurrence_count_is_5431": true,
+    "token_links_and_offsets_match_canonical_records": true,
+    "candidate_forms_unique": true,
+    "candidate_set_exactly_matches_discovery_rule": true,
+    "all_candidates_unreviewed": true,
+    "no_candidate_has_automatic_term_decision": true,
+    "no_candidate_has_automatic_term_category": true,
+    "all_candidate_occurrence_counts_reconcile": true,
+    "review_ranks_contiguous": true
+  },
+  "counts": {
+    "canonical_records": 460,
+    "token_occurrences": 5431,
+    "all_unique_surface_forms": 2837,
+    "candidate_surface_forms": 455,
+    "frequency_selected_candidates": 443,
+    "heading_matched_candidates": 37,
+    "reviewed_candidates": 0,
+    "accepted_terms": 0,
+    "rejected_candidates": 0
+  },
+  "reserved_source_gaps": [
+    73,
+    176
+  ],
+  "token_link_failures": [],
+  "candidate_evidence_failures": [],
+  "outputs": {
+    "candidate_json": "data/grammatical-terminology-candidates.json",
+    "candidate_ndjson": "data/grammatical-terminology-candidates.ndjson",
+    "review_queue_markdown": "indexes/grammatical-terminology-review-queue.md"
+  },
+  "hashes": {
+    "data/grammatical-terminology-candidates.json": "65f6dd8ab129abd5692018d81da9c13e1f5aa5c97956d011bfaca9ce7eb5a784",
+    "data/grammatical-terminology-candidates.ndjson": "966cb11db0bba3b0310345457a69bfafef13909421c9d66c6f097bcfe278fb9f",
+    "indexes/grammatical-terminology-review-queue.md": "2941e109e8d7cf8111fd9bb78a042bd27c7ff9df60020c11c89e2c5fb687c7ca"
+  },
+  "interpretation_boundary": "PASS validates mechanical discovery/evidence only; it does not validate grammatical termhood."
+}
