@@ -41,11 +41,11 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 - சொல்லதிகாரம் 258–462:
   - பெயரியல் 258–319 — **canonicalized and audited**
   - வினையியல் 320–351 — **canonicalized and audited**
-  - பொதுவியல் 352–419 — **next**
-  - இடையியல் 420–441 — pending
+  - பொதுவியல் 352–419 — **canonicalized and audited**
+  - இடையியல் 420–441 — **next**
   - உரியியல் 442–462 — pending
 
-Current canonical boundary: **நூற்பா 351**.
+Current canonical boundary: **நூற்பா 419**.
 
 ## Documented source-version findings
 
@@ -57,10 +57,12 @@ The canonical edition follows the current Project Madurai webpage. Differences a
 - நூற்பா 343: current `செய்தனெ` vs historical `செய்தென`;
 - நூற்பா 344: current trailing `"` after `பிற` vs no trailing quote in the historical mirror.
 
+பொதுவியல் 352–419 is continuously numbered in the controlling webpage and introduces no new numbering discrepancy.
+
 See `audit/SOURCE_VARIANTS.md` and the batch audit files. No secondary-witness reading is silently imported into canonical text.
 
 ## Next canonical activity
 
-Proceed with **3.3 பொதுவியல், நூற்பாக்கள் 352–419**, using the current Project Madurai Unicode webpage as the controlling witness.
+Proceed with **3.4 இடையியல், நூற்பாக்கள் 420–441**, using the current Project Madurai Unicode webpage as the controlling witness.
 
 The complete raw current webpage has not yet been vendored byte-for-byte into the repository; provenance/header material is preserved under `sources/`, and canonical transcription proceeds directly against the controlling webpage with batch audit records.
