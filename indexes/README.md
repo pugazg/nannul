@@ -6,22 +6,42 @@ Human-facing navigational indexes for Nannūl belong here.
 
 ### `nurpa-number-index.md`
 
-Documents the stable நூற்பா identifier scheme and provides range-level navigation from source structure to canonical files.
+Stable range/navigation index for the numbered Nannūl source.
 
-Stable numbered identifiers use:
+It documents:
 
-`nannul-%04d`
+- `nannul-%04d` as the numbered stable-ID scheme;
+- all source-supported section / subsection / இயல் ranges;
+- canonical file paths;
+- reserved source-gap positions `nannul-0073` and `nannul-0176`;
+- `nannul-sirappu-payiram` for the unnumbered சிறப்புப்பாயிரம்.
 
-The unnumbered சிறப்புப்பாயிரம் uses `nannul-sirappu-payiram`.
+Machine-readable resolver: `data/nurpa-index.json`.
 
-Nominal positions 73 and 176 are explicitly reserved as source gaps and do not represent reconstructed canonical text.
+### `source-heading-index.md`
 
-## Related machine data
+Human-facing index of the exact source-supported heading occurrences carried by the canonical unit dataset.
 
-- `structure/identifiers.yml` — stable-ID policy.
-- `data/nurpa-index.json` — machine-readable segment resolver.
-- `structure/sections.yml` — source-supported hierarchy.
+Validated state:
 
-Future indexes may include grammatical-term, example-word, referenced-author/work, and cross-reference indexes to Tolkāppiyam and other Tamil grammar works.
+- **65** actual non-empty source-heading occurrences;
+- **65** distinct exact heading strings;
+- one explicitly represented unheaded span, நூற்பாக்கள் **56–57**, before `எண்` begins at 58.
 
-Indexes are derived from verified text and structure. They must link back to stable நூற்பா identifiers wherever possible and must never silently alter the canonical Tamil layer.
+No empty/fabricated heading is assigned to the unheaded span.
+
+Machine-readable form: `data/source-heading-index.json`.
+
+## Index policy
+
+Indexes are derived from verified canonical text and structure. They use stable நூற்பா IDs wherever individual units are addressed and never rewrite canonical Tamil.
+
+Future human-facing indexes may include:
+
+- grammatical-term index;
+- example-word index;
+- referenced-author/work index;
+- cross-reference index to Tolkāppiyam and other Tamil grammar works;
+- frequency/profile summaries by அதிகாரம், இயல், and source heading.
+
+Analytical classifications must remain distinguishable from mechanical/source-supported indexes.
