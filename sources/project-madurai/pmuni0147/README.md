@@ -25,9 +25,24 @@ Project Madurai states that the file may be freely distributed provided the head
 
 ## Files in this source folder
 
-- `SOURCE_MANIFEST.yml` — machine-readable provenance and source roles.
+- `SOURCE_MANIFEST.yml` — machine-readable provenance, source roles, canonical status, and raw-preservation status.
 - `CURRENT_WEB_HEADER.txt` — captured rendered header from the current Project Madurai Unicode webpage.
+- `RAW_SOURCE_PRESERVATION.md` — exact-byte raw-source preservation protocol and completion gate.
 - `README.md` — source policy and status.
+
+Repository workflow:
+
+- `.github/workflows/vendor-project-madurai-source.yml` — reproducible direct-HTTP vendoring workflow for the current controlling HTML.
+
+When successfully materialized, the workflow writes:
+
+```text
+sources/project-madurai/pmuni0147/raw/
+├── pmuni0147.html
+├── pmuni0147.html.sha256
+├── RETRIEVAL.yml
+└── HTTP_HEADERS.txt
+```
 
 A historical copy also exists in Project Madurai's official GitHub mirror (`project-madurai/pm-repo-html`, `html/pmuni0147.html`, blob `1ebf6e496a39520391830733f9c25de173b1f5b6`). It is a **secondary witness only** because it differs textually and structurally from the current 2021 webpage supplied for this project.
 
@@ -36,7 +51,9 @@ A historical copy also exists in Project Madurai's official GitHub mirror (`proj
 - Provenance recorded: **yes**
 - Current rendered source header captured: **yes**
 - Current webpage source checked through terminal boundary: **yes**
-- Full current raw HTML vendored: **not yet**
+- Raw-source vendoring workflow installed: **yes**
+- Raw-source preservation protocol documented: **yes**
+- Full current raw HTML vendored and hash-verified: **not yet**
 - Canonical சிறப்புப்பாயிரம் derived: **yes**
 - Canonical பொதுப்பாயிரம் 1–55 derived: **yes**
 - Canonical எழுத்ததிகாரம் 56–257 derived: **yes — complete and audited**
@@ -44,6 +61,16 @@ A historical copy also exists in Project Madurai's official GitHub mirror (`proj
 - Current canonical boundary: **462 / `நன்னூல் முற்றிற்று`**
 - End-to-end canonical completion audit: **yes**
 - Source-variant audit: **active and documented**
+
+## Raw-source preservation state
+
+The archival retrieval mechanism is configured, but the expected `raw/` files have **not yet been verified on `main`**. Therefore the repository deliberately keeps:
+
+`full_current_html_vendored: false`
+
+No parsed browser/search representation is accepted as a raw-source substitute. No SHA-256 or byte count is claimed until the actual HTTP response body is committed and verified.
+
+See `RAW_SOURCE_PRESERVATION.md` for the exact completion gate.
 
 ## Numbering state
 
@@ -75,4 +102,4 @@ The source-derived canonical Tamil ingestion is complete. See:
 - `audit/SOLLATHIKARAM_COMPLETION.md`;
 - `audit/NANNUL_CANONICAL_COMPLETION.md`.
 
-The remaining source-preservation gap is the unvendored **full current raw HTML**, which should be treated as a separate archival task from the completed canonical transcription.
+Canonical completion and raw-source preservation are intentionally tracked as separate archival states.
