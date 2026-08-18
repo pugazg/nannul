@@ -1,0 +1,45 @@
+schema_version: 1
+work_id: nannul
+
+unnumbered_units:
+  - id: nannul-sirappu-payiram
+    label_ta: "சிறப்புப்பாயிரம்"
+    numbered: false
+    canonical_file: "text/tamil/00-sirappuppayiram.md"
+
+numbered_units:
+  id_pattern: "nannul-%04d"
+  number_start: 1
+  number_end: 462
+  nominal_positions: 462
+  controlling_witness_displayed_units: 460
+  canonical_units: 460
+  reserved_source_gap_positions: 2
+
+source_gaps:
+  - id: nannul-0073
+    number: 73
+    status: source-gap
+    section_id: ezhuththathikaram
+    unit_id: ezhuthu-iyal
+    source_variant: PM147-V001
+    canonical_text_present: false
+    note: "Reserved identifier position. The controlling current Project Madurai webpage does not display numbered 73."
+  - id: nannul-0176
+    number: 176
+    status: source-gap
+    section_id: ezhuththathikaram
+    unit_id: uyireetru-punariyal
+    source_variant: PM147-V003
+    canonical_text_present: false
+    note: "Reserved identifier position. The controlling current Project Madurai webpage does not display numbered 176."
+
+rules:
+  - "For a displayed numbered நூற்பா n, its stable identifier is nannul- followed by n zero-padded to four digits."
+  - "Stable identifiers never change because of later commentary, translation, indexing, or comparison work."
+  - "Identifiers nannul-0073 and nannul-0176 are reserved source-gap positions and must never be attached to reconstructed canonical text unless an explicit audited editorial policy changes the controlling-source rule."
+  - "The unnumbered சிறப்புப்பாயிரம் is represented separately as nannul-sirappu-payiram and is not forced into the numeric namespace."
+
+machine_index: "data/nurpa-index.json"
+human_index: "indexes/nurpa-number-index.md"
+audit: "audit/STABLE_IDENTIFIER_INDEX.md"
