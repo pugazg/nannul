@@ -35,22 +35,25 @@ A historical copy also exists in Project Madurai's official GitHub mirror (`proj
 
 - Provenance recorded: **yes**
 - Current rendered source header captured: **yes**
-- Current webpage source checked through its structural boundaries: **yes**
+- Current webpage source checked through terminal boundary: **yes**
 - Full current raw HTML vendored: **not yet**
 - Canonical சிறப்புப்பாயிரம் derived: **yes**
 - Canonical பொதுப்பாயிரம் 1–55 derived: **yes**
 - Canonical எழுத்ததிகாரம் 56–257 derived: **yes — complete and audited**
-- Canonical சொல்லதிகாரம் derived through: **441**
-  - பெயரியல் 258–319: complete and audited
-  - வினையியல் 320–351: complete and audited
-  - பொதுவியல் 352–419: complete and audited
-  - இடையியல் 420–441: complete and audited
-- Current canonical boundary: **441**
-- Source-variant audit: **active**
+- Canonical சொல்லதிகாரம் 258–462 derived: **yes — complete and audited**
+- Current canonical boundary: **462 / `நன்னூல் முற்றிற்று`**
+- End-to-end canonical completion audit: **yes**
+- Source-variant audit: **active and documented**
+
+## Numbering state
+
+The nominal numbered source span is 1–462. The current controlling webpage omits displayed numbered 73 and 176, so the canonical layer contains **460 displayed numbered நூற்பாக்கள்** plus the unnumbered சிறப்புப்பாயிரம்.
+
+The source terminates after 462 with `நன்னூல் முற்றிற்று` before Project Madurai footer/revision material.
 
 ## Documented source discrepancies
 
-Differences already encountered between the controlling current webpage and the older official Project Madurai GitHub witness include:
+Differences encountered between the controlling current webpage and the older official Project Madurai GitHub witness include:
 
 - missing displayed 73 in the current webpage;
 - missing displayed 176 in the current webpage;
@@ -64,8 +67,12 @@ These are tracked in `audit/SOURCE_VARIANTS.md`. The canonical layer follows the
 
 The controlling source must be preserved without editorial rewriting. Normalized, segmented, indexed, computational, commentary, comparative, or translated representations belong outside this folder. Secondary witnesses may inform an audit but may not silently alter the controlling-source text.
 
-## Next source-derived canonical work
+## Canonical completion
 
-Proceed with **3. சொல்லதிகாரம் → 3.5 உரியியல், நூற்பாக்கள் 442–462**.
+The source-derived canonical Tamil ingestion is complete. See:
 
-This is the final numbered source batch before end-to-end canonical completion review.
+- `audit/EZHUTHTHATHIKARAM_COMPLETION.md`;
+- `audit/SOLLATHIKARAM_COMPLETION.md`;
+- `audit/NANNUL_CANONICAL_COMPLETION.md`.
+
+The remaining source-preservation gap is the unvendored **full current raw HTML**, which should be treated as a separate archival task from the completed canonical transcription.
