@@ -41,6 +41,17 @@ canonical_scope:
   unnumbered_front_matter: "சிறப்புப்பாயிரம்"
   terminal_marker: "நன்னூல் முற்றிற்று"
 
+raw_source_preservation:
+  target_directory: "sources/project-madurai/pmuni0147/raw"
+  target_html: "sources/project-madurai/pmuni0147/raw/pmuni0147.html"
+  checksum_algorithm: "SHA-256"
+  retrieval_workflow: ".github/workflows/vendor-project-madurai-source.yml"
+  preservation_protocol: "sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md"
+  status: "configured-not-materialized"
+  verified_sha256: null
+  verified_byte_count: null
+  note: "Do not substitute parsed/rendered web text or the historical mirror for the raw current HTTP response body."
+
 status:
   provenance_verified: true
   rendered_header_captured: true
