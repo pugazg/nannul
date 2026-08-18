@@ -26,6 +26,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `HEADING_LEXICAL_CONCORDANCE.md` — source-supported heading index and exact-surface lexical concordance audit.
 - `FREQUENCY_PROFILES.md` — deterministic exact-surface frequency/profile aggregation audit.
 - `TERMINOLOGY_CANDIDATE_DISCOVERY.md` — Phase-1 broad unreviewed grammatical-terminology candidate discovery audit.
+- `TERMINOLOGY_REVIEW_BATCH_001.md` — Phase-2 contextual review Batch 001 audit.
 
 ## Documented source findings
 
@@ -52,7 +53,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - source-heading / exact-surface lexical concordance layer: **GENERATED, CORRECTED, VALIDATED, AND AUDITED**.
 - exact-surface frequency/profile layer: **GENERATED, VALIDATED, AND AUDITED**.
 - grammatical-terminology candidate discovery Phase 1: **GENERATED, STABLE-ID-CORRECTED, VALIDATED, AND AUDITED**.
-- grammatical-terminology contextual review Phase 2: **NOT STARTED**.
+- grammatical-terminology contextual review Phase 2: **IN PROGRESS — BATCH 001 COMPLETE AND AUDITED**.
 
 Current canonical boundary: **462 / `நன்னூல் முற்றிற்று`**.
 
@@ -77,9 +78,9 @@ See `CANONICAL_UNIT_DATASET.md`, `HEADING_LEXICAL_CONCORDANCE.md`, and `FREQUENC
 
 Generated artifacts:
 
-- `data/grammatical-terminology-candidates.json` — **455 unreviewed exact-surface candidates** with provenance/evidence;
+- `data/grammatical-terminology-candidates.json` — **455 mechanically discovered exact-surface candidates** with provenance/evidence;
 - `data/grammatical-terminology-candidates.ndjson` — streaming candidate queue;
-- `indexes/grammatical-terminology-review-queue.md` — ranked human-facing review queue;
+- `indexes/grammatical-terminology-review-queue.md` — ranked human-facing discovery queue;
 - `data/grammatical-terminology-candidates-validation.json` — **PASS** discovery/integrity validation;
 - `data/grammatical-terminology-candidates.schema.json` — discovery schema;
 - `scripts/generate_terminology_candidates.py` — deterministic generator;
@@ -87,20 +88,17 @@ Generated artifacts:
 
 Discovery rule: exact frequency >=3 **or** exact non-whitespace token match in a source-supported heading.
 
-Validated counts:
+Validated discovery counts:
 
 - candidate surface forms: **455**;
 - frequency-selected: **443**;
-- heading-matched: **37**;
-- reviewed: **0**;
-- accepted: **0**;
-- rejected: **0**.
+- heading-matched: **37**.
 
 The frequency and heading candidate sets overlap.
 
 Candidate IDs use stable SHA-256-derived exact-surface identity and therefore do not change merely because review rank changes.
 
-Every generated candidate remains `unreviewed`; validation prohibits automatic term decisions and automatic term categories.
+Generated discovery files retain `unreviewed` discovery state by design; human decisions are stored separately and must not be written back into these regenerated files.
 
 See `TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
@@ -115,15 +113,39 @@ Editorial decisions belong only in:
 - `data/grammatical-terminology-review.json`;
 - schema: `data/grammatical-terminology-review.schema.json`.
 
+Validation:
+
+- `scripts/validate_terminology_review.py`;
+- `.github/workflows/validate-terminology-review.yml`;
+- `data/grammatical-terminology-review-validation.json` — **PASS**.
+
+### Batch 001
+
+Selection: first 20 mechanically ranked candidates carrying exact source-heading-token evidence.
+
 Current review ledger:
 
-- reviewed: **0**;
-- accepted: **0**;
-- rejected: **0**;
+- candidate surface forms: **455**;
+- reviewed: **20**;
+- accepted: **19**;
+- rejected: **1**;
 - needs-context: **0**;
-- unreviewed: **455**.
+- unreviewed: **435**;
+- status: **review-in-progress**.
 
-Generated discovery files must not be hand-edited with review decisions.
+The single rejected candidate is `முன்`, which is treated as an ordinary relational expression embedded in technical grammatical statements rather than a standalone technical term.
+
+Accepted decisions are context-bounded where the same exact form has ordinary or multiple senses. The ledger explicitly separates known technical and non-technical records for mixed forms such as `உயிர்`, `எண்`, `வேற்றுமை`, `மெய்`, `சொல்`, and `மாத்திரை`.
+
+Human-readable decision summary:
+
+- `reviews/terminology/batch-001-decisions.md`.
+
+Audit:
+
+- `TERMINOLOGY_REVIEW_BATCH_001.md`.
+
+The terminology review layer is **not complete**; 435 candidates remain unreviewed.
 
 ## Raw-source preservation status
 
