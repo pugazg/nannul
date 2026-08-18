@@ -33,13 +33,21 @@ secondary_witnesses:
     note: "Older HTML witness; wording/segmentation differs from the currently rendered 2021 webpage and must not silently replace the controlling source."
 
 canonical_scope:
-  numbered_nurpas: "1-462"
+  nominal_numbered_range: "1-462"
+  displayed_numbered_units_in_controlling_witness: 460
+  missing_displayed_numbers_in_controlling_witness:
+    - 73
+    - 176
   unnumbered_front_matter: "சிறப்புப்பாயிரம்"
+  terminal_marker: "நன்னூல் முற்றிற்று"
 
 status:
   provenance_verified: true
   rendered_header_captured: true
   full_current_html_vendored: false
   canonical_payiram_1_55: true
-  canonical_full_text: false
+  canonical_ezhuththathikaram_56_257: true
+  canonical_sollathikaram_258_462: true
+  canonical_full_text: true
+  canonical_completion_audited: true
   source_discrepancy_audit_started: true
