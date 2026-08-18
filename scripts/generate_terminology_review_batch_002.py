@@ -97,21 +97,15 @@ def main() -> None:
                 "source_heading_evidence": heading,
             })
 
-        # First exact body occurrence.
         add_context(occurrences[0]["record_id"], "first-body-occurrence")
-        # One exact body occurrence from every structural unit.
         for unit_id, rids in unit_records.items():
             add_context(rids[0], "structural-unit-body-occurrence")
-        # Governed context for every source-heading match. Heading evidence may be
-        # heading-only and therefore need not repeat the exact token in body text.
         for heading in candidate["evidence"]["source_heading_matches"]:
             start = heading["start_number"]
             governed = record_by_number.get(start)
             if governed is None:
-                # Source gaps are not expected in heading starts, but fail loudly.
                 raise SystemExit(f"No canonical governed record for heading start {start}: {surface}")
             add_context(governed["id"], "source-heading-governed-context", heading)
-        # Every exact body occurrence linked to a documented source variant.
         for rid in occurrence_record_ids:
             if record_by_id[rid].get("source_variant_refs"):
                 add_context(rid, "source-variant-linked-body-occurrence")
@@ -172,7 +166,6 @@ def main() -> None:
         ]
     (OUT / "batch-002-contexts.md").write_text("\n".join(summary) + "\n", encoding="utf-8")
 
-    # One readable file per candidate for contextual review.
     for index, c in enumerate(packet_candidates, start=1):
         lines = [
             f"# Nannūl Terminology Review Batch 002 — Candidate {index:02d}",
