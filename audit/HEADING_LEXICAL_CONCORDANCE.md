@@ -111,14 +111,14 @@ No missing expected canonical number, unexpected number, or substring validation
 
 ## Output fingerprints
 
-The corrected validated outputs have SHA-256 fingerprints:
+The final corrected validated outputs have SHA-256 fingerprints:
 
-- `data/source-heading-index.json` — `65591573d351f86dd19c1bd4b9c6359e275190244c8e9248d8cfcb799c6912f0`
-- `indexes/source-heading-index.md` — `8582d23f82357697d743f48d9e9d1895d1512203768231c6464bafad6ed3d096`
-- `data/word-form-concordance.json` — `1d525db1ed62a810fe65ffc6c345691ad594707f5badd5a3fb9ed2792d4e8a86`
-- `data/token-occurrences.ndjson` — `078ed8c4e8ed71b081efa41fffe99e51cc9989f6d6e966f4a070100e81e62a44`
+- `data/source-heading-index.json` — `5ff24c23df69924f32fbb0f115f579e7fb1c26e069a532821a03b1c4d45a0459`
+- `indexes/source-heading-index.md` — `1569371be8d0ccbf0fe66aa6c8f69c3cf9ba9c6f0e1cc002a60c09160587028f`
+- `data/word-form-concordance.json` — `22e5baf46580c80a7c54cf2fa5c463c7b82561cb84ed47be656eeef61ddf3a86`
+- `data/token-occurrences.ndjson` — `d4a2049fd0bbda63a37e7e911aa636250adf308768506f18d28d140ce5706fd7`
 
-These hashes are also recorded by the reproducible validation output.
+These hashes match the current reproducible `data/concordance-validation.json` output on `main`.
 
 ## Layer separation
 
