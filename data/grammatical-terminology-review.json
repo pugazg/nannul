@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "work_id": "nannul",
+  "source_candidates": "data/grammatical-terminology-candidates.json",
+  "review_guidelines": "docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md",
+  "layer_status": "review-not-started",
+  "counts": {
+    "candidate_surface_forms": 455,
+    "reviewed": 0,
+    "accepted": 0,
+    "rejected": 0,
+    "needs_context": 0,
+    "unreviewed": 455
+  },
+  "decisions": []
+}
