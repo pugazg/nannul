@@ -23,6 +23,7 @@ EXPECTED_GAPS = {73, 176}
 EXPECTED_BATCH_COUNTS = {
     "NANNUL-TERM-REVIEW-001": 20,
     "NANNUL-TERM-REVIEW-002": 17,
+    "NANNUL-TERM-REVIEW-003": 25,
 }
 
 
@@ -44,8 +45,9 @@ def sha256(path: Path) -> str:
 
 def write_batch_summary(batch_id: str, decisions: list[dict], filename: str) -> Path:
     path = REVIEWS / filename
+    batch_num = batch_id.split("-")[-1]
     lines = [
-        f"# Nannūl Grammatical Terminology Review — {batch_id.split('-')[-1]} Decisions",
+        f"# Nannūl Grammatical Terminology Review — Batch {batch_num} Decisions",
         "",
         "Human/contextual review under `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.",
         "",
@@ -171,13 +173,17 @@ def main() -> None:
         "layer_status_matches_coverage": review.get("layer_status") == expected_status,
         "batch_001_has_20_decisions": len(batches["NANNUL-TERM-REVIEW-001"]) == 20,
         "batch_002_has_17_decisions": len(batches["NANNUL-TERM-REVIEW-002"]) == 17,
+        "batch_003_has_25_decisions": len(batches["NANNUL-TERM-REVIEW-003"]) == 25,
     }
     if candidate_validation.get("status") != "PASS":
         failures.append({"reason": "candidate-discovery-validation-not-pass"})
 
     REVIEWS.mkdir(parents=True, exist_ok=True)
-    batch1_path = write_batch_summary("NANNUL-TERM-REVIEW-001", batches["NANNUL-TERM-REVIEW-001"], "batch-001-decisions.md")
-    batch2_path = write_batch_summary("NANNUL-TERM-REVIEW-002", batches["NANNUL-TERM-REVIEW-002"], "batch-002-decisions.md")
+    summary_paths = {
+        "NANNUL-TERM-REVIEW-001": write_batch_summary("NANNUL-TERM-REVIEW-001", batches["NANNUL-TERM-REVIEW-001"], "batch-001-decisions.md"),
+        "NANNUL-TERM-REVIEW-002": write_batch_summary("NANNUL-TERM-REVIEW-002", batches["NANNUL-TERM-REVIEW-002"], "batch-002-decisions.md"),
+        "NANNUL-TERM-REVIEW-003": write_batch_summary("NANNUL-TERM-REVIEW-003", batches["NANNUL-TERM-REVIEW-003"], "batch-003-decisions.md"),
+    }
 
     status = "PASS" if all(checks.values()) and not failures else "FAIL"
     category_counts = Counter(d.get("term_category") for d in decisions if d["decision"] == "accepted")
@@ -200,8 +206,7 @@ def main() -> None:
         "interpretation_boundary": "PASS validates ledger identity, evidence links, decision structure, and counts; it does not replace human semantic review.",
         "hashes": {
             "data/grammatical-terminology-review.json": sha256(REVIEW),
-            "reviews/terminology/batch-001-decisions.md": sha256(batch1_path),
-            "reviews/terminology/batch-002-decisions.md": sha256(batch2_path),
+            **{f"reviews/terminology/batch-{batch_id.split('-')[-1]}-decisions.md": sha256(path) for batch_id, path in summary_paths.items()},
         },
     }
     dump_json(OUT_VALIDATION, validation)
