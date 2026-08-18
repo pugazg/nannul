@@ -51,3 +51,25 @@ The historical mirror is not textually identical to the current webpage. It freq
 **Repository treatment:** current webpage A controls canonical numbering; preserve the historical anomaly only as witness evidence.
 
 **Status:** RESOLVED FOR CANONICAL NUMBERING — use A.
+
+## Variant PM147-V003 — நூற்பா 176
+
+**Location:** எழுத்ததிகாரம் → உயிரீற்றுப் புணரியல், between நூற்பா 175 and 177.
+
+**Controlling current webpage (A):**
+- displays நூற்பா 175;
+- then the heading `ஈகார வீற்றுச் சிறப்புவிதி`;
+- then நூற்பா 177;
+- no numbered 176 is displayed in the rendered text.
+
+**Historical Project Madurai mirror (B):**
+- includes a numbered நூற்பா 176 between 175 and 177;
+- its reading is not treated as canonical because witness A remains controlling.
+
+**Repository treatment:**
+- do not silently insert historical-witness 176 into the canonical text derived from A;
+- canonical range 151–203 preserves the sequence 175 → `ஈகார வீற்றுச் சிறப்புவிதி` → 177;
+- retain B's reading only as variant evidence unless a later editorial decision changes the controlling-source policy;
+- canonical ingest record: `audit/CANONICAL_INGEST_151_203.md`.
+
+**Status:** OPEN AS SOURCE-VERSION DISCREPANCY — canonical handling applied; no repository transcription error remains.
