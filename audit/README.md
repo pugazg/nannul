@@ -16,29 +16,29 @@ The audit layer exists so that the canonical Tamil text remains traceable and co
 ## Current audit records
 
 - `SOURCE_VARIANTS.md` — differences between the controlling Project Madurai webpage and secondary/historical witnesses.
-- `CANONICAL_INGEST_056_127.md` — canonical verification record for எழுத்து இயல், நூற்பாக்கள் 56–127.
-- `CANONICAL_INGEST_128_150.md` — canonical verification record for பதவியல், நூற்பாக்கள் 128–150.
-- `CANONICAL_INGEST_151_203.md` — canonical verification record for உயிரீற்றுப் புணரியல், நூற்பாக்கள் 151–203.
-- `CANONICAL_INGEST_204_239.md` — canonical verification record for மெய்யீற்றுப் புணரியல், நூற்பாக்கள் 204–239.
+- `CANONICAL_INGEST_056_127.md` — எழுத்து இயல் 56–127.
+- `CANONICAL_INGEST_128_150.md` — பதவியல் 128–150.
+- `CANONICAL_INGEST_151_203.md` — உயிரீற்றுப் புணரியல் 151–203.
+- `CANONICAL_INGEST_204_239.md` — மெய்யீற்றுப் புணரியல் 204–239.
+- `CANONICAL_INGEST_240_257.md` — உருபு புணரியல் 240–257.
+- `EZHUTHTHATHIKARAM_COMPLETION.md` — authority-level completion audit for எழுத்ததிகாரம் 56–257.
 
 ## Current findings
 
-- `PM147-V001`: current controlling webpage omits a displayed numbered 73 between 72 and 74. Canonical handling has been applied without restoring the secondary-witness text.
-- `PM147-V002`: historical-witness numbering anomaly around 240–242; current webpage will control canonical numbering when that range is processed.
-- `PM147-V003`: current controlling webpage omits a displayed numbered 176 between 175 and 177. Canonical handling has been applied without restoring the secondary-witness text.
+- `PM147-V001`: controlling webpage omits displayed numbered 73 between 72 and 74; canonical handling applied without restoring the secondary-witness text.
+- `PM147-V002`: historical-witness numbering anomaly around 240–242; canonical handling applied using the current webpage's 240, 241, 242 sequence.
+- `PM147-V003`: controlling webpage omits displayed numbered 176 between 175 and 177; canonical handling applied without restoring the secondary-witness text.
 - பதவியல் 128–150: continuous numbering; no source-numbering discrepancy observed.
 - மெய்யீற்றுப் புணரியல் 204–239: continuous numbering; no source-numbering discrepancy observed.
+- உருபு புணரியல் 240–257: continuous numbering in the controlling current webpage.
 
 ## Verification progress
 
 - சிறப்புப்பாயிரம்: canonicalized.
 - பொதுப்பாயிரம் 1–55: canonicalized.
-- எழுத்து இயல் 56–127: canonicalized and batch-audited.
-- பதவியல் 128–150: canonicalized and batch-audited.
-- உயிரீற்றுப் புணரியல் 151–203: canonicalized and batch-audited.
-- மெய்யீற்றுப் புணரியல் 204–239: canonicalized and batch-audited.
-- Next audit/canonical range: உருபு புணரியல் 240–257.
+- எழுத்ததிகாரம் 56–257: **canonicalized and fully batch-audited**.
+- Next audit/canonical range: சொல்லதிகாரம் → பெயரியல் 258–319.
 
-Current canonical boundary: **239**.
+Current canonical boundary: **257**.
 
 The complete source must eventually be verified through நூற்பா 462 before the whole canonical Tamil layer can be declared source-verified.
