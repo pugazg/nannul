@@ -25,6 +25,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `CANONICAL_UNIT_DATASET.md` — reproducible 460-record canonical unit dataset audit.
 - `HEADING_LEXICAL_CONCORDANCE.md` — source-supported heading index and exact-surface lexical concordance audit.
 - `FREQUENCY_PROFILES.md` — deterministic exact-surface frequency/profile aggregation audit.
+- `TERMINOLOGY_CANDIDATE_DISCOVERY.md` — Phase-1 broad unreviewed grammatical-terminology candidate discovery audit.
 
 ## Documented source findings
 
@@ -50,69 +51,79 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - one-record-per-canonical-unit data layer: **GENERATED, VALIDATED, AND AUDITED**.
 - source-heading / exact-surface lexical concordance layer: **GENERATED, CORRECTED, VALIDATED, AND AUDITED**.
 - exact-surface frequency/profile layer: **GENERATED, VALIDATED, AND AUDITED**.
+- grammatical-terminology candidate discovery Phase 1: **GENERATED, STABLE-ID-CORRECTED, VALIDATED, AND AUDITED**.
+- grammatical-terminology contextual review Phase 2: **NOT STARTED**.
 
 Current canonical boundary: **462 / `நன்னூல் முற்றிற்று`**.
 
 The nominal numbered span is 1–462, while the controlling webpage displays 460 numbered units because 73 and 176 are absent. The stable namespace reserves those two positions as `source-gap`; downstream datasets contain only the 460 actually displayed canonical numbered units.
 
-## Canonical unit dataset status
+## Mechanical data status
 
-Generated artifacts:
-
-- `data/nurpa.json` — 460 canonical records plus dataset/source-gap metadata;
-- `data/nurpa.ndjson` — 460 streaming records;
-- `data/nurpa-validation.json` — **PASS** validation with coverage counts and hashes;
-- `data/nurpa.schema.json` — dataset contract;
-- `scripts/generate_nurpa_dataset.py` — deterministic generator;
-- `.github/workflows/generate-nurpa-dataset.yml` — reproducible generation workflow.
-
-See `CANONICAL_UNIT_DATASET.md`.
-
-## Heading / lexical concordance status
-
-Generated artifacts:
-
-- `data/source-heading-index.json` — **65 actual non-empty source-heading occurrences** plus one explicit unheaded span;
-- `indexes/source-heading-index.md` — human-facing heading index;
-- `data/word-form-concordance.json` — **2,837 unique exact surface forms**;
-- `data/token-occurrences.ndjson` — **5,431 exact token occurrences**;
-- `data/concordance-validation.json` — **PASS** coverage/integrity validation;
-- `scripts/generate_concordance.py` — deterministic generator;
-- `.github/workflows/generate-concordance.yml` — reproducible generation workflow.
-
-நூற்பாக்கள் **56–57** are correctly recorded as an unheaded source span before the first internal heading `எண்` at 58; no empty heading is fabricated.
-
-Tokenization is exact `\S+` surface extraction with no punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting.
-
-See `HEADING_LEXICAL_CONCORDANCE.md`.
-
-## Frequency/profile status
-
-Generated artifacts:
-
-- `data/frequency-profiles.json` — top-20 exact-surface summaries for the whole work and every source-supported grouping;
-- `data/frequency-tables.json` — complete exact-surface frequency tables for every group;
-- `indexes/frequency-profiles.md` — human-readable whole-work/section/இயல்/heading profiles;
-- `data/frequency-profiles-validation.json` — **PASS** reconciliation/integrity validation;
-- `scripts/generate_frequency_profiles.py` — deterministic aggregation generator;
-- `.github/workflows/generate-frequency-profiles.yml` — reproducible self-committing generation workflow.
-
-Validated profile counts:
+Validated baselines:
 
 - canonical records: **460**;
-- token occurrences: **5,431**;
+- exact token occurrences: **5,431**;
 - unique exact surface forms: **2,837**;
 - hapax exact surface forms: **2,037**;
-- source-section / அதிகார-level profiles: **3**;
-- இயல் / structural-unit profiles: **17**;
+- source-section profiles: **3**;
+- structural-unit profiles: **17**;
 - source-heading profiles: **65**;
 - unheaded-span profiles: **1**.
 
-Every token link and character offset was rechecked against canonical `text_ta`, and section, இயல், and heading-plus-unheaded totals all reconcile exactly to the global 5,431 occurrences.
+See `CANONICAL_UNIT_DATASET.md`, `HEADING_LEXICAL_CONCORDANCE.md`, and `FREQUENCY_PROFILES.md`.
 
-Frequency remains descriptive only; no repeated surface form is promoted automatically to grammatical-term status.
+## Grammatical-terminology candidate discovery status
 
-See `FREQUENCY_PROFILES.md`.
+Generated artifacts:
+
+- `data/grammatical-terminology-candidates.json` — **455 unreviewed exact-surface candidates** with provenance/evidence;
+- `data/grammatical-terminology-candidates.ndjson` — streaming candidate queue;
+- `indexes/grammatical-terminology-review-queue.md` — ranked human-facing review queue;
+- `data/grammatical-terminology-candidates-validation.json` — **PASS** discovery/integrity validation;
+- `data/grammatical-terminology-candidates.schema.json` — discovery schema;
+- `scripts/generate_terminology_candidates.py` — deterministic generator;
+- `.github/workflows/generate-terminology-candidates.yml` — reproducible generation workflow.
+
+Discovery rule: exact frequency >=3 **or** exact non-whitespace token match in a source-supported heading.
+
+Validated counts:
+
+- candidate surface forms: **455**;
+- frequency-selected: **443**;
+- heading-matched: **37**;
+- reviewed: **0**;
+- accepted: **0**;
+- rejected: **0**.
+
+The frequency and heading candidate sets overlap.
+
+Candidate IDs use stable SHA-256-derived exact-surface identity and therefore do not change merely because review rank changes.
+
+Every generated candidate remains `unreviewed`; validation prohibits automatic term decisions and automatic term categories.
+
+See `TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
+
+## Grammatical-terminology review status
+
+Human review is governed by:
+
+- `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
+
+Editorial decisions belong only in:
+
+- `data/grammatical-terminology-review.json`;
+- schema: `data/grammatical-terminology-review.schema.json`.
+
+Current review ledger:
+
+- reviewed: **0**;
+- accepted: **0**;
+- rejected: **0**;
+- needs-context: **0**;
+- unreviewed: **455**.
+
+Generated discovery files must not be hand-edited with review decisions.
 
 ## Raw-source preservation status
 
