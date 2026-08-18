@@ -12,7 +12,8 @@ For each candidate the packet includes:
 - discovery rank/score and all source-heading evidence;
 - complete occurrence coverage by record and structural unit;
 - representative full canonical contexts: first occurrence, one occurrence from
-  every structural unit, and every occurrence in a source-variant-linked record.
+  every structural unit, at least one candidate occurrence from every matching
+  source-heading range, and every occurrence in a source-variant-linked record.
 
 No canonical Tamil is changed or normalized.
 """
@@ -82,12 +83,27 @@ def main() -> None:
             units[rec["unit_id"]].append(rid)
 
         selected_context_ids: list[str] = []
-        # first occurrence
+        # First occurrence.
         selected_context_ids.append(occurrences[0]["record_id"])
-        # at least one record from every structural unit
+        # At least one occurrence from every structural unit.
         for unit_id in units:
             selected_context_ids.append(units[unit_id][0])
-        # every candidate-occurrence record carrying a documented source variant
+        # At least one candidate occurrence inside every matching source-heading range.
+        for heading in candidate["evidence"]["source_heading_matches"]:
+            heading_occurrence = next(
+                (
+                    o for o in occurrences
+                    if heading["start_number"] <= o["number"] <= heading["end_number"]
+                ),
+                None,
+            )
+            if heading_occurrence is None:
+                raise SystemExit(
+                    f"Heading evidence for {surface} has no candidate occurrence in "
+                    f"{heading['start_number']}-{heading['end_number']}"
+                )
+            selected_context_ids.append(heading_occurrence["record_id"])
+        # Every candidate-occurrence record carrying a documented source variant.
         for rid in record_ids:
             if record_by_id[rid].get("source_variant_refs"):
                 selected_context_ids.append(rid)
@@ -136,11 +152,12 @@ def main() -> None:
         })
 
     packet = {
-        "schema_version": 1,
+        "schema_version": 2,
         "work_id": "nannul",
         "phase": "terminology-contextual-review",
         "batch_id": "NANNUL-TERM-REVIEW-001",
         "selection_policy": "first 20 mechanical-rank candidates carrying exact source-heading-token evidence",
+        "context_selection_policy": "first occurrence + one per structural unit + one in every matching source-heading range + all variant-linked candidate records",
         "decision_status": "context-packet-only-no-decisions",
         "candidate_count": len(packet_candidates),
         "candidates": packet_candidates,
@@ -156,7 +173,7 @@ def main() -> None:
         "",
         "Selection: first 20 mechanically ranked candidates with exact source-heading-token evidence.",
         "",
-        "For each candidate, all heading evidence and complete record-number coverage are listed; full canonical text is included for the first occurrence, one occurrence in every structural unit, and any source-variant-linked occurrence.",
+        "For each candidate, all heading evidence and complete record-number coverage are listed; full canonical text is included for the first occurrence, one occurrence in every structural unit, at least one candidate occurrence inside every matching source-heading range, and any source-variant-linked occurrence.",
         "",
     ]
     for c in packet_candidates:
