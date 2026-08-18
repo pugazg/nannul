@@ -7,34 +7,37 @@ This folder contains the repository's source-faithful Tamil text derived from th
 - சிறப்புப்பாயிரம்: **complete from controlling source**
 - பொதுப்பாயிரம் 1–55: **complete from controlling source**
 - எழுத்ததிகாரம் 56–257: **canonicalized and audited in full**
-- சொல்லதிகாரம் 258–462:
-  - பெயரியல் 258–319: **canonicalized and audited**
-  - வினையியல் 320–351: **canonicalized and audited**
-  - பொதுவியல் 352–419: **canonicalized and audited**
-  - இடையியல் 420–441: **canonicalized and audited**
-  - உரியியல் 442–462: **next**
+- சொல்லதிகாரம் 258–462: **canonicalized and audited in full**
+  - பெயரியல் 258–319: complete
+  - வினையியல் 320–351: complete
+  - பொதுவியல் 352–419: complete
+  - இடையியல் 420–441: complete
+  - உரியியல் 442–462: complete
 
 ## Current boundary
 
-Canonical Tamil currently reaches source நூற்பா **441**.
+Canonical Tamil reaches source நூற்பா **462**, followed by the source-supported terminal marker:
 
-The next source unit is **442**, beginning `3.5 உரியியல்`.
+`நன்னூல் முற்றிற்று`
 
-## Source-variant status
+**Canonical source-derived ingestion is complete end-to-end.**
 
-The controlling Project Madurai webpage does not display numbered 73 or 176; those gaps remain preserved in the canonical எழுத்ததிகாரம். The historical witness also differs around 240–242; the current webpage's continuous 240, 241, 242 sequence is canonical.
+## Numbering state
 
-Within வினையியல்:
+The nominal numbered source span is 1–462. The current Project Madurai webpage does not display numbered 73 or 176, so the completed canonical layer contains **460 displayed numbered நூற்பாக்கள்**, plus the unnumbered சிறப்புப்பாயிரம்.
 
-- 343 is `செய்தனெ` in the current webpage but `செய்தென` in the historical mirror;
-- 344 ends with `பிற"` in the current webpage while the historical mirror lacks that trailing quotation mark.
+The canonical layer preserves those gaps rather than importing readings from the historical Project Madurai witness.
 
-பொதுவியல் 352–419 and இடையியல் 420–441 are continuously numbered in the controlling webpage and introduce no new numbering anomaly.
+Other documented source-version findings include the historical 240–242 numbering anomaly and textual/punctuation differences at 343 and 344. See `audit/SOURCE_VARIANTS.md`.
 
-The canonical layer follows the controlling current webpage. See `audit/SOURCE_VARIANTS.md` and the relevant batch audits.
+## Completion audits
+
+- `audit/EZHUTHTHATHIKARAM_COMPLETION.md`
+- `audit/SOLLATHIKARAM_COMPLETION.md`
+- `audit/NANNUL_CANONICAL_COMPLETION.md`
 
 ## Rules
 
-Each numbered நூற்பா retains its source number and wording. This layer must not contain translation, explanatory commentary, modernization, silent spelling correction, or text imported from a secondary witness.
+Each numbered நூற்பா retains its source number and wording. This layer must not contain translation, explanatory commentary, modernization, silent spelling correction, reconstructed missing text, or text imported from a secondary witness without an explicit audited editorial decision.
 
-Source discrepancies belong in `audit/` and must not be silently repaired in canonical text.
+The full current raw Project Madurai HTML has not yet been vendored byte-for-byte; that is separate archival source-preservation work and does not change the completed canonical transcription status.
