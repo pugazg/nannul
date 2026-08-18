@@ -1,5 +1,6 @@
 name: Generate Nannul terminology review Batch 003
 
+# Triggered for Batch 003 context generation.
 on:
   push:
     branches:
