@@ -21,49 +21,29 @@ Companion artifacts:
 - `nurpa.schema.json`;
 - `nurpa-index.json`.
 
-Generator: `scripts/generate_nurpa_dataset.py`
+Audit: `audit/CANONICAL_UNIT_DATASET.md`.
 
-Audit: `audit/CANONICAL_UNIT_DATASET.md`
+## Source-heading / lexical / frequency layers
 
-## Source-heading / lexical layer
+Validated mechanical baseline:
 
-### `source-heading-index.json`
-
-- actual non-empty source-heading occurrences: **65**;
-- distinct exact heading texts: **65**;
-- one explicit unheaded span: நூற்பாக்கள் **56–57**.
-
-### `word-form-concordance.json`
-
-Exact non-whitespace (`\S+`) surface-form concordance:
-
+- source-heading occurrences: **65**;
+- explicit unheaded span: நூற்பாக்கள் **56–57**;
 - token occurrences: **5,431**;
-- unique exact surface forms: **2,837**.
+- unique exact surface forms: **2,837**;
+- hapax forms: **2,037**.
 
-No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied.
+Primary artifacts:
 
-Companion occurrence stream: `token-occurrences.ndjson`.
-
-Validation: `concordance-validation.json` — **PASS**.
-
-Audit: `audit/HEADING_LEXICAL_CONCORDANCE.md`.
-
-## Exact-surface frequency profiles
-
-Artifacts:
-
+- `source-heading-index.json`;
+- `word-form-concordance.json`;
+- `token-occurrences.ndjson`;
+- `concordance-validation.json` — **PASS**;
 - `frequency-profiles.json`;
 - `frequency-tables.json`;
 - `frequency-profiles-validation.json` — **PASS**.
 
-Validated whole-work counts:
-
-- canonical records: **460**;
-- token occurrences: **5,431**;
-- unique exact surface forms: **2,837**;
-- hapax exact surface forms: **2,037**.
-
-Audit: `audit/FREQUENCY_PROFILES.md`.
+No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied to exact-surface tokens.
 
 ## Grammatical-terminology candidate discovery
 
@@ -76,11 +56,11 @@ Validated discovery state:
 - exact surface forms considered: **2,837**;
 - discovered candidates: **455**;
 - frequency-selected candidates: **443**;
-- candidates with exact source-heading-token evidence: **37**.
+- source-heading-supported candidates: **37**.
 
 Candidate IDs are stable exact-surface hashes of the form `nannul-term-candidate-<16 hex>`.
 
-Generated candidate rows deliberately remain discovery artifacts and are never overwritten with human semantic decisions.
+Generated candidate rows remain discovery artifacts and are never overwritten with human semantic decisions.
 
 Companion artifacts:
 
@@ -96,22 +76,23 @@ Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
 Separate human/editorial decision ledger.
 
-Current Phase-2 state after **Batches 001–002**:
+Current Phase-2 state after **Batches 001–003**:
 
 - candidates: **455**;
-- reviewed: **37**;
-- accepted: **33**;
-- rejected: **4**;
+- reviewed: **62**;
+- accepted: **51**;
+- rejected: **11**;
 - needs-context: **0**;
-- unreviewed: **418**;
+- unreviewed: **393**;
 - status: **review-in-progress**.
 
 Batch results:
 
 - Batch 001: **20 reviewed = 19 accepted + 1 rejected**;
-- Batch 002: **17 reviewed = 14 accepted + 3 rejected**.
+- Batch 002: **17 reviewed = 14 accepted + 3 rejected**;
+- Batch 003: **25 reviewed = 18 accepted + 7 rejected**.
 
-All **37 source-heading-supported candidates have now been reviewed**. Remaining candidates are in the frequency-only review tier.
+All **37 source-heading-supported candidates** were completed in Batches 001–002. Batch 003 is the first reviewed frequency-only tier.
 
 Mixed-use candidates may carry both `term_use_record_ids` and `non_term_use_record_ids`; acceptance is context-bounded and never silently extended to every occurrence or related surface form.
 
@@ -121,11 +102,21 @@ Schema: `grammatical-terminology-review.schema.json`.
 
 Current validation: **PASS**.
 
-Checks include candidate identity, canonical evidence links, source-gap exclusion, decision structure, evidence subsets, ledger count reconciliation, layer-status reconciliation, Batch-001 count 20, and Batch-002 count 17.
+Checks include:
+
+- candidate identity;
+- canonical evidence links;
+- source-gap exclusion;
+- accepted/rejected evidence requirements;
+- term/non-term subset and overlap rules;
+- ledger count/status reconciliation;
+- Batch-001 count **20**;
+- Batch-002 count **17**;
+- Batch-003 count **25**.
 
 Current validated ledger SHA-256:
 
-`d8c461349249e9caa5ef0f340bc5433efcb34c2a9cb0ed4dba959198860af8de`
+`f5cd2034a9ce085a1311be0ba856e1954080439c20ec9b9472e313419f04f01e`
 
 Validator: `scripts/validate_terminology_review.py`
 
@@ -134,12 +125,14 @@ Workflow: `.github/workflows/validate-terminology-review.yml`
 Human-readable decision summaries:
 
 - `reviews/terminology/batch-001-decisions.md`;
-- `reviews/terminology/batch-002-decisions.md`.
+- `reviews/terminology/batch-002-decisions.md`;
+- `reviews/terminology/batch-003-decisions.md`.
 
 Audits:
 
 - `audit/TERMINOLOGY_REVIEW_BATCH_001.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_002.md`.
+- `audit/TERMINOLOGY_REVIEW_BATCH_002.md`;
+- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`.
 
 ## Derivation and interpretation policy
 
