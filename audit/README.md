@@ -23,6 +23,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md` — exact-byte Project Madurai raw-source retrieval attempt and unresolved materialization state.
 - `STABLE_IDENTIFIER_INDEX.md` — stable நூற்பா identifier namespace and canonical segment-index audit.
 - `CANONICAL_UNIT_DATASET.md` — reproducible 460-record canonical unit dataset audit.
+- `HEADING_LEXICAL_CONCORDANCE.md` — source-supported heading index and exact-surface lexical concordance audit.
 
 ## Documented source findings
 
@@ -46,10 +47,11 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - full source-derived canonical Tamil layer: **COMPLETE**.
 - stable identifier / range index layer: **ESTABLISHED AND AUDITED**.
 - one-record-per-canonical-unit data layer: **GENERATED, VALIDATED, AND AUDITED**.
+- source-heading / exact-surface lexical concordance layer: **GENERATED, CORRECTED, VALIDATED, AND AUDITED**.
 
 Current canonical boundary: **462 / `நன்னூல் முற்றிற்று`**.
 
-The nominal numbered span is 1–462, while the controlling webpage displays 460 numbered units because 73 and 176 are absent. The stable namespace reserves those two positions as `source-gap`; the canonical-unit dataset contains only the 460 actually displayed canonical numbered units.
+The nominal numbered span is 1–462, while the controlling webpage displays 460 numbered units because 73 and 176 are absent. The stable namespace reserves those two positions as `source-gap`; downstream datasets contain only the 460 actually displayed canonical numbered units.
 
 ## Canonical unit dataset status
 
@@ -62,12 +64,25 @@ Generated artifacts:
 - `scripts/generate_nurpa_dataset.py` — deterministic generator;
 - `.github/workflows/generate-nurpa-dataset.yml` — reproducible generation workflow.
 
-Current generated-data integrity hashes:
-
-- `nurpa.json`: `a82d86a75012a1001a5a3d5c2a49034f868f5ba78c2da46bd84400ae19581874`;
-- `nurpa.ndjson`: `9dcfe6482228347d962a18c18fabefafd6b30a3d73a6d984585b324537c4fbd5`.
-
 See `CANONICAL_UNIT_DATASET.md`.
+
+## Heading / lexical concordance status
+
+Generated artifacts:
+
+- `data/source-heading-index.json` — **65 actual non-empty source-heading occurrences** plus one explicit unheaded span;
+- `indexes/source-heading-index.md` — human-facing heading index;
+- `data/word-form-concordance.json` — **2,837 unique exact surface forms**;
+- `data/token-occurrences.ndjson` — **5,431 exact token occurrences**;
+- `data/concordance-validation.json` — **PASS** coverage/integrity validation;
+- `scripts/generate_concordance.py` — deterministic generator;
+- `.github/workflows/generate-concordance.yml` — reproducible generation workflow.
+
+நூற்பாக்கள் **56–57** are correctly recorded as an unheaded source span before the first internal heading `எண்` at 58; no empty heading is fabricated.
+
+Tokenization is exact `\S+` surface extraction with no punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting.
+
+See `HEADING_LEXICAL_CONCORDANCE.md`.
 
 ## Raw-source preservation status
 
@@ -78,4 +93,4 @@ See `CANONICAL_UNIT_DATASET.md`.
 
 See `RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md` and `sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md`.
 
-Raw-source preservation remains a separate archival state from the completed canonical transcription, stable-ID layer, and canonical-unit dataset.
+Raw-source preservation remains a separate archival state from the completed canonical transcription and derived-data layers.
