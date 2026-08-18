@@ -39,13 +39,25 @@ A historical copy also exists in Project Madurai's official GitHub mirror (`proj
 - Full current raw HTML vendored: **not yet**
 - Canonical சிறப்புப்பாயிரம் derived: **yes**
 - Canonical பொதுப்பாயிரம் 1–55 derived: **yes**
-- Canonical நூற்பா 56–462 derived: **not yet**
-- Source-variant audit started: **yes**
+- Canonical எழுத்ததிகாரம் 56–257 derived: **yes — complete and audited**
+- Canonical சொல்லதிகாரம் 258–462 derived: **not yet**
+- Current canonical boundary: **257**
+- Source-variant audit: **active**
 
-## Important source discrepancy
+## Documented source discrepancies
 
-The current webpage displays நூற்பா 72 followed by the heading `பிறப்பு` and then நூற்பா 74, while the older official Project Madurai GitHub witness contains a numbered 73. This is tracked in `audit/SOURCE_VARIANTS.md` and must not be silently resolved in the canonical text.
+The current controlling webpage differs from the older official Project Madurai GitHub witness at several points already encountered:
+
+- current webpage omits displayed numbered 73 between 72 and 74;
+- current webpage omits displayed numbered 176 between 175 and 177;
+- older mirror has a numbering anomaly around 240–242, while the current webpage displays 240, 241, 242 continuously.
+
+These are tracked in `audit/SOURCE_VARIANTS.md`. The canonical layer follows the current webpage and does not silently import readings from the historical witness.
 
 ## Ingestion rule
 
 The controlling source must be preserved without editorial rewriting. Normalized, segmented, indexed, computational, commentary, comparative, or translated representations belong outside this folder. Secondary witnesses may inform an audit but may not silently alter the controlling-source text.
+
+## Next source-derived canonical work
+
+Proceed with **3. சொல்லதிகாரம் → 3.1 பெயரியல், நூற்பாக்கள் 258–319**.
