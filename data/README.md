@@ -2,111 +2,88 @@
 
 Machine-readable derived datasets for Nannūl belong here.
 
-All data in this folder is derived from the audited canonical Tamil and `structure/` metadata. Derived or inferred fields must never be represented as if they were part of the source text.
-
-## Canonical unit dataset — COMPLETE
+## Canonical unit dataset
 
 ### `nurpa.json`
 
-The primary one-record-per-canonical-numbered-unit dataset.
+Primary one-record-per-canonical-numbered-unit dataset.
 
-It contains:
-
-- work and derivation metadata;
-- the two reserved source-gap positions as metadata;
-- **460 canonical numbered records**;
-- stable ID and source number;
-- exact canonical Tamil text;
-- text line count;
-- அதிகாரம் / இயல் or பொதுப்பாயிரம்-subsection parentage;
-- nearest source-supported topic heading;
-- canonical Markdown file provenance;
-- controlling-source status;
-- existing source-variant audit references where applicable.
-
-The dataset contains no canonical record for source-gap positions 73 or 176.
+- canonical records: **460**;
+- source range represented: 1–462 with controlling-source gaps 73 and 176 absent from records;
+- stable IDs: `nannul-%04d`;
+- exact `text_ta` derived from audited canonical Markdown;
+- structural parents, source-supported heading, canonical-file provenance, and source-variant references retained.
 
 ### `nurpa.ndjson`
 
-Streaming/search/indexing representation of the same **460 canonical records**, with one JSON object per physical line.
-
-This is suitable for ingestion into search engines, vector/index pipelines, databases, API build steps, and command-line processing without loading the full dataset object.
+Streaming/search-friendly form of the same 460 canonical records, one JSON object per line.
 
 ### `nurpa-validation.json`
 
-Deterministic generator validation report.
-
-Current validated state:
-
-- status: **PASS**;
-- records: **460**;
-- unique IDs: **460**;
-- first number: **1**;
-- last number: **462**;
-- reserved source gaps: **73, 176**;
-- missing expected canonical numbers: **none**;
-- unexpected numbers: **none**.
-
-It also records per-section, per-unit, and per-file counts plus SHA-256 hashes for `nurpa.json` and `nurpa.ndjson`.
+Generation and coverage validation, including record counts, section/இயல் counts, reserved gaps, and SHA-256 fingerprints.
 
 ### `nurpa.schema.json`
 
-JSON Schema for the `nurpa.json` dataset contract.
-
-It requires 460 canonical records and prevents 73 or 176 from being represented as canonical numbered records.
+JSON Schema contract for `nurpa.json`.
 
 ### `nurpa-index.json`
 
-A lightweight resolver for the stable Nannūl numbered namespace.
+Stable-number/segment resolver for the nominal 1–462 namespace. Positions 73 and 176 resolve as reserved source gaps rather than canonical text.
 
-It records:
+Generator: `scripts/generate_nurpa_dataset.py`
 
-- identifier pattern `nannul-%04d`;
-- nominal numbered range 1–462;
-- canonical displayed unit count 460;
-- reserved source-gap positions 73 and 176;
-- section / subsection / இயல் segment boundaries;
-- canonical file path for each segment;
-- deterministic expansion rule for resolving a number to its stable ID and canonical location.
+Workflow: `.github/workflows/generate-nurpa-dataset.yml`
 
-The two source-gap positions do not point to canonical Tamil text.
+Audit: `audit/CANONICAL_UNIT_DATASET.md`
 
-## Reproducible generation
+## Source-heading index
 
-Generator:
+### `source-heading-index.json`
 
-`scripts/generate_nurpa_dataset.py`
+Derived index of source-supported heading occurrences across the 460 canonical records.
 
-Workflow:
+Current validated state:
 
-`.github/workflows/generate-nurpa-dataset.yml`
+- actual non-empty source-heading occurrences: **65**;
+- distinct exact heading texts: **65**;
+- unheaded source spans: **1**;
+- unheaded records: **2** — நூற்பாக்கள் 56–57 before the first internal heading `எண்` at 58.
 
-The generator reads the canonical Markdown directly, resolves structural parents through `nurpa-index.json`, validates the exact expected number set, and writes `nurpa.json`, `nurpa.ndjson`, and `nurpa-validation.json`.
+The index does not invent a blank heading for 56–57. Human-readable form: `indexes/source-heading-index.md`.
 
-It fails rather than silently emitting a dataset if:
+## Exact-surface lexical concordance
 
-- an expected canonical number is missing;
-- an unexpected number appears;
-- 73 or 176 appears as canonical text;
-- stable IDs are duplicated;
-- a canonical unit has empty text;
-- a number does not resolve to exactly one structural segment.
+### `word-form-concordance.json`
 
-See `audit/CANONICAL_UNIT_DATASET.md` for the completed dataset audit.
+Exact-surface form concordance generated mechanically from `nurpa.json`.
 
-## Stable IDs
+Token definition: each **non-whitespace substring** (`\S+`) in canonical `text_ta`.
 
-All numbered records use stable IDs from `structure/identifiers.yml`:
+Validated counts:
 
-- `nannul-0001`
-- `nannul-0056`
-- `nannul-0258`
-- `nannul-0462`
+- token occurrences: **5,431**;
+- unique exact surface forms: **2,837**.
 
-The unnumbered சிறப்புப்பாயிரம் remains separately addressable as `nannul-sirappu-payiram`; it is not forced into this numbered-record dataset.
+No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied. Source punctuation therefore remains part of a surface form when attached in the canonical text.
 
-## Separation from source preservation
+### `token-occurrences.ndjson`
 
-This dataset is a derivative of the completed canonical Tamil transcription. It does not resolve the separate exact-byte Project Madurai raw-HTML preservation gate.
+One record per exact token occurrence, carrying stable நூற்பா ID, source number, structure/heading context, character offsets, line, column, and token position.
 
-Future derived datasets may include grammatical terminology, token/word-form indexes, examples, commentary mappings, and relationships connecting Nannūl rules with Tolkāppiyam or other Tamil grammatical works.
+### `concordance-validation.json`
+
+Coverage/integrity checks and SHA-256 fingerprints for both the heading and lexical outputs.
+
+Generator: `scripts/generate_concordance.py`
+
+Workflow: `.github/workflows/generate-concordance.yml`
+
+Audit: `audit/HEADING_LEXICAL_CONCORDANCE.md`
+
+## Derivation policy
+
+Everything in `data/` is derived from the verified canonical Tamil and structural metadata. Derived or inferred fields must never be represented as if they were part of the source text.
+
+The current mechanical layers deliberately stop short of claiming that a frequent or repeated lexical surface form is a grammatical term. Grammatical-term classification belongs in a separate reviewed analytical layer.
+
+Suitable next derived artifacts include section/இயல்/heading frequency profiles, grammatical-terminology candidate datasets, and relationship data connecting Nannūl rules with Tolkāppiyam or other grammar works.
