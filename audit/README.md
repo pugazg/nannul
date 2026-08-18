@@ -13,10 +13,21 @@ Each audit should identify:
 
 The audit layer exists so that the canonical Tamil text remains traceable and corrections are never silent.
 
-Planned initial audit:
+## Current audit records
 
-1. archive Project Madurai `pmuni0147` with its complete header;
-2. verify section boundaries and numbering 1–462;
-3. compare imported text against the source page;
-4. record any numbering gaps, duplicated headings, encoding anomalies, or apparent typographical issues;
-5. only then mark the canonical Tamil layer source-verified.
+- `SOURCE_VARIANTS.md` — differences between the controlling Project Madurai webpage and secondary/historical witnesses.
+- `CANONICAL_INGEST_056_127.md` — canonical verification record for எழுத்து இயல், நூற்பாக்கள் 56–127.
+
+## Current findings
+
+- `PM147-V001`: current controlling webpage omits a displayed numbered 73 between 72 and 74. Canonical handling has been applied without restoring the secondary-witness text.
+- `PM147-V002`: historical-witness numbering anomaly around 240–242; current webpage will control canonical numbering when that range is processed.
+
+## Verification progress
+
+- சிறப்புப்பாயிரம்: canonicalized.
+- பொதுப்பாயிரம் 1–55: canonicalized.
+- எழுத்து இயல் 56–127: canonicalized and batch-audited.
+- Next audit/canonical range: பதவியல் 128–150.
+
+The complete source must eventually be verified through நூற்பா 462 before the whole canonical Tamil layer can be declared source-verified.
