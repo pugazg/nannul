@@ -42,7 +42,8 @@ nannul/
 │       ├── 02-ezhuththathikaram/
 │       │   ├── 02-01-ezhuththu-iyal/
 │       │   ├── 02-02-pathaviyal/
-│       │   └── 02-03-uyireetru-punariyal/
+│       │   ├── 02-03-uyireetru-punariyal/
+│       │   └── 02-04-meyyeetru-punariyal/
 │       └── 03-sollathikaram/
 ├── structure/
 │   ├── README.md
@@ -57,7 +58,8 @@ nannul/
     ├── SOURCE_VARIANTS.md
     ├── CANONICAL_INGEST_056_127.md
     ├── CANONICAL_INGEST_128_150.md
-    └── CANONICAL_INGEST_151_203.md
+    ├── CANONICAL_INGEST_151_203.md
+    └── CANONICAL_INGEST_204_239.md
 ```
 
 ## Source structure
@@ -79,11 +81,11 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
   - எழுத்து இயல் 56–127 — **canonicalized and audited**
   - பதவியல் 128–150 — **canonicalized and audited**
   - உயிரீற்றுப் புணரியல் 151–203 — **canonicalized and audited**
-  - மெய்யீற்றுப் புணரியல் 204–239 — **next**
-  - உருபு புணரியல் 240–257 — pending
+  - மெய்யீற்றுப் புணரியல் 204–239 — **canonicalized and audited**
+  - உருபு புணரியல் 240–257 — **next**
 - சொல்லதிகாரம் 258–462 — pending
 
-Current canonical boundary: **நூற்பா 203**.
+Current canonical boundary: **நூற்பா 239**.
 
 ## Documented source-version gaps
 
@@ -93,5 +95,7 @@ The controlling current webpage omits displayed numbered units at:
 - 176 — between 175 and 177.
 
 The canonical text preserves those source states and does not import the historical-witness readings. See `audit/SOURCE_VARIANTS.md`.
+
+A historical Project Madurai mirror also has a known numbering anomaly around 240–242. The current webpage displays 240, 241, 242 continuously and will control the final எழுத்ததிகாரம் batch.
 
 The complete raw current webpage has not yet been vendored byte-for-byte into the repository; provenance/header material is preserved under `sources/`, and canonical transcription proceeds directly against the controlling webpage with batch audit records.
