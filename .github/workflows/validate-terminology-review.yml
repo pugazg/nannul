@@ -1,0 +1,43 @@
+name: Validate Nannul terminology review
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - data/grammatical-terminology-review.json
+      - data/grammatical-terminology-candidates.json
+      - data/grammatical-terminology-candidates-validation.json
+      - data/nurpa.json
+      - scripts/validate_terminology_review.py
+      - .github/workflows/validate-terminology-review.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Validate terminology review ledger
+        run: python3 scripts/validate_terminology_review.py
+
+      - name: Commit validation outputs if changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/grammatical-terminology-review-validation.json reviews/terminology/batch-001-decisions.md
+          if git diff --cached --quiet; then
+            echo 'Terminology review validation outputs unchanged.'
+            exit 0
+          fi
+          git commit -m 'Validate Nannul terminology Batch 1 review'
+          git push origin HEAD:main
