@@ -41,11 +41,6 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 - பொதுப்பாயிரம் 1–55 — **canonicalized**
 - எழுத்ததிகாரம் 56–257 — **canonicalized and audited in full**
 - சொல்லதிகாரம் 258–462 — **canonicalized and audited in full**
-  - பெயரியல் 258–319 — complete
-  - வினையியல் 320–351 — complete
-  - பொதுவியல் 352–419 — complete
-  - இடையியல் 420–441 — complete
-  - உரியியல் 442–462 — complete
 
 Current canonical boundary: **நூற்பா 462 / `நன்னூல் முற்றிற்று`**.
 
@@ -53,26 +48,18 @@ Current canonical boundary: **நூற்பா 462 / `நன்னூல் �
 
 **STABLE நூற்பா IDENTIFIER LAYER: ESTABLISHED AND AUDITED**
 
-Numbered positions use the deterministic identifier scheme:
+Numbered positions use `nannul-%04d`, for example `nannul-0001`, `nannul-0056`, `nannul-0258`, and `nannul-0462`.
 
-`nannul-%04d`
+The unnumbered சிறப்புப்பாயிரம் uses `nannul-sirappu-payiram`.
 
-Examples: `nannul-0001`, `nannul-0056`, `nannul-0258`, `nannul-0462`.
+Because the controlling current webpage does not display numbered 73 or 176, `nannul-0073` and `nannul-0176` are reserved as **source-gap positions** and never point to reconstructed canonical text.
 
-The unnumbered சிறப்புப்பாயிரம் uses:
-
-`nannul-sirappu-payiram`
-
-Because the controlling current webpage does not display numbered 73 or 176, `nannul-0073` and `nannul-0176` are reserved as **source-gap positions** and do not point to reconstructed canonical text.
-
-Structural/index artifacts:
+Primary artifacts:
 
 - `structure/identifiers.yml`
 - `data/nurpa-index.json`
 - `indexes/nurpa-number-index.md`
 - `audit/STABLE_IDENTIFIER_INDEX.md`
-
-This layer is derived metadata only; canonical Tamil files were not rewritten to insert IDs.
 
 ## Canonical unit dataset status
 
@@ -80,15 +67,13 @@ This layer is derived metadata only; canonical Tamil files were not rewritten to
 
 Primary artifacts:
 
-- `data/nurpa.json` — complete dataset object with **460 canonical numbered records**;
+- `data/nurpa.json` — **460 canonical numbered records**;
 - `data/nurpa.ndjson` — one canonical record per line;
 - `data/nurpa-validation.json` — deterministic coverage/count/hash validation;
 - `data/nurpa.schema.json` — JSON Schema contract;
 - `scripts/generate_nurpa_dataset.py` — deterministic generator;
-- `.github/workflows/generate-nurpa-dataset.yml` — reproducible generation workflow;
-- `audit/CANONICAL_UNIT_DATASET.md` — completed dataset audit.
-
-Each record carries stable ID, source number, exact canonical Tamil text, structural parents, nearest source-supported topic heading, canonical-file provenance, controlling-source status, and applicable source-variant references.
+- `.github/workflows/generate-nurpa-dataset.yml` — reproducible workflow;
+- `audit/CANONICAL_UNIT_DATASET.md` — dataset audit.
 
 Validated invariant:
 
@@ -96,10 +81,29 @@ Validated invariant:
 - canonical numbered records: **460**;
 - reserved source gaps: **73, 176**;
 - missing expected canonical records: **none**;
-- unexpected records: **none**;
-- unique stable IDs: **460**.
+- unexpected records: **none**.
 
-The dataset does not reconstruct either source gap and does not alter canonical Tamil.
+## Source-heading / lexical concordance status
+
+**SOURCE-HEADING + EXACT-SURFACE LEXICAL CONCORDANCE: GENERATED, CORRECTED, VALIDATED, AND AUDITED**
+
+Heading layer:
+
+- `data/source-heading-index.json` — **65 actual non-empty source-heading occurrences**;
+- `indexes/source-heading-index.md` — human-facing heading index;
+- one explicit unheaded span covers நூற்பாக்கள் **56–57**, before `எண்` begins at 58;
+- no blank or fabricated heading is assigned to that span.
+
+Lexical layer:
+
+- `data/word-form-concordance.json` — **2,837 unique exact surface forms**;
+- `data/token-occurrences.ndjson` — **5,431 exact token occurrences**;
+- `data/concordance-validation.json` — **PASS** validation with output fingerprints;
+- `scripts/generate_concordance.py` — deterministic generator;
+- `.github/workflows/generate-concordance.yml` — reproducible workflow;
+- `audit/HEADING_LEXICAL_CONCORDANCE.md` — formal audit.
+
+Tokenization is deliberately lossless at the surface level: each token is an exact non-whitespace substring (`\S+`) of canonical `text_ta`. No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied. This keeps unusual and punctuation-bearing source forms visible rather than silently cleaning them.
 
 ## Numbering state of the controlling source
 
@@ -117,37 +121,34 @@ The canonical edition follows the current Project Madurai webpage. Differences d
 - நூற்பா 343: current `செய்தனெ` vs historical `செய்தென`;
 - நூற்பா 344: current trailing `"` after `பிற` vs no trailing quote in the historical mirror.
 
-See `audit/SOURCE_VARIANTS.md` and the batch audit files. No secondary-witness reading is silently imported into canonical text.
+See `audit/SOURCE_VARIANTS.md`. No secondary-witness reading is silently imported into canonical text or derived data.
 
-## Completion audits
+## Completion / derived-layer audits
 
 - `audit/EZHUTHTHATHIKARAM_COMPLETION.md`
 - `audit/SOLLATHIKARAM_COMPLETION.md`
 - `audit/NANNUL_CANONICAL_COMPLETION.md`
 - `audit/STABLE_IDENTIFIER_INDEX.md`
 - `audit/CANONICAL_UNIT_DATASET.md`
+- `audit/HEADING_LEXICAL_CONCORDANCE.md`
 
 ## Raw-source preservation
 
-Exact-byte preservation of the **current** Project Madurai HTML is tracked separately from canonical completion.
+Exact-byte preservation of the **current** Project Madurai HTML remains a separate archival gate.
 
 Infrastructure present:
 
-- `.github/workflows/vendor-project-madurai-source.yml` — reproducible direct-HTTP fetch/checksum workflow;
-- `sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md` — archival protocol and completion gate;
-- `audit/RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md` — dated retrieval-attempt audit;
-- `SOURCE_MANIFEST.yml` raw-preservation state and target paths.
+- `.github/workflows/vendor-project-madurai-source.yml`
+- `sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md`
+- `audit/RAW_SOURCE_PRESERVATION_ATTEMPT_2026-08-18.md`
+- raw-preservation state in `SOURCE_MANIFEST.yml`
 
 Current raw-source status: **workflow/protocol configured, raw snapshot not yet materialized and hash-verified on `main`**.
 
-Accordingly, `full_current_html_vendored` remains `false`. Parsed web text and the historical GitHub mirror are not accepted as substitutes for the controlling HTTP response bytes.
+Accordingly, `full_current_html_vendored` remains `false`. Parsed web text and the historical GitHub mirror are not substitutes for the controlling HTTP response bytes.
 
 ## Next derived-data activity
 
-With stable IDs and the 460-record canonical dataset established, the next safe source-derived milestone is a **source-supported topic-heading / concordance layer**:
+The next safe mechanical milestone is **frequency/profile summaries by அதிகாரம், இயல்/subsection, and source heading**, using only the validated exact-surface occurrence dataset.
 
-1. index every distinct source heading and the stable நூற்பா IDs governed by it;
-2. build a lossless lexical concordance from the canonical `text_ta` field without spelling normalization;
-3. keep later grammatical-term interpretation separate from this purely derived lexical layer.
-
-That will provide a reliable basis for search, terminology study, commentary linking, and later comparison with Tolkāppiyam or other Tamil grammatical works without changing the canonical source layer.
+A later grammatical-terminology index should be treated separately as an analytical/reviewed layer: lexical frequency alone must not be misrepresented as grammatical classification.
