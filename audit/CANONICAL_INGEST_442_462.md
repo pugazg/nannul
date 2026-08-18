@@ -2,7 +2,7 @@
 
 ## Batch identity
 
-- Batch ID: `PM147-CANON-009`
+- Batch ID: `PM147-CANON-010`
 - அதிகாரம்: **3. சொல்லதிகாரம்**
 - இயல்: **3.5 உரியியல்**
 - Nominal source range: **442–462**
