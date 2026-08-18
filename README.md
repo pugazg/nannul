@@ -46,6 +46,7 @@ nannul/
 │       │   ├── 02-04-meyyeetru-punariyal/
 │       │   └── 02-05-urupu-punariyal/
 │       └── 03-sollathikaram/
+│           └── 03-01-peyariyal/
 ├── structure/
 │   ├── README.md
 │   └── sections.yml
@@ -62,7 +63,8 @@ nannul/
     ├── CANONICAL_INGEST_151_203.md
     ├── CANONICAL_INGEST_204_239.md
     ├── CANONICAL_INGEST_240_257.md
-    └── EZHUTHTHATHIKARAM_COMPLETION.md
+    ├── EZHUTHTHATHIKARAM_COMPLETION.md
+    └── CANONICAL_INGEST_258_319.md
 ```
 
 ## Source structure
@@ -87,13 +89,13 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
   - மெய்யீற்றுப் புணரியல் 204–239 — complete
   - உருபு புணரியல் 240–257 — complete
 - சொல்லதிகாரம் 258–462:
-  - பெயரியல் 258–319 — **next**
-  - வினையியல் 320–351 — pending
+  - பெயரியல் 258–319 — **canonicalized and audited**
+  - வினையியல் 320–351 — **next**
   - பொதுவியல் 352–419 — pending
   - இடையியல் 420–441 — pending
   - உரியியல் 442–462 — pending
 
-Current canonical boundary: **நூற்பா 257**.
+Current canonical boundary: **நூற்பா 319**.
 
 ## Documented source-version findings
 
@@ -106,10 +108,12 @@ The canonical text preserves those source states and does not import the histori
 
 The historical Project Madurai mirror also has a numbering anomaly around 240–242. The current webpage displays **240, 241, 242** continuously; that sequence is canonical and has been applied in `2.5 உருபு புணரியல்`.
 
-See `audit/SOURCE_VARIANTS.md` and `audit/EZHUTHTHATHIKARAM_COMPLETION.md`.
+The controlling webpage displays **258–319 continuously** in பெயரியல், with no additional numbering discrepancy observed.
+
+See `audit/SOURCE_VARIANTS.md`, `audit/EZHUTHTHATHIKARAM_COMPLETION.md`, and `audit/CANONICAL_INGEST_258_319.md`.
 
 ## Next canonical activity
 
-Proceed with **3.1 பெயரியல், நூற்பாக்கள் 258–319**, under சொல்லதிகாரம், using the current Project Madurai Unicode webpage as the controlling witness.
+Proceed with **3.2 வினையியல், நூற்பாக்கள் 320–351**, under சொல்லதிகாரம், using the current Project Madurai Unicode webpage as the controlling witness.
 
 The complete raw current webpage has not yet been vendored byte-for-byte into the repository; provenance/header material is preserved under `sources/`, and canonical transcription proceeds directly against the controlling webpage with batch audit records.
