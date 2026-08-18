@@ -34,10 +34,11 @@ The historical mirror is not textually identical to the current webpage. It freq
 
 **Repository treatment:**
 - do not silently insert historical-witness 73 into the canonical text derived from A;
-- when canonical extraction reaches this point, represent the gap explicitly and link to this audit record;
-- retain B's reading only in a variant/secondary-witness layer unless a later editorial decision changes the controlling-source policy.
+- canonical range 56–127 now preserves the sequence 72 → `பிறப்பு` → 74;
+- retain B's reading only in a variant/secondary-witness layer unless a later editorial decision changes the controlling-source policy;
+- canonical ingest record: `audit/CANONICAL_INGEST_056_127.md`.
 
-**Status:** OPEN — source-version discrepancy, not a transcription error.
+**Status:** OPEN AS SOURCE-VERSION DISCREPANCY — canonical handling applied; no repository transcription error remains.
 
 ## Variant PM147-V002 — numbering around உருபு புணரியல்
 
