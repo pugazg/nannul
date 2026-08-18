@@ -1,6 +1,6 @@
 # Indexes
 
-Human-facing navigational indexes for Nannūl belong here.
+Human-facing navigational and derived indexes for Nannūl belong here.
 
 ## Current indexes
 
@@ -32,16 +32,39 @@ No empty/fabricated heading is assigned to the unheaded span.
 
 Machine-readable form: `data/source-heading-index.json`.
 
+### `frequency-profiles.md`
+
+Human-facing exact-surface frequency profile generated from the validated occurrence layer.
+
+It provides:
+
+- whole-work exact-surface frequency leaders;
+- **3** source-section / அதிகார-level profiles;
+- **17** இயல் / structural-unit profiles;
+- **65** actual source-heading profiles;
+- **1** explicit unheaded-span profile;
+- record, token, unique-form, and hapax counts;
+- leading exact surface forms for each group.
+
+Validated whole-work totals are **460 canonical numbered records**, **5,431 exact token occurrences**, **2,837 unique exact surface forms**, and **2,037 hapax surface forms**.
+
+Machine-readable summaries: `data/frequency-profiles.json`.
+
+Complete exact-surface group tables: `data/frequency-tables.json`.
+
+Validation: `data/frequency-profiles-validation.json`.
+
+Audit: `audit/FREQUENCY_PROFILES.md`.
+
 ## Index policy
 
 Indexes are derived from verified canonical text and structure. They use stable நூற்பா IDs wherever individual units are addressed and never rewrite canonical Tamil.
 
+Mechanical frequency/profile data must remain distinguishable from analytical classification. In particular, frequent surface forms are not automatically grammatical terms.
+
 Future human-facing indexes may include:
 
-- grammatical-term index;
+- reviewed grammatical-term index;
 - example-word index;
 - referenced-author/work index;
-- cross-reference index to Tolkāppiyam and other Tamil grammar works;
-- frequency/profile summaries by அதிகாரம், இயல், and source heading.
-
-Analytical classifications must remain distinguishable from mechanical/source-supported indexes.
+- cross-reference index to Tolkāppiyam and other Tamil grammar works.
