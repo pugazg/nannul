@@ -22,6 +22,7 @@ The audit layer exists so that the canonical Tamil text remains traceable and co
 - `CANONICAL_INGEST_204_239.md` — மெய்யீற்றுப் புணரியல் 204–239.
 - `CANONICAL_INGEST_240_257.md` — உருபு புணரியல் 240–257.
 - `EZHUTHTHATHIKARAM_COMPLETION.md` — authority-level completion audit for எழுத்ததிகாரம் 56–257.
+- `CANONICAL_INGEST_258_319.md` — பெயரியல் 258–319.
 
 ## Current findings
 
@@ -31,14 +32,17 @@ The audit layer exists so that the canonical Tamil text remains traceable and co
 - பதவியல் 128–150: continuous numbering; no source-numbering discrepancy observed.
 - மெய்யீற்றுப் புணரியல் 204–239: continuous numbering; no source-numbering discrepancy observed.
 - உருபு புணரியல் 240–257: continuous numbering in the controlling current webpage.
+- பெயரியல் 258–319: continuous numbering; no source-numbering discrepancy observed.
 
 ## Verification progress
 
 - சிறப்புப்பாயிரம்: canonicalized.
 - பொதுப்பாயிரம் 1–55: canonicalized.
 - எழுத்ததிகாரம் 56–257: **canonicalized and fully batch-audited**.
-- Next audit/canonical range: சொல்லதிகாரம் → பெயரியல் 258–319.
+- சொல்லதிகாரம்:
+  - பெயரியல் 258–319: **canonicalized and batch-audited**.
+  - next: வினையியல் 320–351.
 
-Current canonical boundary: **257**.
+Current canonical boundary: **319**.
 
 The complete source must eventually be verified through நூற்பா 462 before the whole canonical Tamil layer can be declared source-verified.
