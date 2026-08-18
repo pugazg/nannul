@@ -80,10 +80,48 @@ Workflow: `.github/workflows/generate-concordance.yml`
 
 Audit: `audit/HEADING_LEXICAL_CONCORDANCE.md`
 
+## Exact-surface frequency profiles
+
+### `frequency-profiles.json`
+
+Mechanical summary profiles over the already-validated exact token occurrences.
+
+Validated dimensions:
+
+- source-section / அதிகார-level profiles: **3**;
+- இயல் / structural-unit profiles: **17**;
+- actual source-heading profiles: **65**;
+- explicit unheaded-span profiles: **1**.
+
+Whole-work validated counts remain:
+
+- canonical records: **460**;
+- token occurrences: **5,431**;
+- unique exact surface forms: **2,837**;
+- hapax exact surface forms: **2,037**.
+
+Each profile records record/token/form counts plus its top 20 exact surface forms. The frequency ordering is deterministic: descending count, first global occurrence, then exact surface form.
+
+### `frequency-tables.json`
+
+Complete exact-surface frequency tables for the whole work and every section, இயல், source-heading occurrence, and unheaded span. These tables retain all exact forms, not merely the top-20 profile summaries.
+
+### `frequency-profiles-validation.json`
+
+**PASS** reconciliation/integrity report. It verifies canonical/token links and offsets, source-gap handling, total coverage, per-group reconciliation, and output fingerprints.
+
+Human-readable profile: `indexes/frequency-profiles.md`
+
+Generator: `scripts/generate_frequency_profiles.py`
+
+Workflow: `.github/workflows/generate-frequency-profiles.yml`
+
+Audit: `audit/FREQUENCY_PROFILES.md`
+
 ## Derivation policy
 
 Everything in `data/` is derived from the verified canonical Tamil and structural metadata. Derived or inferred fields must never be represented as if they were part of the source text.
 
 The current mechanical layers deliberately stop short of claiming that a frequent or repeated lexical surface form is a grammatical term. Grammatical-term classification belongs in a separate reviewed analytical layer.
 
-Suitable next derived artifacts include section/இயல்/heading frequency profiles, grammatical-terminology candidate datasets, and relationship data connecting Nannūl rules with Tolkāppiyam or other grammar works.
+The next suitable derived artifact is a provenance-rich **grammatical-terminology candidate dataset** whose entries begin as `unreviewed` candidates rather than automatic grammatical assertions. Later relationship data may connect reviewed Nannūl concepts with Tolkāppiyam or other grammar works without changing the canonical source layer.
