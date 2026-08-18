@@ -35,21 +35,29 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 
 ## Canonical status
 
+**SOURCE-DERIVED CANONICAL TAMIL INGESTION: COMPLETE**
+
 - சிறப்புப்பாயிரம் — **canonicalized**
 - பொதுப்பாயிரம் 1–55 — **canonicalized**
 - எழுத்ததிகாரம் 56–257 — **canonicalized and audited in full**
-- சொல்லதிகாரம் 258–462:
-  - பெயரியல் 258–319 — **canonicalized and audited**
-  - வினையியல் 320–351 — **canonicalized and audited**
-  - பொதுவியல் 352–419 — **canonicalized and audited**
-  - இடையியல் 420–441 — **canonicalized and audited**
-  - உரியியல் 442–462 — **next**
+- சொல்லதிகாரம் 258–462 — **canonicalized and audited in full**
+  - பெயரியல் 258–319 — complete
+  - வினையியல் 320–351 — complete
+  - பொதுவியல் 352–419 — complete
+  - இடையியல் 420–441 — complete
+  - உரியியல் 442–462 — complete
 
-Current canonical boundary: **நூற்பா 441**.
+Current canonical boundary: **நூற்பா 462 / `நன்னூல் முற்றிற்று`**.
+
+## Numbering state of the controlling source
+
+The nominal numbered span is **1–462**. The current Project Madurai webpage does not display numbered **73** or **176**, so the completed canonical layer contains **460 displayed numbered நூற்பாக்கள்**, plus the unnumbered சிறப்புப்பாயிரம்.
+
+Those source-version gaps are preserved rather than silently reconstructed.
 
 ## Documented source-version findings
 
-The canonical edition follows the current Project Madurai webpage. Differences already documented against the older official Project Madurai GitHub mirror include:
+The canonical edition follows the current Project Madurai webpage. Differences documented against the older official Project Madurai GitHub mirror include:
 
 - missing displayed 73 in the current webpage;
 - missing displayed 176 in the current webpage;
@@ -59,10 +67,14 @@ The canonical edition follows the current Project Madurai webpage. Differences a
 
 See `audit/SOURCE_VARIANTS.md` and the batch audit files. No secondary-witness reading is silently imported into canonical text.
 
-## Next canonical activity
+## Completion audits
 
-Proceed with **3.5 உரியியல், நூற்பாக்கள் 442–462**, using the current Project Madurai Unicode webpage as the controlling witness.
+- `audit/EZHUTHTHATHIKARAM_COMPLETION.md`
+- `audit/SOLLATHIKARAM_COMPLETION.md`
+- `audit/NANNUL_CANONICAL_COMPLETION.md`
 
-Completing that batch will complete சொல்லதிகாரம் and the numbered Nannūl source through நூற்பா 462, after which an end-to-end completion audit should be created.
+## Remaining work outside canonical transcription
 
-The complete raw current webpage has not yet been vendored byte-for-byte into the repository; provenance/header material is preserved under `sources/`, and canonical transcription proceeds directly against the controlling webpage with batch audit records.
+The full current Project Madurai HTML has **not yet been vendored byte-for-byte**. Provenance and rendered header material are preserved under `sources/project-madurai/pmuni0147/`.
+
+Future work can proceed in separate layers: raw-source preservation, stable நூற்பா IDs and indexes, machine-readable structured data, commentary, comparative grammar, translations, and critical/source comparison. These must not silently alter the completed canonical Tamil layer.
