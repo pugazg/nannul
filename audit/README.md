@@ -15,6 +15,7 @@ Each audit should identify source/version, range, verification method, anomalies
 - `EZHUTHTHATHIKARAM_COMPLETION.md` — authority-level completion audit for எழுத்ததிகாரம் 56–257.
 - `CANONICAL_INGEST_258_319.md` — பெயரியல் 258–319.
 - `CANONICAL_INGEST_320_351.md` — வினையியல் 320–351.
+- `CANONICAL_INGEST_352_419.md` — பொதுவியல் 352–419.
 
 ## Current findings
 
@@ -25,6 +26,7 @@ Each audit should identify source/version, range, verification method, anomalies
 - `PM147-V005`: நூற்பா 344 has a trailing `"` in the current webpage and not in the historical mirror; current punctuation is canonical.
 - பெயரியல் 258–319: continuous numbering.
 - வினையியல் 320–351: continuous numbering.
+- பொதுவியல் 352–419: continuous numbering; no new numbering discrepancy observed.
 
 ## Verification progress
 
@@ -34,8 +36,9 @@ Each audit should identify source/version, range, verification method, anomalies
 - சொல்லதிகாரம்:
   - பெயரியல் 258–319: **canonicalized and audited**.
   - வினையியல் 320–351: **canonicalized and audited**.
-  - next: பொதுவியல் 352–419.
+  - பொதுவியல் 352–419: **canonicalized and audited**.
+  - next: இடையியல் 420–441.
 
-Current canonical boundary: **351**.
+Current canonical boundary: **419**.
 
 The complete source must eventually be verified through நூற்பா 462 before the whole canonical Tamil layer can be declared source-verified.
