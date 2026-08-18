@@ -19,6 +19,7 @@ The audit layer exists so that the canonical Tamil text remains traceable and co
 - `CANONICAL_INGEST_056_127.md` — canonical verification record for எழுத்து இயல், நூற்பாக்கள் 56–127.
 - `CANONICAL_INGEST_128_150.md` — canonical verification record for பதவியல், நூற்பாக்கள் 128–150.
 - `CANONICAL_INGEST_151_203.md` — canonical verification record for உயிரீற்றுப் புணரியல், நூற்பாக்கள் 151–203.
+- `CANONICAL_INGEST_204_239.md` — canonical verification record for மெய்யீற்றுப் புணரியல், நூற்பாக்கள் 204–239.
 
 ## Current findings
 
@@ -26,6 +27,7 @@ The audit layer exists so that the canonical Tamil text remains traceable and co
 - `PM147-V002`: historical-witness numbering anomaly around 240–242; current webpage will control canonical numbering when that range is processed.
 - `PM147-V003`: current controlling webpage omits a displayed numbered 176 between 175 and 177. Canonical handling has been applied without restoring the secondary-witness text.
 - பதவியல் 128–150: continuous numbering; no source-numbering discrepancy observed.
+- மெய்யீற்றுப் புணரியல் 204–239: continuous numbering; no source-numbering discrepancy observed.
 
 ## Verification progress
 
@@ -34,8 +36,9 @@ The audit layer exists so that the canonical Tamil text remains traceable and co
 - எழுத்து இயல் 56–127: canonicalized and batch-audited.
 - பதவியல் 128–150: canonicalized and batch-audited.
 - உயிரீற்றுப் புணரியல் 151–203: canonicalized and batch-audited.
-- Next audit/canonical range: மெய்யீற்றுப் புணரியல் 204–239.
+- மெய்யீற்றுப் புணரியல் 204–239: canonicalized and batch-audited.
+- Next audit/canonical range: உருபு புணரியல் 240–257.
 
-Current canonical boundary: **203**.
+Current canonical boundary: **239**.
 
 The complete source must eventually be verified through நூற்பா 462 before the whole canonical Tamil layer can be declared source-verified.
