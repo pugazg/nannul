@@ -44,13 +44,17 @@ The historical mirror is not textually identical to the current webpage. It freq
 
 **Location:** எழுத்ததிகாரம் → உருபு புணரியல், நூற்பா 240–242.
 
-**Controlling current webpage (A):** numbers the sequence 240, 241, 242.
+**Controlling current webpage (A):** numbers the sequence **240, 241, 242**.
 
-**Historical Project Madurai mirror (B):** the older HTML currently shows 240 followed by 242 and another 242, indicating an older numbering/markup anomaly.
+**Historical Project Madurai mirror (B):** the older HTML shows 240 followed by 242 and another 242, indicating an older numbering/markup anomaly.
 
-**Repository treatment:** current webpage A controls canonical numbering; preserve the historical anomaly only as witness evidence.
+**Repository treatment:**
+- current webpage A controls canonical numbering;
+- canonical range 240–257 now preserves **240 → 241 → 242**;
+- preserve the historical anomaly only as witness evidence;
+- canonical ingest record: `audit/CANONICAL_INGEST_240_257.md`.
 
-**Status:** RESOLVED FOR CANONICAL NUMBERING — use A.
+**Status:** RESOLVED FOR CANONICAL NUMBERING AND APPLIED — canonical text uses witness A; no repository transcription issue remains.
 
 ## Variant PM147-V003 — நூற்பா 176
 
