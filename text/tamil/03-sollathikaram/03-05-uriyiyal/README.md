@@ -2,22 +2,33 @@
 
 Canonical source range: **442–462**.
 
-Status: **NEXT CANONICAL BATCH**.
+Status: **CANONICALIZED AND BATCH-AUDITED**.
 
-The current Project Madurai Unicode webpage remains the controlling witness.
+The current Project Madurai Unicode webpage is the controlling witness.
 
-Planned canonical file:
+Canonical file:
 
 `uriyiyal-442-462.md`
 
-The source begins this இயல் at நூற்பா **442** immediately after இடையியல் ends at 441 and ends at **462**, after which the webpage states `நன்னூல் முற்றிற்று`.
+Audit:
 
-The controlling webpage presents this இயல் under the single source heading `உரியியல்`. Verify the full 442–462 sequence and the end-of-work boundary against the webpage during ingestion.
+`audit/CANONICAL_INGEST_442_462.md`
 
-Do not normalize source wording, silently repair punctuation or numbering, or import readings from a secondary witness. Any discrepancy found during extraction must be recorded under `audit/` before editorial intervention.
+## Boundary verification
 
-Completing this batch should be followed by:
+- first numbered unit: **442**;
+- last numbered unit: **462**;
+- displayed numbered units: **21**;
+- numbering: continuous;
+- no missing or duplicated number observed;
+- source heading retained: `உரியியல்`;
+- after 462 the controlling webpage states `நன்னூல் முற்றிற்று`.
 
-1. a dedicated `CANONICAL_INGEST_442_462.md` audit;
-2. a சொல்லதிகாரம் completion audit for 258–462;
-3. an end-to-end canonical completion audit covering சிறப்புப்பாயிரம், பொதுப்பாயிரம், எழுத்ததிகாரம், and சொல்லதிகாரம்.
+The canonical file retains that terminal source marker and excludes Project Madurai's webpage footer/revision material from the literary text.
+
+No source wording, punctuation, spacing, or numbering was silently normalized, and no secondary-witness reading was imported.
+
+This completes **3. சொல்லதிகாரம் 258–462** and the full numbered Nannūl source. See:
+
+- `audit/SOLLATHIKARAM_COMPLETION.md`;
+- `audit/NANNUL_CANONICAL_COMPLETION.md`.
