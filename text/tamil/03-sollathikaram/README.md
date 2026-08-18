@@ -2,12 +2,24 @@
 
 Canonical range: **258–462**.
 
-Planned இயல் folders/files:
+Status: **NEXT அதிகாரம்**.
 
-- `03-01-peyariyal/` — 258–319
-- `03-02-vinaiyiyal/` — 320–351
-- `03-03-pothuviyal/` — 352–419
-- `03-04-idaiyiyal/` — 420–441
-- `03-05-uriyiyal/` — 442–462
+The current Project Madurai Unicode webpage remains the controlling witness.
 
-Canonical extraction has not yet started in this folder. The controlling source remains the current Project Madurai `pmuni0147` Unicode webpage.
+## இயல் folders/files
+
+- `03-01-peyariyal/` — 258–319 — **next**
+- `03-02-vinaiyiyal/` — 320–351 — pending
+- `03-03-pothuviyal/` — 352–419 — pending
+- `03-04-idaiyiyal/` — 420–441 — pending
+- `03-05-uriyiyal/` — 442–462 — pending
+
+## Previous milestone
+
+**எழுத்ததிகாரம் 56–257 is canonicalized and audited in full.** See `audit/EZHUTHTHATHIKARAM_COMPLETION.md`.
+
+## Next canonical activity
+
+Proceed with **3.1 பெயரியல், நூற்பாக்கள் 258–319**.
+
+Canonical extraction of சொல்லதிகாரம் has not yet started. Do not normalize source wording, silently repair numbering, or import readings from a secondary witness. Any discrepancy discovered during extraction must be recorded under `audit/` before editorial intervention.
