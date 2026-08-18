@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "inputs": {
+    "canonical_dataset": "data/nurpa.json",
+    "token_occurrences": "data/token-occurrences.ndjson",
+    "heading_index": "data/source-heading-index.json",
+    "concordance_validation": "data/concordance-validation.json"
+  },
+  "checks": {
+    "canonical_record_count_is_460": true,
+    "record_ids_unique": true,
+    "canonical_numbers_match_expected_set": true,
+    "reserved_source_gaps_absent": true,
+    "input_token_occurrence_count_is_5431": true,
+    "input_token_links_and_offsets_match_canonical_records": true,
+    "global_token_count_matches_input": true,
+    "global_unique_surface_forms_is_2837": true,
+    "global_frequency_counts_reconcile": true,
+    "section_token_totals_reconcile": true,
+    "unit_token_totals_reconcile": true,
+    "heading_plus_unheaded_token_totals_reconcile": true,
+    "section_records_cover_canonical_records_once_in_source_order": true,
+    "unit_records_cover_canonical_records_once_in_source_order": true,
+    "heading_plus_unheaded_records_cover_all_exactly_once": true,
+    "heading_profile_count_matches_heading_index": true,
+    "unheaded_profile_count_matches_heading_index": true,
+    "all_profile_frequency_tables_reconcile": true
+  },
+  "counts": {
+    "canonical_records": 460,
+    "token_occurrences": 5431,
+    "unique_surface_forms": 2837,
+    "hapax_surface_forms": 2037,
+    "section_profiles": 3,
+    "unit_profiles": 17,
+    "heading_profiles": 65,
+    "unheaded_profiles": 1
+  },
+  "reserved_source_gaps": [
+    73,
+    176
+  ],
+  "token_link_failures": [],
+  "outputs": {
+    "profiles": "data/frequency-profiles.json",
+    "tables": "data/frequency-tables.json",
+    "markdown": "indexes/frequency-profiles.md"
+  },
+  "hashes": {
+    "data/frequency-profiles.json": "9faf914312835823e23511f3af0c9bde564d53df6ea3be21146dc7446db7d4f4",
+    "data/frequency-tables.json": "cc91cd5608280eea0e7f79969a136ef06cb9f0029be97e3acb2244b62dcbee27",
+    "indexes/frequency-profiles.md": "84acee313fc20167a10b5ccc4f58c5d4145a07de8f2743030f6f7c093e466101"
+  },
+  "derivation_status": "mechanical aggregation only; canonical Tamil and exact token surfaces unchanged"
+}
