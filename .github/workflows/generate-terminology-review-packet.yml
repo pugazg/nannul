@@ -1,0 +1,42 @@
+name: Generate Nannul terminology review packet
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/generate_terminology_review_packet.py
+      - data/grammatical-terminology-candidates.json
+      - data/token-occurrences.ndjson
+      - data/nurpa.json
+      - .github/workflows/generate-terminology-review-packet.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Generate contextual review packet
+        run: python3 scripts/generate_terminology_review_packet.py
+
+      - name: Commit review packet if changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reviews/terminology/batch-001-contexts.json reviews/terminology/batch-001-contexts.md
+          if git diff --cached --quiet; then
+            echo 'Review packet unchanged.'
+            exit 0
+          fi
+          git commit -m 'Generate Nannul terminology Batch 1 context packet'
+          git push origin HEAD:main
