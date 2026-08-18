@@ -40,26 +40,23 @@ A historical copy also exists in Project Madurai's official GitHub mirror (`proj
 - Canonical சிறப்புப்பாயிரம் derived: **yes**
 - Canonical பொதுப்பாயிரம் 1–55 derived: **yes**
 - Canonical எழுத்ததிகாரம் 56–257 derived: **yes — complete and audited**
-- Canonical சொல்லதிகாரம்:
-  - பெயரியல் 258–319: **yes — complete and audited**
-  - வினையியல் 320–351: not yet
-  - பொதுவியல் 352–419: not yet
-  - இடையியல் 420–441: not yet
-  - உரியியல் 442–462: not yet
-- Current canonical boundary: **319**
+- Canonical சொல்லதிகாரம் derived through: **351**
+  - பெயரியல் 258–319: complete and audited
+  - வினையியல் 320–351: complete and audited
+- Current canonical boundary: **351**
 - Source-variant audit: **active**
 
 ## Documented source discrepancies
 
-The current controlling webpage differs from the older official Project Madurai GitHub witness at several points already encountered:
+Differences already encountered between the controlling current webpage and the older official Project Madurai GitHub witness include:
 
-- current webpage omits displayed numbered 73 between 72 and 74;
-- current webpage omits displayed numbered 176 between 175 and 177;
-- older mirror has a numbering anomaly around 240–242, while the current webpage displays 240, 241, 242 continuously.
+- missing displayed 73 in the current webpage;
+- missing displayed 176 in the current webpage;
+- older-mirror numbering anomaly around 240–242;
+- நூற்பா 343: current `செய்தனெ` vs historical `செய்தென`;
+- நூற்பா 344: current trailing `"` after `பிற` vs no trailing quote in the historical mirror.
 
 These are tracked in `audit/SOURCE_VARIANTS.md`. The canonical layer follows the current webpage and does not silently import readings from the historical witness.
-
-No additional numbering discrepancy was observed in பெயரியல் 258–319.
 
 ## Ingestion rule
 
@@ -67,4 +64,4 @@ The controlling source must be preserved without editorial rewriting. Normalized
 
 ## Next source-derived canonical work
 
-Proceed with **3. சொல்லதிகாரம் → 3.2 வினையியல், நூற்பாக்கள் 320–351**.
+Proceed with **3. சொல்லதிகாரம் → 3.3 பொதுவியல், நூற்பாக்கள் 352–419**.
