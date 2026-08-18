@@ -1,0 +1,36 @@
+name: Generate Nannul terminology review Batch 003
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/generate_terminology_review_batch_003.py
+      - .github/workflows/generate-terminology-review-batch-003.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Generate Batch 003 contexts
+        run: python3 scripts/generate_terminology_review_batch_003.py
+      - name: Commit generated review packets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reviews/terminology/batch-003-*.json reviews/terminology/batch-003-*.md
+          if git diff --cached --quiet; then
+            echo 'Batch 003 context outputs unchanged.'
+            exit 0
+          fi
+          git commit -m 'Generate Nannul terminology Batch 3 contexts'
+          git push origin HEAD:main
