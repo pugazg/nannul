@@ -1,3 +1,4 @@
+# Editorial Batch 002 apply workflow; follow-up commit intentionally triggers this job.
 name: Apply Nannul terminology review Batch 002
 
 on:
