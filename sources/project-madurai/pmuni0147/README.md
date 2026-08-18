@@ -40,8 +40,13 @@ A historical copy also exists in Project Madurai's official GitHub mirror (`proj
 - Canonical சிறப்புப்பாயிரம் derived: **yes**
 - Canonical பொதுப்பாயிரம் 1–55 derived: **yes**
 - Canonical எழுத்ததிகாரம் 56–257 derived: **yes — complete and audited**
-- Canonical சொல்லதிகாரம் 258–462 derived: **not yet**
-- Current canonical boundary: **257**
+- Canonical சொல்லதிகாரம்:
+  - பெயரியல் 258–319: **yes — complete and audited**
+  - வினையியல் 320–351: not yet
+  - பொதுவியல் 352–419: not yet
+  - இடையியல் 420–441: not yet
+  - உரியியல் 442–462: not yet
+- Current canonical boundary: **319**
 - Source-variant audit: **active**
 
 ## Documented source discrepancies
@@ -54,10 +59,12 @@ The current controlling webpage differs from the older official Project Madurai 
 
 These are tracked in `audit/SOURCE_VARIANTS.md`. The canonical layer follows the current webpage and does not silently import readings from the historical witness.
 
+No additional numbering discrepancy was observed in பெயரியல் 258–319.
+
 ## Ingestion rule
 
 The controlling source must be preserved without editorial rewriting. Normalized, segmented, indexed, computational, commentary, comparative, or translated representations belong outside this folder. Secondary witnesses may inform an audit but may not silently alter the controlling-source text.
 
 ## Next source-derived canonical work
 
-Proceed with **3. சொல்லதிகாரம் → 3.1 பெயரியல், நூற்பாக்கள் 258–319**.
+Proceed with **3. சொல்லதிகாரம் → 3.2 வினையியல், நூற்பாக்கள் 320–351**.
