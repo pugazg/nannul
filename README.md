@@ -41,7 +41,8 @@ nannul/
 │       ├── 01-pothuppayiram/
 │       ├── 02-ezhuththathikaram/
 │       │   ├── 02-01-ezhuththu-iyal/
-│       │   └── 02-02-pathaviyal/
+│       │   ├── 02-02-pathaviyal/
+│       │   └── 02-03-uyireetru-punariyal/
 │       └── 03-sollathikaram/
 ├── structure/
 │   ├── README.md
@@ -55,7 +56,8 @@ nannul/
     ├── README.md
     ├── SOURCE_VARIANTS.md
     ├── CANONICAL_INGEST_056_127.md
-    └── CANONICAL_INGEST_128_150.md
+    ├── CANONICAL_INGEST_128_150.md
+    └── CANONICAL_INGEST_151_203.md
 ```
 
 ## Source structure
@@ -76,13 +78,20 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 - எழுத்ததிகாரம்:
   - எழுத்து இயல் 56–127 — **canonicalized and audited**
   - பதவியல் 128–150 — **canonicalized and audited**
-  - உயிரீற்றுப் புணரியல் 151–203 — **next**
-  - மெய்யீற்றுப் புணரியல் 204–239 — pending
+  - உயிரீற்றுப் புணரியல் 151–203 — **canonicalized and audited**
+  - மெய்யீற்றுப் புணரியல் 204–239 — **next**
   - உருபு புணரியல் 240–257 — pending
 - சொல்லதிகாரம் 258–462 — pending
 
-Current canonical boundary: **நூற்பா 150**.
+Current canonical boundary: **நூற்பா 203**.
 
-The controlling webpage has a documented numbering gap at 73; the canonical text preserves that source state. See `audit/SOURCE_VARIANTS.md`.
+## Documented source-version gaps
+
+The controlling current webpage omits displayed numbered units at:
+
+- 73 — between 72 and 74;
+- 176 — between 175 and 177.
+
+The canonical text preserves those source states and does not import the historical-witness readings. See `audit/SOURCE_VARIANTS.md`.
 
 The complete raw current webpage has not yet been vendored byte-for-byte into the repository; provenance/header material is preserved under `sources/`, and canonical transcription proceeds directly against the controlling webpage with batch audit records.
