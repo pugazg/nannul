@@ -1,0 +1,45 @@
+name: Generate Nannul heading and lexical concordance
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/generate_concordance.py
+      - data/nurpa.json
+      - .github/workflows/generate-concordance.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Generate and validate concordances
+        run: python3 scripts/generate_concordance.py
+
+      - name: Commit generated concordance outputs if changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            data/source-heading-index.json \
+            indexes/source-heading-index.md \
+            data/word-form-concordance.json \
+            data/token-occurrences.ndjson \
+            data/concordance-validation.json
+          if git diff --cached --quiet; then
+            echo 'Concordance outputs are unchanged.'
+            exit 0
+          fi
+          git commit -m 'Generate Nannul heading and lexical concordance'
+          git push origin HEAD:main
