@@ -21,6 +21,8 @@ text/tamil/
 │   └── 02-05-urupu-punariyal/
 │       └── urupu-punariyal-240-257.md
 └── 03-sollathikaram/
+    └── 03-01-peyariyal/
+        └── peyariyal-258-319.md
 ```
 
 ## Canonical status
@@ -34,19 +36,19 @@ text/tamil/
   - மெய்யீற்றுப் புணரியல் 204–239: complete
   - உருபு புணரியல் 240–257: complete
 - சொல்லதிகாரம் 258–462:
-  - பெயரியல் 258–319: **next**
-  - வினையியல் 320–351: pending
+  - பெயரியல் 258–319: **canonicalized and audited**
+  - வினையியல் 320–351: **next**
   - பொதுவியல் 352–419: pending
   - இடையியல் 420–441: pending
   - உரியியல் 442–462: pending
 
 ## Current boundary
 
-Canonical Tamil currently reaches source நூற்பா **257**.
+Canonical Tamil currently reaches source நூற்பா **319**.
 
-The next source unit is **258**, beginning `3.1 பெயரியல்` under சொல்லதிகாரம்.
+The next source unit is **320**, beginning `3.2 வினையியல்` under சொல்லதிகாரம்.
 
-## Controlling-source numbering gaps
+## Controlling-source numbering findings
 
 The current Project Madurai webpage does not display:
 
@@ -57,7 +59,9 @@ The canonical layer preserves those source states rather than importing readings
 
 The older witness also has a numbering anomaly around 240–242; the current webpage's continuous **240, 241, 242** sequence is canonical.
 
-See `audit/SOURCE_VARIANTS.md` and `audit/EZHUTHTHATHIKARAM_COMPLETION.md`.
+The பெயரியல் range **258–319** is continuous in the controlling webpage with no missing or duplicate number observed.
+
+See `audit/SOURCE_VARIANTS.md`, `audit/EZHUTHTHATHIKARAM_COMPLETION.md`, and `audit/CANONICAL_INGEST_258_319.md`.
 
 ## Rules
 
