@@ -56,15 +56,38 @@ Validation: `data/frequency-profiles-validation.json`.
 
 Audit: `audit/FREQUENCY_PROFILES.md`.
 
+### `grammatical-terminology-review-queue.md`
+
+Human-facing **Phase-1 candidate discovery queue** for later grammatical-terminology review.
+
+Current validated state:
+
+- discovered exact-surface candidates: **455**;
+- candidates meeting frequency >=3: **443**;
+- candidates with exact source-heading-token evidence: **37**;
+- reviewed / accepted / rejected: **0 / 0 / 0**.
+
+Candidate IDs are stable SHA-256-derived identifiers tied to the exact surface form; review rank is separately recalculable.
+
+The queue is intentionally broad. Its score ranks review priority only and does not assert technical-term status.
+
+Machine-readable discovery data: `data/grammatical-terminology-candidates.json`.
+
+Validation: `data/grammatical-terminology-candidates-validation.json`.
+
+Review decisions belong separately in `data/grammatical-terminology-review.json` under `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
+
+Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
+
 ## Index policy
 
 Indexes are derived from verified canonical text and structure. They use stable நூற்பா IDs wherever individual units are addressed and never rewrite canonical Tamil.
 
-Mechanical frequency/profile data must remain distinguishable from analytical classification. In particular, frequent surface forms are not automatically grammatical terms.
+Mechanical frequency/profile data and candidate-discovery ranking must remain distinguishable from analytical classification. In particular, frequent or heading-linked surface forms are not automatically grammatical terms.
 
 Future human-facing indexes may include:
 
-- reviewed grammatical-term index;
+- reviewed grammatical-term index derived only from explicit review-ledger decisions;
 - example-word index;
 - referenced-author/work index;
 - cross-reference index to Tolkāppiyam and other Tamil grammar works.
