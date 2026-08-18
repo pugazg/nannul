@@ -103,7 +103,7 @@ Lexical layer:
 - `.github/workflows/generate-concordance.yml` — reproducible workflow;
 - `audit/HEADING_LEXICAL_CONCORDANCE.md` — formal audit.
 
-Tokenization is deliberately lossless at the surface level: each token is an exact non-whitespace substring (`\S+`) of canonical `text_ta`. No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied. This keeps unusual and punctuation-bearing source forms visible rather than silently cleaning them.
+Tokenization is deliberately lossless at the surface level: each token is an exact non-whitespace substring (`\S+`) of canonical `text_ta`. No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied.
 
 ## Exact-surface frequency/profile status
 
@@ -111,13 +111,13 @@ Tokenization is deliberately lossless at the surface level: each token is an exa
 
 Primary artifacts:
 
-- `data/frequency-profiles.json` — group summaries with top-20 exact surface forms;
-- `data/frequency-tables.json` — complete exact-surface frequency tables for every group;
-- `indexes/frequency-profiles.md` — human-facing whole-work and grouped profiles;
-- `data/frequency-profiles-validation.json` — **PASS** reconciliation/integrity validation;
-- `scripts/generate_frequency_profiles.py` — deterministic aggregation generator;
-- `.github/workflows/generate-frequency-profiles.yml` — reproducible self-committing workflow;
-- `audit/FREQUENCY_PROFILES.md` — formal audit.
+- `data/frequency-profiles.json`
+- `data/frequency-tables.json`
+- `indexes/frequency-profiles.md`
+- `data/frequency-profiles-validation.json`
+- `scripts/generate_frequency_profiles.py`
+- `.github/workflows/generate-frequency-profiles.yml`
+- `audit/FREQUENCY_PROFILES.md`
 
 Validated whole-work counts:
 
@@ -133,9 +133,67 @@ Validated profile dimensions:
 - actual source-heading profiles: **65**;
 - explicit unheaded-span profiles: **1**.
 
-All section, இயல், and heading-plus-unheaded token totals reconcile exactly to the global 5,431 occurrences, and token links/character offsets are revalidated against canonical `text_ta` during generation.
-
 Frequency remains a purely descriptive mechanical layer. No frequent lexical form is automatically classified as a grammatical term.
+
+## Grammatical-terminology candidate discovery status
+
+**PHASE 1 — CANDIDATE DISCOVERY: COMPLETE, VALIDATED, AUDITED; ALL CANDIDATES UNREVIEWED**
+
+Primary generated artifacts:
+
+- `data/grammatical-terminology-candidates.json` — provenance-rich candidate dataset;
+- `data/grammatical-terminology-candidates.ndjson` — streaming candidate queue;
+- `indexes/grammatical-terminology-review-queue.md` — ranked human-facing queue;
+- `data/grammatical-terminology-candidates-validation.json` — **PASS** validation;
+- `data/grammatical-terminology-candidates.schema.json` — generated-layer schema;
+- `scripts/generate_terminology_candidates.py` — deterministic discovery generator;
+- `.github/workflows/generate-terminology-candidates.yml` — reproducible self-committing workflow;
+- `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md` — formal Phase-1 audit.
+
+Discovery rule:
+
+- exact surface occurrence count >= **3**, **or**
+- exact non-whitespace token match in a source-supported heading.
+
+Validated result:
+
+- exact surface forms considered: **2,837**;
+- candidates: **455**;
+- frequency-selected candidates: **443**;
+- heading-matched candidates: **37**;
+- reviewed: **0**;
+- accepted: **0**;
+- rejected: **0**.
+
+The frequency and heading sets overlap.
+
+Candidate identity is stable across rank changes: each ID is `nannul-term-candidate-<16 hex>`, using the first 16 hexadecimal characters of SHA-256 over the exact UTF-8 surface form.
+
+Review priority is only a mechanical ordering signal. Every generated candidate is explicitly `unreviewed`, with no automatic decision or grammatical category.
+
+## Grammatical-terminology contextual review status
+
+**PHASE 2 — HUMAN/CONTEXTUAL REVIEW: NOT STARTED**
+
+Review policy:
+
+- `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`
+
+Separate decision ledger:
+
+- `data/grammatical-terminology-review.json`
+- schema: `data/grammatical-terminology-review.schema.json`
+
+Current review ledger:
+
+- candidates: **455**;
+- reviewed: **0**;
+- accepted: **0**;
+- rejected: **0**;
+- needs-context: **0**;
+- unreviewed: **455**.
+
+Human decisions must never be written into regenerated discovery files. Allowed decisions are `accepted`, `rejected`, and `needs-context`, each requiring contextual evidence and rationale.
 
 ## Numbering state of the controlling source
 
@@ -164,6 +222,7 @@ See `audit/SOURCE_VARIANTS.md`. No secondary-witness reading is silently importe
 - `audit/CANONICAL_UNIT_DATASET.md`
 - `audit/HEADING_LEXICAL_CONCORDANCE.md`
 - `audit/FREQUENCY_PROFILES.md`
+- `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`
 
 ## Raw-source preservation
 
@@ -180,8 +239,8 @@ Current raw-source status: **workflow/protocol configured, raw snapshot not yet 
 
 Accordingly, `full_current_html_vendored` remains `false`. Parsed web text and the historical GitHub mirror are not substitutes for the controlling HTTP response bytes.
 
-## Next derived-data activity
+## Next analytical activity
 
-The next safe analytical milestone is a **reviewed grammatical-terminology candidate layer**.
+Begin **Phase 2 contextual terminology review — Batch 1**, preferably the highest-priority source-heading-supported candidates first.
 
-The first phase should remain candidate discovery only: derive potentially significant repeated exact forms and source-heading cues from the validated mechanical data, attach stable நூற்பா provenance and occurrence evidence, and mark every candidate `unreviewed`. Frequency alone must never be treated as proof that a form is a grammatical technical term.
+Review should proceed in a small batch (roughly 20–30 candidates), inspect stable நூற்பா contexts, and record only evidence-backed `accepted`, `rejected`, or `needs-context` decisions in the separate review ledger. Discovery rank must never be converted automatically into a semantic decision.
