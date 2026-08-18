@@ -77,3 +77,35 @@ The historical mirror is not textually identical to the current webpage. It freq
 - canonical ingest record: `audit/CANONICAL_INGEST_151_203.md`.
 
 **Status:** OPEN AS SOURCE-VERSION DISCREPANCY — canonical handling applied; no repository transcription error remains.
+
+## Variant PM147-V004 — நூற்பா 343 wording
+
+**Location:** சொல்லதிகாரம் → வினையியல் → வினையெச்சம், நூற்பா 343.
+
+**Controlling current webpage (A):** displays `செய்தனெ` in the sequence `செய்தனெ செய செயின் செய்யிய செய்யியர்`.
+
+**Historical Project Madurai mirror (B):** displays the corresponding form as `செய்தென`.
+
+**Repository treatment:**
+- preserve `செய்தனெ` in the canonical text because witness A controls this edition;
+- do not silently substitute the historical reading;
+- retain B's form as variant evidence only;
+- canonical ingest record: `audit/CANONICAL_INGEST_320_351.md`.
+
+**Status:** OPEN AS TEXTUAL WITNESS DISCREPANCY — canonical handling applied; no repository transcription error remains.
+
+## Variant PM147-V005 — நூற்பா 344 trailing quotation mark
+
+**Location:** சொல்லதிகாரம் → வினையியல் → வினையெச்சம், நூற்பா 344.
+
+**Controlling current webpage (A):** ends the final displayed line with `பிற"`.
+
+**Historical Project Madurai mirror (B):** the corresponding line ends with `பிற` and does not contain the trailing quotation mark.
+
+**Repository treatment:**
+- preserve the trailing `"` in the canonical text because it is present in witness A;
+- do not silently remove it as an apparent typographical error;
+- retain B's punctuation state as secondary-witness evidence;
+- canonical ingest record: `audit/CANONICAL_INGEST_320_351.md`.
+
+**Status:** OPEN AS PUNCTUATION WITNESS DISCREPANCY — canonical handling applied; no repository transcription error remains.
