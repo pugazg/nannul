@@ -118,10 +118,69 @@ Workflow: `.github/workflows/generate-frequency-profiles.yml`
 
 Audit: `audit/FREQUENCY_PROFILES.md`
 
+## Grammatical-terminology candidate discovery
+
+### `grammatical-terminology-candidates.json`
+
+Phase-1 **unreviewed candidate discovery** dataset.
+
+Validated state:
+
+- all unique exact surface forms considered: **2,837**;
+- discovered candidate surface forms: **455**;
+- candidates meeting exact frequency >=3: **443**;
+- candidates with exact source-heading-token evidence: **37**;
+- reviewed: **0**;
+- accepted: **0**;
+- rejected: **0**.
+
+The frequency and heading sets overlap. Candidate selection is deliberately broad and is not a grammatical-term assertion.
+
+Candidate IDs are stable across ranking changes: `nannul-term-candidate-<16 hex>`, where the suffix is the first 16 hexadecimal characters of SHA-256 over the exact UTF-8 surface form.
+
+Each candidate carries exact-surface frequency, record/section/இயல் breadth, source-heading evidence when present, stable நூற்பா occurrence samples, variant references, and a mechanical review-priority score. The score is **not** semantic confidence.
+
+### `grammatical-terminology-candidates.ndjson`
+
+Streaming form of the 455 unreviewed discovery candidates.
+
+### `grammatical-terminology-candidates-validation.json`
+
+**PASS** validation ensuring the discovery rule is reproduced exactly, stable candidate IDs match exact-surface hashes, evidence counts reconcile, and every generated candidate remains unreviewed with no automatic category or decision.
+
+### `grammatical-terminology-candidates.schema.json`
+
+Schema contract for the generated discovery layer. It intentionally requires `review_status: unreviewed` and null automatic decisions/categories.
+
+Generator: `scripts/generate_terminology_candidates.py`
+
+Workflow: `.github/workflows/generate-terminology-candidates.yml`
+
+Human review queue: `indexes/grammatical-terminology-review-queue.md`
+
+Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`
+
+## Grammatical-terminology review ledger
+
+### `grammatical-terminology-review.json`
+
+Separate human/editorial decision ledger. It is **not generated from frequency** and currently starts with:
+
+- candidates: **455**;
+- reviewed: **0**;
+- accepted: **0**;
+- rejected: **0**;
+- needs-context: **0**;
+- unreviewed: **455**.
+
+Do not place human decisions in the generated candidate files. Review decisions belong only in this ledger under `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
+
+Schema: `grammatical-terminology-review.schema.json`.
+
 ## Derivation policy
 
 Everything in `data/` is derived from the verified canonical Tamil and structural metadata. Derived or inferred fields must never be represented as if they were part of the source text.
 
-The current mechanical layers deliberately stop short of claiming that a frequent or repeated lexical surface form is a grammatical term. Grammatical-term classification belongs in a separate reviewed analytical layer.
+The mechanical layers deliberately distinguish frequency/candidate discovery from reviewed grammatical interpretation. A repeated or heading-linked exact form remains only an **unreviewed candidate** until a contextual decision is recorded in the separate review ledger.
 
-The next suitable derived artifact is a provenance-rich **grammatical-terminology candidate dataset** whose entries begin as `unreviewed` candidates rather than automatic grammatical assertions. Later relationship data may connect reviewed Nannūl concepts with Tolkāppiyam or other grammar works without changing the canonical source layer.
+Future relationship data may connect reviewed Nannūl concepts with Tolkāppiyam or other grammar works without changing the canonical source layer.
