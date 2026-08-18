@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "work_id": "nannul",
   "layer_status": "candidate-discovery-unreviewed",
   "source_layers": {
@@ -13,6 +13,7 @@
     "minimum_frequency": 3,
     "selection_rule": "exact occurrence count >= 3 OR exact non-whitespace token match in a source-supported heading",
     "heading_matching": "exact non-whitespace token equality; no normalization",
+    "candidate_id": "nannul-term-candidate- + first 16 hex characters of SHA-256(exact UTF-8 surface_form_ta); stable across ranking changes",
     "priority_score": "mechanical review ordering only; NOT probability/confidence of termhood",
     "default_review_status": "unreviewed",
     "automatic_term_acceptance": false
@@ -34,7 +35,7 @@
   ],
   "candidates": [
     {
-      "candidate_id": "nannul-term-candidate-0001",
+      "candidate_id": "nannul-term-candidate-4ab35c693be30e13",
       "surface_form_ta": "முன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -208,7 +209,7 @@
       "review_rank": 1
     },
     {
-      "candidate_id": "nannul-term-candidate-0002",
+      "candidate_id": "nannul-term-candidate-2c83aa9539c00e7c",
       "surface_form_ta": "உயிர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -359,7 +360,7 @@
       "review_rank": 2
     },
     {
-      "candidate_id": "nannul-term-candidate-0003",
+      "candidate_id": "nannul-term-candidate-21b0ec31ad3bb44d",
       "surface_form_ta": "எண்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -510,7 +511,7 @@
       "review_rank": 3
     },
     {
-      "candidate_id": "nannul-term-candidate-0004",
+      "candidate_id": "nannul-term-candidate-033b3c06358ceb1e",
       "surface_form_ta": "ய",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -658,7 +659,7 @@
       "review_rank": 4
     },
     {
-      "candidate_id": "nannul-term-candidate-0005",
+      "candidate_id": "nannul-term-candidate-c3733c8bd70a111e",
       "surface_form_ta": "வேற்றுமை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -808,7 +809,7 @@
       "review_rank": 5
     },
     {
-      "candidate_id": "nannul-term-candidate-0006",
+      "candidate_id": "nannul-term-candidate-6455a8e382cd253b",
       "surface_form_ta": "ர",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -955,7 +956,7 @@
       "review_rank": 6
     },
     {
-      "candidate_id": "nannul-term-candidate-0007",
+      "candidate_id": "nannul-term-candidate-35261cc95184dea4",
       "surface_form_ta": "உருபு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -1106,7 +1107,7 @@
       "review_rank": 7
     },
     {
-      "candidate_id": "nannul-term-candidate-0008",
+      "candidate_id": "nannul-term-candidate-f36e8f122d2c2078",
       "surface_form_ta": "ழ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -1247,7 +1248,7 @@
       "review_rank": 8
     },
     {
-      "candidate_id": "nannul-term-candidate-0009",
+      "candidate_id": "nannul-term-candidate-12ee4aa6f2f329f5",
       "surface_form_ta": "மெய்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -1393,7 +1394,7 @@
       "review_rank": 9
     },
     {
-      "candidate_id": "nannul-term-candidate-0010",
+      "candidate_id": "nannul-term-candidate-f83f596ad7c653d9",
       "surface_form_ta": "வினை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -1539,7 +1540,7 @@
       "review_rank": 10
     },
     {
-      "candidate_id": "nannul-term-candidate-0011",
+      "candidate_id": "nannul-term-candidate-b557bec0b73a05be",
       "surface_form_ta": "பெயர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -1681,7 +1682,7 @@
       "review_rank": 11
     },
     {
-      "candidate_id": "nannul-term-candidate-0012",
+      "candidate_id": "nannul-term-candidate-2d5d1083c11c5a99",
       "surface_form_ta": "முற்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -1824,7 +1825,7 @@
       "review_rank": 12
     },
     {
-      "candidate_id": "nannul-term-candidate-0013",
+      "candidate_id": "nannul-term-candidate-f13d698f1f0ea327",
       "surface_form_ta": "சொல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -1970,7 +1971,7 @@
       "review_rank": 13
     },
     {
-      "candidate_id": "nannul-term-candidate-0014",
+      "candidate_id": "nannul-term-candidate-fa3389357be3970c",
       "surface_form_ta": "இடைநிலை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2099,7 +2100,7 @@
       "review_rank": 14
     },
     {
-      "candidate_id": "nannul-term-candidate-0015",
+      "candidate_id": "nannul-term-candidate-7c6552a72edcd0cd",
       "surface_form_ta": "சாரியை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2222,7 +2223,7 @@
       "review_rank": 15
     },
     {
-      "candidate_id": "nannul-term-candidate-0016",
+      "candidate_id": "nannul-term-candidate-f871b92e88430fcd",
       "surface_form_ta": "பாயிரம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2340,7 +2341,7 @@
       "review_rank": 16
     },
     {
-      "candidate_id": "nannul-term-candidate-0017",
+      "candidate_id": "nannul-term-candidate-7612cff0b89c9724",
       "surface_form_ta": "பகுதி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2451,7 +2452,7 @@
       "review_rank": 17
     },
     {
-      "candidate_id": "nannul-term-candidate-0018",
+      "candidate_id": "nannul-term-candidate-efa81b5c39df4a29",
       "surface_form_ta": "மாத்திரை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2551,7 +2552,7 @@
       "review_rank": 18
     },
     {
-      "candidate_id": "nannul-term-candidate-0019",
+      "candidate_id": "nannul-term-candidate-f6a2f091c7106cc3",
       "surface_form_ta": "வல்லினம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2653,7 +2654,7 @@
       "review_rank": 19
     },
     {
-      "candidate_id": "nannul-term-candidate-0020",
+      "candidate_id": "nannul-term-candidate-2db17c3d25bc3efe",
       "surface_form_ta": "திரிபு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2744,7 +2745,7 @@
       "review_rank": 20
     },
     {
-      "candidate_id": "nannul-term-candidate-0021",
+      "candidate_id": "nannul-term-candidate-47b58d96bd85f891",
       "surface_form_ta": "பதம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2834,7 +2835,7 @@
       "review_rank": 21
     },
     {
-      "candidate_id": "nannul-term-candidate-0022",
+      "candidate_id": "nannul-term-candidate-70d6fc2f1f337bad",
       "surface_form_ta": "வேற்றுமைப்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -2927,7 +2928,7 @@
       "review_rank": 22
     },
     {
-      "candidate_id": "nannul-term-candidate-0023",
+      "candidate_id": "nannul-term-candidate-ff7b639378ce2c86",
       "surface_form_ta": "வினையெச்சம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3021,7 +3022,7 @@
       "review_rank": 23
     },
     {
-      "candidate_id": "nannul-term-candidate-0024",
+      "candidate_id": "nannul-term-candidate-3cc7806094981427",
       "surface_form_ta": "விகுதி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3121,7 +3122,7 @@
       "review_rank": 24
     },
     {
-      "candidate_id": "nannul-term-candidate-0025",
+      "candidate_id": "nannul-term-candidate-c91df5c7fce71d65",
       "surface_form_ta": "பொதுப்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3201,7 +3202,7 @@
       "review_rank": 25
     },
     {
-      "candidate_id": "nannul-term-candidate-0026",
+      "candidate_id": "nannul-term-candidate-60bd7274594ffc5d",
       "surface_form_ta": "போலி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3280,7 +3281,7 @@
       "review_rank": 26
     },
     {
-      "candidate_id": "nannul-term-candidate-0027",
+      "candidate_id": "nannul-term-candidate-173b59fbc007924b",
       "surface_form_ta": "இலக்கணம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3360,7 +3361,7 @@
       "review_rank": 27
     },
     {
-      "candidate_id": "nannul-term-candidate-0028",
+      "candidate_id": "nannul-term-candidate-f129dd4737adaa2d",
       "surface_form_ta": "உருபுகள்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3442,7 +3443,7 @@
       "review_rank": 28
     },
     {
-      "candidate_id": "nannul-term-candidate-0029",
+      "candidate_id": "nannul-term-candidate-96dec81cd2555769",
       "surface_form_ta": "ஆகும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3608,7 +3609,7 @@
       "review_rank": 29
     },
     {
-      "candidate_id": "nannul-term-candidate-0030",
+      "candidate_id": "nannul-term-candidate-3afd94c8607bb591",
       "surface_form_ta": "ஐ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3757,7 +3758,7 @@
       "review_rank": 30
     },
     {
-      "candidate_id": "nannul-term-candidate-0031",
+      "candidate_id": "nannul-term-candidate-655f5ff75649a436",
       "surface_form_ta": "முதல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -3910,7 +3911,7 @@
       "review_rank": 31
     },
     {
-      "candidate_id": "nannul-term-candidate-0032",
+      "candidate_id": "nannul-term-candidate-0fe2f89a337b6903",
       "surface_form_ta": "ஈர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -4058,7 +4059,7 @@
       "review_rank": 32
     },
     {
-      "candidate_id": "nannul-term-candidate-0033",
+      "candidate_id": "nannul-term-candidate-9c7a8cc60c35994a",
       "surface_form_ta": "என",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -4206,7 +4207,7 @@
       "review_rank": 33
     },
     {
-      "candidate_id": "nannul-term-candidate-0034",
+      "candidate_id": "nannul-term-candidate-b743a7797bfde38d",
       "surface_form_ta": "என்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -4348,7 +4349,7 @@
       "review_rank": 34
     },
     {
-      "candidate_id": "nannul-term-candidate-0035",
+      "candidate_id": "nannul-term-candidate-1b5239a2e456ad8e",
       "surface_form_ta": "ஈறு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -4487,7 +4488,7 @@
       "review_rank": 35
     },
     {
-      "candidate_id": "nannul-term-candidate-0036",
+      "candidate_id": "nannul-term-candidate-269a43a35172207d",
       "surface_form_ta": "இரு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -4635,7 +4636,7 @@
       "review_rank": 36
     },
     {
-      "candidate_id": "nannul-term-candidate-0037",
+      "candidate_id": "nannul-term-candidate-2b55983c33fdc725",
       "surface_form_ta": "என்ப",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -4780,7 +4781,7 @@
       "review_rank": 37
     },
     {
-      "candidate_id": "nannul-term-candidate-0038",
+      "candidate_id": "nannul-term-candidate-aa9456d7a26a0ca2",
       "surface_form_ta": "ஆம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -4922,7 +4923,7 @@
       "review_rank": 38
     },
     {
-      "candidate_id": "nannul-term-candidate-0039",
+      "candidate_id": "nannul-term-candidate-6e7752307962125a",
       "surface_form_ta": "ஈற்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -5062,7 +5063,7 @@
       "review_rank": 39
     },
     {
-      "candidate_id": "nannul-term-candidate-0040",
+      "candidate_id": "nannul-term-candidate-afec51864a333430",
       "surface_form_ta": "இயல்பும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -5199,7 +5200,7 @@
       "review_rank": 40
     },
     {
-      "candidate_id": "nannul-term-candidate-0041",
+      "candidate_id": "nannul-term-candidate-2a5d9cc8cf620f64",
       "surface_form_ta": "இடை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -5344,7 +5345,7 @@
       "review_rank": 41
     },
     {
-      "candidate_id": "nannul-term-candidate-0042",
+      "candidate_id": "nannul-term-candidate-505e0e7bb5ea070b",
       "surface_form_ta": "ஆறு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -5487,7 +5488,7 @@
       "review_rank": 42
     },
     {
-      "candidate_id": "nannul-term-candidate-0043",
+      "candidate_id": "nannul-term-candidate-ed094b09da798b5e",
       "surface_form_ta": "பொருள்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -5627,7 +5628,7 @@
       "review_rank": 43
     },
     {
-      "candidate_id": "nannul-term-candidate-0044",
+      "candidate_id": "nannul-term-candidate-b4b2c40524b4ca04",
       "surface_form_ta": "என்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -5771,7 +5772,7 @@
       "review_rank": 44
     },
     {
-      "candidate_id": "nannul-term-candidate-0045",
+      "candidate_id": "nannul-term-candidate-6791ec4383666049",
       "surface_form_ta": "ஒற்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -5909,7 +5910,7 @@
       "review_rank": 45
     },
     {
-      "candidate_id": "nannul-term-candidate-0046",
+      "candidate_id": "nannul-term-candidate-814fb946c7eb282d",
       "surface_form_ta": "இயல்பே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -6051,7 +6052,7 @@
       "review_rank": 46
     },
     {
-      "candidate_id": "nannul-term-candidate-0047",
+      "candidate_id": "nannul-term-candidate-958162d89e6f85f4",
       "surface_form_ta": "ஒன்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -6191,7 +6192,7 @@
       "review_rank": 47
     },
     {
-      "candidate_id": "nannul-term-candidate-0048",
+      "candidate_id": "nannul-term-candidate-e863501be23aa0f1",
       "surface_form_ta": "ஆ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -6329,7 +6330,7 @@
       "review_rank": 48
     },
     {
-      "candidate_id": "nannul-term-candidate-0049",
+      "candidate_id": "nannul-term-candidate-71a55ac783462656",
       "surface_form_ta": "ன",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -6468,7 +6469,7 @@
       "review_rank": 49
     },
     {
-      "candidate_id": "nannul-term-candidate-0050",
+      "candidate_id": "nannul-term-candidate-3efce37a78b036a3",
       "surface_form_ta": "ள",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -6601,7 +6602,7 @@
       "review_rank": 50
     },
     {
-      "candidate_id": "nannul-term-candidate-0051",
+      "candidate_id": "nannul-term-candidate-fdda3eb04f5332f9",
       "surface_form_ta": "உயிர்மெய்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -6731,7 +6732,7 @@
       "review_rank": 51
     },
     {
-      "candidate_id": "nannul-term-candidate-0052",
+      "candidate_id": "nannul-term-candidate-5c5c1736243095b1",
       "surface_form_ta": "ஆய்தம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -6863,7 +6864,7 @@
       "review_rank": 52
     },
     {
-      "candidate_id": "nannul-term-candidate-0053",
+      "candidate_id": "nannul-term-candidate-f425cda05c3657a7",
       "surface_form_ta": "இ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -6996,7 +6997,7 @@
       "review_rank": 53
     },
     {
-      "candidate_id": "nannul-term-candidate-0054",
+      "candidate_id": "nannul-term-candidate-509403e7f807bdae",
       "surface_form_ta": "ப",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -7130,7 +7131,7 @@
       "review_rank": 54
     },
     {
-      "candidate_id": "nannul-term-candidate-0055",
+      "candidate_id": "nannul-term-candidate-321ae55f16483bda",
       "surface_form_ta": "ல",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -7262,7 +7263,7 @@
       "review_rank": 55
     },
     {
-      "candidate_id": "nannul-term-candidate-0056",
+      "candidate_id": "nannul-term-candidate-a804913e83185380",
       "surface_form_ta": "முன்னிலை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -7392,7 +7393,7 @@
       "review_rank": 56
     },
     {
-      "candidate_id": "nannul-term-candidate-0057",
+      "candidate_id": "nannul-term-candidate-40b244f9010bf898",
       "surface_form_ta": "வழி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -7529,7 +7530,7 @@
       "review_rank": 57
     },
     {
-      "candidate_id": "nannul-term-candidate-0058",
+      "candidate_id": "nannul-term-candidate-32c41d3451176cc7",
       "surface_form_ta": "பிற",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -7673,7 +7674,7 @@
       "review_rank": 58
     },
     {
-      "candidate_id": "nannul-term-candidate-0059",
+      "candidate_id": "nannul-term-candidate-6a23ca3b786b56ea",
       "surface_form_ta": "ஏ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -7805,7 +7806,7 @@
       "review_rank": 59
     },
     {
-      "candidate_id": "nannul-term-candidate-0060",
+      "candidate_id": "nannul-term-candidate-84df3a3903a9fc1f",
       "surface_form_ta": "ஆதி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -7938,7 +7939,7 @@
       "review_rank": 60
     },
     {
-      "candidate_id": "nannul-term-candidate-0061",
+      "candidate_id": "nannul-term-candidate-0512be82f9446405",
       "surface_form_ta": "இறுதி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -8070,7 +8071,7 @@
       "review_rank": 61
     },
     {
-      "candidate_id": "nannul-term-candidate-0062",
+      "candidate_id": "nannul-term-candidate-5b29394d18b24268",
       "surface_form_ta": "பிறவும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -8209,7 +8210,7 @@
       "review_rank": 62
     },
     {
-      "candidate_id": "nannul-term-candidate-0063",
+      "candidate_id": "nannul-term-candidate-69e7de59bf42aada",
       "surface_form_ta": "மூ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -8342,7 +8343,7 @@
       "review_rank": 63
     },
     {
-      "candidate_id": "nannul-term-candidate-0064",
+      "candidate_id": "nannul-term-candidate-1b864dbc1be4e3f2",
       "surface_form_ta": "ஓ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -8472,7 +8473,7 @@
       "review_rank": 64
     },
     {
-      "candidate_id": "nannul-term-candidate-0065",
+      "candidate_id": "nannul-term-candidate-9600ae384add8ddf",
       "surface_form_ta": "வினா",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -8605,7 +8606,7 @@
       "review_rank": 65
     },
     {
-      "candidate_id": "nannul-term-candidate-0066",
+      "candidate_id": "nannul-term-candidate-766427f8a352b12d",
       "surface_form_ta": "அல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -8740,7 +8741,7 @@
       "review_rank": 66
     },
     {
-      "candidate_id": "nannul-term-candidate-0067",
+      "candidate_id": "nannul-term-candidate-82c1bfbece726d1a",
       "surface_form_ta": "இவை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -8878,7 +8879,7 @@
       "review_rank": 67
     },
     {
-      "candidate_id": "nannul-term-candidate-0068",
+      "candidate_id": "nannul-term-candidate-1bd75d2043346766",
       "surface_form_ta": "ஓர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9014,7 +9015,7 @@
       "review_rank": 68
     },
     {
-      "candidate_id": "nannul-term-candidate-0069",
+      "candidate_id": "nannul-term-candidate-df9c04f9e4750980",
       "surface_form_ta": "எனும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9146,7 +9147,7 @@
       "review_rank": 69
     },
     {
-      "candidate_id": "nannul-term-candidate-0070",
+      "candidate_id": "nannul-term-candidate-4332d9db2936a85c",
       "surface_form_ta": "க",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9279,7 +9280,7 @@
       "review_rank": 70
     },
     {
-      "candidate_id": "nannul-term-candidate-0071",
+      "candidate_id": "nannul-term-candidate-6d321faedeede394",
       "surface_form_ta": "த",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9413,7 +9414,7 @@
       "review_rank": 71
     },
     {
-      "candidate_id": "nannul-term-candidate-0072",
+      "candidate_id": "nannul-term-candidate-9843c57bcbbeb72b",
       "surface_form_ta": "ஞ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9546,7 +9547,7 @@
       "review_rank": 72
     },
     {
-      "candidate_id": "nannul-term-candidate-0073",
+      "candidate_id": "nannul-term-candidate-746cc08d32535e2c",
       "surface_form_ta": "ந",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9679,7 +9680,7 @@
       "review_rank": 73
     },
     {
-      "candidate_id": "nannul-term-candidate-0074",
+      "candidate_id": "nannul-term-candidate-1ec5a36a3782e1a4",
       "surface_form_ta": "அற்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9812,7 +9813,7 @@
       "review_rank": 74
     },
     {
-      "candidate_id": "nannul-term-candidate-0075",
+      "candidate_id": "nannul-term-candidate-38add2df5dcb7d46",
       "surface_form_ta": "பொருள்கோள்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9898,7 +9899,7 @@
       "review_rank": 75
     },
     {
-      "candidate_id": "nannul-term-candidate-0076",
+      "candidate_id": "nannul-term-candidate-f7d70f4b2f728bd4",
       "surface_form_ta": "இகர",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -9976,7 +9977,7 @@
       "review_rank": 76
     },
     {
-      "candidate_id": "nannul-term-candidate-0077",
+      "candidate_id": "nannul-term-candidate-cc048cf2cc5b37c0",
       "surface_form_ta": "படர்க்கை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -10103,7 +10104,7 @@
       "review_rank": 77
     },
     {
-      "candidate_id": "nannul-term-candidate-0078",
+      "candidate_id": "nannul-term-candidate-5d62934869983b90",
       "surface_form_ta": "பெயரே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -10228,7 +10229,7 @@
       "review_rank": 78
     },
     {
-      "candidate_id": "nannul-term-candidate-0079",
+      "candidate_id": "nannul-term-candidate-8c9d0755f2df765a",
       "surface_form_ta": "குறில்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -10358,7 +10359,7 @@
       "review_rank": 79
     },
     {
-      "candidate_id": "nannul-term-candidate-0080",
+      "candidate_id": "nannul-term-candidate-26d2bf5001380579",
       "surface_form_ta": "வ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -10487,7 +10488,7 @@
       "review_rank": 80
     },
     {
-      "candidate_id": "nannul-term-candidate-0081",
+      "candidate_id": "nannul-term-candidate-f5d907741141f2eb",
       "surface_form_ta": "ஆய்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -10622,7 +10623,7 @@
       "review_rank": 81
     },
     {
-      "candidate_id": "nannul-term-candidate-0082",
+      "candidate_id": "nannul-term-candidate-9a8b17b7005dc0c9",
       "surface_form_ta": "இரண்டு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -10755,7 +10756,7 @@
       "review_rank": 82
     },
     {
-      "candidate_id": "nannul-term-candidate-0083",
+      "candidate_id": "nannul-term-candidate-2f8273285b40887d",
       "surface_form_ta": "அ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -10886,7 +10887,7 @@
       "review_rank": 83
     },
     {
-      "candidate_id": "nannul-term-candidate-0084",
+      "candidate_id": "nannul-term-candidate-06f94daf5c38de22",
       "surface_form_ta": "ஈ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -11020,7 +11021,7 @@
       "review_rank": 84
     },
     {
-      "candidate_id": "nannul-term-candidate-0085",
+      "candidate_id": "nannul-term-candidate-ab1fdd3b22f3fe17",
       "surface_form_ta": "சுட்டு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -11151,7 +11152,7 @@
       "review_rank": 85
     },
     {
-      "candidate_id": "nannul-term-candidate-0086",
+      "candidate_id": "nannul-term-candidate-0bc7aaac11f19241",
       "surface_form_ta": "இனம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -11282,7 +11283,7 @@
       "review_rank": 86
     },
     {
-      "candidate_id": "nannul-term-candidate-0087",
+      "candidate_id": "nannul-term-candidate-a1b95759ebcbbe9e",
       "surface_form_ta": "பெயர்வினை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -11412,7 +11413,7 @@
       "review_rank": 87
     },
     {
-      "candidate_id": "nannul-term-candidate-0088",
+      "candidate_id": "nannul-term-candidate-c7048275c4be40ad",
       "surface_form_ta": "ஏவல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -11541,7 +11542,7 @@
       "review_rank": 88
     },
     {
-      "candidate_id": "nannul-term-candidate-0089",
+      "candidate_id": "nannul-term-candidate-94012cb385d09be7",
       "surface_form_ta": "எச்சம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -11671,7 +11672,7 @@
       "review_rank": 89
     },
     {
-      "candidate_id": "nannul-term-candidate-0090",
+      "candidate_id": "nannul-term-candidate-6d38c554eefd9669",
       "surface_form_ta": "உருபே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -11802,7 +11803,7 @@
       "review_rank": 90
     },
     {
-      "candidate_id": "nannul-term-candidate-0091",
+      "candidate_id": "nannul-term-candidate-abef0a958cccba02",
       "surface_form_ta": "அவற்றுள்,",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -11937,7 +11938,7 @@
       "review_rank": 91
     },
     {
-      "candidate_id": "nannul-term-candidate-0092",
+      "candidate_id": "nannul-term-candidate-3bf339c0198f1dc7",
       "surface_form_ta": "தன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -12069,7 +12070,7 @@
       "review_rank": 92
     },
     {
-      "candidate_id": "nannul-term-candidate-0093",
+      "candidate_id": "nannul-term-candidate-a5a495703733498b",
       "surface_form_ta": "காலம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -12203,7 +12204,7 @@
       "review_rank": 93
     },
     {
-      "candidate_id": "nannul-term-candidate-0094",
+      "candidate_id": "nannul-term-candidate-496c2a1107074373",
       "surface_form_ta": "அளவு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -12335,7 +12336,7 @@
       "review_rank": 94
     },
     {
-      "candidate_id": "nannul-term-candidate-0095",
+      "candidate_id": "nannul-term-candidate-5df3e2351076381c",
       "surface_form_ta": "உ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -12464,7 +12465,7 @@
       "review_rank": 95
     },
     {
-      "candidate_id": "nannul-term-candidate-0096",
+      "candidate_id": "nannul-term-candidate-430bfc0719002403",
       "surface_form_ta": "ற",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -12596,7 +12597,7 @@
       "review_rank": 96
     },
     {
-      "candidate_id": "nannul-term-candidate-0097",
+      "candidate_id": "nannul-term-candidate-d0db287d26f057d8",
       "surface_form_ta": "இடம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -12724,7 +12725,7 @@
       "review_rank": 97
     },
     {
-      "candidate_id": "nannul-term-candidate-0098",
+      "candidate_id": "nannul-term-candidate-aca5a71e93ab7c03",
       "surface_form_ta": "முன்னர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -12856,7 +12857,7 @@
       "review_rank": 98
     },
     {
-      "candidate_id": "nannul-term-candidate-0099",
+      "candidate_id": "nannul-term-candidate-d8dbf0f63eea6caf",
       "surface_form_ta": "மொழி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -12990,7 +12991,7 @@
       "review_rank": 99
     },
     {
-      "candidate_id": "nannul-term-candidate-0100",
+      "candidate_id": "nannul-term-candidate-4d62645c8771a410",
       "surface_form_ta": "நான்கும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -13121,7 +13122,7 @@
       "review_rank": 100
     },
     {
-      "candidate_id": "nannul-term-candidate-0101",
+      "candidate_id": "nannul-term-candidate-dabe927001ce6df6",
       "surface_form_ta": "அகரம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -13253,7 +13254,7 @@
       "review_rank": 101
     },
     {
-      "candidate_id": "nannul-term-candidate-0102",
+      "candidate_id": "nannul-term-candidate-f036af407abc2532",
       "surface_form_ta": "உம்மை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -13384,7 +13385,7 @@
       "review_rank": 102
     },
     {
-      "candidate_id": "nannul-term-candidate-0103",
+      "candidate_id": "nannul-term-candidate-68d36cd806e3a5d5",
       "surface_form_ta": "ஏற்கும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -13517,7 +13518,7 @@
       "review_rank": 103
     },
     {
-      "candidate_id": "nannul-term-candidate-0104",
+      "candidate_id": "nannul-term-candidate-f521a06150b17a6c",
       "surface_form_ta": "உயர்திணை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -13647,7 +13648,7 @@
       "review_rank": 104
     },
     {
-      "candidate_id": "nannul-term-candidate-0105",
+      "candidate_id": "nannul-term-candidate-e3f784e2f7279b16",
       "surface_form_ta": "சிறப்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -13767,7 +13768,7 @@
       "review_rank": 105
     },
     {
-      "candidate_id": "nannul-term-candidate-0106",
+      "candidate_id": "nannul-term-candidate-052c25b366fb4eae",
       "surface_form_ta": "மூன்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -13891,7 +13892,7 @@
       "review_rank": 106
     },
     {
-      "candidate_id": "nannul-term-candidate-0107",
+      "candidate_id": "nannul-term-candidate-a8ed19c744f51189",
       "surface_form_ta": "வேறு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14014,7 +14015,7 @@
       "review_rank": 107
     },
     {
-      "candidate_id": "nannul-term-candidate-0108",
+      "candidate_id": "nannul-term-candidate-509871dd2710d320",
       "surface_form_ta": "இயல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14136,7 +14137,7 @@
       "review_rank": 108
     },
     {
-      "candidate_id": "nannul-term-candidate-0109",
+      "candidate_id": "nannul-term-candidate-f768eb5fbe483462",
       "surface_form_ta": "தன்மை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14254,7 +14255,7 @@
       "review_rank": 109
     },
     {
-      "candidate_id": "nannul-term-candidate-0110",
+      "candidate_id": "nannul-term-candidate-fa7220e14e13848a",
       "surface_form_ta": "தான்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14375,7 +14376,7 @@
       "review_rank": 110
     },
     {
-      "candidate_id": "nannul-term-candidate-0111",
+      "candidate_id": "nannul-term-candidate-c4a099c2dece5513",
       "surface_form_ta": "எழுத்து",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14496,7 +14497,7 @@
       "review_rank": 111
     },
     {
-      "candidate_id": "nannul-term-candidate-0112",
+      "candidate_id": "nannul-term-candidate-fe9756bfc7336c88",
       "surface_form_ta": "உளவே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14617,7 +14618,7 @@
       "review_rank": 112
     },
     {
-      "candidate_id": "nannul-term-candidate-0113",
+      "candidate_id": "nannul-term-candidate-b9f7b36d07efa027",
       "surface_form_ta": "து",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14738,7 +14739,7 @@
       "review_rank": 113
     },
     {
-      "candidate_id": "nannul-term-candidate-0114",
+      "candidate_id": "nannul-term-candidate-e5cf084bae0c4aab",
       "surface_form_ta": "ஆன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14858,7 +14859,7 @@
       "review_rank": 114
     },
     {
-      "candidate_id": "nannul-term-candidate-0115",
+      "candidate_id": "nannul-term-candidate-1a7d01c05036ff8c",
       "surface_form_ta": "இடத்து",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -14980,7 +14981,7 @@
       "review_rank": 115
     },
     {
-      "candidate_id": "nannul-term-candidate-0116",
+      "candidate_id": "nannul-term-candidate-d6820636711d0ab1",
       "surface_form_ta": "இடத்தும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -15102,7 +15103,7 @@
       "review_rank": 116
     },
     {
-      "candidate_id": "nannul-term-candidate-0117",
+      "candidate_id": "nannul-term-candidate-303d4ab9b05f2188",
       "surface_form_ta": "ஆகலும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -15222,7 +15223,7 @@
       "review_rank": 117
     },
     {
-      "candidate_id": "nannul-term-candidate-0118",
+      "candidate_id": "nannul-term-candidate-22132f51d7a3a31f",
       "surface_form_ta": "இறு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -15343,7 +15344,7 @@
       "review_rank": 118
     },
     {
-      "candidate_id": "nannul-term-candidate-0119",
+      "candidate_id": "nannul-term-candidate-8334c92da63cf56c",
       "surface_form_ta": "அம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -15458,7 +15459,7 @@
       "review_rank": 119
     },
     {
-      "candidate_id": "nannul-term-candidate-0120",
+      "candidate_id": "nannul-term-candidate-87d04524e56dbe6e",
       "surface_form_ta": "நான்கு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -15570,7 +15571,7 @@
       "review_rank": 120
     },
     {
-      "candidate_id": "nannul-term-candidate-0121",
+      "candidate_id": "nannul-term-candidate-af7efddab539ec53",
       "surface_form_ta": "இல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -15683,7 +15684,7 @@
       "review_rank": 121
     },
     {
-      "candidate_id": "nannul-term-candidate-0122",
+      "candidate_id": "nannul-term-candidate-e7beb50714a3d8f2",
       "surface_form_ta": "ஆதல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -15792,7 +15793,7 @@
       "review_rank": 122
     },
     {
-      "candidate_id": "nannul-term-candidate-0123",
+      "candidate_id": "nannul-term-candidate-9f399f23fe5b3586",
       "surface_form_ta": "ஏற்புழி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -15902,7 +15903,7 @@
       "review_rank": 123
     },
     {
-      "candidate_id": "nannul-term-candidate-0124",
+      "candidate_id": "nannul-term-candidate-ce45f9ba23bbd5d0",
       "surface_form_ta": "ஐயம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16012,7 +16013,7 @@
       "review_rank": 124
     },
     {
-      "candidate_id": "nannul-term-candidate-0125",
+      "candidate_id": "nannul-term-candidate-1ebf89cacccb3817",
       "surface_form_ta": "வன்மை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16123,7 +16124,7 @@
       "review_rank": 125
     },
     {
-      "candidate_id": "nannul-term-candidate-0126",
+      "candidate_id": "nannul-term-candidate-a160bc93a792e076",
       "surface_form_ta": "ஆகி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16235,7 +16236,7 @@
       "review_rank": 126
     },
     {
-      "candidate_id": "nannul-term-candidate-0127",
+      "candidate_id": "nannul-term-candidate-e02d4ecbfbaf85c6",
       "surface_form_ta": "காரணம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16346,7 +16347,7 @@
       "review_rank": 127
     },
     {
-      "candidate_id": "nannul-term-candidate-0128",
+      "candidate_id": "nannul-term-candidate-fae8dd868f675e67",
       "surface_form_ta": "முறை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16455,7 +16456,7 @@
       "review_rank": 128
     },
     {
-      "candidate_id": "nannul-term-candidate-0129",
+      "candidate_id": "nannul-term-candidate-5a8c7f4399e07d49",
       "surface_form_ta": "உயிரும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16567,7 +16568,7 @@
       "review_rank": 129
     },
     {
-      "candidate_id": "nannul-term-candidate-0130",
+      "candidate_id": "nannul-term-candidate-2e91ead4c74e3103",
       "surface_form_ta": "எட்டு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16680,7 +16681,7 @@
       "review_rank": 130
     },
     {
-      "candidate_id": "nannul-term-candidate-0131",
+      "candidate_id": "nannul-term-candidate-f0c493c1f2839aac",
       "surface_form_ta": "ஏழ்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16792,7 +16793,7 @@
       "review_rank": 131
     },
     {
-      "candidate_id": "nannul-term-candidate-0132",
+      "candidate_id": "nannul-term-candidate-aeae2b1a0b7abc49",
       "surface_form_ta": "ஒழி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -16904,7 +16905,7 @@
       "review_rank": 132
     },
     {
-      "candidate_id": "nannul-term-candidate-0133",
+      "candidate_id": "nannul-term-candidate-7941009c43a62c39",
       "surface_form_ta": "ட",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17017,7 +17018,7 @@
       "review_rank": 133
     },
     {
-      "candidate_id": "nannul-term-candidate-0134",
+      "candidate_id": "nannul-term-candidate-2700389ffe520d7b",
       "surface_form_ta": "இரண்டும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17129,7 +17130,7 @@
       "review_rank": 134
     },
     {
-      "candidate_id": "nannul-term-candidate-0135",
+      "candidate_id": "nannul-term-candidate-8ee1c41e4d47d6b9",
       "surface_form_ta": "இசை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17241,7 +17242,7 @@
       "review_rank": 135
     },
     {
-      "candidate_id": "nannul-term-candidate-0136",
+      "candidate_id": "nannul-term-candidate-aec0b5ff9d56275d",
       "surface_form_ta": "ஐந்து",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17356,7 +17357,7 @@
       "review_rank": 136
     },
     {
-      "candidate_id": "nannul-term-candidate-0137",
+      "candidate_id": "nannul-term-candidate-351e03961fd641ba",
       "surface_form_ta": "ஆறும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17468,7 +17469,7 @@
       "review_rank": 137
     },
     {
-      "candidate_id": "nannul-term-candidate-0138",
+      "candidate_id": "nannul-term-candidate-d4f58bf5ccd7a62c",
       "surface_form_ta": "நெறியே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17581,7 +17582,7 @@
       "review_rank": 138
     },
     {
-      "candidate_id": "nannul-term-candidate-0139",
+      "candidate_id": "nannul-term-candidate-d445bab941aea5ed",
       "surface_form_ta": "தம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17694,7 +17695,7 @@
       "review_rank": 139
     },
     {
-      "candidate_id": "nannul-term-candidate-0140",
+      "candidate_id": "nannul-term-candidate-df60ad5830c9fcb1",
       "surface_form_ta": "தாம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17805,7 +17806,7 @@
       "review_rank": 140
     },
     {
-      "candidate_id": "nannul-term-candidate-0141",
+      "candidate_id": "nannul-term-candidate-ecab52d28cba6fcf",
       "surface_form_ta": "இயலும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -17919,7 +17920,7 @@
       "review_rank": 141
     },
     {
-      "candidate_id": "nannul-term-candidate-0142",
+      "candidate_id": "nannul-term-candidate-48e7a3d4e880c008",
       "surface_form_ta": "அன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18028,7 +18029,7 @@
       "review_rank": 142
     },
     {
-      "candidate_id": "nannul-term-candidate-0143",
+      "candidate_id": "nannul-term-candidate-54d3daa65617ee5d",
       "surface_form_ta": "ஊர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18140,7 +18141,7 @@
       "review_rank": 143
     },
     {
-      "candidate_id": "nannul-term-candidate-0144",
+      "candidate_id": "nannul-term-candidate-6c109b7f6cf2b5de",
       "surface_form_ta": "தொழில்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18254,7 +18255,7 @@
       "review_rank": 144
     },
     {
-      "candidate_id": "nannul-term-candidate-0145",
+      "candidate_id": "nannul-term-candidate-d22d0bb934c230e2",
       "surface_form_ta": "இல",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18365,7 +18366,7 @@
       "review_rank": 145
     },
     {
-      "candidate_id": "nannul-term-candidate-0146",
+      "candidate_id": "nannul-term-candidate-6670bf9e8860c9ab",
       "surface_form_ta": "மூன்றும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18478,7 +18479,7 @@
       "review_rank": 146
     },
     {
-      "candidate_id": "nannul-term-candidate-0147",
+      "candidate_id": "nannul-term-candidate-e271d012c35ffd2e",
       "surface_form_ta": "எழுவாய்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18588,7 +18589,7 @@
       "review_rank": 147
     },
     {
-      "candidate_id": "nannul-term-candidate-0148",
+      "candidate_id": "nannul-term-candidate-fe189a2241940bb3",
       "surface_form_ta": "உள",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18698,7 +18699,7 @@
       "review_rank": 148
     },
     {
-      "candidate_id": "nannul-term-candidate-0149",
+      "candidate_id": "nannul-term-candidate-87ac4abb02b6fa91",
       "surface_form_ta": "பல",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18809,7 +18810,7 @@
       "review_rank": 149
     },
     {
-      "candidate_id": "nannul-term-candidate-0150",
+      "candidate_id": "nannul-term-candidate-30e4534c364db72b",
       "surface_form_ta": "ஒன்றன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -18918,7 +18919,7 @@
       "review_rank": 150
     },
     {
-      "candidate_id": "nannul-term-candidate-0151",
+      "candidate_id": "nannul-term-candidate-63bf73312cdeac24",
       "surface_form_ta": "உருபும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19031,7 +19032,7 @@
       "review_rank": 151
     },
     {
-      "candidate_id": "nannul-term-candidate-0152",
+      "candidate_id": "nannul-term-candidate-d0b41095f41fb071",
       "surface_form_ta": "புலவர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19135,7 +19136,7 @@
       "review_rank": 152
     },
     {
-      "candidate_id": "nannul-term-candidate-0153",
+      "candidate_id": "nannul-term-candidate-1ffd38d7aa385c84",
       "surface_form_ta": "இன்றி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19237,7 +19238,7 @@
       "review_rank": 153
     },
     {
-      "candidate_id": "nannul-term-candidate-0154",
+      "candidate_id": "nannul-term-candidate-758a5e19632ec087",
       "surface_form_ta": "ஆகா",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19339,7 +19340,7 @@
       "review_rank": 154
     },
     {
-      "candidate_id": "nannul-term-candidate-0155",
+      "candidate_id": "nannul-term-candidate-10857df7c4ad2b25",
       "surface_form_ta": "வழியே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19441,7 +19442,7 @@
       "review_rank": 155
     },
     {
-      "candidate_id": "nannul-term-candidate-0156",
+      "candidate_id": "nannul-term-candidate-db56d52541cff59a",
       "surface_form_ta": "பொருளே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19540,7 +19541,7 @@
       "review_rank": 156
     },
     {
-      "candidate_id": "nannul-term-candidate-0157",
+      "candidate_id": "nannul-term-candidate-2be4e532280a168e",
       "surface_form_ta": "நின்ற",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19643,7 +19644,7 @@
       "review_rank": 157
     },
     {
-      "candidate_id": "nannul-term-candidate-0158",
+      "candidate_id": "nannul-term-candidate-a15cc2dde39cdc29",
       "surface_form_ta": "அது",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19744,7 +19745,7 @@
       "review_rank": 158
     },
     {
-      "candidate_id": "nannul-term-candidate-0159",
+      "candidate_id": "nannul-term-candidate-9eceb41e91ce119e",
       "surface_form_ta": "உயர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19844,7 +19845,7 @@
       "review_rank": 159
     },
     {
-      "candidate_id": "nannul-term-candidate-0160",
+      "candidate_id": "nannul-term-candidate-e2ca8a58ed948407",
       "surface_form_ta": "ஒன்றே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -19945,7 +19946,7 @@
       "review_rank": 160
     },
     {
-      "candidate_id": "nannul-term-candidate-0161",
+      "candidate_id": "nannul-term-candidate-a6b7d3b4f9e13596",
       "surface_form_ta": "உற",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20044,7 +20045,7 @@
       "review_rank": 161
     },
     {
-      "candidate_id": "nannul-term-candidate-0162",
+      "candidate_id": "nannul-term-candidate-a7a25d02f2b6d60a",
       "surface_form_ta": "வருமே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20145,7 +20146,7 @@
       "review_rank": 162
     },
     {
-      "candidate_id": "nannul-term-candidate-0163",
+      "candidate_id": "nannul-term-candidate-25c84c02b2405027",
       "surface_form_ta": "அவற்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20246,7 +20247,7 @@
       "review_rank": 163
     },
     {
-      "candidate_id": "nannul-term-candidate-0164",
+      "candidate_id": "nannul-term-candidate-f5e807545b8d9b02",
       "surface_form_ta": "இயல்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20349,7 +20350,7 @@
       "review_rank": 164
     },
     {
-      "candidate_id": "nannul-term-candidate-0165",
+      "candidate_id": "nannul-term-candidate-5bab471766d5b7a3",
       "surface_form_ta": "பால்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20450,7 +20451,7 @@
       "review_rank": 165
     },
     {
-      "candidate_id": "nannul-term-candidate-0166",
+      "candidate_id": "nannul-term-candidate-342bfaee41f9fcf0",
       "surface_form_ta": "வவ்வும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20550,7 +20551,7 @@
       "review_rank": 166
     },
     {
-      "candidate_id": "nannul-term-candidate-0167",
+      "candidate_id": "nannul-term-candidate-0036152a7825b6be",
       "surface_form_ta": "ஒன்பதும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20651,7 +20652,7 @@
       "review_rank": 167
     },
     {
-      "candidate_id": "nannul-term-candidate-0168",
+      "candidate_id": "nannul-term-candidate-042079729c9a5c29",
       "surface_form_ta": "குணம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20752,7 +20753,7 @@
       "review_rank": 168
     },
     {
-      "candidate_id": "nannul-term-candidate-0169",
+      "candidate_id": "nannul-term-candidate-026d2745ef2fa5e8",
       "surface_form_ta": "கு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20853,7 +20854,7 @@
       "review_rank": 169
     },
     {
-      "candidate_id": "nannul-term-candidate-0170",
+      "candidate_id": "nannul-term-candidate-bb743a6496b36449",
       "surface_form_ta": "உம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -20955,7 +20956,7 @@
       "review_rank": 170
     },
     {
-      "candidate_id": "nannul-term-candidate-0171",
+      "candidate_id": "nannul-term-candidate-9ce8726ddf051576",
       "surface_form_ta": "ஐம்பால்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21054,7 +21055,7 @@
       "review_rank": 171
     },
     {
-      "candidate_id": "nannul-term-candidate-0172",
+      "candidate_id": "nannul-term-candidate-126a09361d989d16",
       "surface_form_ta": "சில",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21156,7 +21157,7 @@
       "review_rank": 172
     },
     {
-      "candidate_id": "nannul-term-candidate-0173",
+      "candidate_id": "nannul-term-candidate-9df9ac6baa7afaf7",
       "surface_form_ta": "எதிர்மறை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21255,7 +21256,7 @@
       "review_rank": 173
     },
     {
-      "candidate_id": "nannul-term-candidate-0174",
+      "candidate_id": "nannul-term-candidate-98933144f98dfc1b",
       "surface_form_ta": "பொது",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21356,7 +21357,7 @@
       "review_rank": 174
     },
     {
-      "candidate_id": "nannul-term-candidate-0175",
+      "candidate_id": "nannul-term-candidate-43a3fb0360037479",
       "surface_form_ta": "அனைத்தும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21456,7 +21457,7 @@
       "review_rank": 175
     },
     {
-      "candidate_id": "nannul-term-candidate-0176",
+      "candidate_id": "nannul-term-candidate-566314ad081edc4f",
       "surface_form_ta": "இருமையும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21556,7 +21557,7 @@
       "review_rank": 176
     },
     {
-      "candidate_id": "nannul-term-candidate-0177",
+      "candidate_id": "nannul-term-candidate-5f0ae1d04a06120b",
       "surface_form_ta": "பன்மை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21655,7 +21656,7 @@
       "review_rank": 177
     },
     {
-      "candidate_id": "nannul-term-candidate-0178",
+      "candidate_id": "nannul-term-candidate-69581fe956e9727e",
       "surface_form_ta": "உருபின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21756,7 +21757,7 @@
       "review_rank": 178
     },
     {
-      "candidate_id": "nannul-term-candidate-0179",
+      "candidate_id": "nannul-term-candidate-4e5e3237c758e7c2",
       "surface_form_ta": "சொல்லின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21831,7 +21832,7 @@
       "review_rank": 179
     },
     {
-      "candidate_id": "nannul-term-candidate-0180",
+      "candidate_id": "nannul-term-candidate-95cb5664bc1e4936",
       "surface_form_ta": "பிறப்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21895,7 +21896,7 @@
       "review_rank": 180
     },
     {
-      "candidate_id": "nannul-term-candidate-0181",
+      "candidate_id": "nannul-term-candidate-9f30af081804037a",
       "surface_form_ta": "உருவம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -21959,7 +21960,7 @@
       "review_rank": 181
     },
     {
-      "candidate_id": "nannul-term-candidate-0182",
+      "candidate_id": "nannul-term-candidate-3f8e59246d33784d",
       "surface_form_ta": "அகர",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22025,7 +22026,7 @@
       "review_rank": 182
     },
     {
-      "candidate_id": "nannul-term-candidate-0183",
+      "candidate_id": "nannul-term-candidate-842e4e3df88fd099",
       "surface_form_ta": "சிறப்புப்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22091,7 +22092,7 @@
       "review_rank": 183
     },
     {
-      "candidate_id": "nannul-term-candidate-0184",
+      "candidate_id": "nannul-term-candidate-173b8dcc874200bd",
       "surface_form_ta": "ஒழிபு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22157,7 +22158,7 @@
       "review_rank": 184
     },
     {
-      "candidate_id": "nannul-term-candidate-0185",
+      "candidate_id": "nannul-term-candidate-90d8fa6c597a2209",
       "surface_form_ta": "பெயரெச்சம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22223,7 +22224,7 @@
       "review_rank": 185
     },
     {
-      "candidate_id": "nannul-term-candidate-0186",
+      "candidate_id": "nannul-term-candidate-3b116b11f8dc5e98",
       "surface_form_ta": "அல்வழி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22351,7 +22352,7 @@
       "review_rank": 186
     },
     {
-      "candidate_id": "nannul-term-candidate-0187",
+      "candidate_id": "nannul-term-candidate-0ee5530767e93806",
       "surface_form_ta": "அயல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22473,7 +22474,7 @@
       "review_rank": 187
     },
     {
-      "candidate_id": "nannul-term-candidate-0188",
+      "candidate_id": "nannul-term-candidate-ce7daea7d704ac1f",
       "surface_form_ta": "ண",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22601,7 +22602,7 @@
       "review_rank": 188
     },
     {
-      "candidate_id": "nannul-term-candidate-0189",
+      "candidate_id": "nannul-term-candidate-5414b7795bfcbec5",
       "surface_form_ta": "ம",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22729,7 +22730,7 @@
       "review_rank": 189
     },
     {
-      "candidate_id": "nannul-term-candidate-0190",
+      "candidate_id": "nannul-term-candidate-66a9242b61a6772d",
       "surface_form_ta": "அறிவு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22853,7 +22854,7 @@
       "review_rank": 190
     },
     {
-      "candidate_id": "nannul-term-candidate-0191",
+      "candidate_id": "nannul-term-candidate-a4cfffbe24639676",
       "surface_form_ta": "கூறல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -22977,7 +22978,7 @@
       "review_rank": 191
     },
     {
-      "candidate_id": "nannul-term-candidate-0192",
+      "candidate_id": "nannul-term-candidate-cb8a12b59afb4b0c",
       "surface_form_ta": "ச",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23104,7 +23105,7 @@
       "review_rank": 192
     },
     {
-      "candidate_id": "nannul-term-candidate-0193",
+      "candidate_id": "nannul-term-candidate-39c1228ecba16c30",
       "surface_form_ta": "இன்னன",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23229,7 +23230,7 @@
       "review_rank": 193
     },
     {
-      "candidate_id": "nannul-term-candidate-0194",
+      "candidate_id": "nannul-term-candidate-e0d7a1d18d9b8320",
       "surface_form_ta": "உகரம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23348,7 +23349,7 @@
       "review_rank": 194
     },
     {
-      "candidate_id": "nannul-term-candidate-0195",
+      "candidate_id": "nannul-term-candidate-ea0b4df6e81c2e9c",
       "surface_form_ta": "வரின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23467,7 +23468,7 @@
       "review_rank": 195
     },
     {
-      "candidate_id": "nannul-term-candidate-0196",
+      "candidate_id": "nannul-term-candidate-448962bf622b96db",
       "surface_form_ta": "ஆக்கம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23584,7 +23585,7 @@
       "review_rank": 196
     },
     {
-      "candidate_id": "nannul-term-candidate-0197",
+      "candidate_id": "nannul-term-candidate-20fe5353d0f01a49",
       "surface_form_ta": "அளபு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23690,7 +23691,7 @@
       "review_rank": 197
     },
     {
-      "candidate_id": "nannul-term-candidate-0198",
+      "candidate_id": "nannul-term-candidate-3d456bc21aa03e95",
       "surface_form_ta": "உறல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23796,7 +23797,7 @@
       "review_rank": 198
     },
     {
-      "candidate_id": "nannul-term-candidate-0199",
+      "candidate_id": "nannul-term-candidate-1adf9f4372035b8b",
       "surface_form_ta": "நூல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23893,7 +23894,7 @@
       "review_rank": 199
     },
     {
-      "candidate_id": "nannul-term-candidate-0200",
+      "candidate_id": "nannul-term-candidate-b5d81993249b14cb",
       "surface_form_ta": "பல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -23990,7 +23991,7 @@
       "review_rank": 200
     },
     {
-      "candidate_id": "nannul-term-candidate-0201",
+      "candidate_id": "nannul-term-candidate-02aa88b340d95f2b",
       "surface_form_ta": "இன",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24092,7 +24093,7 @@
       "review_rank": 201
     },
     {
-      "candidate_id": "nannul-term-candidate-0202",
+      "candidate_id": "nannul-term-candidate-ff314f08ff1bfd8c",
       "surface_form_ta": "அதனோடு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24189,7 +24190,7 @@
       "review_rank": 202
     },
     {
-      "candidate_id": "nannul-term-candidate-0203",
+      "candidate_id": "nannul-term-candidate-d4010aa55b312a2e",
       "surface_form_ta": "வேற்றுமைக்கு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24288,7 +24289,7 @@
       "review_rank": 203
     },
     {
-      "candidate_id": "nannul-term-candidate-0204",
+      "candidate_id": "nannul-term-candidate-2d433556309f2eb4",
       "surface_form_ta": "பொருள்முதல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24386,7 +24387,7 @@
       "review_rank": 204
     },
     {
-      "candidate_id": "nannul-term-candidate-0205",
+      "candidate_id": "nannul-term-candidate-12183a6e9cfad1fc",
       "surface_form_ta": "ஐந்தும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24479,7 +24480,7 @@
       "review_rank": 205
     },
     {
-      "candidate_id": "nannul-term-candidate-0206",
+      "candidate_id": "nannul-term-candidate-1680440d56a32350",
       "surface_form_ta": "பெறுமே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24571,7 +24572,7 @@
       "review_rank": 206
     },
     {
-      "candidate_id": "nannul-term-candidate-0207",
+      "candidate_id": "nannul-term-candidate-5e1404031536fd2c",
       "surface_form_ta": "உடையது",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24663,7 +24664,7 @@
       "review_rank": 207
     },
     {
-      "candidate_id": "nannul-term-candidate-0208",
+      "candidate_id": "nannul-term-candidate-451d043435992286",
       "surface_form_ta": "கொளலே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24756,7 +24757,7 @@
       "review_rank": 208
     },
     {
-      "candidate_id": "nannul-term-candidate-0209",
+      "candidate_id": "nannul-term-candidate-b571bc1081600030",
       "surface_form_ta": "விரித்தல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24846,7 +24847,7 @@
       "review_rank": 209
     },
     {
-      "candidate_id": "nannul-term-candidate-0210",
+      "candidate_id": "nannul-term-candidate-61aa2c79e579c730",
       "surface_form_ta": "இதற்கு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -24937,7 +24938,7 @@
       "review_rank": 210
     },
     {
-      "candidate_id": "nannul-term-candidate-0211",
+      "candidate_id": "nannul-term-candidate-01f4389c06ab0747",
       "surface_form_ta": "பொருளை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25028,7 +25029,7 @@
       "review_rank": 211
     },
     {
-      "candidate_id": "nannul-term-candidate-0212",
+      "candidate_id": "nannul-term-candidate-18adf2cc8968c3a9",
       "surface_form_ta": "அன்ன",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25121,7 +25122,7 @@
       "review_rank": 212
     },
     {
-      "candidate_id": "nannul-term-candidate-0213",
+      "candidate_id": "nannul-term-candidate-05ebd0b35f36b4c6",
       "surface_form_ta": "தரும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25212,7 +25213,7 @@
       "review_rank": 213
     },
     {
-      "candidate_id": "nannul-term-candidate-0214",
+      "candidate_id": "nannul-term-candidate-175da3f65784c470",
       "surface_form_ta": "இல்லது",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25303,7 +25304,7 @@
       "review_rank": 214
     },
     {
-      "candidate_id": "nannul-term-candidate-0215",
+      "candidate_id": "nannul-term-candidate-3e7f424166994cda",
       "surface_form_ta": "வழக்கு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25393,7 +25394,7 @@
       "review_rank": 215
     },
     {
-      "candidate_id": "nannul-term-candidate-0216",
+      "candidate_id": "nannul-term-candidate-39087f0744221add",
       "surface_form_ta": "எல்லை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25483,7 +25484,7 @@
       "review_rank": 216
     },
     {
-      "candidate_id": "nannul-term-candidate-0217",
+      "candidate_id": "nannul-term-candidate-e2b5c56e700f03d1",
       "surface_form_ta": "இடுகுறி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25576,7 +25577,7 @@
       "review_rank": 217
     },
     {
-      "candidate_id": "nannul-term-candidate-0218",
+      "candidate_id": "nannul-term-candidate-324e8f34516eac87",
       "surface_form_ta": "எய்தும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25668,7 +25669,7 @@
       "review_rank": 218
     },
     {
-      "candidate_id": "nannul-term-candidate-0219",
+      "candidate_id": "nannul-term-candidate-d2a5623b139273fd",
       "surface_form_ta": "மூன்றே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25758,7 +25759,7 @@
       "review_rank": 219
     },
     {
-      "candidate_id": "nannul-term-candidate-0220",
+      "candidate_id": "nannul-term-candidate-6e1142b952fa4772",
       "surface_form_ta": "யா",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25849,7 +25850,7 @@
       "review_rank": 220
     },
     {
-      "candidate_id": "nannul-term-candidate-0221",
+      "candidate_id": "nannul-term-candidate-a84fed3671e2295d",
       "surface_form_ta": "முறையே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -25941,7 +25942,7 @@
       "review_rank": 221
     },
     {
-      "candidate_id": "nannul-term-candidate-0222",
+      "candidate_id": "nannul-term-candidate-0ab41881df24e713",
       "surface_form_ta": "வடிவு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26032,7 +26033,7 @@
       "review_rank": 222
     },
     {
-      "candidate_id": "nannul-term-candidate-0223",
+      "candidate_id": "nannul-term-candidate-61cf5dbb37a124e4",
       "surface_form_ta": "ஒப்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26123,7 +26124,7 @@
       "review_rank": 223
     },
     {
-      "candidate_id": "nannul-term-candidate-0224",
+      "candidate_id": "nannul-term-candidate-a2d2766b94c68ba9",
       "surface_form_ta": "நிறை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26213,7 +26214,7 @@
       "review_rank": 224
     },
     {
-      "candidate_id": "nannul-term-candidate-0225",
+      "candidate_id": "nannul-term-candidate-f876dfbab99e4816",
       "surface_form_ta": "ஏனை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26305,7 +26306,7 @@
       "review_rank": 225
     },
     {
-      "candidate_id": "nannul-term-candidate-0226",
+      "candidate_id": "nannul-term-candidate-14995753a5c8e2ad",
       "surface_form_ta": "ஆறன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26395,7 +26396,7 @@
       "review_rank": 226
     },
     {
-      "candidate_id": "nannul-term-candidate-0227",
+      "candidate_id": "nannul-term-candidate-64a818a29e49abbd",
       "surface_form_ta": "விளி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26485,7 +26486,7 @@
       "review_rank": 227
     },
     {
-      "candidate_id": "nannul-term-candidate-0228",
+      "candidate_id": "nannul-term-candidate-a2deb9e84dca59b7",
       "surface_form_ta": "அல்லன",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26576,7 +26577,7 @@
       "review_rank": 228
     },
     {
-      "candidate_id": "nannul-term-candidate-0229",
+      "candidate_id": "nannul-term-candidate-06010c0778d32657",
       "surface_form_ta": "செய்யுள்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26668,7 +26669,7 @@
       "review_rank": 229
     },
     {
-      "candidate_id": "nannul-term-candidate-0230",
+      "candidate_id": "nannul-term-candidate-eaa72e970582d79d",
       "surface_form_ta": "அஃறிணைப்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26759,7 +26760,7 @@
       "review_rank": 230
     },
     {
-      "candidate_id": "nannul-term-candidate-0231",
+      "candidate_id": "nannul-term-candidate-d30ad32c4ab1724d",
       "surface_form_ta": "பெயரின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26851,7 +26852,7 @@
       "review_rank": 231
     },
     {
-      "candidate_id": "nannul-term-candidate-0232",
+      "candidate_id": "nannul-term-candidate-64f94f36e1699810",
       "surface_form_ta": "ஒன்றும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -26943,7 +26944,7 @@
       "review_rank": 232
     },
     {
-      "candidate_id": "nannul-term-candidate-0233",
+      "candidate_id": "nannul-term-candidate-f315d616378349cb",
       "surface_form_ta": "விகாரம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27033,7 +27034,7 @@
       "review_rank": 233
     },
     {
-      "candidate_id": "nannul-term-candidate-0234",
+      "candidate_id": "nannul-term-candidate-01efbe06de364674",
       "surface_form_ta": "ஆதலும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27123,7 +27124,7 @@
       "review_rank": 234
     },
     {
-      "candidate_id": "nannul-term-candidate-0235",
+      "candidate_id": "nannul-term-candidate-9116ffe6947beabe",
       "surface_form_ta": "எம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27215,7 +27216,7 @@
       "review_rank": 235
     },
     {
-      "candidate_id": "nannul-term-candidate-0236",
+      "candidate_id": "nannul-term-candidate-760a64c59a4b571f",
       "surface_form_ta": "மின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27306,7 +27307,7 @@
       "review_rank": 236
     },
     {
-      "candidate_id": "nannul-term-candidate-0237",
+      "candidate_id": "nannul-term-candidate-019331f4f14e869c",
       "surface_form_ta": "பெயர்க்கு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27396,7 +27397,7 @@
       "review_rank": 237
     },
     {
-      "candidate_id": "nannul-term-candidate-0238",
+      "candidate_id": "nannul-term-candidate-9e430d10c1383939",
       "surface_form_ta": "வியங்கோள்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27486,7 +27487,7 @@
       "review_rank": 238
     },
     {
-      "candidate_id": "nannul-term-candidate-0239",
+      "candidate_id": "nannul-term-candidate-339efe790a6fdbf8",
       "surface_form_ta": "எட்டே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27578,7 +27579,7 @@
       "review_rank": 239
     },
     {
-      "candidate_id": "nannul-term-candidate-0240",
+      "candidate_id": "nannul-term-candidate-ad227ec6b6f7ee5d",
       "surface_form_ta": "மேல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27668,7 +27669,7 @@
       "review_rank": 240
     },
     {
-      "candidate_id": "nannul-term-candidate-0241",
+      "candidate_id": "nannul-term-candidate-f0c1a890c4dd527c",
       "surface_form_ta": "அன்மொழி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27758,7 +27759,7 @@
       "review_rank": 241
     },
     {
-      "candidate_id": "nannul-term-candidate-0242",
+      "candidate_id": "nannul-term-candidate-252c4b7ebc3bbb24",
       "surface_form_ta": "உரி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27850,7 +27851,7 @@
       "review_rank": 242
     },
     {
-      "candidate_id": "nannul-term-candidate-0243",
+      "candidate_id": "nannul-term-candidate-cc781754ddf29ba1",
       "surface_form_ta": "ஒருமொழி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -27940,7 +27941,7 @@
       "review_rank": 243
     },
     {
-      "candidate_id": "nannul-term-candidate-0244",
+      "candidate_id": "nannul-term-candidate-86fb6090da4cee3a",
       "surface_form_ta": "பொதுப்பெயர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28031,7 +28032,7 @@
       "review_rank": 244
     },
     {
-      "candidate_id": "nannul-term-candidate-0245",
+      "candidate_id": "nannul-term-candidate-b4fdd3001a1dc128",
       "surface_form_ta": "மன்னே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28122,7 +28123,7 @@
       "review_rank": 245
     },
     {
-      "candidate_id": "nannul-term-candidate-0246",
+      "candidate_id": "nannul-term-candidate-b095d81df72ffd09",
       "surface_form_ta": "ஏற்பன",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28214,7 +28215,7 @@
       "review_rank": 246
     },
     {
-      "candidate_id": "nannul-term-candidate-0247",
+      "candidate_id": "nannul-term-candidate-032a33365fffa233",
       "surface_form_ta": "வரினே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28304,7 +28305,7 @@
       "review_rank": 247
     },
     {
-      "candidate_id": "nannul-term-candidate-0248",
+      "candidate_id": "nannul-term-candidate-e5eaeca6d19d2963",
       "surface_form_ta": "நீ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28394,7 +28395,7 @@
       "review_rank": 248
     },
     {
-      "candidate_id": "nannul-term-candidate-0249",
+      "candidate_id": "nannul-term-candidate-e79184258bdee1b4",
       "surface_form_ta": "எண்ணும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28486,7 +28487,7 @@
       "review_rank": 249
     },
     {
-      "candidate_id": "nannul-term-candidate-0250",
+      "candidate_id": "nannul-term-candidate-acad307bdd3c3d56",
       "surface_form_ta": "அல",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28577,7 +28578,7 @@
       "review_rank": 250
     },
     {
-      "candidate_id": "nannul-term-candidate-0251",
+      "candidate_id": "nannul-term-candidate-48d01f234f52ea13",
       "surface_form_ta": "அற்றே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28668,7 +28669,7 @@
       "review_rank": 251
     },
     {
-      "candidate_id": "nannul-term-candidate-0252",
+      "candidate_id": "nannul-term-candidate-a5ba2d60e73ecb4e",
       "surface_form_ta": "மொழியே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28760,7 +28761,7 @@
       "review_rank": 252
     },
     {
-      "candidate_id": "nannul-term-candidate-0253",
+      "candidate_id": "nannul-term-candidate-f4f5f64ebe603efd",
       "surface_form_ta": "என்னும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28842,7 +28843,7 @@
       "review_rank": 253
     },
     {
-      "candidate_id": "nannul-term-candidate-0254",
+      "candidate_id": "nannul-term-candidate-564698f8cec336af",
       "surface_form_ta": "சார்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -28924,7 +28925,7 @@
       "review_rank": 254
     },
     {
-      "candidate_id": "nannul-term-candidate-0255",
+      "candidate_id": "nannul-term-candidate-04d491ac49c5517b",
       "surface_form_ta": "வினையின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29006,7 +29007,7 @@
       "review_rank": 255
     },
     {
-      "candidate_id": "nannul-term-candidate-0256",
+      "candidate_id": "nannul-term-candidate-dcff09c8e753e372",
       "surface_form_ta": "அடைதல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29087,7 +29088,7 @@
       "review_rank": 256
     },
     {
-      "candidate_id": "nannul-term-candidate-0257",
+      "candidate_id": "nannul-term-candidate-0c995d41712bcc55",
       "surface_form_ta": "உடைமை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29168,7 +29169,7 @@
       "review_rank": 257
     },
     {
-      "candidate_id": "nannul-term-candidate-0258",
+      "candidate_id": "nannul-term-candidate-7ceefeeadb13d2d3",
       "surface_form_ta": "அல்லது",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29249,7 +29250,7 @@
       "review_rank": 258
     },
     {
-      "candidate_id": "nannul-term-candidate-0259",
+      "candidate_id": "nannul-term-candidate-c3f4ff3e9a7e50d7",
       "surface_form_ta": "பல்வகைப்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29331,7 +29332,7 @@
       "review_rank": 259
     },
     {
-      "candidate_id": "nannul-term-candidate-0260",
+      "candidate_id": "nannul-term-candidate-c7d70ee3f306502b",
       "surface_form_ta": "முடியும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29413,7 +29414,7 @@
       "review_rank": 260
     },
     {
-      "candidate_id": "nannul-term-candidate-0261",
+      "candidate_id": "nannul-term-candidate-d8f8d9fc7a657421",
       "surface_form_ta": "உரை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29494,7 +29495,7 @@
       "review_rank": 261
     },
     {
-      "candidate_id": "nannul-term-candidate-0262",
+      "candidate_id": "nannul-term-candidate-a6a9d785cd996968",
       "surface_form_ta": "உடன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29576,7 +29577,7 @@
       "review_rank": 262
     },
     {
-      "candidate_id": "nannul-term-candidate-0263",
+      "candidate_id": "nannul-term-candidate-0520b10ae5a846e3",
       "surface_form_ta": "ஈதல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29657,7 +29658,7 @@
       "review_rank": 263
     },
     {
-      "candidate_id": "nannul-term-candidate-0264",
+      "candidate_id": "nannul-term-candidate-da0ffcc0cb31e735",
       "surface_form_ta": "காலை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29738,7 +29739,7 @@
       "review_rank": 264
     },
     {
-      "candidate_id": "nannul-term-candidate-0265",
+      "candidate_id": "nannul-term-candidate-8c369a00284f01f9",
       "surface_form_ta": "செவி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29820,7 +29821,7 @@
       "review_rank": 265
     },
     {
-      "candidate_id": "nannul-term-candidate-0266",
+      "candidate_id": "nannul-term-candidate-a1821a55ee40528b",
       "surface_form_ta": "ஆக",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29902,7 +29903,7 @@
       "review_rank": 266
     },
     {
-      "candidate_id": "nannul-term-candidate-0267",
+      "candidate_id": "nannul-term-candidate-e86dda64929d0b1e",
       "surface_form_ta": "போ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -29984,7 +29985,7 @@
       "review_rank": 267
     },
     {
-      "candidate_id": "nannul-term-candidate-0268",
+      "candidate_id": "nannul-term-candidate-8219e37cf1fd4f67",
       "surface_form_ta": "எனப்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30065,7 +30066,7 @@
       "review_rank": 268
     },
     {
-      "candidate_id": "nannul-term-candidate-0269",
+      "candidate_id": "nannul-term-candidate-b26e915b26925652",
       "surface_form_ta": "போதல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30147,7 +30148,7 @@
       "review_rank": 269
     },
     {
-      "candidate_id": "nannul-term-candidate-0270",
+      "candidate_id": "nannul-term-candidate-67590eb199909ddb",
       "surface_form_ta": "என்மனார்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30229,7 +30230,7 @@
       "review_rank": 270
     },
     {
-      "candidate_id": "nannul-term-candidate-0271",
+      "candidate_id": "nannul-term-candidate-4aef00e7b56e7ee7",
       "surface_form_ta": "நனி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30311,7 +30312,7 @@
       "review_rank": 271
     },
     {
-      "candidate_id": "nannul-term-candidate-0272",
+      "candidate_id": "nannul-term-candidate-66085336499afa34",
       "surface_form_ta": "அறு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30392,7 +30393,7 @@
       "review_rank": 272
     },
     {
-      "candidate_id": "nannul-term-candidate-0273",
+      "candidate_id": "nannul-term-candidate-0f54c6dad07784a7",
       "surface_form_ta": "உளரே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30473,7 +30474,7 @@
       "review_rank": 273
     },
     {
-      "candidate_id": "nannul-term-candidate-0274",
+      "candidate_id": "nannul-term-candidate-dc47159d34c8bd9e",
       "surface_form_ta": "மிகுதி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30554,7 +30555,7 @@
       "review_rank": 274
     },
     {
-      "candidate_id": "nannul-term-candidate-0275",
+      "candidate_id": "nannul-term-candidate-43d19d77084f687b",
       "surface_form_ta": "என்றா",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30634,7 +30635,7 @@
       "review_rank": 275
     },
     {
-      "candidate_id": "nannul-term-candidate-0276",
+      "candidate_id": "nannul-term-candidate-49b9153e115f3c9b",
       "surface_form_ta": "உறு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30715,7 +30716,7 @@
       "review_rank": 276
     },
     {
-      "candidate_id": "nannul-term-candidate-0277",
+      "candidate_id": "nannul-term-candidate-30303443e2e98bd2",
       "surface_form_ta": "அவற்றின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30796,7 +30797,7 @@
       "review_rank": 277
     },
     {
-      "candidate_id": "nannul-term-candidate-0278",
+      "candidate_id": "nannul-term-candidate-a66b99ae57e79bc2",
       "surface_form_ta": "ஆண்டு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30877,7 +30878,7 @@
       "review_rank": 278
     },
     {
-      "candidate_id": "nannul-term-candidate-0279",
+      "candidate_id": "nannul-term-candidate-a40bc245f52bab74",
       "surface_form_ta": "உயிர்மெய்யும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -30958,7 +30959,7 @@
       "review_rank": 279
     },
     {
-      "candidate_id": "nannul-term-candidate-0280",
+      "candidate_id": "nannul-term-candidate-a8109196bdf2f715",
       "surface_form_ta": "நால்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31039,7 +31040,7 @@
       "review_rank": 280
     },
     {
-      "candidate_id": "nannul-term-candidate-0281",
+      "candidate_id": "nannul-term-candidate-3c2875a2bfe8c0a5",
       "surface_form_ta": "ஒழித்த",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31120,7 +31121,7 @@
       "review_rank": 281
     },
     {
-      "candidate_id": "nannul-term-candidate-0282",
+      "candidate_id": "nannul-term-candidate-18f240b24b8028c6",
       "surface_form_ta": "ஏழன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31201,7 +31202,7 @@
       "review_rank": 282
     },
     {
-      "candidate_id": "nannul-term-candidate-0283",
+      "candidate_id": "nannul-term-candidate-77dce933c56afaa9",
       "surface_form_ta": "அனைத்து",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31282,7 +31283,7 @@
       "review_rank": 283
     },
     {
-      "candidate_id": "nannul-term-candidate-0284",
+      "candidate_id": "nannul-term-candidate-e8be232166022d12",
       "surface_form_ta": "வரு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31363,7 +31364,7 @@
       "review_rank": 284
     },
     {
-      "candidate_id": "nannul-term-candidate-0285",
+      "candidate_id": "nannul-term-candidate-3abe09bf00803c51",
       "surface_form_ta": "ஆறினும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31444,7 +31445,7 @@
       "review_rank": 285
     },
     {
-      "candidate_id": "nannul-term-candidate-0286",
+      "candidate_id": "nannul-term-candidate-99ad3c11b0c274aa",
       "surface_form_ta": "ஈற்றவும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31525,7 +31526,7 @@
       "review_rank": 286
     },
     {
-      "candidate_id": "nannul-term-candidate-0287",
+      "candidate_id": "nannul-term-candidate-540a59cf6fd8508b",
       "surface_form_ta": "தமிழ்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31606,7 +31607,7 @@
       "review_rank": 287
     },
     {
-      "candidate_id": "nannul-term-candidate-0288",
+      "candidate_id": "nannul-term-candidate-6f495f2810cbe8a9",
       "surface_form_ta": "தோன்றல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31687,7 +31688,7 @@
       "review_rank": 288
     },
     {
-      "candidate_id": "nannul-term-candidate-0289",
+      "candidate_id": "nannul-term-candidate-2c142ed4b11ea41c",
       "surface_form_ta": "அஃது",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31768,7 +31769,7 @@
       "review_rank": 289
     },
     {
-      "candidate_id": "nannul-term-candidate-0290",
+      "candidate_id": "nannul-term-candidate-6cd4e00fd4a2c9b3",
       "surface_form_ta": "மா",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31849,7 +31850,7 @@
       "review_rank": 290
     },
     {
-      "candidate_id": "nannul-term-candidate-0291",
+      "candidate_id": "nannul-term-candidate-ddd1d180385e26f5",
       "surface_form_ta": "அழிவும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -31930,7 +31931,7 @@
       "review_rank": 291
     },
     {
-      "candidate_id": "nannul-term-candidate-0292",
+      "candidate_id": "nannul-term-candidate-46d55da1d9d5c3dd",
       "surface_form_ta": "ஆயின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32011,7 +32012,7 @@
       "review_rank": 292
     },
     {
-      "candidate_id": "nannul-term-candidate-0293",
+      "candidate_id": "nannul-term-candidate-24952729117001f9",
       "surface_form_ta": "உறின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32092,7 +32093,7 @@
       "review_rank": 293
     },
     {
-      "candidate_id": "nannul-term-candidate-0294",
+      "candidate_id": "nannul-term-candidate-10efe3ac8e557694",
       "surface_form_ta": "சாதி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32173,7 +32174,7 @@
       "review_rank": 294
     },
     {
-      "candidate_id": "nannul-term-candidate-0295",
+      "candidate_id": "nannul-term-candidate-5b7880133ce03e96",
       "surface_form_ta": "பலர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32256,7 +32257,7 @@
       "review_rank": 295
     },
     {
-      "candidate_id": "nannul-term-candidate-0296",
+      "candidate_id": "nannul-term-candidate-be04b820c33b7437",
       "surface_form_ta": "இற்று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32337,7 +32338,7 @@
       "review_rank": 296
     },
     {
-      "candidate_id": "nannul-term-candidate-0297",
+      "candidate_id": "nannul-term-candidate-0be83e91cc78dda5",
       "surface_form_ta": "இன்ன",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32418,7 +32419,7 @@
       "review_rank": 297
     },
     {
-      "candidate_id": "nannul-term-candidate-0298",
+      "candidate_id": "nannul-term-candidate-a1ece204f19f0327",
       "surface_form_ta": "என்பது",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32499,7 +32500,7 @@
       "review_rank": 298
     },
     {
-      "candidate_id": "nannul-term-candidate-0299",
+      "candidate_id": "nannul-term-candidate-c832cf7bad5f4e01",
       "surface_form_ta": "ஓடு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32580,7 +32581,7 @@
       "review_rank": 299
     },
     {
-      "candidate_id": "nannul-term-candidate-0300",
+      "candidate_id": "nannul-term-candidate-34177583f540474e",
       "surface_form_ta": "ஒழிய",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32661,7 +32662,7 @@
       "review_rank": 300
     },
     {
-      "candidate_id": "nannul-term-candidate-0301",
+      "candidate_id": "nannul-term-candidate-a132c7fe0fecc486",
       "surface_form_ta": "வரும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32777,7 +32778,7 @@
       "review_rank": 301
     },
     {
-      "candidate_id": "nannul-term-candidate-0302",
+      "candidate_id": "nannul-term-candidate-41e4c91615bfe2bc",
       "surface_form_ta": "அசைநிலை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32881,7 +32882,7 @@
       "review_rank": 302
     },
     {
-      "candidate_id": "nannul-term-candidate-0303",
+      "candidate_id": "nannul-term-candidate-58b0e6fe73139a7d",
       "surface_form_ta": "காட்டல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -32976,7 +32977,7 @@
       "review_rank": 303
     },
     {
-      "candidate_id": "nannul-term-candidate-0304",
+      "candidate_id": "nannul-term-candidate-6aec733842e2adf8",
       "surface_form_ta": "ஆவி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33073,7 +33074,7 @@
       "review_rank": 304
     },
     {
-      "candidate_id": "nannul-term-candidate-0305",
+      "candidate_id": "nannul-term-candidate-56b5915a839ad71d",
       "surface_form_ta": "எ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33170,7 +33171,7 @@
       "review_rank": 305
     },
     {
-      "candidate_id": "nannul-term-candidate-0306",
+      "candidate_id": "nannul-term-candidate-d08e50e7ef30925f",
       "surface_form_ta": "வலிவரின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33267,7 +33268,7 @@
       "review_rank": 306
     },
     {
-      "candidate_id": "nannul-term-candidate-0307",
+      "candidate_id": "nannul-term-candidate-87add58fab9a3510",
       "surface_form_ta": "இயல்பாம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33364,7 +33365,7 @@
       "review_rank": 307
     },
     {
-      "candidate_id": "nannul-term-candidate-0308",
+      "candidate_id": "nannul-term-candidate-c8a95bbc8165c07c",
       "surface_form_ta": "மிகலும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33461,7 +33462,7 @@
       "review_rank": 308
     },
     {
-      "candidate_id": "nannul-term-candidate-0309",
+      "candidate_id": "nannul-term-candidate-07648577025e7935",
       "surface_form_ta": "ஒரு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33558,7 +33559,7 @@
       "review_rank": 309
     },
     {
-      "candidate_id": "nannul-term-candidate-0310",
+      "candidate_id": "nannul-term-candidate-1423244a977b35ab",
       "surface_form_ta": "அஃறிணை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33654,7 +33655,7 @@
       "review_rank": 310
     },
     {
-      "candidate_id": "nannul-term-candidate-0311",
+      "candidate_id": "nannul-term-candidate-56bdab9059885e11",
       "surface_form_ta": "உடல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33749,7 +33750,7 @@
       "review_rank": 311
     },
     {
-      "candidate_id": "nannul-term-candidate-0312",
+      "candidate_id": "nannul-term-candidate-eea358848da06e01",
       "surface_form_ta": "கண்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33845,7 +33846,7 @@
       "review_rank": 312
     },
     {
-      "candidate_id": "nannul-term-candidate-0313",
+      "candidate_id": "nannul-term-candidate-6ae739e7a8124e69",
       "surface_form_ta": "ஒழியிசை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -33940,7 +33941,7 @@
       "review_rank": 313
     },
     {
-      "candidate_id": "nannul-term-candidate-0314",
+      "candidate_id": "nannul-term-candidate-05a4d1c2d1288e24",
       "surface_form_ta": "புணர்த்தல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34028,7 +34029,7 @@
       "review_rank": 314
     },
     {
-      "candidate_id": "nannul-term-candidate-0315",
+      "candidate_id": "nannul-term-candidate-99ba8b13016113e6",
       "surface_form_ta": "மாண்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34116,7 +34117,7 @@
       "review_rank": 315
     },
     {
-      "candidate_id": "nannul-term-candidate-0316",
+      "candidate_id": "nannul-term-candidate-1fd7366ef6f22222",
       "surface_form_ta": "காலமும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34207,7 +34208,7 @@
       "review_rank": 316
     },
     {
-      "candidate_id": "nannul-term-candidate-0317",
+      "candidate_id": "nannul-term-candidate-0f54709612fc70a3",
       "surface_form_ta": "மூக்கு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34295,7 +34296,7 @@
       "review_rank": 317
     },
     {
-      "candidate_id": "nannul-term-candidate-0318",
+      "candidate_id": "nannul-term-candidate-d06adcfe2e641592",
       "surface_form_ta": "நா",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34383,7 +34384,7 @@
       "review_rank": 318
     },
     {
-      "candidate_id": "nannul-term-candidate-0319",
+      "candidate_id": "nannul-term-candidate-35401ad804e04162",
       "surface_form_ta": "குறுகும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34472,7 +34473,7 @@
       "review_rank": 319
     },
     {
-      "candidate_id": "nannul-term-candidate-0320",
+      "candidate_id": "nannul-term-candidate-8d2a2ef7f14b6a4a",
       "surface_form_ta": "மார்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34561,7 +34562,7 @@
       "review_rank": 320
     },
     {
-      "candidate_id": "nannul-term-candidate-0321",
+      "candidate_id": "nannul-term-candidate-ba147a162ee6fbb1",
       "surface_form_ta": "டு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34649,7 +34650,7 @@
       "review_rank": 321
     },
     {
-      "candidate_id": "nannul-term-candidate-0322",
+      "candidate_id": "nannul-term-candidate-9ae9fe9e62d212bc",
       "surface_form_ta": "செய்யும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34738,7 +34739,7 @@
       "review_rank": 322
     },
     {
-      "candidate_id": "nannul-term-candidate-0323",
+      "candidate_id": "nannul-term-candidate-fb95bd3b6ba0bb08",
       "surface_form_ta": "ஈற்றின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34827,7 +34828,7 @@
       "review_rank": 323
     },
     {
-      "candidate_id": "nannul-term-candidate-0324",
+      "candidate_id": "nannul-term-candidate-198423e86fc60274",
       "surface_form_ta": "அவ்வும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -34916,7 +34917,7 @@
       "review_rank": 324
     },
     {
-      "candidate_id": "nannul-term-candidate-0325",
+      "candidate_id": "nannul-term-candidate-9e1f9235751b5620",
       "surface_form_ta": "எல்லாம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35004,7 +35005,7 @@
       "review_rank": 325
     },
     {
-      "candidate_id": "nannul-term-candidate-0326",
+      "candidate_id": "nannul-term-candidate-ffdf5808fde6adbf",
       "surface_form_ta": "நூலே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35083,7 +35084,7 @@
       "review_rank": 326
     },
     {
-      "candidate_id": "nannul-term-candidate-0327",
+      "candidate_id": "nannul-term-candidate-707694078fbcee8a",
       "surface_form_ta": "கோடல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35162,7 +35163,7 @@
       "review_rank": 327
     },
     {
-      "candidate_id": "nannul-term-candidate-0328",
+      "candidate_id": "nannul-term-candidate-191b0d6a8d699bc9",
       "surface_form_ta": "அறிவின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35241,7 +35242,7 @@
       "review_rank": 328
     },
     {
-      "candidate_id": "nannul-term-candidate-0329",
+      "candidate_id": "nannul-term-candidate-42d0bc05320ba908",
       "surface_form_ta": "வேண்டும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35320,7 +35321,7 @@
       "review_rank": 329
     },
     {
-      "candidate_id": "nannul-term-candidate-0330",
+      "candidate_id": "nannul-term-candidate-a8a6329fba59d130",
       "surface_form_ta": "கொண்டு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35399,7 +35400,7 @@
       "review_rank": 330
     },
     {
-      "candidate_id": "nannul-term-candidate-0331",
+      "candidate_id": "nannul-term-candidate-deea49eac16faf59",
       "surface_form_ta": "பொருளைச்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35478,7 +35479,7 @@
       "review_rank": 331
     },
     {
-      "candidate_id": "nannul-term-candidate-0332",
+      "candidate_id": "nannul-term-candidate-96ffd40f1012a61c",
       "surface_form_ta": "முயற்சி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35558,7 +35559,7 @@
       "review_rank": 332
     },
     {
-      "candidate_id": "nannul-term-candidate-0333",
+      "candidate_id": "nannul-term-candidate-6fff65e19f533880",
       "surface_form_ta": "ஆகுமே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35638,7 +35639,7 @@
       "review_rank": 333
     },
     {
-      "candidate_id": "nannul-term-candidate-0334",
+      "candidate_id": "nannul-term-candidate-1e424c1f57e80d19",
       "surface_form_ta": "அளவும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35717,7 +35718,7 @@
       "review_rank": 334
     },
     {
-      "candidate_id": "nannul-term-candidate-0335",
+      "candidate_id": "nannul-term-candidate-6186e7bd88473428",
       "surface_form_ta": "நிலையும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35796,7 +35797,7 @@
       "review_rank": 335
     },
     {
-      "candidate_id": "nannul-term-candidate-0336",
+      "candidate_id": "nannul-term-candidate-7d1215317cbed2ce",
       "surface_form_ta": "அச்சம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35875,7 +35876,7 @@
       "review_rank": 336
     },
     {
-      "candidate_id": "nannul-term-candidate-0337",
+      "candidate_id": "nannul-term-candidate-f13d45658a3c5110",
       "surface_form_ta": "அவை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -35954,7 +35955,7 @@
       "review_rank": 337
     },
     {
-      "candidate_id": "nannul-term-candidate-0338",
+      "candidate_id": "nannul-term-candidate-3e7df1c1212486c3",
       "surface_form_ta": "மூவகை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36033,7 +36034,7 @@
       "review_rank": 338
     },
     {
-      "candidate_id": "nannul-term-candidate-0339",
+      "candidate_id": "nannul-term-candidate-8856197af6749086",
       "surface_form_ta": "யானும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36112,7 +36113,7 @@
       "review_rank": 339
     },
     {
-      "candidate_id": "nannul-term-candidate-0340",
+      "candidate_id": "nannul-term-candidate-6c164be79a8a2469",
       "surface_form_ta": "தனி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36191,7 +36192,7 @@
       "review_rank": 340
     },
     {
-      "candidate_id": "nannul-term-candidate-0341",
+      "candidate_id": "nannul-term-candidate-036eda015c17a264",
       "surface_form_ta": "மென்மை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36270,7 +36271,7 @@
       "review_rank": 341
     },
     {
-      "candidate_id": "nannul-term-candidate-0342",
+      "candidate_id": "nannul-term-candidate-741cdc2934cceafc",
       "surface_form_ta": "விட்டு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36349,7 +36350,7 @@
       "review_rank": 342
     },
     {
-      "candidate_id": "nannul-term-candidate-0343",
+      "candidate_id": "nannul-term-candidate-7761963abd2588b3",
       "surface_form_ta": "ஆகியும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36428,7 +36429,7 @@
       "review_rank": 343
     },
     {
-      "candidate_id": "nannul-term-candidate-0344",
+      "candidate_id": "nannul-term-candidate-c146cab6f3bc4fb5",
       "surface_form_ta": "அதன்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36507,7 +36508,7 @@
       "review_rank": 344
     },
     {
-      "candidate_id": "nannul-term-candidate-0345",
+      "candidate_id": "nannul-term-candidate-f546e83879dce9e6",
       "surface_form_ta": "தொடர்மொழி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36586,7 +36587,7 @@
       "review_rank": 345
     },
     {
-      "candidate_id": "nannul-term-candidate-0346",
+      "candidate_id": "nannul-term-candidate-6472a6e4e0b34ac6",
       "surface_form_ta": "ஈறே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36665,7 +36666,7 @@
       "review_rank": 346
     },
     {
-      "candidate_id": "nannul-term-candidate-0347",
+      "candidate_id": "nannul-term-candidate-d137a6719d775299",
       "surface_form_ta": "மயங்கும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36744,7 +36745,7 @@
       "review_rank": 347
     },
     {
-      "candidate_id": "nannul-term-candidate-0348",
+      "candidate_id": "nannul-term-candidate-1d87e5e2664bb19c",
       "surface_form_ta": "ஒக்கும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36825,7 +36826,7 @@
       "review_rank": 348
     },
     {
-      "candidate_id": "nannul-term-candidate-0349",
+      "candidate_id": "nannul-term-candidate-074145955aca1082",
       "surface_form_ta": "இகரம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36904,7 +36905,7 @@
       "review_rank": 349
     },
     {
-      "candidate_id": "nannul-term-candidate-0350",
+      "candidate_id": "nannul-term-candidate-8126cf74649b238d",
       "surface_form_ta": "ஏழும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -36984,7 +36985,7 @@
       "review_rank": 350
     },
     {
-      "candidate_id": "nannul-term-candidate-0351",
+      "candidate_id": "nannul-term-candidate-20c4d9ff1b093e0a",
       "surface_form_ta": "வை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37064,7 +37065,7 @@
       "review_rank": 351
     },
     {
-      "candidate_id": "nannul-term-candidate-0352",
+      "candidate_id": "nannul-term-candidate-eab4535427d3e9c0",
       "surface_form_ta": "று",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37143,7 +37144,7 @@
       "review_rank": 352
     },
     {
-      "candidate_id": "nannul-term-candidate-0353",
+      "candidate_id": "nannul-term-candidate-4212ff72a9d7a41f",
       "surface_form_ta": "பொருளின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37222,7 +37223,7 @@
       "review_rank": 353
     },
     {
-      "candidate_id": "nannul-term-candidate-0354",
+      "candidate_id": "nannul-term-candidate-e645164370819dc1",
       "surface_form_ta": "உறுப்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37302,7 +37303,7 @@
       "review_rank": 354
     },
     {
-      "candidate_id": "nannul-term-candidate-0355",
+      "candidate_id": "nannul-term-candidate-b095aa76c6368e95",
       "surface_form_ta": "இன்னும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37381,7 +37382,7 @@
       "review_rank": 355
     },
     {
-      "candidate_id": "nannul-term-candidate-0356",
+      "candidate_id": "nannul-term-candidate-86408b28e449e8d4",
       "surface_form_ta": "ஏற்பவும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37460,7 +37461,7 @@
       "review_rank": 356
     },
     {
-      "candidate_id": "nannul-term-candidate-0357",
+      "candidate_id": "nannul-term-candidate-06c57bf14ace430e",
       "surface_form_ta": "அழிந்து",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37539,7 +37540,7 @@
       "review_rank": 357
     },
     {
-      "candidate_id": "nannul-term-candidate-0358",
+      "candidate_id": "nannul-term-candidate-31eadfa2d913470a",
       "surface_form_ta": "ஆவன",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37618,7 +37619,7 @@
       "review_rank": 358
     },
     {
-      "candidate_id": "nannul-term-candidate-0359",
+      "candidate_id": "nannul-term-candidate-2cdbcf7efb52f4c2",
       "surface_form_ta": "ஆயும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37697,7 +37698,7 @@
       "review_rank": 359
     },
     {
-      "candidate_id": "nannul-term-candidate-0360",
+      "candidate_id": "nannul-term-candidate-ea8c928dbdafa516",
       "surface_form_ta": "நாம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37776,7 +37777,7 @@
       "review_rank": 360
     },
     {
-      "candidate_id": "nannul-term-candidate-0361",
+      "candidate_id": "nannul-term-candidate-a903dd48ad72be78",
       "surface_form_ta": "யான்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37855,7 +37856,7 @@
       "review_rank": 361
     },
     {
-      "candidate_id": "nannul-term-candidate-0362",
+      "candidate_id": "nannul-term-candidate-ffe449427c197d6c",
       "surface_form_ta": "யாம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -37934,7 +37935,7 @@
       "review_rank": 362
     },
     {
-      "candidate_id": "nannul-term-candidate-0363",
+      "candidate_id": "nannul-term-candidate-de47d57d6bc78cc8",
       "surface_form_ta": "நீர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38013,7 +38014,7 @@
       "review_rank": 363
     },
     {
-      "candidate_id": "nannul-term-candidate-0364",
+      "candidate_id": "nannul-term-candidate-1daa75d89a6264f0",
       "surface_form_ta": "இது",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38092,7 +38093,7 @@
       "review_rank": 364
     },
     {
-      "candidate_id": "nannul-term-candidate-0365",
+      "candidate_id": "nannul-term-candidate-61da34d4d59cc498",
       "surface_form_ta": "எனின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38171,7 +38172,7 @@
       "review_rank": 365
     },
     {
-      "candidate_id": "nannul-term-candidate-0366",
+      "candidate_id": "nannul-term-candidate-704fda339584f2eb",
       "surface_form_ta": "இருதிணை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38250,7 +38251,7 @@
       "review_rank": 366
     },
     {
-      "candidate_id": "nannul-term-candidate-0367",
+      "candidate_id": "nannul-term-candidate-c3b1f5c0e5eb843c",
       "surface_form_ta": "செய்யுட்கு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38329,7 +38330,7 @@
       "review_rank": 367
     },
     {
-      "candidate_id": "nannul-term-candidate-0368",
+      "candidate_id": "nannul-term-candidate-6d2f17d27b38639c",
       "surface_form_ta": "கிளவி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38408,7 +38409,7 @@
       "review_rank": 368
     },
     {
-      "candidate_id": "nannul-term-candidate-0369",
+      "candidate_id": "nannul-term-candidate-26582f9912a5e1f2",
       "surface_form_ta": "ஒள",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38532,7 +38533,7 @@
       "review_rank": 369
     },
     {
-      "candidate_id": "nannul-term-candidate-0370",
+      "candidate_id": "nannul-term-candidate-aeb0b15f1044128a",
       "surface_form_ta": "முடித்தல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38642,7 +38643,7 @@
       "review_rank": 370
     },
     {
-      "candidate_id": "nannul-term-candidate-0371",
+      "candidate_id": "nannul-term-candidate-2bb52431de2141b1",
       "surface_form_ta": "ஈற்ற",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38752,7 +38753,7 @@
       "review_rank": 371
     },
     {
-      "candidate_id": "nannul-term-candidate-0372",
+      "candidate_id": "nannul-term-candidate-f06293c8e764d987",
       "surface_form_ta": "தொழிற்பெயர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38857,7 +38858,7 @@
       "review_rank": 372
     },
     {
-      "candidate_id": "nannul-term-candidate-0373",
+      "candidate_id": "nannul-term-candidate-c716485cdd0aaed9",
       "surface_form_ta": "ஆசான்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -38943,7 +38944,7 @@
       "review_rank": 373
     },
     {
-      "candidate_id": "nannul-term-candidate-0374",
+      "candidate_id": "nannul-term-candidate-bb6e7d7f0a5d9b4a",
       "surface_form_ta": "மொழிமுதல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39031,7 +39032,7 @@
       "review_rank": 374
     },
     {
-      "candidate_id": "nannul-term-candidate-0375",
+      "candidate_id": "nannul-term-candidate-8644481669eb5110",
       "surface_form_ta": "உயிரளபு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39118,7 +39119,7 @@
       "review_rank": 375
     },
     {
-      "candidate_id": "nannul-term-candidate-0376",
+      "candidate_id": "nannul-term-candidate-4067903eb1330d55",
       "surface_form_ta": "முதலும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39206,7 +39207,7 @@
       "review_rank": 376
     },
     {
-      "candidate_id": "nannul-term-candidate-0377",
+      "candidate_id": "nannul-term-candidate-4987db4c6e23ae2f",
       "surface_form_ta": "ஆகும்மே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39294,7 +39295,7 @@
       "review_rank": 377
     },
     {
-      "candidate_id": "nannul-term-candidate-0378",
+      "candidate_id": "nannul-term-candidate-4a3fe3080765dce3",
       "surface_form_ta": "புள்ளி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39381,7 +39382,7 @@
       "review_rank": 378
     },
     {
-      "candidate_id": "nannul-term-candidate-0379",
+      "candidate_id": "nannul-term-candidate-6ec3ce29127a1eff",
       "surface_form_ta": "இகரமும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39467,7 +39468,7 @@
       "review_rank": 379
     },
     {
-      "candidate_id": "nannul-term-candidate-0380",
+      "candidate_id": "nannul-term-candidate-cdf332a48eb449c5",
       "surface_form_ta": "எய்தின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39554,7 +39555,7 @@
       "review_rank": 380
     },
     {
-      "candidate_id": "nannul-term-candidate-0381",
+      "candidate_id": "nannul-term-candidate-45abe43776846cca",
       "surface_form_ta": "உயிர்வரின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39641,7 +39642,7 @@
       "review_rank": 381
     },
     {
-      "candidate_id": "nannul-term-candidate-0382",
+      "candidate_id": "nannul-term-candidate-fd8d39de5e73d06d",
       "surface_form_ta": "பிறவரின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39729,7 +39730,7 @@
       "review_rank": 382
     },
     {
-      "candidate_id": "nannul-term-candidate-0383",
+      "candidate_id": "nannul-term-candidate-b2adfdee29ec0a20",
       "surface_form_ta": "வலிமெலி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39816,7 +39817,7 @@
       "review_rank": 383
     },
     {
-      "candidate_id": "nannul-term-candidate-0384",
+      "candidate_id": "nannul-term-candidate-74bccbfa06990e8d",
       "surface_form_ta": "பத்தின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39902,7 +39903,7 @@
       "review_rank": 384
     },
     {
-      "candidate_id": "nannul-term-candidate-0385",
+      "candidate_id": "nannul-term-candidate-7b5bcbed03e2b984",
       "surface_form_ta": "நும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -39989,7 +39990,7 @@
       "review_rank": 385
     },
     {
-      "candidate_id": "nannul-term-candidate-0386",
+      "candidate_id": "nannul-term-candidate-958852c513d70731",
       "surface_form_ta": "விகற்பமும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40077,7 +40078,7 @@
       "review_rank": 386
     },
     {
-      "candidate_id": "nannul-term-candidate-0387",
+      "candidate_id": "nannul-term-candidate-8fc4a957afdb07bf",
       "surface_form_ta": "குறிப்பின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40163,7 +40164,7 @@
       "review_rank": 387
     },
     {
-      "candidate_id": "nannul-term-candidate-0388",
+      "candidate_id": "nannul-term-candidate-67a5a0be348d711f",
       "surface_form_ta": "திணைபால்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40250,7 +40251,7 @@
       "review_rank": 388
     },
     {
-      "candidate_id": "nannul-term-candidate-0389",
+      "candidate_id": "nannul-term-candidate-d69256ffc43aafd3",
       "surface_form_ta": "ஒருமை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40336,7 +40337,7 @@
       "review_rank": 389
     },
     {
-      "candidate_id": "nannul-term-candidate-0390",
+      "candidate_id": "nannul-term-candidate-9875d47dadec39aa",
       "surface_form_ta": "பெயரும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40424,7 +40425,7 @@
       "review_rank": 390
     },
     {
-      "candidate_id": "nannul-term-candidate-0391",
+      "candidate_id": "nannul-term-candidate-605d44d6c828e319",
       "surface_form_ta": "தகும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40501,7 +40502,7 @@
       "review_rank": 391
     },
     {
-      "candidate_id": "nannul-term-candidate-0392",
+      "candidate_id": "nannul-term-candidate-211208fe870d91f0",
       "surface_form_ta": "எழுத்தே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40578,7 +40579,7 @@
       "review_rank": 392
     },
     {
-      "candidate_id": "nannul-term-candidate-0393",
+      "candidate_id": "nannul-term-candidate-0ef0d3bfe620dfdf",
       "surface_form_ta": "ஐகான்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40656,7 +40657,7 @@
       "review_rank": 393
     },
     {
-      "candidate_id": "nannul-term-candidate-0394",
+      "candidate_id": "nannul-term-candidate-57ad19ac6fa067af",
       "surface_form_ta": "நெடில்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40734,7 +40735,7 @@
       "review_rank": 394
     },
     {
-      "candidate_id": "nannul-term-candidate-0395",
+      "candidate_id": "nannul-term-candidate-eb1f275c395544de",
       "surface_form_ta": "வழியும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40812,7 +40813,7 @@
       "review_rank": 395
     },
     {
-      "candidate_id": "nannul-term-candidate-0396",
+      "candidate_id": "nannul-term-candidate-27d913398f4becc9",
       "surface_form_ta": "பெறும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40890,7 +40891,7 @@
       "review_rank": 396
     },
     {
-      "candidate_id": "nannul-term-candidate-0397",
+      "candidate_id": "nannul-term-candidate-29cb7148dc561a53",
       "surface_form_ta": "தோன்றும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -40968,7 +40969,7 @@
       "review_rank": 397
     },
     {
-      "candidate_id": "nannul-term-candidate-0398",
+      "candidate_id": "nannul-term-candidate-79e4ddf8e7bec227",
       "surface_form_ta": "எகர",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41046,7 +41047,7 @@
       "review_rank": 398
     },
     {
-      "candidate_id": "nannul-term-candidate-0399",
+      "candidate_id": "nannul-term-candidate-2896a31dbc7d80cf",
       "surface_form_ta": "உறழும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41123,7 +41124,7 @@
       "review_rank": 399
     },
     {
-      "candidate_id": "nannul-term-candidate-0400",
+      "candidate_id": "nannul-term-candidate-693851ca4f109d83",
       "surface_form_ta": "நொ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41201,7 +41202,7 @@
       "review_rank": 400
     },
     {
-      "candidate_id": "nannul-term-candidate-0401",
+      "candidate_id": "nannul-term-candidate-be1a16128854919d",
       "surface_form_ta": "மிகலுமாம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41279,7 +41280,7 @@
       "review_rank": 401
     },
     {
-      "candidate_id": "nannul-term-candidate-0402",
+      "candidate_id": "nannul-term-candidate-37b45f569d40ae7b",
       "surface_form_ta": "றகரம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41357,7 +41358,7 @@
       "review_rank": 402
     },
     {
-      "candidate_id": "nannul-term-candidate-0403",
+      "candidate_id": "nannul-term-candidate-10f29d957f7f3a4d",
       "surface_form_ta": "மென்மையும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41435,7 +41436,7 @@
       "review_rank": 403
     },
     {
-      "candidate_id": "nannul-term-candidate-0404",
+      "candidate_id": "nannul-term-candidate-f03a276ef44b64a1",
       "surface_form_ta": "மெய்வரின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41513,7 +41514,7 @@
       "review_rank": 404
     },
     {
-      "candidate_id": "nannul-term-candidate-0405",
+      "candidate_id": "nannul-term-candidate-9e1f9e967453d396",
       "surface_form_ta": "உறழ்வும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41591,7 +41592,7 @@
       "review_rank": 405
     },
     {
-      "candidate_id": "nannul-term-candidate-0406",
+      "candidate_id": "nannul-term-candidate-46151e5f0d9f0edc",
       "surface_form_ta": "நம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41669,7 +41670,7 @@
       "review_rank": 406
     },
     {
-      "candidate_id": "nannul-term-candidate-0407",
+      "candidate_id": "nannul-term-candidate-bb6b112f67483a2b",
       "surface_form_ta": "சொல்லே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41747,7 +41748,7 @@
       "review_rank": 407
     },
     {
-      "candidate_id": "nannul-term-candidate-0408",
+      "candidate_id": "nannul-term-candidate-4f21ab96c48c11e5",
       "surface_form_ta": "பெண்பால்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41825,7 +41826,7 @@
       "review_rank": 408
     },
     {
-      "candidate_id": "nannul-term-candidate-0409",
+      "candidate_id": "nannul-term-candidate-80c8a4ab25ddfaf7",
       "surface_form_ta": "ஒருபொருள்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41902,7 +41903,7 @@
       "review_rank": 409
     },
     {
-      "candidate_id": "nannul-term-candidate-0410",
+      "candidate_id": "nannul-term-candidate-d632d67ff11b1b6a",
       "surface_form_ta": "ஒருசொல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -41979,7 +41980,7 @@
       "review_rank": 410
     },
     {
-      "candidate_id": "nannul-term-candidate-0411",
+      "candidate_id": "nannul-term-candidate-9ec6ea383d94ebca",
       "surface_form_ta": "அடை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42056,7 +42057,7 @@
       "review_rank": 411
     },
     {
-      "candidate_id": "nannul-term-candidate-0412",
+      "candidate_id": "nannul-term-candidate-d1fb0e31b660e8e0",
       "surface_form_ta": "பல்லோர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42134,7 +42135,7 @@
       "review_rank": 412
     },
     {
-      "candidate_id": "nannul-term-candidate-0413",
+      "candidate_id": "nannul-term-candidate-fe3264123947d630",
       "surface_form_ta": "பலவின்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42212,7 +42213,7 @@
       "review_rank": 413
     },
     {
-      "candidate_id": "nannul-term-candidate-0414",
+      "candidate_id": "nannul-term-candidate-5fb73e0db7a10e76",
       "surface_form_ta": "கருவி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42290,7 +42291,7 @@
       "review_rank": 414
     },
     {
-      "candidate_id": "nannul-term-candidate-0415",
+      "candidate_id": "nannul-term-candidate-ea50afd2e180d35b",
       "surface_form_ta": "வினையொடு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42367,7 +42368,7 @@
       "review_rank": 415
     },
     {
-      "candidate_id": "nannul-term-candidate-0416",
+      "candidate_id": "nannul-term-candidate-17df2d58aa875ffb",
       "surface_form_ta": "கொள்ளும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42446,7 +42447,7 @@
       "review_rank": 416
     },
     {
-      "candidate_id": "nannul-term-candidate-0417",
+      "candidate_id": "nannul-term-candidate-ee505bbd947e88ca",
       "surface_form_ta": "தத்தம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42523,7 +42524,7 @@
       "review_rank": 417
     },
     {
-      "candidate_id": "nannul-term-candidate-0418",
+      "candidate_id": "nannul-term-candidate-3a963bc0c1ed0134",
       "surface_form_ta": "பிரிப்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42600,7 +42601,7 @@
       "review_rank": 418
     },
     {
-      "candidate_id": "nannul-term-candidate-0419",
+      "candidate_id": "nannul-term-candidate-628c7e764553112b",
       "surface_form_ta": "ஒ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42686,7 +42687,7 @@
       "review_rank": 419
     },
     {
-      "candidate_id": "nannul-term-candidate-0420",
+      "candidate_id": "nannul-term-candidate-d073ed3d53603b5d",
       "surface_form_ta": "ஊ",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42771,7 +42772,7 @@
       "review_rank": 420
     },
     {
-      "candidate_id": "nannul-term-candidate-0421",
+      "candidate_id": "nannul-term-candidate-5b1c63efaae1e706",
       "surface_form_ta": "ங",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42857,7 +42858,7 @@
       "review_rank": 421
     },
     {
-      "candidate_id": "nannul-term-candidate-0422",
+      "candidate_id": "nannul-term-candidate-67c6d5f3f35b7a7a",
       "surface_form_ta": "எதிர்வும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -42940,7 +42941,7 @@
       "review_rank": 422
     },
     {
-      "candidate_id": "nannul-term-candidate-0423",
+      "candidate_id": "nannul-term-candidate-ffedca931e44f076",
       "surface_form_ta": "பெயர்க்கண்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43023,7 +43024,7 @@
       "review_rank": 423
     },
     {
-      "candidate_id": "nannul-term-candidate-0424",
+      "candidate_id": "nannul-term-candidate-9fed6cc0d68e4e13",
       "surface_form_ta": "போலவும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43106,7 +43107,7 @@
       "review_rank": 424
     },
     {
-      "candidate_id": "nannul-term-candidate-0425",
+      "candidate_id": "nannul-term-candidate-38f36e1ca96579bf",
       "surface_form_ta": "சூத்திரம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43180,7 +43181,7 @@
       "review_rank": 425
     },
     {
-      "candidate_id": "nannul-term-candidate-0426",
+      "candidate_id": "nannul-term-candidate-f1463745bd87bbf1",
       "surface_form_ta": "காண்டிகை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43254,7 +43255,7 @@
       "review_rank": 426
     },
     {
-      "candidate_id": "nannul-term-candidate-0427",
+      "candidate_id": "nannul-term-candidate-d5137078d55da38d",
       "surface_form_ta": "வகை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43328,7 +43329,7 @@
       "review_rank": 427
     },
     {
-      "candidate_id": "nannul-term-candidate-0428",
+      "candidate_id": "nannul-term-candidate-a11b5091c6d7ebfe",
       "surface_form_ta": "வைத்தல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43402,7 +43403,7 @@
       "review_rank": 428
     },
     {
-      "candidate_id": "nannul-term-candidate-0429",
+      "candidate_id": "nannul-term-candidate-a528b434c09490ae",
       "surface_form_ta": "மொழிதல்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43476,7 +43477,7 @@
       "review_rank": 429
     },
     {
-      "candidate_id": "nannul-term-candidate-0430",
+      "candidate_id": "nannul-term-candidate-a312a63718c27aeb",
       "surface_form_ta": "மஃகான்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43551,7 +43552,7 @@
       "review_rank": 430
     },
     {
-      "candidate_id": "nannul-term-candidate-0431",
+      "candidate_id": "nannul-term-candidate-a451b4e6ec8b14c5",
       "surface_form_ta": "சார்பெழுத்து",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43626,7 +43627,7 @@
       "review_rank": 431
     },
     {
-      "candidate_id": "nannul-term-candidate-0432",
+      "candidate_id": "nannul-term-candidate-7b5122206484ec6b",
       "surface_form_ta": "அஃகும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43701,7 +43702,7 @@
       "review_rank": 432
     },
     {
-      "candidate_id": "nannul-term-candidate-0433",
+      "candidate_id": "nannul-term-candidate-393d6419929ce759",
       "surface_form_ta": "ஆறே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43775,7 +43776,7 @@
       "review_rank": 433
     },
     {
-      "candidate_id": "nannul-term-candidate-0434",
+      "candidate_id": "nannul-term-candidate-c56fef4569c9328f",
       "surface_form_ta": "எழும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43850,7 +43851,7 @@
       "review_rank": 434
     },
     {
-      "candidate_id": "nannul-term-candidate-0435",
+      "candidate_id": "nannul-term-candidate-f31b40e83427509d",
       "surface_form_ta": "மேவும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -43926,7 +43927,7 @@
       "review_rank": 435
     },
     {
-      "candidate_id": "nannul-term-candidate-0436",
+      "candidate_id": "nannul-term-candidate-d8027ec594b845da",
       "surface_form_ta": "அண்ணம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44000,7 +44001,7 @@
       "review_rank": 436
     },
     {
-      "candidate_id": "nannul-term-candidate-0437",
+      "candidate_id": "nannul-term-candidate-5aa2bc2c8c154378",
       "surface_form_ta": "பகாப்பதம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44074,7 +44075,7 @@
       "review_rank": 437
     },
     {
-      "candidate_id": "nannul-term-candidate-0438",
+      "candidate_id": "nannul-term-candidate-d7459312aaeb5ec5",
       "surface_form_ta": "பதமும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44149,7 +44150,7 @@
       "review_rank": 438
     },
     {
-      "candidate_id": "nannul-term-candidate-0439",
+      "candidate_id": "nannul-term-candidate-42ef18fb100fa35c",
       "surface_form_ta": "ஆண்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44224,7 +44225,7 @@
       "review_rank": 439
     },
     {
-      "candidate_id": "nannul-term-candidate-0440",
+      "candidate_id": "nannul-term-candidate-c773ca84a8eb0843",
       "surface_form_ta": "எழுத்தானும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44298,7 +44299,7 @@
       "review_rank": 440
     },
     {
-      "candidate_id": "nannul-term-candidate-0441",
+      "candidate_id": "nannul-term-candidate-d3edd7344834065c",
       "surface_form_ta": "உற்ற",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44373,7 +44374,7 @@
       "review_rank": 441
     },
     {
-      "candidate_id": "nannul-term-candidate-0442",
+      "candidate_id": "nannul-term-candidate-5840dffffe1925dd",
       "surface_form_ta": "நான்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44448,7 +44449,7 @@
       "review_rank": 442
     },
     {
-      "candidate_id": "nannul-term-candidate-0443",
+      "candidate_id": "nannul-term-candidate-3857ba616f6aaffe",
       "surface_form_ta": "நீயிர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44523,7 +44524,7 @@
       "review_rank": 443
     },
     {
-      "candidate_id": "nannul-term-candidate-0444",
+      "candidate_id": "nannul-term-candidate-b8d7f7b305b2a5a9",
       "surface_form_ta": "நீவிர்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44598,7 +44599,7 @@
       "review_rank": 444
     },
     {
-      "candidate_id": "nannul-term-candidate-0445",
+      "candidate_id": "nannul-term-candidate-957eaa743e7190fa",
       "surface_form_ta": "உருபாம்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44672,7 +44673,7 @@
       "review_rank": 445
     },
     {
-      "candidate_id": "nannul-term-candidate-0446",
+      "candidate_id": "nannul-term-candidate-ca7ae0eb6feed3c1",
       "surface_form_ta": "நீட்சியும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44746,7 +44747,7 @@
       "review_rank": 446
     },
     {
-      "candidate_id": "nannul-term-candidate-0447",
+      "candidate_id": "nannul-term-candidate-e23f7d7f3ac79ffd",
       "surface_form_ta": "அழிவு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44820,7 +44821,7 @@
       "review_rank": 447
     },
     {
-      "candidate_id": "nannul-term-candidate-0448",
+      "candidate_id": "nannul-term-candidate-4844f02376006189",
       "surface_form_ta": "நீட்சி",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44894,7 +44895,7 @@
       "review_rank": 448
     },
     {
-      "candidate_id": "nannul-term-candidate-0449",
+      "candidate_id": "nannul-term-candidate-d798562774ec4a65",
       "surface_form_ta": "முற்றே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -44969,7 +44970,7 @@
       "review_rank": 449
     },
     {
-      "candidate_id": "nannul-term-candidate-0450",
+      "candidate_id": "nannul-term-candidate-5f0df3fbd0648a3b",
       "surface_form_ta": "வினைக்குறிப்பு",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -45043,7 +45044,7 @@
       "review_rank": 450
     },
     {
-      "candidate_id": "nannul-term-candidate-0451",
+      "candidate_id": "nannul-term-candidate-ff91e839a3d081f1",
       "surface_form_ta": "வினையும்",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -45118,7 +45119,7 @@
       "review_rank": 451
     },
     {
-      "candidate_id": "nannul-term-candidate-0452",
+      "candidate_id": "nannul-term-candidate-93d23e903cadc5f0",
       "surface_form_ta": "உரித்தே",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -45193,7 +45194,7 @@
       "review_rank": 452
     },
     {
-      "candidate_id": "nannul-term-candidate-0453",
+      "candidate_id": "nannul-term-candidate-42d94859941336cd",
       "surface_form_ta": "இசைநிறை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -45267,7 +45268,7 @@
       "review_rank": 453
     },
     {
-      "candidate_id": "nannul-term-candidate-0454",
+      "candidate_id": "nannul-term-candidate-4f9b62e0793511f9",
       "surface_form_ta": "தெரிநிலை",
       "review_status": "unreviewed",
       "term_decision": null,
@@ -45341,7 +45342,7 @@
       "review_rank": 454
     },
     {
-      "candidate_id": "nannul-term-candidate-0455",
+      "candidate_id": "nannul-term-candidate-1cfbf82e91bebde8",
       "surface_form_ta": "கழிவு",
       "review_status": "unreviewed",
       "term_decision": null,
