@@ -1,0 +1,71 @@
+name: Vendor Project Madurai Nannul source
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/vendor-project-madurai-source.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch and fingerprint controlling source
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_URL='https://www.projectmadurai.org/pm_etexts/utf8/pmuni0147.html'
+          RAW_DIR='sources/project-madurai/pmuni0147/raw'
+          mkdir -p "$RAW_DIR"
+
+          curl --fail --location --retry 3 --retry-delay 2 \
+            --user-agent 'pugazg/nannul archival source preservation' \
+            --dump-header "$RAW_DIR/HTTP_HEADERS.txt" \
+            "$SOURCE_URL" \
+            --output "$RAW_DIR/pmuni0147.html"
+
+          test -s "$RAW_DIR/pmuni0147.html"
+          grep -q 'நன்னூல்' "$RAW_DIR/pmuni0147.html"
+          grep -q 'நன்னூல் முற்றிற்று' "$RAW_DIR/pmuni0147.html"
+
+          sha256sum "$RAW_DIR/pmuni0147.html" > "$RAW_DIR/pmuni0147.html.sha256"
+          BYTE_COUNT="$(wc -c < "$RAW_DIR/pmuni0147.html" | tr -d ' ')"
+          RETRIEVED_AT="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          SHA256="$(cut -d' ' -f1 "$RAW_DIR/pmuni0147.html.sha256")"
+
+          cat > "$RAW_DIR/RETRIEVAL.yml" <<EOF
+          source_url: "$SOURCE_URL"
+          retrieved_at_utc: "$RETRIEVED_AT"
+          retrieval_method: "GitHub Actions curl --fail --location"
+          byte_count: $BYTE_COUNT
+          sha256: "$SHA256"
+          validation:
+            nonempty: true
+            contains_title_nannul: true
+            contains_terminal_marker: true
+          preservation_role: "byte-for-byte HTTP response body snapshot of controlling source"
+          EOF
+
+      - name: Commit vendored source if changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add sources/project-madurai/pmuni0147/raw/
+          if git diff --cached --quiet; then
+            echo 'Vendored source is unchanged.'
+            exit 0
+          fi
+          git commit -m 'Vendor current Project Madurai Nannul source snapshot'
+          git push origin HEAD:main
