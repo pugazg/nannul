@@ -49,6 +49,31 @@ Detailed இயல்-level ranges are recorded in `structure/sections.yml`.
 
 Current canonical boundary: **நூற்பா 462 / `நன்னூல் முற்றிற்று`**.
 
+## Stable identifier / index status
+
+**STABLE நூற்பா IDENTIFIER LAYER: ESTABLISHED AND AUDITED**
+
+Numbered positions use the deterministic identifier scheme:
+
+`nannul-%04d`
+
+Examples: `nannul-0001`, `nannul-0056`, `nannul-0258`, `nannul-0462`.
+
+The unnumbered சிறப்புப்பாயிரம் uses:
+
+`nannul-sirappu-payiram`
+
+Because the controlling current webpage does not display numbered 73 or 176, `nannul-0073` and `nannul-0176` are reserved as **source-gap positions** and do not point to reconstructed canonical text.
+
+Structural/index artifacts:
+
+- `structure/identifiers.yml`
+- `data/nurpa-index.json`
+- `indexes/nurpa-number-index.md`
+- `audit/STABLE_IDENTIFIER_INDEX.md`
+
+This layer is derived metadata only; canonical Tamil files were not rewritten to insert IDs.
+
 ## Numbering state of the controlling source
 
 The nominal numbered span is **1–462**. The current Project Madurai webpage does not display numbered **73** or **176**, so the completed canonical layer contains **460 displayed numbered நூற்பாக்கள்**, plus the unnumbered சிறப்புப்பாயிரம்.
@@ -72,12 +97,13 @@ See `audit/SOURCE_VARIANTS.md` and the batch audit files. No secondary-witness r
 - `audit/EZHUTHTHATHIKARAM_COMPLETION.md`
 - `audit/SOLLATHIKARAM_COMPLETION.md`
 - `audit/NANNUL_CANONICAL_COMPLETION.md`
+- `audit/STABLE_IDENTIFIER_INDEX.md`
 
 ## Raw-source preservation
 
 Exact-byte preservation of the **current** Project Madurai HTML is tracked separately from canonical completion.
 
-Infrastructure now present:
+Infrastructure present:
 
 - `.github/workflows/vendor-project-madurai-source.yml` — reproducible direct-HTTP fetch/checksum workflow;
 - `sources/project-madurai/pmuni0147/RAW_SOURCE_PRESERVATION.md` — archival protocol and completion gate;
@@ -88,8 +114,8 @@ Current raw-source status: **workflow/protocol configured, raw snapshot not yet 
 
 Accordingly, `full_current_html_vendored` remains `false`. Parsed web text and the historical GitHub mirror are not accepted as substitutes for the controlling HTTP response bytes.
 
-## Remaining work outside canonical transcription
+## Next derived-data activity
 
-The immediate unresolved archival gate is materializing and SHA-256-verifying the current raw Project Madurai HTML under `sources/project-madurai/pmuni0147/raw/`.
+The next independent structural/data milestone is a **one-record-per-canonical-unit dataset** containing stable ID, source number, structural parents, canonical file path, and provenance status for all 460 displayed numbered units, with the two reserved source-gap positions represented separately and explicitly.
 
-After that gate passes, future work can proceed in separate layers such as stable நூற்பா IDs and indexes, machine-readable structured data, commentary, comparative grammar, translations, and critical/source comparison. These must not silently alter the completed canonical Tamil layer.
+That dataset must be generated from the audited canonical layer and stable-ID rules without altering source text.
