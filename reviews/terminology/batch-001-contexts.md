@@ -4,12 +4,12 @@
 
 Selection: first 20 mechanically ranked candidates with exact source-heading-token evidence.
 
-For each candidate, all heading evidence and complete record-number coverage are listed; full canonical text is included for the first occurrence, one occurrence in every structural unit, and any source-variant-linked occurrence.
+For each candidate, all heading evidence and complete body-occurrence coverage are listed. Full canonical text is included for the first body occurrence, one body occurrence in every structural unit, one governed context for every matching source heading, and any source-variant-linked body occurrence. A heading token may be heading-only; the packet does not invent a body occurrence.
 
 ## 1. `முன்` — `nannul-term-candidate-4ab35c693be30e13`
 
-- Occurrences: **24**
-- Record numbers with the exact form: 89, 119, 123, 127, 136, 148, 158, 159, 162, 167, 171, 175, 177, 180, 196, 199, 200, 205, 249, 251, 256, 321
+- Body occurrences: **24**
+- Record numbers with the exact form in body text: 89, 119, 123, 127, 136, 148, 158, 159, 162, 167, 171, 175, 177, 180, 196, 199, 200, 205, 249, 251, 256, 321
 - Structural units: எழுத்து இயல், பதவியல், உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல், உருபு புணரியல், வினையியல்
 - Source-heading matches: **3**
 
@@ -24,6 +24,7 @@ For each candidate, all heading evidence and complete record-number coverage are
 #### nannul-0089 — நூற்பா 89 — எழுத்து இயல்
 
 Source heading: பிறப்பு
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 புள்ளி விட்டு அவ்வொடு முன் உரு ஆகியும்
@@ -35,6 +36,7 @@ Source heading: பிறப்பு
 #### nannul-0136 — நூற்பா 136 — பதவியல்
 
 Source heading: பகுதி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஈறு போதல் இடை உகரம் இ ஆதல்
@@ -46,6 +48,7 @@ Source heading: பகுதி
 #### nannul-0158 — நூற்பா 158 — உயிரீற்றுப் புணரியல்
 
 Source heading: பொதுப்புணர்ச்சி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 எண்மூ எழுத்து ஈற்று எவ்வகை மொழிக்கும்
@@ -57,6 +60,7 @@ Source heading: பொதுப்புணர்ச்சி
 #### nannul-0205 — நூற்பா 205 — மெய்யீற்றுப் புணரியல்
 
 Source heading: மெய்யீற்றின் முன் உயிர்
+Context role: heading-range-with-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 தனிக்குறில் முன் ஒற்று உயிர்வரின் இரட்டும்
@@ -65,6 +69,7 @@ Source heading: மெய்யீற்றின் முன் உயிர�
 #### nannul-0249 — நூற்பா 249 — உருபு புணரியல்
 
 Source heading: உருபு புணர்ச்சிக்குச் சிறப்புவிதி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஒன்று முதல் எட்டு ஈறு ஆம் எண் ஊர்
@@ -75,16 +80,37 @@ Source heading: உருபு புணர்ச்சிக்குச் �
 #### nannul-0321 — நூற்பா 321 — வினையியல்
 
 Source heading: வினைச் சொல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பொருள்முதல் ஆறினும் தோற்றி முன் ஆறனுள்
 வினைமுதல் மாத்திரை விளக்கல் வினைக்குறிப்பே
 ```
 
+#### nannul-0165 — நூற்பா 165 — உயிரீற்றுப் புணரியல்
+
+Source heading: உயிரீற்று முன் வல்லினம்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+இயல்பினும் விதியினும் நின்ற உயிர்முன்
+க ச த ப மிகும் விதவாதன மன்னே
+```
+
+#### nannul-0206 — நூற்பா 206 — மெய்யீற்றுப் புணரியல்
+
+Source heading: மெய்யீற்றின் முன் மெய்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+தன் ஒழி மெய்முன் யவ்வரின் இகரம்
+துன்னும் என்று துணிநரும் உளரே
+```
+
 ## 2. `உயிர்` — `nannul-term-candidate-2c83aa9539c00e7c`
 
-- Occurrences: **22**
-- Record numbers with the exact form: 74, 89, 108, 110, 147, 151, 189, 219, 220, 242, 261, 443, 444, 445, 446, 447, 448, 450, 451, 454
+- Body occurrences: **22**
+- Record numbers with the exact form in body text: 74, 89, 108, 110, 147, 151, 189, 219, 220, 242, 261, 443, 444, 445, 446, 447, 448, 450, 451, 454
 - Structural units: எழுத்து இயல், பதவியல், உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல், உருபு புணரியல், பெயரியல், உரியியல்
 - Source-heading matches: **1**
 
@@ -97,6 +123,7 @@ Source heading: வினைச் சொல்
 #### nannul-0074 — நூற்பா 74 — எழுத்து இயல்
 
 Source heading: பிறப்பு
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 நிறை உயிர் முயற்சியின் உள்வளி துரப்ப
@@ -108,6 +135,7 @@ Source heading: பிறப்பு
 #### nannul-0147 — நூற்பா 147 — பதவியல்
 
 Source heading: வடமொழியாக்கம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 அவற்றுள்,
@@ -122,6 +150,7 @@ Source heading: வடமொழியாக்கம்
 #### nannul-0151 — நூற்பா 151 — உயிரீற்றுப் புணரியல்
 
 Source heading: புணர்ச்சி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 மெய் உயிர் முதல் ஈறு ஆம் இரு பதங்களும்
@@ -133,6 +162,7 @@ Source heading: புணர்ச்சி
 #### nannul-0219 — நூற்பா 219 — மெய்யீற்றுப் புணரியல்
 
 Source heading: மகரவீறு
+Context role: structural-unit-representative; candidate in body
 
 ```text
 மவ்வீறு ஒற்று அழிந்து உயிர் ஈறு ஒப்பவும்
@@ -142,6 +172,7 @@ Source heading: மகரவீறு
 #### nannul-0242 — நூற்பா 242 — உருபு புணரியல்; variants: PM147-V002
 
 Source heading: உருபுகள்
+Context role: source-variant-linked-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 ஒற்று உயிர் முதல் ஈற்று உருபுகள் புணர்ச்சியின்
@@ -151,6 +182,7 @@ Source heading: உருபுகள்
 #### nannul-0261 — நூற்பா 261 — பெயரியல்
 
 Source heading: சொல்லின் பொதுவிலக்கணம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 மக்கள் தேவர் நரகர் உயர்திணை
@@ -160,15 +192,25 @@ Source heading: சொல்லின் பொதுவிலக்கணம்
 #### nannul-0443 — நூற்பா 443 — உரியியல்
 
 Source heading: உரியியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 உயிர் உயிர் அல்லதாம் பொருள் குணம் பண்பே
 ```
 
+#### nannul-0204 — நூற்பா 204 — மெய்யீற்றுப் புணரியல்
+
+Source heading: மெய்யீற்றின் முன் உயிர்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+உடல்மேல் உயிர்வந்து ஒன்றுவது இயல்பே
+```
+
 ## 3. `எண்` — `nannul-term-candidate-21b0ec31ad3bb44d`
 
-- Occurrences: **20**
-- Record numbers with the exact form: 4, 47, 57, 179, 188, 195, 197, 199, 211, 249, 276, 279, 288, 386, 420, 421, 422, 428, 430
+- Body occurrences: **20**
+- Record numbers with the exact form in body text: 4, 47, 57, 179, 188, 195, 197, 199, 211, 249, 276, 279, 288, 386, 420, 421, 422, 428, 430
 - Structural units: நூலினது வரலாறு, சிறப்புப்பாயிர இலக்கணம், எழுத்து இயல், உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல், உருபு புணரியல், பெயரியல், பொதுவியல், இடையியல்
 - Source-heading matches: **1**
 
@@ -181,6 +223,7 @@ Source heading: உரியியல்
 #### nannul-0004 — நூற்பா 4 — நூலினது வரலாறு
 
 Source heading: 1.1 நூலினது வரலாறு (4–25)
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 நூலின் இயல்பே நுவலின் ஓர் இரு
@@ -195,6 +238,7 @@ Source heading: 1.1 நூலினது வரலாறு (4–25)
 #### nannul-0047 — நூற்பா 47 — சிறப்புப்பாயிர இலக்கணம்
 
 Source heading: 1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஆக்கியோன் பெயரே வழியே எல்லை
@@ -206,6 +250,7 @@ Source heading: 1.6 சிறப்புப்பாயிர இலக்க�
 #### nannul-0057 — நூற்பா 57 — எழுத்து இயல்
 
 Source heading: (none)
+Context role: structural-unit-representative; candidate in body
 
 ```text
 எண் பெயர் முறை பிறப்பு உருவம் மாத்திரை
@@ -216,6 +261,7 @@ Source heading: (none)
 #### nannul-0179 — நூற்பா 179 — உயிரீற்றுப் புணரியல்
 
 Source heading: முற்றுகர வீற்றுச் சிறப்புவிதி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 மூன்று ஆறு உருபு எண் வினைத்தொகை சுட்டு ஈறு
@@ -225,6 +271,7 @@ Source heading: முற்றுகர வீற்றுச் சிறப�
 #### nannul-0211 — நூற்பா 211 — மெய்யீற்றுப் புணரியல்
 
 Source heading: ணகர னகரவீறு
+Context role: structural-unit-representative; candidate in body
 
 ```text
 சாதி குழூஉ பரண் கவண் பெயர் இறுதி
@@ -235,6 +282,7 @@ Source heading: ணகர னகரவீறு
 #### nannul-0249 — நூற்பா 249 — உருபு புணரியல்
 
 Source heading: உருபு புணர்ச்சிக்குச் சிறப்புவிதி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஒன்று முதல் எட்டு ஈறு ஆம் எண் ஊர்
@@ -245,6 +293,7 @@ Source heading: உருபு புணர்ச்சிக்குச் �
 #### nannul-0276 — நூற்பா 276 — பெயரியல்
 
 Source heading: பெயர்ச் சொல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 அவற்றுள்,
@@ -264,6 +313,7 @@ Source heading: பெயர்ச் சொல்
 #### nannul-0386 — நூற்பா 386 — பொதுவியல்
 
 Source heading: வழாநிலை வழுவமைதி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 சுட்டு மறை நேர் ஏவல் வினாதல்
@@ -275,6 +325,7 @@ Source heading: வழாநிலை வழுவமைதி
 #### nannul-0420 — நூற்பா 420 — இடையியல்
 
 Source heading: இடையியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 வேற்றுமை வினை சாரியை ஒப்பு உருபுகள்
@@ -284,10 +335,20 @@ Source heading: இடையியல்
 ஒன்றும் பலவும் வந்து ஒன்றுவது இடைச்சொல்
 ```
 
+#### nannul-0058 — நூற்பா 58 — எழுத்து இயல்
+
+Source heading: எண்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+மொழிமுதல் காரணம் ஆம் அணுத் திரள் ஒலி
+எழுத்து அது முதல் சார்பு என இரு வகைத்தே
+```
+
 ## 4. `ய` — `nannul-term-candidate-033b3c06358ceb1e`
 
-- Occurrences: **19**
-- Record numbers with the exact form: 70, 82, 92, 102, 107, 114, 115, 116, 117, 119, 123, 149, 158, 159, 161, 207, 224, 353
+- Body occurrences: **19**
+- Record numbers with the exact form in body text: 70, 82, 92, 102, 107, 114, 115, 116, 117, 119, 123, 149, 158, 159, 161, 207, 224, 353
 - Structural units: எழுத்து இயல், பதவியல், உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல், பொதுவியல்
 - Source-heading matches: **1**
 
@@ -300,6 +361,7 @@ Source heading: இடையியல்
 #### nannul-0070 — நூற்பா 70 — எழுத்து இயல்
 
 Source heading: பெயர்
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 இடையினம் ய ர ல வ ழ ள என ஆறே
@@ -308,6 +370,7 @@ Source heading: பெயர்
 #### nannul-0149 — நூற்பா 149 — பதவியல்
 
 Source heading: வடமொழியாக்கம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 இணைந்தியல் காலை ய ர லக்கு இகரமும்
@@ -318,6 +381,7 @@ Source heading: வடமொழியாக்கம்
 #### nannul-0158 — நூற்பா 158 — உயிரீற்றுப் புணரியல்
 
 Source heading: பொதுப்புணர்ச்சி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 எண்மூ எழுத்து ஈற்று எவ்வகை மொழிக்கும்
@@ -329,6 +393,7 @@ Source heading: பொதுப்புணர்ச்சி
 #### nannul-0207 — நூற்பா 207 — மெய்யீற்றுப் புணரியல்
 
 Source heading: மெய்யீற்றின் முன் மெய்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஞ ண ந ம ல வ ள ன ஒற்று இறு தொழிற்பெயர்
@@ -339,16 +404,28 @@ Source heading: மெய்யீற்றின் முன் மெய்
 #### nannul-0353 — நூற்பா 353 — பொதுவியல்
 
 Source heading: பொதுவியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பெயர்வினை இடத்து ன ள ர ய ஈற்று அயல்
 ஆ ஓ ஆகலும் செய்யுளுள் உரித்தே
 ```
 
+#### nannul-0224 — நூற்பா 224 — மெய்யீற்றுப் புணரியல்
+
+Source heading: ய ர ழ வீறு
+Context role: heading-range-with-body-occurrence; candidate in body
+
+```text
+ய ர ழ முன்னர்க் க ச த ப அல்வழி
+இயல்பும் மிகலும் ஆகும் வேற்றுமை
+மிகலும் இனத்தோடு உறழ்தலும் விதிமேல்
+```
+
 ## 5. `வேற்றுமை` — `nannul-term-candidate-c3733c8bd70a111e`
 
-- Occurrences: **17**
-- Record numbers with the exact form: 152, 166, 182, 183, 202, 203, 208, 213, 220, 224, 291, 317, 361, 362, 420, 451
+- Body occurrences: **17**
+- Record numbers with the exact form in body text: 152, 166, 182, 183, 202, 203, 208, 213, 220, 224, 291, 317, 361, 362, 420, 451
 - Structural units: உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல், பெயரியல், பொதுவியல், இடையியல், உரியியல்
 - Source-heading matches: **1**
 
@@ -361,6 +438,7 @@ Source heading: பொதுவியல்
 #### nannul-0152 — நூற்பா 152 — உயிரீற்றுப் புணரியல்
 
 Source heading: புணர்ச்சி
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 வேற்றுமை ஐம் முதல் ஆறு ஆம் அல்வழி
@@ -372,6 +450,7 @@ Source heading: புணர்ச்சி
 #### nannul-0208 — நூற்பா 208 — மெய்யீற்றுப் புணரியல்
 
 Source heading: மெய்யீற்றின் முன் மெய்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 நவ்விறு தொழிற்பெயர்க்கு அவ்வுமாம் வேற்றுமை
@@ -380,6 +459,7 @@ Source heading: மெய்யீற்றின் முன் மெய்
 #### nannul-0291 — நூற்பா 291 — பெயரியல்
 
 Source heading: வேற்றுமை
+Context role: heading-range-with-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 ஏற்கும் எவ்வகைப் பெயர்க்கும் ஈறாய்ப் பொருள்
@@ -389,6 +469,7 @@ Source heading: வேற்றுமை
 #### nannul-0361 — நூற்பா 361 — பொதுவியல்
 
 Source heading: தொகைநிலைத் தொடர்மொழி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பெயரொடு பெயரும் வினையும் வேற்றுமை
@@ -400,6 +481,7 @@ Source heading: தொகைநிலைத் தொடர்மொழி
 #### nannul-0420 — நூற்பா 420 — இடையியல்
 
 Source heading: இடையியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 வேற்றுமை வினை சாரியை ஒப்பு உருபுகள்
@@ -412,6 +494,7 @@ Source heading: இடையியல்
 #### nannul-0451 — நூற்பா 451 — உரியியல்
 
 Source heading: உரியியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஒற்றுமை நயத்தின் ஒன்று எனத் தோன்றினும்
@@ -420,8 +503,8 @@ Source heading: உரியியல்
 
 ## 6. `ர` — `nannul-term-candidate-6455a8e382cd253b`
 
-- Occurrences: **15**
-- Record numbers with the exact form: 70, 83, 107, 110, 116, 119, 149, 159, 161, 224, 304, 314, 353
+- Body occurrences: **15**
+- Record numbers with the exact form in body text: 70, 83, 107, 110, 116, 119, 149, 159, 161, 224, 304, 314, 353
 - Structural units: எழுத்து இயல், பதவியல், உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல், பெயரியல், பொதுவியல்
 - Source-heading matches: **1**
 
@@ -434,6 +517,7 @@ Source heading: உரியியல்
 #### nannul-0070 — நூற்பா 70 — எழுத்து இயல்
 
 Source heading: பெயர்
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 இடையினம் ய ர ல வ ழ ள என ஆறே
@@ -442,6 +526,7 @@ Source heading: பெயர்
 #### nannul-0149 — நூற்பா 149 — பதவியல்
 
 Source heading: வடமொழியாக்கம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 இணைந்தியல் காலை ய ர லக்கு இகரமும்
@@ -452,6 +537,7 @@ Source heading: வடமொழியாக்கம்
 #### nannul-0159 — நூற்பா 159 — உயிரீற்றுப் புணரியல்
 
 Source heading: பொதுப்புணர்ச்சி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பொதுப்பெயர் உயர்திணைப் பெயர்கள் ஈற்றுமெய்
@@ -462,6 +548,7 @@ Source heading: பொதுப்புணர்ச்சி
 #### nannul-0224 — நூற்பா 224 — மெய்யீற்றுப் புணரியல்
 
 Source heading: ய ர ழ வீறு
+Context role: heading-range-with-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 ய ர ழ முன்னர்க் க ச த ப அல்வழி
@@ -472,6 +559,7 @@ Source heading: ய ர ழ வீறு
 #### nannul-0304 — நூற்பா 304 — பெயரியல்
 
 Source heading: வேற்றுமை
+Context role: structural-unit-representative; candidate in body
 
 ```text
 இ உ ஊவோடு ஐ ஓ ன ள ர ல
@@ -483,6 +571,7 @@ Source heading: வேற்றுமை
 #### nannul-0353 — நூற்பா 353 — பொதுவியல்
 
 Source heading: பொதுவியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பெயர்வினை இடத்து ன ள ர ய ஈற்று அயல்
@@ -491,8 +580,8 @@ Source heading: பொதுவியல்
 
 ## 7. `உருபு` — `nannul-term-candidate-35261cc95184dea4`
 
-- Occurrences: **14**
-- Record numbers with the exact form: 179, 254, 295, 296, 297, 298, 299, 301, 307, 312, 356, 361, 366, 374
+- Body occurrences: **14**
+- Record numbers with the exact form in body text: 179, 254, 295, 296, 297, 298, 299, 301, 307, 312, 356, 361, 366, 374
 - Structural units: உயிரீற்றுப் புணரியல், உருபு புணரியல், பெயரியல், பொதுவியல்
 - Source-heading matches: **2**
 
@@ -506,6 +595,7 @@ Source heading: பொதுவியல்
 #### nannul-0179 — நூற்பா 179 — உயிரீற்றுப் புணரியல்
 
 Source heading: முற்றுகர வீற்றுச் சிறப்புவிதி
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 மூன்று ஆறு உருபு எண் வினைத்தொகை சுட்டு ஈறு
@@ -515,6 +605,7 @@ Source heading: முற்றுகர வீற்றுச் சிறப�
 #### nannul-0254 — நூற்பா 254 — உருபு புணரியல்
 
 Source heading: புறனடை
+Context role: structural-unit-representative; candidate in body
 
 ```text
 விகுதி பதம் சாரியை உருபு அனைத்தினும்
@@ -524,6 +615,7 @@ Source heading: புறனடை
 #### nannul-0295 — நூற்பா 295 — பெயரியல்
 
 Source heading: வேற்றுமை
+Context role: structural-unit-representative; candidate in body
 
 ```text
 அவற்றுள்,
@@ -534,16 +626,37 @@ Source heading: வேற்றுமை
 #### nannul-0356 — நூற்பா 356 — பொதுவியல்
 
 Source heading: பொதுவியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 உருபு முற்று ஈர் எச்சம் கொள்ளும்
 பெயர்வினை இடைப்பிற வரலுமாம் ஏற்பன
 ```
 
+#### nannul-0238 — நூற்பா 238 — மெய்யீற்றுப் புணரியல்
+
+Source heading: வேற்றுமைப் பொருட் புணர்ச்சியை உருபு புணர்ச்சியோடு மாட்டெறிதல்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+உருபின் முடிபவை ஒக்கும் அப்பொருளினும்
+```
+
+#### nannul-0245 — நூற்பா 245 — உருபு புணரியல்
+
+Source heading: உருபு புணர்ச்சிக்குச் சிறப்புவிதி
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+எல்லாம் என்பது இழிதிணை ஆயின்
+அற்று ஓடு உருபின் மேல் உம் உறுமே
+அன்றேல் நம் இடை அடைந்து அற்று ஆகும்
+```
+
 ## 8. `ழ` — `nannul-term-candidate-f36e8f122d2c2078`
 
-- Occurrences: **10**
-- Record numbers with the exact form: 70, 83, 107, 110, 116, 119, 150, 161, 224
+- Body occurrences: **10**
+- Record numbers with the exact form in body text: 70, 83, 107, 110, 116, 119, 150, 161, 224
 - Structural units: எழுத்து இயல், பதவியல், உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல்
 - Source-heading matches: **1**
 
@@ -556,6 +669,7 @@ Source heading: பொதுவியல்
 #### nannul-0070 — நூற்பா 70 — எழுத்து இயல்
 
 Source heading: பெயர்
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 இடையினம் ய ர ல வ ழ ள என ஆறே
@@ -564,6 +678,7 @@ Source heading: பெயர்
 #### nannul-0150 — நூற்பா 150 — பதவியல்
 
 Source heading: வடமொழியாக்கம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ற ன ழ எ ஒவ்வும் உயிர்மெய்யும் உயிரளபு
@@ -573,6 +688,7 @@ Source heading: வடமொழியாக்கம்
 #### nannul-0161 — நூற்பா 161 — உயிரீற்றுப் புணரியல்
 
 Source heading: பொதுப்புணர்ச்சி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஆவி ய ர ழ இறுதி முன்னிலை வினை
@@ -582,6 +698,7 @@ Source heading: பொதுப்புணர்ச்சி
 #### nannul-0224 — நூற்பா 224 — மெய்யீற்றுப் புணரியல்
 
 Source heading: ய ர ழ வீறு
+Context role: heading-range-with-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 ய ர ழ முன்னர்க் க ச த ப அல்வழி
@@ -591,8 +708,8 @@ Source heading: ய ர ழ வீறு
 
 ## 9. `மெய்` — `nannul-term-candidate-12ee4aa6f2f329f5`
 
-- Occurrences: **9**
-- Record numbers with the exact form: 63, 98, 107, 110, 136, 151, 162, 336, 444
+- Body occurrences: **9**
+- Record numbers with the exact form in body text: 63, 98, 107, 110, 136, 151, 162, 336, 444
 - Structural units: எழுத்து இயல், பதவியல், உயிரீற்றுப் புணரியல், வினையியல், உரியியல்
 - Source-heading matches: **1**
 
@@ -605,6 +722,7 @@ Source heading: ய ர ழ வீறு
 #### nannul-0063 — நூற்பா 63 — எழுத்து இயல்
 
 Source heading: பெயர்
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 அம்முதல் ஈராறு ஆவி கம்முதல்
@@ -614,6 +732,7 @@ Source heading: பெயர்
 #### nannul-0136 — நூற்பா 136 — பதவியல்
 
 Source heading: பகுதி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஈறு போதல் இடை உகரம் இ ஆதல்
@@ -625,6 +744,7 @@ Source heading: பகுதி
 #### nannul-0151 — நூற்பா 151 — உயிரீற்றுப் புணரியல்
 
 Source heading: புணர்ச்சி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 மெய் உயிர் முதல் ஈறு ஆம் இரு பதங்களும்
@@ -636,6 +756,7 @@ Source heading: புணர்ச்சி
 #### nannul-0336 — நூற்பா 336 — வினையியல்
 
 Source heading: முற்று வினை
+Context role: structural-unit-representative; candidate in body
 
 ```text
 முன்னிலை முன்னர் ஈயும் ஏயும்
@@ -645,6 +766,7 @@ Source heading: முற்று வினை
 #### nannul-0444 — நூற்பா 444 — உரியியல்
 
 Source heading: உரியியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 மெய் நா மூக்கு நாட்டம் செவிகளின்
@@ -652,10 +774,20 @@ Source heading: உரியியல்
 ஓர் அறிவு ஆதியா உயிர் ஐந்து ஆகும்
 ```
 
+#### nannul-0206 — நூற்பா 206 — மெய்யீற்றுப் புணரியல்
+
+Source heading: மெய்யீற்றின் முன் மெய்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+தன் ஒழி மெய்முன் யவ்வரின் இகரம்
+துன்னும் என்று துணிநரும் உளரே
+```
+
 ## 10. `வினை` — `nannul-term-candidate-f83f596ad7c653d9`
 
-- Occurrences: **9**
-- Record numbers with the exact form: 132, 138, 143, 144, 161, 207, 276, 390, 420
+- Body occurrences: **9**
+- Record numbers with the exact form in body text: 132, 138, 143, 144, 161, 207, 276, 390, 420
 - Structural units: பதவியல், உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல், பெயரியல், பொதுவியல், இடையியல்
 - Source-heading matches: **1**
 
@@ -668,6 +800,7 @@ Source heading: உரியியல்
 #### nannul-0132 — நூற்பா 132 — பதவியல்
 
 Source heading: பதம்
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 பொருள் இடம் காலம் சினை குணம் தொழிலின்
@@ -677,6 +810,7 @@ Source heading: பதம்
 #### nannul-0161 — நூற்பா 161 — உயிரீற்றுப் புணரியல்
 
 Source heading: பொதுப்புணர்ச்சி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஆவி ய ர ழ இறுதி முன்னிலை வினை
@@ -686,6 +820,7 @@ Source heading: பொதுப்புணர்ச்சி
 #### nannul-0207 — நூற்பா 207 — மெய்யீற்றுப் புணரியல்
 
 Source heading: மெய்யீற்றின் முன் மெய்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஞ ண ந ம ல வ ள ன ஒற்று இறு தொழிற்பெயர்
@@ -696,6 +831,7 @@ Source heading: மெய்யீற்றின் முன் மெய்
 #### nannul-0276 — நூற்பா 276 — பெயரியல்
 
 Source heading: பெயர்ச் சொல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 அவற்றுள்,
@@ -715,6 +851,7 @@ Source heading: பெயர்ச் சொல்
 #### nannul-0390 — நூற்பா 390 — பொதுவியல்
 
 Source heading: வழாநிலை வழுவமைதி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 வினை சார்பு இனம் இடம் மேவி விளங்காப்
@@ -724,6 +861,7 @@ Source heading: வழாநிலை வழுவமைதி
 #### nannul-0420 — நூற்பா 420 — இடையியல்
 
 Source heading: இடையியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 வேற்றுமை வினை சாரியை ஒப்பு உருபுகள்
@@ -733,10 +871,20 @@ Source heading: இடையியல்
 ஒன்றும் பலவும் வந்து ஒன்றுவது இடைச்சொல்
 ```
 
+#### nannul-0323 — நூற்பா 323 — வினையியல்
+
+Source heading: முற்று வினை
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+பொது இயல்பு ஆறையும் தோற்றிப் பொருட்பெயர்
+முதல் அறு பெயர் அலது ஏற்பில முற்றே
+```
+
 ## 11. `பெயர்` — `nannul-term-candidate-b557bec0b73a05be`
 
-- Occurrences: **8**
-- Record numbers with the exact form: 57, 132, 211, 276, 280, 292, 312, 323
+- Body occurrences: **8**
+- Record numbers with the exact form in body text: 57, 132, 211, 276, 280, 292, 312, 323
 - Structural units: எழுத்து இயல், பதவியல், மெய்யீற்றுப் புணரியல், பெயரியல், வினையியல்
 - Source-heading matches: **1**
 
@@ -749,6 +897,7 @@ Source heading: இடையியல்
 #### nannul-0057 — நூற்பா 57 — எழுத்து இயல்
 
 Source heading: (none)
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 எண் பெயர் முறை பிறப்பு உருவம் மாத்திரை
@@ -759,6 +908,7 @@ Source heading: (none)
 #### nannul-0132 — நூற்பா 132 — பதவியல்
 
 Source heading: பதம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பொருள் இடம் காலம் சினை குணம் தொழிலின்
@@ -768,6 +918,7 @@ Source heading: பதம்
 #### nannul-0211 — நூற்பா 211 — மெய்யீற்றுப் புணரியல்
 
 Source heading: ணகர னகரவீறு
+Context role: structural-unit-representative; candidate in body
 
 ```text
 சாதி குழூஉ பரண் கவண் பெயர் இறுதி
@@ -778,6 +929,7 @@ Source heading: ணகர னகரவீறு
 #### nannul-0276 — நூற்பா 276 — பெயரியல்
 
 Source heading: பெயர்ச் சொல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 அவற்றுள்,
@@ -797,16 +949,26 @@ Source heading: பெயர்ச் சொல்
 #### nannul-0323 — நூற்பா 323 — வினையியல்
 
 Source heading: முற்று வினை
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பொது இயல்பு ஆறையும் தோற்றிப் பொருட்பெயர்
 முதல் அறு பெயர் அலது ஏற்பில முற்றே
 ```
 
+#### nannul-0062 — நூற்பா 62 — எழுத்து இயல்
+
+Source heading: பெயர்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+இடுகுறி காரணப் பெயர்பொதுச் சிறப்பின
+```
+
 ## 12. `முற்று` — `nannul-term-candidate-2d5d1083c11c5a99`
 
-- Occurrences: **8**
-- Record numbers with the exact form: 152, 167, 171, 324, 356, 374, 421, 425
+- Body occurrences: **8**
+- Record numbers with the exact form in body text: 152, 167, 171, 324, 356, 374, 421, 425
 - Structural units: உயிரீற்றுப் புணரியல், வினையியல், பொதுவியல், இடையியல்
 - Source-heading matches: **1**
 
@@ -819,6 +981,7 @@ Source heading: முற்று வினை
 #### nannul-0152 — நூற்பா 152 — உயிரீற்றுப் புணரியல்
 
 Source heading: புணர்ச்சி
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 வேற்றுமை ஐம் முதல் ஆறு ஆம் அல்வழி
@@ -830,6 +993,7 @@ Source heading: புணர்ச்சி
 #### nannul-0324 — நூற்பா 324 — வினையியல்
 
 Source heading: முற்று வினை
+Context role: heading-range-with-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 ஒருவன்முதல் ஐந்தையும் படர்க்கை இடத்தும்
@@ -842,6 +1006,7 @@ Source heading: முற்று வினை
 #### nannul-0356 — நூற்பா 356 — பொதுவியல்
 
 Source heading: பொதுவியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 உருபு முற்று ஈர் எச்சம் கொள்ளும்
@@ -851,6 +1016,7 @@ Source heading: பொதுவியல்
 #### nannul-0421 — நூற்பா 421 — இடையியல்
 
 Source heading: இடையியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 தெரிநிலை தேற்றம் ஐயம் முற்று எண் சிறப்பு
@@ -860,8 +1026,8 @@ Source heading: இடையியல்
 
 ## 13. `சொல்` — `nannul-term-candidate-f13d698f1f0ea327`
 
-- Occurrences: **7**
-- Record numbers with the exact form: 40, 256, 290, 346, 360, 406, 461
+- Body occurrences: **7**
+- Record numbers with the exact form in body text: 40, 256, 290, 346, 360, 406, 461
 - Structural units: பாடங் கேட்டலின் வரலாறு, உருபு புணரியல், பெயரியல், வினையியல், பொதுவியல், உரியியல்
 - Source-heading matches: **2**
 
@@ -875,6 +1041,7 @@ Source heading: இடையியல்
 #### nannul-0040 — நூற்பா 40 — பாடங் கேட்டலின் வரலாறு
 
 Source heading: 1.5 பாடங் கேட்டலின் வரலாறு (40–46)
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 கோடல் மரபே கூறும் காலை
@@ -891,6 +1058,7 @@ Source heading: 1.5 பாடங் கேட்டலின் வரலாற�
 #### nannul-0256 — நூற்பா 256 — உருபு புணரியல்
 
 Source heading: புறனடை
+Context role: structural-unit-representative; candidate in body
 
 ```text
 புள்ளியும் உயிரும் ஆய் இறு சொல் முன்
@@ -901,6 +1069,7 @@ Source heading: புறனடை
 #### nannul-0290 — நூற்பா 290 — பெயரியல்
 
 Source heading: பெயர்ச் சொல்
+Context role: heading-range-with-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 பொருள்முதல் ஆறோடு அளவை சொல் தானி
@@ -912,6 +1081,7 @@ Source heading: பெயர்ச் சொல்
 #### nannul-0346 — நூற்பா 346 — வினையியல்
 
 Source heading: வினையெச்சம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 சொல் திரியினும் பொருள் திரியா வினைக்குறை
@@ -920,6 +1090,7 @@ Source heading: வினையெச்சம்
 #### nannul-0360 — நூற்பா 360 — பொதுவியல்
 
 Source heading: பொதுவியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பெயர்வினை உம்மைசொல் பிரிப்பு என ஒழியிசை
@@ -930,6 +1101,7 @@ Source heading: பொதுவியல்
 #### nannul-0461 — நூற்பா 461 — உரியியல்
 
 Source heading: உரியியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 சொல் தொறும் இற்று இதன் பெற்றி என்று அனைத்தும்
@@ -938,10 +1110,20 @@ Source heading: உரியியல்
 தெற்றென உணர்தல் தெள்ளியோர் திறனே
 ```
 
+#### nannul-0320 — நூற்பா 320 — வினையியல்
+
+Source heading: வினைச் சொல்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+செய்பவன் கருவி நிலம்செயல் காலம்
+செய்பொருள் ஆறும் தருவது வினையே
+```
+
 ## 14. `இடைநிலை` — `nannul-term-candidate-fa3389357be3970c`
 
-- Occurrences: **6**
-- Record numbers with the exact form: 57, 133, 141, 142, 143, 416
+- Body occurrences: **6**
+- Record numbers with the exact form in body text: 57, 133, 141, 142, 143, 416
 - Structural units: எழுத்து இயல், பதவியல், பொதுவியல்
 - Source-heading matches: **2**
 
@@ -955,6 +1137,7 @@ Source heading: உரியியல்
 #### nannul-0057 — நூற்பா 57 — எழுத்து இயல்
 
 Source heading: (none)
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 எண் பெயர் முறை பிறப்பு உருவம் மாத்திரை
@@ -965,6 +1148,7 @@ Source heading: (none)
 #### nannul-0133 — நூற்பா 133 — பதவியல்
 
 Source heading: பதம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பகுதி விகுதி இடைநிலை சாரியை
@@ -975,16 +1159,40 @@ Source heading: பதம்
 #### nannul-0416 — நூற்பா 416 — பொதுவியல்
 
 Source heading: பொருள்கோள்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 இடைநிலை மொழியே ஏனை ஈர் இடத்தும்
 நடந்து பொருளை நண்ணுதல் தாப்பிசை
 ```
 
+#### nannul-0110 — நூற்பா 110 — எழுத்து இயல்
+
+Source heading: இடைநிலை மயக்கம்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+க ச த ப ஒழித்த ஈர் ஏழன் கூட்டம்
+மெய்ம்மயக்கு உடனிலை ர ழ ஒழித்து ஈர் எட்டு
+ஆகும் இவ்விரு பால் மயக்கும் மொழி இடை
+மேவும் உயிர் மெய் மயக்கு அளவு இன்றே
+```
+
+#### nannul-0141 — நூற்பா 141 — பதவியல்
+
+Source heading: இடைநிலை
+Context role: heading-range-with-body-occurrence; candidate in body
+
+```text
+இலக்கியம் கண்டு அதற்கு இலக்கணம் இயம்பலின்
+பகுதி விகுதி பகுத்து இடை நின்றதை
+வினைப்பெயர் அல் பெயர்க்கு இடைநிலை எனலே
+```
+
 ## 15. `சாரியை` — `nannul-term-candidate-7c6552a72edcd0cd`
 
-- Occurrences: **6**
-- Record numbers with the exact form: 126, 133, 243, 253, 254, 420
+- Body occurrences: **6**
+- Record numbers with the exact form in body text: 126, 133, 243, 253, 254, 420
 - Structural units: எழுத்து இயல், பதவியல், உருபு புணரியல், இடையியல்
 - Source-heading matches: **1**
 
@@ -997,6 +1205,7 @@ Source heading: பொருள்கோள்
 #### nannul-0126 — நூற்பா 126 — எழுத்து இயல்
 
 Source heading: போலி
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 மெய்கள் அகரமும் நெட்டுயிர் காரமும்
@@ -1007,6 +1216,7 @@ Source heading: போலி
 #### nannul-0133 — நூற்பா 133 — பதவியல்
 
 Source heading: பதம்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பகுதி விகுதி இடைநிலை சாரியை
@@ -1017,6 +1227,7 @@ Source heading: பதம்
 #### nannul-0243 — நூற்பா 243 — உருபு புணரியல்
 
 Source heading: சாரியை
+Context role: heading-range-with-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 பதம்முன் விகுதியும் பதமும் உருபும்
@@ -1027,6 +1238,7 @@ Source heading: சாரியை
 #### nannul-0420 — நூற்பா 420 — இடையியல்
 
 Source heading: இடையியல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 வேற்றுமை வினை சாரியை ஒப்பு உருபுகள்
@@ -1038,8 +1250,8 @@ Source heading: இடையியல்
 
 ## 16. `பாயிரம்` — `nannul-term-candidate-f871b92e88430fcd`
 
-- Occurrences: **6**
-- Record numbers with the exact form: 1, 2, 3, 4, 51, 54
+- Body occurrences: **6**
+- Record numbers with the exact form in body text: 1, 2, 3, 4, 51, 54
 - Structural units: பொதுப்பாயிரம், நூலினது வரலாறு, சிறப்புப்பாயிர இலக்கணம்
 - Source-heading matches: **1**
 
@@ -1052,6 +1264,7 @@ Source heading: இடையியல்
 #### nannul-0001 — நூற்பா 1 — பொதுப்பாயிரம்
 
 Source heading: 1.0 பொதுப் பாயிரம் (1–3)
+Context role: first-body-occurrence, heading-range-with-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 முகவுரை பதிகம் அணிந்துரை நூன்முகம்
@@ -1061,6 +1274,7 @@ Source heading: 1.0 பொதுப் பாயிரம் (1–3)
 #### nannul-0004 — நூற்பா 4 — நூலினது வரலாறு
 
 Source heading: 1.1 நூலினது வரலாறு (4–25)
+Context role: structural-unit-representative; candidate in body
 
 ```text
 நூலின் இயல்பே நுவலின் ஓர் இரு
@@ -1075,6 +1289,7 @@ Source heading: 1.1 நூலினது வரலாறு (4–25)
 #### nannul-0051 — நூற்பா 51 — சிறப்புப்பாயிர இலக்கணம்
 
 Source heading: 1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)
+Context role: structural-unit-representative; candidate in body
 
 ```text
 தன் ஆசிரியன் தன்னொடு கற்றோன்
@@ -1084,8 +1299,8 @@ Source heading: 1.6 சிறப்புப்பாயிர இலக்க�
 
 ## 17. `பகுதி` — `nannul-term-candidate-7612cff0b89c9724`
 
-- Occurrences: **5**
-- Record numbers with the exact form: 133, 134, 139, 141, 278
+- Body occurrences: **5**
+- Record numbers with the exact form in body text: 133, 134, 139, 141, 278
 - Structural units: பதவியல், பெயரியல்
 - Source-heading matches: **1**
 
@@ -1098,6 +1313,7 @@ Source heading: 1.6 சிறப்புப்பாயிர இலக்க�
 #### nannul-0133 — நூற்பா 133 — பதவியல்
 
 Source heading: பதம்
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 பகுதி விகுதி இடைநிலை சாரியை
@@ -1108,6 +1324,7 @@ Source heading: பதம்
 #### nannul-0278 — நூற்பா 278 — பெயரியல்
 
 Source heading: பெயர்ச் சொல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 கிளந்த கிளைமுதல் உற்ற ரவ்வீற்றவும்
@@ -1115,10 +1332,20 @@ Source heading: பெயர்ச் சொல்
 பல்லோர் பெயரின் பகுதி ஆகும்
 ```
 
+#### nannul-0134 — நூற்பா 134 — பதவியல்
+
+Source heading: பகுதி
+Context role: heading-range-with-body-occurrence; candidate in body
+
+```text
+தத்தம்,
+பகாப் பதங்களே பகுதி ஆகும்
+```
+
 ## 18. `மாத்திரை` — `nannul-term-candidate-efa81b5c39df4a29`
 
-- Occurrences: **4**
-- Record numbers with the exact form: 57, 99, 100, 321
+- Body occurrences: **4**
+- Record numbers with the exact form in body text: 57, 99, 100, 321
 - Structural units: எழுத்து இயல், வினையியல்
 - Source-heading matches: **1**
 
@@ -1131,6 +1358,7 @@ Source heading: பெயர்ச் சொல்
 #### nannul-0057 — நூற்பா 57 — எழுத்து இயல்
 
 Source heading: (none)
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 எண் பெயர் முறை பிறப்பு உருவம் மாத்திரை
@@ -1141,16 +1369,29 @@ Source heading: (none)
 #### nannul-0321 — நூற்பா 321 — வினையியல்
 
 Source heading: வினைச் சொல்
+Context role: structural-unit-representative; candidate in body
 
 ```text
 பொருள்முதல் ஆறினும் தோற்றி முன் ஆறனுள்
 வினைமுதல் மாத்திரை விளக்கல் வினைக்குறிப்பே
 ```
 
+#### nannul-0099 — நூற்பா 99 — எழுத்து இயல்
+
+Source heading: மாத்திரை
+Context role: heading-range-with-body-occurrence; candidate in body
+
+```text
+மூன்று உயிரளபு இரண்டாம் நெடில் ஒன்றே
+குறிலோடு ஐ ஒளக் குறுக்கம் ஒற்றளபு
+அரை ஒற்று இ உக் குறுக்கம் ஆய்தம்
+கால் குறள் மஃகான் ஆய்தம் மாத்திரை
+```
+
 ## 19. `வல்லினம்` — `nannul-term-candidate-f6a2f091c7106cc3`
 
-- Occurrences: **4**
-- Record numbers with the exact form: 68, 161, 209, 256
+- Body occurrences: **4**
+- Record numbers with the exact form in body text: 68, 161, 209, 256
 - Structural units: எழுத்து இயல், உயிரீற்றுப் புணரியல், மெய்யீற்றுப் புணரியல், உருபு புணரியல்
 - Source-heading matches: **1**
 
@@ -1163,6 +1404,7 @@ Source heading: வினைச் சொல்
 #### nannul-0068 — நூற்பா 68 — எழுத்து இயல்
 
 Source heading: பெயர்
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 வல்லினம் க ச ட த ப ற என ஆறே
@@ -1171,6 +1413,7 @@ Source heading: பெயர்
 #### nannul-0161 — நூற்பா 161 — உயிரீற்றுப் புணரியல்
 
 Source heading: பொதுப்புணர்ச்சி
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ஆவி ய ர ழ இறுதி முன்னிலை வினை
@@ -1180,6 +1423,7 @@ Source heading: பொதுப்புணர்ச்சி
 #### nannul-0209 — நூற்பா 209 — மெய்யீற்றுப் புணரியல்
 
 Source heading: ணகர னகரவீறு
+Context role: structural-unit-representative; candidate in body
 
 ```text
 ண ன வல்லினம் வர ட றவும் பிறவரின்
@@ -1190,6 +1434,7 @@ Source heading: ணகர னகரவீறு
 #### nannul-0256 — நூற்பா 256 — உருபு புணரியல்
 
 Source heading: புறனடை
+Context role: structural-unit-representative; candidate in body
 
 ```text
 புள்ளியும் உயிரும் ஆய் இறு சொல் முன்
@@ -1197,10 +1442,20 @@ Source heading: புறனடை
 வல்லினம் விகற்பமும் இயல்பும் ஆகும்
 ```
 
+#### nannul-0165 — நூற்பா 165 — உயிரீற்றுப் புணரியல்
+
+Source heading: உயிரீற்று முன் வல்லினம்
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+இயல்பினும் விதியினும் நின்ற உயிர்முன்
+க ச த ப மிகும் விதவாதன மன்னே
+```
+
 ## 20. `திரிபு` — `nannul-term-candidate-2db17c3d25bc3efe`
 
-- Occurrences: **3**
-- Record numbers with the exact form: 8, 295, 303
+- Body occurrences: **3**
+- Record numbers with the exact form in body text: 8, 295, 303
 - Structural units: நூலினது வரலாறு, பெயரியல்
 - Source-heading matches: **1**
 
@@ -1213,6 +1468,7 @@ Source heading: புறனடை
 #### nannul-0008 — நூற்பா 8 — நூலினது வரலாறு
 
 Source heading: 1.1 நூலினது வரலாறு (4–25)
+Context role: first-body-occurrence, structural-unit-representative; candidate in body
 
 ```text
 இருவர் நூற்கும் ஒருசிறை தொடங்கித்
@@ -1222,10 +1478,21 @@ Source heading: 1.1 நூலினது வரலாறு (4–25)
 #### nannul-0295 — நூற்பா 295 — பெயரியல்
 
 Source heading: வேற்றுமை
+Context role: structural-unit-representative; candidate in body
 
 ```text
 அவற்றுள்,
 எழுவாய் உருபு திரிபு இல் பெயரே
 வினைபெயர் வினாக்கொளல் அதன் பயனிலையே
+```
+
+#### nannul-0237 — நூற்பா 237 — மெய்யீற்றுப் புணரியல்
+
+Source heading: வருமொழித் தகர நகரத் திரிபு
+Context role: heading-context-only-token-not-repeated-in-selected-body; heading-context only; candidate not repeated in this body
+
+```text
+னலமுன் றனவும் ணளமுன் டணவும்
+ஆகும் தநக்கள் ஆயும் காலே
 ```
 
