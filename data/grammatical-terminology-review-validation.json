@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "source_review_ledger": "data/grammatical-terminology-review.json",
+  "checks": {
+    "candidate_discovery_validation_pass": true,
+    "candidate_count_is_455": true,
+    "decision_candidate_ids_unique": true,
+    "all_decisions_reference_valid_candidates_and_records": true,
+    "ledger_counts_reconcile": true,
+    "layer_status_matches_coverage": true,
+    "batch_001_has_20_decisions": true
+  },
+  "counts": {
+    "candidate_surface_forms": 455,
+    "reviewed": 20,
+    "accepted": 19,
+    "rejected": 1,
+    "needs_context": 0,
+    "unreviewed": 435
+  },
+  "batch_001": {
+    "decision_count": 20,
+    "accepted": 19,
+    "rejected": 1,
+    "needs_context": 0
+  },
+  "accepted_category_counts": {
+    "case": 1,
+    "meta-grammar": 2,
+    "morphology": 4,
+    "noun": 1,
+    "phonology-letter-class": 6,
+    "phonology-sound-process": 1,
+    "prosodic-measure": 1,
+    "textual-pedagogy": 1,
+    "verb": 2
+  },
+  "failures": [],
+  "interpretation_boundary": "PASS validates ledger identity, evidence links, decision structure, and counts; it does not replace human semantic review.",
+  "hashes": {
+    "data/grammatical-terminology-review.json": "c28e87bfbcd8e05dffdb76ca598aff39ff196c7134d727ce2a61a02489d98a7f",
+    "reviews/terminology/batch-001-decisions.md": "2b5b7322bfd063bd341e2a12f484bd58b30725ab9b3c7f552bad683be50344fd"
+  }
+}
