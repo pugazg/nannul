@@ -16,6 +16,7 @@ Each audit should identify source/version, range, verification method, anomalies
 - `CANONICAL_INGEST_258_319.md` — பெயரியல் 258–319.
 - `CANONICAL_INGEST_320_351.md` — வினையியல் 320–351.
 - `CANONICAL_INGEST_352_419.md` — பொதுவியல் 352–419.
+- `CANONICAL_INGEST_420_441.md` — இடையியல் 420–441.
 
 ## Current findings
 
@@ -26,7 +27,8 @@ Each audit should identify source/version, range, verification method, anomalies
 - `PM147-V005`: நூற்பா 344 has a trailing `"` in the current webpage and not in the historical mirror; current punctuation is canonical.
 - பெயரியல் 258–319: continuous numbering.
 - வினையியல் 320–351: continuous numbering.
-- பொதுவியல் 352–419: continuous numbering; no new numbering discrepancy observed.
+- பொதுவியல் 352–419: continuous numbering.
+- இடையியல் 420–441: continuous numbering; no new numbering discrepancy observed.
 
 ## Verification progress
 
@@ -37,8 +39,9 @@ Each audit should identify source/version, range, verification method, anomalies
   - பெயரியல் 258–319: **canonicalized and audited**.
   - வினையியல் 320–351: **canonicalized and audited**.
   - பொதுவியல் 352–419: **canonicalized and audited**.
-  - next: இடையியல் 420–441.
+  - இடையியல் 420–441: **canonicalized and audited**.
+  - next: உரியியல் 442–462.
 
-Current canonical boundary: **419**.
+Current canonical boundary: **441**.
 
-The complete source must eventually be verified through நூற்பா 462 before the whole canonical Tamil layer can be declared source-verified.
+The next batch, உரியியல் 442–462, is the final numbered source range. After it is audited, the full canonical Tamil source can be reviewed for end-to-end completion through நூற்பா 462.
