@@ -24,6 +24,7 @@ EXPECTED_BATCH_COUNTS = {
     "NANNUL-TERM-REVIEW-001": 20,
     "NANNUL-TERM-REVIEW-002": 17,
     "NANNUL-TERM-REVIEW-003": 25,
+    "NANNUL-TERM-REVIEW-004": 25,
 }
 
 
@@ -174,15 +175,15 @@ def main() -> None:
         "batch_001_has_20_decisions": len(batches["NANNUL-TERM-REVIEW-001"]) == 20,
         "batch_002_has_17_decisions": len(batches["NANNUL-TERM-REVIEW-002"]) == 17,
         "batch_003_has_25_decisions": len(batches["NANNUL-TERM-REVIEW-003"]) == 25,
+        "batch_004_has_25_decisions": len(batches["NANNUL-TERM-REVIEW-004"]) == 25,
     }
     if candidate_validation.get("status") != "PASS":
         failures.append({"reason": "candidate-discovery-validation-not-pass"})
 
     REVIEWS.mkdir(parents=True, exist_ok=True)
     summary_paths = {
-        "NANNUL-TERM-REVIEW-001": write_batch_summary("NANNUL-TERM-REVIEW-001", batches["NANNUL-TERM-REVIEW-001"], "batch-001-decisions.md"),
-        "NANNUL-TERM-REVIEW-002": write_batch_summary("NANNUL-TERM-REVIEW-002", batches["NANNUL-TERM-REVIEW-002"], "batch-002-decisions.md"),
-        "NANNUL-TERM-REVIEW-003": write_batch_summary("NANNUL-TERM-REVIEW-003", batches["NANNUL-TERM-REVIEW-003"], "batch-003-decisions.md"),
+        batch_id: write_batch_summary(batch_id, batches[batch_id], f"batch-{batch_id.split('-')[-1]}-decisions.md")
+        for batch_id in EXPECTED_BATCH_COUNTS
     }
 
     status = "PASS" if all(checks.values()) and not failures else "FAIL"
