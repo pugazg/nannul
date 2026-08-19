@@ -83,7 +83,7 @@ Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
 ## Grammatical-terminology contextual review
 
-**PHASE 2 — IN PROGRESS; BATCHES 001–006 COMPLETE AND AUDITED**
+**PHASE 2 — IN PROGRESS; BATCHES 001–007 COMPLETE AND AUDITED**
 
 Review policy: `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
 
@@ -92,35 +92,36 @@ Human decision ledger: `data/grammatical-terminology-review.json`.
 Current validated ledger:
 
 - candidates: **455**;
-- reviewed: **137**;
-- accepted: **97**;
-- rejected: **40**;
+- reviewed: **162**;
+- accepted: **104**;
+- rejected: **58**;
 - needs-context: **0**;
-- unreviewed: **318**;
+- unreviewed: **293**;
 - layer status: **review-in-progress**.
 
 Validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
 
 ### Batch results
 
-- Batch 001 — **20 reviewed = 19 accepted + 1 rejected**; source-heading-supported.
-- Batch 002 — **17 reviewed = 14 accepted + 3 rejected**; remaining source-heading-supported.
-- Batch 003 — **25 reviewed = 18 accepted + 7 rejected**; first frequency-only batch.
-- Batch 004 — **25 reviewed = 16 accepted + 9 rejected**; second frequency-only batch.
-- Batch 005 — **25 reviewed = 18 accepted + 7 rejected**; third frequency-only batch.
-- Batch 006 — **25 reviewed = 12 accepted + 13 rejected**; fourth frequency-only batch.
+- Batch 001 — **20 = 19 accepted + 1 rejected**; source-heading-supported.
+- Batch 002 — **17 = 14 accepted + 3 rejected**; remaining source-heading-supported.
+- Batch 003 — **25 = 18 accepted + 7 rejected**; frequency-only.
+- Batch 004 — **25 = 16 accepted + 9 rejected**; frequency-only.
+- Batch 005 — **25 = 18 accepted + 7 rejected**; frequency-only.
+- Batch 006 — **25 = 12 accepted + 13 rejected**; frequency-only.
+- Batch 007 — **25 = 7 accepted + 18 rejected**; frequency-only.
 
 All **37 source-heading-supported candidates** have explicit decisions.
 
-Batch-006 accepted forms:
+Batch-007 accepted forms:
 
-`தன்மை`, `எழுத்து`, `து`, `ஆன்`, `இறு`, `அம்`, `இல்`, `ஏற்புழி`, `ஐயம்`, `வன்மை`, `காரணம்`, `முறை`.
+`ட`, `இசை`, `தம்`, `அன்`, `ஊர்`, `தொழில்`, `எழுவாய்`.
 
-Batch-006 rejected forms:
+Batch-007 rejected forms:
 
-`மூன்று`, `வேறு`, `இயல்`, `தான்`, `உளவே`, `இடத்து`, `இடத்தும்`, `ஆகலும்`, `நான்கு`, `ஆதல்`, `ஆகி`, `உயிரும்`, `எட்டு`.
+`ஏழ்`, `ஒழி`, `இரண்டும்`, `ஐந்து`, `ஆறும்`, `நெறியே`, `தாம்`, `இயலும்`, `இல`, `மூன்றும்`, `உள`, `பல`, `ஒன்றன்`, `உருபும்`, `புலவர்`, `இன்றி`, `ஆகா`, `வழியே`.
 
-Batch 006 reinforces exact-form restraint: inflected/compositional surfaces such as `இடத்து`, `இடத்தும்`, `ஆகலும்`, `ஆதல்`, `ஆகி`, and `உயிரும்` are not promoted merely because their base or surrounding phrase is technical. Mixed-use accepted forms retain separate technical/non-technical evidence.
+Batch 007 reinforces the review boundary: frequency-only candidates increasingly contain numeral, pronoun/example, discourse, and inflected/compositional surfaces. Exact grammatical forms are accepted only where Nannūl itself enumerates or uses them as technical forms, and mixed-use accepted forms retain separate technical/non-technical evidence.
 
 Audits:
 
@@ -130,42 +131,16 @@ Audits:
 - `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_006.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_007.md`
 
 ## Documented source-version findings
 
-The canonical edition follows the current Project Madurai webpage. Documented differences against the older official Project Madurai GitHub mirror include:
-
-- current webpage omits displayed 73;
-- current webpage omits displayed 176;
-- historical numbering anomaly around 240–242;
-- நூற்பா 343: current `செய்தனெ` vs historical `செய்தென`;
-- நூற்பா 344: current trailing `"` after `பிற` vs no trailing quote in the historical mirror.
-
-See `audit/SOURCE_VARIANTS.md`.
-
-## Completion / derived-layer audits
-
-- `audit/EZHUTHTHATHIKARAM_COMPLETION.md`
-- `audit/SOLLATHIKARAM_COMPLETION.md`
-- `audit/NANNUL_CANONICAL_COMPLETION.md`
-- `audit/STABLE_IDENTIFIER_INDEX.md`
-- `audit/CANONICAL_UNIT_DATASET.md`
-- `audit/HEADING_LEXICAL_CONCORDANCE.md`
-- `audit/FREQUENCY_PROFILES.md`
-- `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`
-- `audit/TERMINOLOGY_REVIEW_BATCH_001.md`
-- `audit/TERMINOLOGY_REVIEW_BATCH_002.md`
-- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
-- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
-- `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
-- `audit/TERMINOLOGY_REVIEW_BATCH_006.md`
+The canonical edition follows the current Project Madurai webpage. Documented differences against the older official Project Madurai GitHub mirror include omitted displayed 73 and 176, the historical numbering anomaly around 240–242, current `செய்தனெ` at 343, and the current trailing quotation mark at 344. See `audit/SOURCE_VARIANTS.md`.
 
 ## Raw-source preservation
 
-Exact-byte preservation of the **current** Project Madurai HTML remains a separate archival gate.
-
-Infrastructure is present, but the raw snapshot is not yet materialized and SHA-256-verified on `main`; `full_current_html_vendored` therefore remains `false`.
+Exact-byte preservation of the **current** Project Madurai HTML remains a separate archival gate. Infrastructure is present, but the raw snapshot is not yet materialized and SHA-256-verified on `main`; `full_current_html_vendored` therefore remains `false`.
 
 ## Next analytical activity
 
-Continue **Phase 2 Batch 007** with the next **25 highest-priority unreviewed frequency-only candidates**, using the same deterministic context sampling, stable exact-surface identity, internal canonical evidence, mixed-use handling, separate human ledger, and post-review validation.
+Continue **Phase 2 Batch 008** with the next **25 highest-priority unreviewed frequency-only candidates**, using deterministic context sampling, stable exact-surface identity, internal canonical evidence, mixed-use handling, separate human decisions, and post-review validation.
