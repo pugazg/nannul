@@ -41,27 +41,27 @@ Candidate IDs remain stable SHA-256-derived exact-surface identifiers. The queue
 
 Human decisions: `data/grammatical-terminology-review.json`.
 
-Current Phase-2 status after **Batches 001–007**:
+Current Phase-2 status after **Batches 001–008**:
 
-- reviewed: **162**;
-- accepted: **104**;
-- rejected: **58**;
+- reviewed: **187**;
+- accepted: **116**;
+- rejected: **71**;
 - needs-context: **0**;
-- unreviewed: **293**.
+- unreviewed: **268**.
 
-Batch decision summaries and context packets exist for Batches 001–007 under `reviews/terminology/`.
+Batch decision summaries and context packets exist for Batches 001–008 under `reviews/terminology/`.
 
 Review validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
 
-Audits exist at `audit/TERMINOLOGY_REVIEW_BATCH_001.md` through `audit/TERMINOLOGY_REVIEW_BATCH_007.md`.
+Audits exist at `audit/TERMINOLOGY_REVIEW_BATCH_001.md` through `audit/TERMINOLOGY_REVIEW_BATCH_008.md`.
 
 ### Review-tier status
 
-All **37 source-heading-supported candidates** were reviewed across Batches 001–002. Batches 003–007 continue the frequency-only tier while preserving the rule that frequency is review priority, not termhood.
+All **37 source-heading-supported candidates** were reviewed across Batches 001–002. Batches 003–008 continue the frequency-only tier while preserving the rule that frequency is review priority, not termhood.
 
-Batch 007 accepted `ட`, context-bounded `இசை`, `தம்`, `அன்`, context-bounded `ஊர்`, `தொழில்`, and `எழுவாய்`. It rejected 18 numeral, pronominal/example, discourse, and compositional exact surfaces.
+Batch 008 accepted `அது`, `இயல்பு`, `பால்`, `குணம்`, `கு`, `உம்`, `ஐம்பால்`, `எதிர்மறை`, `பொது`, `பன்மை`, `அல்வழி`, and `அயல்`. It rejected 13 emphatic, inflected, numeral/quantifier, anaphoric, and verbal rule-language exact surfaces.
 
-The declining acceptance rate in later frequency-only batches is expected: lower-ranked candidates increasingly reflect grammatical prose vocabulary and example forms rather than named grammatical concepts. This does not change the acceptance standard.
+The review also now demonstrates a stable base/surface policy: an inflected surface can be rejected without prejudging its base, and a later base review may accept the underlying grammatical term when canonical contexts establish independent technical identity.
 
 A consolidated reviewed grammatical-term index should be generated only after a larger reviewed sample makes it useful; it must derive from the explicit review ledger, never directly from mechanical rank.
 
