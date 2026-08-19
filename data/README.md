@@ -42,14 +42,14 @@ Candidate IDs are stable exact-surface hashes: `nannul-term-candidate-<16 hex>`.
 
 `grammatical-terminology-review.json` is the separate human/editorial decision ledger.
 
-Current Phase-2 state after **Batches 001–005**:
+Current Phase-2 state after **Batches 001–006**:
 
 - candidates: **455**;
-- reviewed: **112**;
-- accepted: **85**;
-- rejected: **27**;
+- reviewed: **137**;
+- accepted: **97**;
+- rejected: **40**;
 - needs-context: **0**;
-- unreviewed: **343**;
+- unreviewed: **318**;
 - status: **review-in-progress**.
 
 Batch results:
@@ -58,9 +58,10 @@ Batch results:
 - Batch 002: **17 = 14 accepted + 3 rejected**;
 - Batch 003: **25 = 18 accepted + 7 rejected**;
 - Batch 004: **25 = 16 accepted + 9 rejected**;
-- Batch 005: **25 = 18 accepted + 7 rejected**.
+- Batch 005: **25 = 18 accepted + 7 rejected**;
+- Batch 006: **25 = 12 accepted + 13 rejected**.
 
-All **37 source-heading-supported candidates** were completed in Batches 001–002. Batches 003–005 are frequency-only review tiers.
+All **37 source-heading-supported candidates** were completed in Batches 001–002. Batches 003–006 are frequency-only review tiers.
 
 Mixed-use candidates may carry both `term_use_record_ids` and `non_term_use_record_ids`; acceptance remains context-bounded.
 
@@ -68,11 +69,11 @@ Mixed-use candidates may carry both `term_use_record_ids` and `non_term_use_reco
 
 `grammatical-terminology-review-validation.json` — **PASS**.
 
-Validation checks candidate identity, canonical evidence links, source-gap exclusion, decision structure, evidence-subset/overlap rules, ledger count/status reconciliation, and batch counts **20 + 17 + 25 + 25 + 25**.
+Validation checks candidate identity, canonical evidence links, source-gap exclusion, decision structure, evidence-subset/overlap rules, ledger count/status reconciliation, and batch counts **20 + 17 + 25 + 25 + 25 + 25**.
 
 Current validated ledger SHA-256:
 
-`6f4652e888c850d6aa4168628cdebf7682f8178436ced4179e2441f6ab58d891`
+`c74aeb4499997bee191547156295d5a5208c004f63a5ff9c22ae6ac2db3b5979`
 
 Validator: `scripts/validate_terminology_review.py`
 
@@ -85,6 +86,7 @@ Human-readable summaries:
 - `reviews/terminology/batch-003-decisions.md`
 - `reviews/terminology/batch-004-decisions.md`
 - `reviews/terminology/batch-005-decisions.md`
+- `reviews/terminology/batch-006-decisions.md`
 
 Audits:
 
@@ -93,6 +95,7 @@ Audits:
 - `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_006.md`
 
 ## Derivation and interpretation policy
 
