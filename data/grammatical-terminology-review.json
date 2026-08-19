@@ -6,11 +6,11 @@
   "layer_status": "review-in-progress",
   "counts": {
     "candidate_surface_forms": 455,
-    "reviewed": 162,
-    "accepted": 104,
-    "rejected": 58,
+    "reviewed": 187,
+    "accepted": 116,
+    "rejected": 71,
     "needs_context": 0,
-    "unreviewed": 293
+    "unreviewed": 268
   },
   "decisions": [
     {
@@ -4667,6 +4667,689 @@
       "review_notes": null,
       "review_batch": "NANNUL-TERM-REVIEW-007",
       "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-db56d52541cff59a",
+      "surface_form_ta": "பொருளே",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "பொருளே is an emphatic/predicative surface built from the already reviewed grammatical base பொருள். The passages use it to close definitions ('the meaning is ...') rather than name a distinct grammatical category.",
+      "reviewed_record_ids": [
+        "nannul-0047",
+        "nannul-0298",
+        "nannul-0299",
+        "nannul-0300",
+        "nannul-0450"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0047",
+        "nannul-0298",
+        "nannul-0299",
+        "nannul-0300",
+        "nannul-0450"
+      ],
+      "external_evidence": [],
+      "review_notes": "Rejection concerns independent exact-form termhood only; the base பொருள் remains accepted.",
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-2be4e532280a168e",
+      "surface_form_ta": "நின்ற",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "நின்ற is a participial verbal form ('standing/remained/positioned') used compositionally inside rules and prefatory prose. It does not name a grammatical category.",
+      "reviewed_record_ids": [
+        "nannul-0055",
+        "nannul-0109",
+        "nannul-0136",
+        "nannul-0165",
+        "nannul-0253"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0055",
+        "nannul-0109",
+        "nannul-0136",
+        "nannul-0165",
+        "nannul-0253"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-a15cc2dde39cdc29",
+      "surface_form_ta": "அது",
+      "decision": "accepted",
+      "term_category": "case",
+      "rationale": "The exact form அது is explicitly enumerated among the eight case forms in நூற்பா 292, establishing a technical case-marker use. Elsewhere the same surface is demonstrative/anaphoric prose, so acceptance is restricted to the case context.",
+      "reviewed_record_ids": [
+        "nannul-0058",
+        "nannul-0128",
+        "nannul-0180",
+        "nannul-0292",
+        "nannul-0315"
+      ],
+      "term_use_record_ids": [
+        "nannul-0292"
+      ],
+      "non_term_use_record_ids": [
+        "nannul-0058",
+        "nannul-0128",
+        "nannul-0180",
+        "nannul-0315"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "mixed-context"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-9eceb41e91ce119e",
+      "surface_form_ta": "உயர்",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "உயர் functions as an adjectival/abbreviatory modifier ('high/higher') inside expressions such as உயர் பெயர் and high-class/person references. The reviewed corpus already carries the explicit category உயர்திணை; the bare modifier does not require an independent term identity.",
+      "reviewed_record_ids": [
+        "nannul-0061",
+        "nannul-0289",
+        "nannul-0308",
+        "nannul-0309",
+        "nannul-0349"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0061",
+        "nannul-0289",
+        "nannul-0308",
+        "nannul-0309",
+        "nannul-0349"
+      ],
+      "external_evidence": [],
+      "review_notes": "Rejection does not affect the accepted term உயர்திணை.",
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-e2ca8a58ed948407",
+      "surface_form_ta": "ஒன்றே",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "ஒன்றே is the numeral ஒன்று with emphatic/predicative ஏ. It counts or predicates singularity in grammatical inventories but does not name a distinct grammatical term.",
+      "reviewed_record_ids": [
+        "nannul-0061",
+        "nannul-0099",
+        "nannul-0263",
+        "nannul-0284",
+        "nannul-0324"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0061",
+        "nannul-0099",
+        "nannul-0263",
+        "nannul-0284",
+        "nannul-0324"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-a6b7d3b4f9e13596",
+      "surface_form_ta": "உற",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "உற is verbal rule-language ('touch/join/receive/occur') describing articulation, combination, or attachment. The operations described are technical, but the verb itself is not a category label.",
+      "reviewed_record_ids": [
+        "nannul-0077",
+        "nannul-0079",
+        "nannul-0082",
+        "nannul-0235",
+        "nannul-0355"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0077",
+        "nannul-0079",
+        "nannul-0082",
+        "nannul-0235",
+        "nannul-0355"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-a7a25d02f2b6d60a",
+      "surface_form_ta": "வருமே",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "வருமே is a finite/predicative verbal surface ('will/does come') used to state rule outcomes. It is compositional rule prose, not independent grammatical terminology.",
+      "reviewed_record_ids": [
+        "nannul-0077",
+        "nannul-0079",
+        "nannul-0148",
+        "nannul-0189",
+        "nannul-0336"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0077",
+        "nannul-0079",
+        "nannul-0148",
+        "nannul-0189",
+        "nannul-0336"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-25c84c02b2405027",
+      "surface_form_ta": "அவற்று",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "அவற்று is an inflected anaphoric/demonstrative form referring back to previously named items. It organizes grammatical prose but does not independently name a grammatical category.",
+      "reviewed_record_ids": [
+        "nannul-0091",
+        "nannul-0265",
+        "nannul-0337",
+        "nannul-0389"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0091",
+        "nannul-0265",
+        "nannul-0337",
+        "nannul-0389"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-f5e807545b8d9b02",
+      "surface_form_ta": "இயல்பு",
+      "decision": "accepted",
+      "term_category": "meta-grammar",
+      "rationale": "இயல்பு is repeatedly used as technical rule metalanguage for the natural/default/unmodified outcome contrasted with விகாரம், மிகுதல், திரிபு, or special rule behavior. The ordinary 'natural' measure example at நூற்பா 100 is kept separate.",
+      "reviewed_record_ids": [
+        "nannul-0100",
+        "nannul-0177",
+        "nannul-0209",
+        "nannul-0303",
+        "nannul-0323"
+      ],
+      "term_use_record_ids": [
+        "nannul-0177",
+        "nannul-0209",
+        "nannul-0303",
+        "nannul-0323"
+      ],
+      "non_term_use_record_ids": [
+        "nannul-0100"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "mixed-context"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-5bab471766d5b7a3",
+      "surface_form_ta": "பால்",
+      "decision": "accepted",
+      "term_category": "noun",
+      "rationale": "பால் has explicit grammatical category use for gender/classification, especially in பெயரியல் and the list of grammatical concord/deviation dimensions. Broader 'type/class' uses in other structural statements are distinguished from this technical gender sense.",
+      "reviewed_record_ids": [
+        "nannul-0110",
+        "nannul-0128",
+        "nannul-0281",
+        "nannul-0375"
+      ],
+      "term_use_record_ids": [
+        "nannul-0281",
+        "nannul-0375"
+      ],
+      "non_term_use_record_ids": [
+        "nannul-0110",
+        "nannul-0128"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "mixed-context"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-342bfaee41f9fcf0",
+      "surface_form_ta": "வவ்வும்",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "வவ்வும் is an additive/inflected surface used when the வ-letter/form participates in rules. The independent exact letter symbol வ is already accepted; this surface does not require a separate term identity.",
+      "reviewed_record_ids": [
+        "nannul-0125",
+        "nannul-0162",
+        "nannul-0163",
+        "nannul-0199",
+        "nannul-0280"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0125",
+        "nannul-0162",
+        "nannul-0163",
+        "nannul-0199",
+        "nannul-0280"
+      ],
+      "external_evidence": [],
+      "review_notes": "Rejection does not affect the accepted exact letter term வ.",
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-0036152a7825b6be",
+      "surface_form_ta": "ஒன்பதும்",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "ஒன்பதும் is the numeral ஒன்பது with additive/emphatic உம். It counts members or participates as a numeral in rules and does not name an independent grammatical category.",
+      "reviewed_record_ids": [
+        "nannul-0130",
+        "nannul-0197",
+        "nannul-0199",
+        "nannul-0249",
+        "nannul-0360"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0130",
+        "nannul-0197",
+        "nannul-0199",
+        "nannul-0249",
+        "nannul-0360"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-042079729c9a5c29",
+      "surface_form_ta": "குணம்",
+      "decision": "accepted",
+      "term_category": "semantics",
+      "rationale": "குணம் is explicit grammatical/semantic metalanguage for quality/property: it participates in word derivation and naming classifications and is directly paired/defined with பண்பு in உரியியல்.",
+      "reviewed_record_ids": [
+        "nannul-0132",
+        "nannul-0276",
+        "nannul-0393",
+        "nannul-0443",
+        "nannul-0453"
+      ],
+      "term_use_record_ids": [
+        "nannul-0132",
+        "nannul-0276",
+        "nannul-0393",
+        "nannul-0443",
+        "nannul-0453"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "broad-grammatical"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-026d2745ef2fa5e8",
+      "surface_form_ta": "கு",
+      "decision": "accepted",
+      "term_category": "morphology",
+      "rationale": "கு is explicitly enumerated as grammatical form material in விகுதி and சாரியை inventories, as a case form in the eight-case list, and in finite-verb morphology. Its exact-form identity is therefore directly supported across several morphological systems.",
+      "reviewed_record_ids": [
+        "nannul-0140",
+        "nannul-0244",
+        "nannul-0292",
+        "nannul-0318",
+        "nannul-0331"
+      ],
+      "term_use_record_ids": [
+        "nannul-0140",
+        "nannul-0244",
+        "nannul-0292",
+        "nannul-0318",
+        "nannul-0331"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "multiple-grammatical-senses"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-bb743a6496b36449",
+      "surface_form_ta": "உம்",
+      "decision": "accepted",
+      "term_category": "particle",
+      "rationale": "உம் is explicitly treated as grammatical form material: it appears in விகுதி/finite-verb inventories and as the additive/enumerative particle whose presence or absence affects constructions. The exact surface therefore has internally established grammatical-form identity.",
+      "reviewed_record_ids": [
+        "nannul-0140",
+        "nannul-0245",
+        "nannul-0332",
+        "nannul-0341",
+        "nannul-0368"
+      ],
+      "term_use_record_ids": [
+        "nannul-0140",
+        "nannul-0245",
+        "nannul-0332",
+        "nannul-0341",
+        "nannul-0368"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "multiple-grammatical-senses"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-9ce8726ddf051576",
+      "surface_form_ta": "ஐம்பால்",
+      "decision": "accepted",
+      "term_category": "noun",
+      "rationale": "ஐம்பால் is explicit grammatical metalanguage for the five gender/person-number classes. Nannūl repeatedly applies it to tense intermediates, word meaning, and finite-verbal distribution.",
+      "reviewed_record_ids": [
+        "nannul-0142",
+        "nannul-0143",
+        "nannul-0144",
+        "nannul-0259",
+        "nannul-0339"
+      ],
+      "term_use_record_ids": [
+        "nannul-0142",
+        "nannul-0143",
+        "nannul-0144",
+        "nannul-0259",
+        "nannul-0339"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "broad-grammatical"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-126a09361d989d16",
+      "surface_form_ta": "சில",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "சில is the ordinary quantifier/example word 'some/few'. Nannūl may subject the lexical form to rules or use it to qualify subsets, but it is not itself the name of a grammatical category.",
+      "reviewed_record_ids": [
+        "nannul-0144",
+        "nannul-0170",
+        "nannul-0184",
+        "nannul-0207",
+        "nannul-0280"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0144",
+        "nannul-0170",
+        "nannul-0184",
+        "nannul-0207",
+        "nannul-0280"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-9df9ac6baa7afaf7",
+      "surface_form_ta": "எதிர்மறை",
+      "decision": "accepted",
+      "term_category": "semantics",
+      "rationale": "எதிர்மறை is explicitly grammaticalized as negative/oppositional meaning and constructional function. It is listed in verbal behavior, residual-expression classes, and இடைச்சொல் semantic inventories.",
+      "reviewed_record_ids": [
+        "nannul-0145",
+        "nannul-0360",
+        "nannul-0421",
+        "nannul-0423",
+        "nannul-0425"
+      ],
+      "term_use_record_ids": [
+        "nannul-0145",
+        "nannul-0360",
+        "nannul-0421",
+        "nannul-0423",
+        "nannul-0425"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "broad-grammatical"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-98933144f98dfc1b",
+      "surface_form_ta": "பொது",
+      "decision": "accepted",
+      "term_category": "meta-grammar",
+      "rationale": "பொது functions as grammatical classificatory metalanguage for what is common/general across letters, words, persons/classes, and verbal behavior. In several passages it is predicative/category-bearing rather than merely incidental prose.",
+      "reviewed_record_ids": [
+        "nannul-0146",
+        "nannul-0260",
+        "nannul-0274",
+        "nannul-0285",
+        "nannul-0323"
+      ],
+      "term_use_record_ids": [
+        "nannul-0146",
+        "nannul-0260",
+        "nannul-0274",
+        "nannul-0285",
+        "nannul-0323"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "broad-grammatical"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-43a3fb0360037479",
+      "surface_form_ta": "அனைத்தும்",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "அனைத்தும் is the ordinary universal quantifier 'all/everything' used to scope grammatical statements. It does not name an independent technical category.",
+      "reviewed_record_ids": [
+        "nannul-0153",
+        "nannul-0177",
+        "nannul-0265",
+        "nannul-0450",
+        "nannul-0461"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0153",
+        "nannul-0177",
+        "nannul-0265",
+        "nannul-0450",
+        "nannul-0461"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-566314ad081edc4f",
+      "surface_form_ta": "இருமையும்",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "இருமையும் is a compositional 'both/both kinds' expression whose referent changes by rule. It is not a stable independent grammatical category label.",
+      "reviewed_record_ids": [
+        "nannul-0162",
+        "nannul-0260",
+        "nannul-0264",
+        "nannul-0319",
+        "nannul-0405"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0162",
+        "nannul-0260",
+        "nannul-0264",
+        "nannul-0319",
+        "nannul-0405"
+      ],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-5f0ae1d04a06120b",
+      "surface_form_ta": "பன்மை",
+      "decision": "accepted",
+      "term_category": "noun",
+      "rationale": "பன்மை is an explicit grammatical number category. Nannūl contrasts it with ஒருமை and applies it to nominal reference, agreement, person/deictic positions, and verbal endings.",
+      "reviewed_record_ids": [
+        "nannul-0167",
+        "nannul-0287",
+        "nannul-0289",
+        "nannul-0332",
+        "nannul-0337"
+      ],
+      "term_use_record_ids": [
+        "nannul-0167",
+        "nannul-0287",
+        "nannul-0289",
+        "nannul-0332",
+        "nannul-0337"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "broad-grammatical"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-69581fe956e9727e",
+      "surface_form_ta": "உருபின்",
+      "decision": "rejected",
+      "term_category": null,
+      "rationale": "உருபின் is the genitive/oblique surface of the already accepted base term உருபு. It means 'of the form/case-marker' inside rules and does not establish a separate term identity.",
+      "reviewed_record_ids": [
+        "nannul-0238",
+        "nannul-0245",
+        "nannul-0246",
+        "nannul-0317",
+        "nannul-0354"
+      ],
+      "term_use_record_ids": [],
+      "non_term_use_record_ids": [
+        "nannul-0238",
+        "nannul-0245",
+        "nannul-0246",
+        "nannul-0317",
+        "nannul-0354"
+      ],
+      "external_evidence": [],
+      "review_notes": "Rejection concerns independent exact-form termhood only; the base உருபு remains accepted.",
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-3b116b11f8dc5e98",
+      "surface_form_ta": "அல்வழி",
+      "decision": "accepted",
+      "term_category": "other-grammar",
+      "rationale": "அல்வழி is a stable technical category repeatedly contrasted with வேற்றுமை in புணர்ச்சி. Nannūl uses it to define the non-case syntactic/sandhi environment and to condition phonological alternations across both உயிரீற்று and மெய்யீற்று rules.",
+      "reviewed_record_ids": [
+        "nannul-0151",
+        "nannul-0152",
+        "nannul-0171",
+        "nannul-0177",
+        "nannul-0178",
+        "nannul-0181",
+        "nannul-0211",
+        "nannul-0220",
+        "nannul-0224",
+        "nannul-0227",
+        "nannul-0229",
+        "nannul-0230",
+        "nannul-0232"
+      ],
+      "term_use_record_ids": [
+        "nannul-0151",
+        "nannul-0152",
+        "nannul-0171",
+        "nannul-0177",
+        "nannul-0178",
+        "nannul-0181",
+        "nannul-0211",
+        "nannul-0220",
+        "nannul-0224",
+        "nannul-0227",
+        "nannul-0229",
+        "nannul-0230",
+        "nannul-0232"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "broad-grammatical"
+    },
+    {
+      "candidate_id": "nannul-term-candidate-0ee5530767e93806",
+      "surface_form_ta": "அயல்",
+      "decision": "accepted",
+      "term_category": "morphology",
+      "rationale": "அயல் is repeatedly used as positional grammatical metalanguage for the adjacent/neighboring segment in vocative and related alternation rules. Its recurrence in structured transformation descriptions establishes a stable technical positional sense.",
+      "reviewed_record_ids": [
+        "nannul-0303",
+        "nannul-0307",
+        "nannul-0308",
+        "nannul-0309",
+        "nannul-0310",
+        "nannul-0311",
+        "nannul-0312",
+        "nannul-0353"
+      ],
+      "term_use_record_ids": [
+        "nannul-0303",
+        "nannul-0307",
+        "nannul-0308",
+        "nannul-0309",
+        "nannul-0310",
+        "nannul-0311",
+        "nannul-0312",
+        "nannul-0353"
+      ],
+      "non_term_use_record_ids": [],
+      "external_evidence": [],
+      "review_notes": null,
+      "review_batch": "NANNUL-TERM-REVIEW-008",
+      "review_basis": "internal-canonical-contexts-frequency-only-tier",
+      "technical_scope": "broad-grammatical"
     }
   ]
 }
