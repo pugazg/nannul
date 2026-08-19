@@ -83,7 +83,7 @@ Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
 ## Grammatical-terminology contextual review
 
-**PHASE 2 — IN PROGRESS; BATCHES 001–003 COMPLETE AND AUDITED**
+**PHASE 2 — IN PROGRESS; BATCHES 001–004 COMPLETE AND AUDITED**
 
 Review policy:
 
@@ -96,11 +96,11 @@ Human decision ledger:
 Current validated ledger:
 
 - candidates: **455**;
-- reviewed: **62**;
-- accepted: **51**;
-- rejected: **11**;
+- reviewed: **87**;
+- accepted: **67**;
+- rejected: **20**;
 - needs-context: **0**;
-- unreviewed: **393**;
+- unreviewed: **368**;
 - layer status: **review-in-progress**.
 
 Validation:
@@ -115,49 +115,47 @@ Validation:
 - **19 accepted**;
 - **1 rejected** — `முன்`.
 
-Audit: `audit/TERMINOLOGY_REVIEW_BATCH_001.md`.
-
 ### Batch 002 — remaining source-heading-supported
 
 - **17 reviewed**;
 - **14 accepted**;
 - **3 rejected** — `பொதுப்`, `சொல்லின்`, `சிறப்புப்`.
 
-Audit: `audit/TERMINOLOGY_REVIEW_BATCH_002.md`.
-
 All **37 source-heading-supported candidates** therefore have explicit decisions.
 
 ### Batch 003 — first frequency-only batch
-
-Selection: **25 highest-priority unreviewed frequency-only candidates**.
-
-Result:
 
 - **25 reviewed**;
 - **18 accepted**;
 - **7 rejected**;
 - **0 needs-context**.
 
-Rejected exact forms:
+### Batch 004 — second frequency-only batch
 
-- `ஆகும்`;
-- `இரு`;
-- `என்ப`;
-- `இயல்பும்`;
-- `ஆறு`;
-- `இயல்பே`;
-- `ஒன்று`.
+Selection: the next **25 highest-priority unreviewed frequency-only candidates**.
 
-Accepted forms include `ஐ`, `முதல்`, `ஈர்`, `என`, `என்`, `ஈறு`, `ஆம்`, `ஈற்று`, `இடை`, `பொருள்`, `என்று`, `ஒற்று`, `ஆ`, `ன`, `ள`, `உயிர்மெய்`, `ஆய்தம்`, and `இ`.
+Result:
 
-Batch 003 confirms two key rules:
+- **25 reviewed**;
+- **16 accepted**;
+- **9 rejected**;
+- **0 needs-context**.
 
-1. frequency is a review-priority signal only—high-frequency `ஆகும்` is still rejected when contexts show ordinary rule-statement syntax;
-2. a frequency-only form can be accepted when Nannūl body text itself explicitly establishes grammatical use, even without source-heading evidence.
+Accepted Batch-004 forms:
 
-The review also rejects compositional exact surfaces such as `இயல்பும்` and `இயல்பே` without pre-judging the later base-form review of `இயல்பு`.
+`ப`, `ல`, `முன்னிலை`, `ஏ`, `இறுதி`, `ஓ`, `வினா`, `அல்`, `க`, `த`, `ஞ`, `ந`, `அற்று`, `படர்க்கை`, `குறில்`, `வ`.
 
-Audit: `audit/TERMINOLOGY_REVIEW_BATCH_003.md`.
+Rejected Batch-004 forms:
+
+`வழி`, `பிற`, `ஆதி`, `பிறவும்`, `மூ`, `இவை`, `ஓர்`, `எனும்`, `பெயரே`.
+
+Batch 004 reinforces three review rules:
+
+1. frequent ordinary enumerative/discourse forms remain rejected despite occurring inside grammar;
+2. exact letter symbols remain independently useful grammatical terms when Nannūl explicitly enumerates/manipulates them;
+3. inflected/compositional surfaces such as `எனும்` and `பெயரே` do not automatically receive separate term identities from their bases.
+
+Audit: `audit/TERMINOLOGY_REVIEW_BATCH_004.md`.
 
 ## Documented source-version findings
 
@@ -184,6 +182,7 @@ See `audit/SOURCE_VARIANTS.md`.
 - `audit/TERMINOLOGY_REVIEW_BATCH_001.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_002.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
 
 ## Raw-source preservation
 
@@ -193,6 +192,6 @@ Infrastructure is present, but the raw snapshot is not yet materialized and SHA-
 
 ## Next analytical activity
 
-Continue **Phase 2 Batch 004** with the next roughly **25 highest-priority unreviewed frequency-only candidates**.
+Continue **Phase 2 Batch 005** with the next roughly **25 highest-priority unreviewed frequency-only candidates**.
 
-Use the same controls established in Batch 003: deterministic representative-context sampling, stable exact-surface identity, internal canonical contexts first, explicit mixed-use handling, restraint around purely compositional inflected surfaces, separate human decision ledger, and post-review structural/provenance validation.
+Use the same controls established in Batches 003–004: deterministic representative-context sampling, stable exact-surface identity, internal canonical contexts first, explicit mixed-use handling, restraint around purely compositional/inflected surfaces, separate human decision ledger, and post-review structural/provenance validation.
