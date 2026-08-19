@@ -17,12 +17,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `HEADING_LEXICAL_CONCORDANCE.md` — source-heading / exact-surface concordance audit.
 - `FREQUENCY_PROFILES.md` — deterministic frequency/profile audit.
 - `TERMINOLOGY_CANDIDATE_DISCOVERY.md` — Phase-1 terminology discovery audit.
-- `TERMINOLOGY_REVIEW_BATCH_001.md` — Phase-2 contextual review Batch 001.
-- `TERMINOLOGY_REVIEW_BATCH_002.md` — Batch 002 and heading-supported-tier completion.
-- `TERMINOLOGY_REVIEW_BATCH_003.md` — first frequency-only batch.
-- `TERMINOLOGY_REVIEW_BATCH_004.md` — second frequency-only batch.
-- `TERMINOLOGY_REVIEW_BATCH_005.md` — third frequency-only batch.
-- `TERMINOLOGY_REVIEW_BATCH_006.md` — fourth frequency-only batch.
+- `TERMINOLOGY_REVIEW_BATCH_001.md` through `TERMINOLOGY_REVIEW_BATCH_007.md` — Phase-2 contextual review audits.
 
 ## Canonical / mechanical-data status
 
@@ -39,7 +34,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 
 - candidate surface forms: **455**;
 - frequency-selected candidates: **443**;
-- candidates with exact source-heading-token evidence: **37**.
+- exact source-heading-supported candidates: **37**.
 
 Discovery rank is review priority only, never semantic confidence.
 
@@ -56,19 +51,22 @@ Batch results:
 - Batch 003 — 25 = **18 accepted + 7 rejected**;
 - Batch 004 — 25 = **16 accepted + 9 rejected**;
 - Batch 005 — 25 = **18 accepted + 7 rejected**;
-- Batch 006 — 25 = **12 accepted + 13 rejected**.
+- Batch 006 — 25 = **12 accepted + 13 rejected**;
+- Batch 007 — 25 = **7 accepted + 18 rejected**.
 
-Whole ledger after Batch 006:
+Whole ledger after Batch 007:
 
 - candidates: **455**;
-- reviewed: **137**;
-- accepted: **97**;
-- rejected: **40**;
+- reviewed: **162**;
+- accepted: **104**;
+- rejected: **58**;
 - needs-context: **0**;
-- unreviewed: **318**;
+- unreviewed: **293**;
 - status: **review-in-progress**.
 
-Validation enforces batch counts **20 + 17 + 25 + 25 + 25 + 25**, canonical evidence linkage, source-gap exclusion, evidence-subset rules, and exact count/status reconciliation.
+Validation enforces batch counts **20 + 17 + 25 + 25 + 25 + 25 + 25**, canonical evidence linkage, source-gap exclusion, evidence-subset rules, and exact count/status reconciliation.
+
+Batch 007 demonstrates the increasingly selective frequency-only tier: strong grammatical forms such as `ட`, `அன்`, `தம்`, `ஊர்`, `தொழில்`, `எழுவாய்`, and context-bounded `இசை` were retained, while numeral, pronoun/example, and compositional surfaces were rejected as independent terminology.
 
 ## Raw-source preservation status
 
