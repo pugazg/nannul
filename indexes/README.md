@@ -12,19 +12,13 @@ Machine-readable resolver: `data/nurpa-index.json`.
 
 ### `source-heading-index.md`
 
-Human-facing exact source-heading index.
-
-Validated state:
+Validated exact source-heading index:
 
 - **65** actual non-empty source-heading occurrences;
 - **65** distinct exact heading strings;
 - one explicit unheaded span, நூற்பாக்கள் **56–57**.
 
-Machine-readable form: `data/source-heading-index.json`.
-
 ### `frequency-profiles.md`
-
-Human-facing exact-surface frequency profile.
 
 Validated whole-work totals:
 
@@ -33,78 +27,54 @@ Validated whole-work totals:
 - **2,837** unique exact surface forms;
 - **2,037** hapax forms.
 
-Machine-readable data: `data/frequency-profiles.json` and `data/frequency-tables.json`.
-
 ### `grammatical-terminology-review-queue.md`
 
-Human-facing **Phase-1 discovery queue**.
-
-Discovery state:
+Human-facing Phase-1 mechanical discovery queue:
 
 - exact-surface candidates: **455**;
 - frequency-selected: **443**;
 - source-heading-supported: **37**.
 
-The queue remains mechanically generated and intentionally does not display human decisions as if they were discovery output. Candidate IDs remain stable SHA-256-derived exact-surface identifiers.
-
-Machine-readable discovery data: `data/grammatical-terminology-candidates.json`.
+Candidate IDs remain stable SHA-256-derived exact-surface identifiers. The queue does not encode human decisions.
 
 ## Human terminology review surfaces
 
-Human decisions are stored in:
+Human decisions: `data/grammatical-terminology-review.json`.
 
-- `data/grammatical-terminology-review.json`.
+Current Phase-2 status after **Batches 001–005**:
 
-Current Phase-2 status after **Batches 001–004**:
-
-- reviewed: **87**;
-- accepted: **67**;
-- rejected: **20**;
+- reviewed: **112**;
+- accepted: **85**;
+- rejected: **27**;
 - needs-context: **0**;
-- unreviewed: **368**.
+- unreviewed: **343**.
 
-Batch summaries:
+Batch decision summaries:
 
-- `reviews/terminology/batch-001-decisions.md`;
-- `reviews/terminology/batch-002-decisions.md`;
-- `reviews/terminology/batch-003-decisions.md`;
-- `reviews/terminology/batch-004-decisions.md`.
+- `reviews/terminology/batch-001-decisions.md`
+- `reviews/terminology/batch-002-decisions.md`
+- `reviews/terminology/batch-003-decisions.md`
+- `reviews/terminology/batch-004-decisions.md`
+- `reviews/terminology/batch-005-decisions.md`
 
-Context evidence:
+Context evidence exists for all five batches under `reviews/terminology/`.
 
-- Batch 001: 20 heading-supported candidates;
-- Batch 002: 17 remaining heading-supported candidates;
-- Batch 003: first 25 frequency-only candidates;
-- Batch 004: next 25 frequency-only candidates.
-
-Review validation:
-
-- `data/grammatical-terminology-review-validation.json` — **PASS**.
+Review validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
 
 Audits:
 
-- `audit/TERMINOLOGY_REVIEW_BATCH_001.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_002.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`.
+- `audit/TERMINOLOGY_REVIEW_BATCH_001.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_002.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
 
 ### Review-tier status
 
-All **37 candidates carrying exact source-heading-token evidence** were reviewed across Batches 001–002.
+All **37 source-heading-supported candidates** were reviewed across Batches 001–002. Batches 003–005 continue the frequency-only tier while preserving the rule that frequency is review priority, not termhood.
 
-Batches 003–004 are frequency-only review tiers. They confirm that frequency is a prioritization signal only: ordinary enumerative/discourse forms can be rejected even when frequent, while exact letter symbols and grammatical labels are accepted only when internal canonical contexts establish their technical use.
-
-A consolidated reviewed grammatical-term index should be generated only after a larger reviewed sample makes it useful; it must derive from the explicit review ledger, never from frequency/discovery rank alone.
+A consolidated reviewed grammatical-term index should be generated only after a larger reviewed sample makes it useful; it must derive from the explicit review ledger, never directly from mechanical rank.
 
 ## Index policy
 
-Indexes are derived from verified canonical text and structure and never rewrite canonical Tamil.
-
-Mechanical frequency/profile data and candidate-discovery ranking must remain distinguishable from analytical classification. Human terminology decisions remain provenance-backed and context-bounded, especially for mixed-use forms.
-
-Future human-facing indexes may include:
-
-- consolidated reviewed grammatical-term index;
-- example-word index;
-- referenced-author/work index;
-- cross-reference index to Tolkāppiyam and other Tamil grammar works.
+Indexes derive from verified canonical text and structure and never rewrite canonical Tamil. Mechanical frequency/discovery data and human analytical decisions remain distinguishable, with context-bounded treatment for mixed-use forms.
