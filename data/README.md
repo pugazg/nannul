@@ -4,24 +4,14 @@ Machine-readable derived datasets for Nannūl belong here.
 
 ## Canonical unit dataset
 
-### `nurpa.json`
-
-Primary one-record-per-canonical-numbered-unit dataset.
+`nurpa.json` is the primary one-record-per-canonical-numbered-unit dataset.
 
 - canonical records: **460**;
-- source range represented: 1–462 with controlling-source gaps 73 and 176 absent from records;
+- represented source range: 1–462 with controlling-source gaps 73 and 176 absent from records;
 - stable IDs: `nannul-%04d`;
-- exact `text_ta` derived from audited canonical Markdown;
-- structural parents, source-supported heading, canonical-file provenance, and source-variant references retained.
+- exact `text_ta` derived from audited canonical Markdown.
 
-Companion artifacts:
-
-- `nurpa.ndjson`;
-- `nurpa-validation.json` — **PASS**;
-- `nurpa.schema.json`;
-- `nurpa-index.json`.
-
-Audit: `audit/CANONICAL_UNIT_DATASET.md`.
+Companion artifacts: `nurpa.ndjson`, `nurpa-validation.json` (**PASS**), `nurpa.schema.json`, and `nurpa-index.json`.
 
 ## Source-heading / lexical / frequency layers
 
@@ -33,117 +23,77 @@ Validated mechanical baseline:
 - unique exact surface forms: **2,837**;
 - hapax forms: **2,037**.
 
-Primary artifacts:
+Primary artifacts include `source-heading-index.json`, `word-form-concordance.json`, `token-occurrences.ndjson`, `frequency-profiles.json`, and their PASS validation artifacts.
 
-- `source-heading-index.json`;
-- `word-form-concordance.json`;
-- `token-occurrences.ndjson`;
-- `concordance-validation.json` — **PASS**;
-- `frequency-profiles.json`;
-- `frequency-tables.json`;
-- `frequency-profiles-validation.json` — **PASS**.
-
-No punctuation stripping, Unicode normalization, spelling normalization, stemming, lemmatization, or sandhi splitting is applied to exact-surface tokens.
+Exact-surface tokenization performs no punctuation stripping, Unicode/spelling normalization, stemming, lemmatization, or sandhi splitting.
 
 ## Grammatical-terminology candidate discovery
 
-### `grammatical-terminology-candidates.json`
-
-Phase-1 mechanically generated discovery data.
-
-Validated discovery state:
+`grammatical-terminology-candidates.json` is the generated Phase-1 discovery layer.
 
 - exact surface forms considered: **2,837**;
 - discovered candidates: **455**;
-- frequency-selected candidates: **443**;
-- source-heading-supported candidates: **37**.
+- frequency-selected: **443**;
+- source-heading-supported: **37**.
 
-Candidate IDs are stable exact-surface hashes of the form `nannul-term-candidate-<16 hex>`.
-
-Generated candidate rows remain discovery artifacts and are never overwritten with human semantic decisions.
-
-Companion artifacts:
-
-- `grammatical-terminology-candidates.ndjson`;
-- `grammatical-terminology-candidates-validation.json` — **PASS**;
-- `grammatical-terminology-candidates.schema.json`.
-
-Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
+Candidate IDs are stable exact-surface hashes: `nannul-term-candidate-<16 hex>`. Generated candidate data is never overwritten with human decisions.
 
 ## Grammatical-terminology review ledger
 
-### `grammatical-terminology-review.json`
+`grammatical-terminology-review.json` is the separate human/editorial decision ledger.
 
-Separate human/editorial decision ledger.
-
-Current Phase-2 state after **Batches 001–004**:
+Current Phase-2 state after **Batches 001–005**:
 
 - candidates: **455**;
-- reviewed: **87**;
-- accepted: **67**;
-- rejected: **20**;
+- reviewed: **112**;
+- accepted: **85**;
+- rejected: **27**;
 - needs-context: **0**;
-- unreviewed: **368**;
+- unreviewed: **343**;
 - status: **review-in-progress**.
 
 Batch results:
 
-- Batch 001: **20 reviewed = 19 accepted + 1 rejected**;
-- Batch 002: **17 reviewed = 14 accepted + 3 rejected**;
-- Batch 003: **25 reviewed = 18 accepted + 7 rejected**;
-- Batch 004: **25 reviewed = 16 accepted + 9 rejected**.
+- Batch 001: **20 = 19 accepted + 1 rejected**;
+- Batch 002: **17 = 14 accepted + 3 rejected**;
+- Batch 003: **25 = 18 accepted + 7 rejected**;
+- Batch 004: **25 = 16 accepted + 9 rejected**;
+- Batch 005: **25 = 18 accepted + 7 rejected**.
 
-All **37 source-heading-supported candidates** were completed in Batches 001–002. Batches 003–004 are frequency-only review tiers.
+All **37 source-heading-supported candidates** were completed in Batches 001–002. Batches 003–005 are frequency-only review tiers.
 
-Mixed-use candidates may carry both `term_use_record_ids` and `non_term_use_record_ids`; acceptance is context-bounded and never silently extended to every occurrence or related surface form.
+Mixed-use candidates may carry both `term_use_record_ids` and `non_term_use_record_ids`; acceptance remains context-bounded.
 
-Schema: `grammatical-terminology-review.schema.json`.
+### Review validation
 
-### `grammatical-terminology-review-validation.json`
+`grammatical-terminology-review-validation.json` — **PASS**.
 
-Current validation: **PASS**.
-
-Checks include:
-
-- candidate identity;
-- canonical evidence links;
-- source-gap exclusion;
-- accepted/rejected evidence requirements;
-- term/non-term subset and overlap rules;
-- ledger count/status reconciliation;
-- Batch-001 count **20**;
-- Batch-002 count **17**;
-- Batch-003 count **25**;
-- Batch-004 count **25**.
+Validation checks candidate identity, canonical evidence links, source-gap exclusion, decision structure, evidence-subset/overlap rules, ledger count/status reconciliation, and batch counts **20 + 17 + 25 + 25 + 25**.
 
 Current validated ledger SHA-256:
 
-`b8088d9681f304245c19f09843fa111d20c441f492b6ca2c444bbd6846030c48`
+`6f4652e888c850d6aa4168628cdebf7682f8178436ced4179e2441f6ab58d891`
 
 Validator: `scripts/validate_terminology_review.py`
 
 Workflow: `.github/workflows/validate-terminology-review.yml`
 
-Human-readable decision summaries:
+Human-readable summaries:
 
-- `reviews/terminology/batch-001-decisions.md`;
-- `reviews/terminology/batch-002-decisions.md`;
-- `reviews/terminology/batch-003-decisions.md`;
-- `reviews/terminology/batch-004-decisions.md`.
+- `reviews/terminology/batch-001-decisions.md`
+- `reviews/terminology/batch-002-decisions.md`
+- `reviews/terminology/batch-003-decisions.md`
+- `reviews/terminology/batch-004-decisions.md`
+- `reviews/terminology/batch-005-decisions.md`
 
 Audits:
 
-- `audit/TERMINOLOGY_REVIEW_BATCH_001.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_002.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`.
+- `audit/TERMINOLOGY_REVIEW_BATCH_001.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_002.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
 
 ## Derivation and interpretation policy
 
-Everything in `data/` remains separated by evidentiary role:
-
-- canonical-derived mechanical datasets preserve or aggregate source-supported data;
-- candidate discovery prioritizes possible terms without deciding termhood;
-- the review ledger is a distinct human analytical layer with explicit provenance and rationale.
-
-External comparison with Tolkāppiyam, commentaries, dictionaries, or later grammar works must be tagged separately if introduced in later phases.
+Canonical-derived mechanical datasets, candidate discovery, and human review remain separate evidentiary layers. External Tolkāppiyam/commentary/dictionary/later-grammar evidence must be tagged separately if introduced later.
