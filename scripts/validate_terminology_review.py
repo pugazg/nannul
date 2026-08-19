@@ -26,6 +26,7 @@ EXPECTED_BATCH_COUNTS = {
     "NANNUL-TERM-REVIEW-003": 25,
     "NANNUL-TERM-REVIEW-004": 25,
     "NANNUL-TERM-REVIEW-005": 25,
+    "NANNUL-TERM-REVIEW-006": 25,
 }
 
 
@@ -178,6 +179,7 @@ def main() -> None:
         "batch_003_has_25_decisions": len(batches["NANNUL-TERM-REVIEW-003"]) == 25,
         "batch_004_has_25_decisions": len(batches["NANNUL-TERM-REVIEW-004"]) == 25,
         "batch_005_has_25_decisions": len(batches["NANNUL-TERM-REVIEW-005"]) == 25,
+        "batch_006_has_25_decisions": len(batches["NANNUL-TERM-REVIEW-006"]) == 25,
     }
     if candidate_validation.get("status") != "PASS":
         failures.append({"reason": "candidate-discovery-validation-not-pass"})
