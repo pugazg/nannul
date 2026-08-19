@@ -38,10 +38,11 @@ jobs:
             data/grammatical-terminology-review-validation.json \
             reviews/terminology/batch-001-decisions.md \
             reviews/terminology/batch-002-decisions.md \
-            reviews/terminology/batch-003-decisions.md
+            reviews/terminology/batch-003-decisions.md \
+            reviews/terminology/batch-004-decisions.md
           if git diff --cached --quiet; then
             echo 'Terminology review validation outputs unchanged.'
             exit 0
           fi
-          git commit -m 'Validate Nannul terminology review through Batch 3'
+          git commit -m 'Validate Nannul terminology review through Batch 4'
           git push origin HEAD:main
