@@ -29,6 +29,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `TERMINOLOGY_REVIEW_BATCH_001.md` — Phase-2 contextual review Batch 001.
 - `TERMINOLOGY_REVIEW_BATCH_002.md` — Phase-2 contextual review Batch 002 and heading-supported-tier completion.
 - `TERMINOLOGY_REVIEW_BATCH_003.md` — first frequency-only contextual review batch.
+- `TERMINOLOGY_REVIEW_BATCH_004.md` — second frequency-only contextual review batch.
 
 ## Canonical / mechanical-data status
 
@@ -62,54 +63,30 @@ Validation:
 - `.github/workflows/validate-terminology-review.yml`;
 - `data/grammatical-terminology-review-validation.json` — **PASS**.
 
-### Batch 001 — heading-supported
+### Batch results
 
-- reviewed: **20**;
-- accepted: **19**;
-- rejected: **1** (`முன்`);
-- needs-context: **0**.
+- Batch 001 — 20 reviewed = **19 accepted + 1 rejected**;
+- Batch 002 — 17 reviewed = **14 accepted + 3 rejected**;
+- Batch 003 — 25 reviewed = **18 accepted + 7 rejected**;
+- Batch 004 — 25 reviewed = **16 accepted + 9 rejected**.
 
-### Batch 002 — remaining heading-supported
+All **37 source-heading-supported candidates** were completed in Batches 001–002. Batches 003–004 review the frequency-only tier.
 
-- reviewed: **17**;
-- accepted: **14**;
-- rejected: **3** (`பொதுப்`, `சொல்லின்`, `சிறப்புப்`);
-- needs-context: **0**.
-
-After Batch 002, all **37 source-heading-supported candidates** had explicit decisions.
-
-### Batch 003 — first frequency-only batch
-
-Selection: **25 highest-priority unreviewed frequency-only candidates**.
-
-- reviewed: **25**;
-- accepted: **18**;
-- rejected: **7**;
-- needs-context: **0**.
-
-Rejected exact forms:
-
-- `ஆகும்`;
-- `இரு`;
-- `என்ப`;
-- `இயல்பும்`;
-- `ஆறு`;
-- `இயல்பே`;
-- `ஒன்று`.
-
-Batch 003 confirmed that high frequency alone does not imply termhood, while frequency-only forms can still be accepted when Nannūl explicitly treats them as grammatical forms in body text—for example `ஐ`, `ஈர்`, `என`, `என்`, `ஆம்`, `ஒற்று`, `உயிர்மெய்`, and `ஆய்தம்`.
-
-### Whole review ledger after Batch 003
+### Whole review ledger after Batch 004
 
 - candidate surface forms: **455**;
-- reviewed: **62**;
-- accepted: **51**;
-- rejected: **11**;
+- reviewed: **87**;
+- accepted: **67**;
+- rejected: **20**;
 - needs-context: **0**;
-- unreviewed: **393**;
+- unreviewed: **368**;
 - status: **review-in-progress**.
 
-Validation enforces batch counts **20 + 17 + 25**, canonical evidence linkage, source-gap exclusion, evidence-subset rules, and exact count reconciliation.
+Batch-004 accepted forms include `ப`, `ல`, `முன்னிலை`, `ஏ`, `இறுதி`, `ஓ`, `வினா`, `அல்`, `க`, `த`, `ஞ`, `ந`, `அற்று`, `படர்க்கை`, `குறில்`, and `வ`.
+
+Batch-004 rejected forms are `வழி`, `பிற`, `ஆதி`, `பிறவும்`, `மூ`, `இவை`, `ஓர்`, `எனும்`, and `பெயரே`.
+
+Validation enforces batch counts **20 + 17 + 25 + 25**, canonical evidence linkage, source-gap exclusion, evidence-subset rules, and exact count/status reconciliation.
 
 ## Raw-source preservation status
 
