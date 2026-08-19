@@ -22,6 +22,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `TERMINOLOGY_REVIEW_BATCH_003.md` — first frequency-only batch.
 - `TERMINOLOGY_REVIEW_BATCH_004.md` — second frequency-only batch.
 - `TERMINOLOGY_REVIEW_BATCH_005.md` — third frequency-only batch.
+- `TERMINOLOGY_REVIEW_BATCH_006.md` — fourth frequency-only batch.
 
 ## Canonical / mechanical-data status
 
@@ -54,19 +55,20 @@ Batch results:
 - Batch 002 — 17 = **14 accepted + 3 rejected**;
 - Batch 003 — 25 = **18 accepted + 7 rejected**;
 - Batch 004 — 25 = **16 accepted + 9 rejected**;
-- Batch 005 — 25 = **18 accepted + 7 rejected**.
+- Batch 005 — 25 = **18 accepted + 7 rejected**;
+- Batch 006 — 25 = **12 accepted + 13 rejected**.
 
-Whole ledger after Batch 005:
+Whole ledger after Batch 006:
 
 - candidates: **455**;
-- reviewed: **112**;
-- accepted: **85**;
-- rejected: **27**;
+- reviewed: **137**;
+- accepted: **97**;
+- rejected: **40**;
 - needs-context: **0**;
-- unreviewed: **343**;
+- unreviewed: **318**;
 - status: **review-in-progress**.
 
-Validation enforces batch counts **20 + 17 + 25 + 25 + 25**, canonical evidence linkage, source-gap exclusion, evidence-subset rules, and exact count/status reconciliation.
+Validation enforces batch counts **20 + 17 + 25 + 25 + 25 + 25**, canonical evidence linkage, source-gap exclusion, evidence-subset rules, and exact count/status reconciliation.
 
 ## Raw-source preservation status
 
