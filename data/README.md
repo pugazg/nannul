@@ -40,14 +40,14 @@ Candidate IDs are stable exact-surface hashes: `nannul-term-candidate-<16 hex>`.
 
 `grammatical-terminology-review.json` is the separate human/editorial decision ledger.
 
-Current Phase-2 state after **Batches 001–007**:
+Current Phase-2 state after **Batches 001–008**:
 
 - candidates: **455**;
-- reviewed: **162**;
-- accepted: **104**;
-- rejected: **58**;
+- reviewed: **187**;
+- accepted: **116**;
+- rejected: **71**;
 - needs-context: **0**;
-- unreviewed: **293**;
+- unreviewed: **268**;
 - status: **review-in-progress**.
 
 Batch results:
@@ -58,9 +58,10 @@ Batch results:
 - Batch 004: **25 = 16 accepted + 9 rejected**;
 - Batch 005: **25 = 18 accepted + 7 rejected**;
 - Batch 006: **25 = 12 accepted + 13 rejected**;
-- Batch 007: **25 = 7 accepted + 18 rejected**.
+- Batch 007: **25 = 7 accepted + 18 rejected**;
+- Batch 008: **25 = 12 accepted + 13 rejected**.
 
-All **37 source-heading-supported candidates** were completed in Batches 001–002. Batches 003–007 are frequency-only review tiers.
+All **37 source-heading-supported candidates** were completed in Batches 001–002. Batches 003–008 are frequency-only review tiers.
 
 Mixed-use candidates may carry both `term_use_record_ids` and `non_term_use_record_ids`; acceptance remains context-bounded.
 
@@ -68,21 +69,21 @@ Mixed-use candidates may carry both `term_use_record_ids` and `non_term_use_reco
 
 `grammatical-terminology-review-validation.json` — **PASS**.
 
-Validation checks candidate identity, canonical evidence links, source-gap exclusion, decision structure, evidence-subset/overlap rules, ledger count/status reconciliation, and exact batch boundaries through Batch 007.
+Validation checks candidate identity, canonical evidence links, source-gap exclusion, decision structure, evidence-subset/overlap rules, ledger count/status reconciliation, and exact batch boundaries through Batch 008.
 
 Current validated ledger SHA-256:
 
-`6533411e9fea2ed8945342270aa617055effdd04654969f176a9af6f2e539112`
+`66f4f44fa5eb862379524a719a6fa1f8ee7a0f58a7bc899863bd69d562eba3ed`
 
-Batch-007 decision-summary SHA-256:
+Batch-008 decision-summary SHA-256:
 
-`1cda2eedf9f0698b5012fcdff295fc454d80e4336df43f050078199f6a6ec574`
+`e4da47483b92771abfca9d450bf2c4448f1994d9c5925bf49febbe985d7d1cc3`
 
 Validator: `scripts/validate_terminology_review.py`
 
 Workflow: `.github/workflows/validate-terminology-review.yml`
 
-Human-readable summaries and audits exist for Batches 001–007 under `reviews/terminology/` and `audit/` respectively.
+Human-readable summaries and audits exist for Batches 001–008 under `reviews/terminology/` and `audit/` respectively.
 
 ## Derivation and interpretation policy
 
