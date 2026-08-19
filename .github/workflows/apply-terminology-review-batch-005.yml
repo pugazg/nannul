@@ -1,0 +1,36 @@
+name: Apply Nannul terminology review Batch 005
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/apply_terminology_review_batch_005.py
+      - .github/workflows/apply-terminology-review-batch-005.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Apply Batch 005 decisions
+        run: python3 scripts/apply_terminology_review_batch_005.py
+      - name: Commit ledger and summary
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/grammatical-terminology-review.json reviews/terminology/batch-005-decisions.md
+          if git diff --cached --quiet; then
+            echo 'Batch 005 review already applied.'
+            exit 0
+          fi
+          git commit -m 'Apply Nannul terminology review Batch 5'
+          git push origin HEAD:main
