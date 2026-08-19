@@ -24,10 +24,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-
       - name: Validate terminology review ledger
         run: python3 scripts/validate_terminology_review.py
-
       - name: Commit validation outputs if changed
         shell: bash
         run: |
@@ -41,10 +39,11 @@ jobs:
             reviews/terminology/batch-003-decisions.md \
             reviews/terminology/batch-004-decisions.md \
             reviews/terminology/batch-005-decisions.md \
-            reviews/terminology/batch-006-decisions.md
+            reviews/terminology/batch-006-decisions.md \
+            reviews/terminology/batch-007-decisions.md
           if git diff --cached --quiet; then
             echo 'Terminology review validation outputs unchanged.'
             exit 0
           fi
-          git commit -m 'Validate Nannul terminology review through Batch 6'
+          git commit -m 'Validate Nannul terminology review through Batch 7'
           git push origin HEAD:main
