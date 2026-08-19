@@ -1,0 +1,5395 @@
+{
+  "schema_version": 1,
+  "work_id": "nannul",
+  "phase": "terminology-contextual-review",
+  "batch_id": "NANNUL-TERM-REVIEW-005",
+  "selection_policy": "next 25 highest-priority unreviewed frequency-only candidates after Batches 001-004; no source-heading-token evidence",
+  "decision_status": "context-packet-only-no-decisions",
+  "candidate_count": 25,
+  "candidates": [
+    {
+      "candidate_id": "nannul-term-candidate-f5d907741141f2eb",
+      "review_rank": 81,
+      "surface_form_ta": "ஆய்",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0047",
+        "nannul-0084",
+        "nannul-0089",
+        "nannul-0140",
+        "nannul-0173",
+        "nannul-0256",
+        "nannul-0335",
+        "nannul-0406"
+      ],
+      "numbers_all": [
+        47,
+        84,
+        89,
+        140,
+        173,
+        256,
+        335,
+        406
+      ],
+      "structural_units": [
+        {
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "record_ids": [
+            "nannul-0047"
+          ]
+        },
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0084",
+            "nannul-0089"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0140"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0173"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0256"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0335"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0406"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0047",
+          "number": 47,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "topic_heading_ta": "1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "ஆக்கியோன் பெயரே வழியே எல்லை\nநூல்பெயர் யாப்பே நுதலிய பொருளே\nகேட்போர் பயனோடு ஆய் எண் பொருளும்\nவாய்ப்பக் காட்டல் பாயிரத்து இயல்பே",
+          "candidate_offsets": [
+            {
+              "character_start": 75,
+              "character_end": 78
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0084",
+          "number": 84,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அண்பல் முதலும் அண்ணமும் முறையின்\nநா விளிம்பு வீங்கி ஒற்றவும் வருடவும்\nலகாரம் ளகாரம் ஆய் இரண்டும் பிறக்கும்",
+          "candidate_offsets": [
+            {
+              "character_start": 84,
+              "character_end": 87
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0089",
+          "number": 89,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "புள்ளி விட்டு அவ்வொடு முன் உரு ஆகியும்\nஏனை உயிரோடு உருவு திரிந்தும்\nஉயிர் அளவு ஆய் அதன் வடிவு ஒழித்து இரு வயின்\nபெயரொடும் ஒற்று முன் ஆய் வரும் உயிர்மெய்",
+          "candidate_offsets": [
+            {
+              "character_start": 79,
+              "character_end": 82
+            },
+            {
+              "character_start": 133,
+              "character_end": 136
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0140",
+          "number": 140,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "விகுதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "அன் ஆன் அள் ஆள் அர் ஆர் ப மார்\nஅ ஆ கு டு து று என் ஏன் அல் அன்\nஅம் ஆம் எம் ஏம் ஓம் ஒடு உம் ஊர்\nக ட த ற ஐ ஆய் இ மின் இர் ஈர்\nஈயர் கயவும் என்பவும் பிறவும்\nவினையின் விகுதி பெயரினும் சிலவே",
+          "candidate_offsets": [
+            {
+              "character_start": 105,
+              "character_end": 108
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0173",
+          "number": 173,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "இகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "அன்றி இன்றி என் வினையெஞ்சு இகரம்\nதொடர்பினுள் உகரம் ஆய் வரின் இயல்பே",
+          "candidate_offsets": [
+            {
+              "character_start": 52,
+              "character_end": 55
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0256",
+          "number": 256,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "புறனடை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "புள்ளியும் உயிரும் ஆய் இறு சொல் முன்\nதம்மின் ஆகிய தொழில் மொழி வரினே\nவல்லினம் விகற்பமும் இயல்பும் ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 19,
+              "character_end": 22
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0335",
+          "number": 335,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "முற்று வினை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "ஐ ஆய் இகர ஈற்ற மூன்றும்\nஏவலின் வரூஉம் எல்லா ஈற்றவும்\nமுப்பால் ஒருமை முன்னிலை மொழியே",
+          "candidate_offsets": [
+            {
+              "character_start": 2,
+              "character_end": 5
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0406",
+          "number": 406,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "தம்பால் இல்லது இல் எனின் இனன் ஆய்\nஉள்ளது கூறி மாற்றியும் உள்ளது\nசுட்டியும் உரைப்பர் சொல் சுருங்குதற்கே",
+          "candidate_offsets": [
+            {
+              "character_start": 30,
+              "character_end": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-9a8b17b7005dc0c9",
+      "review_rank": 82,
+      "surface_form_ta": "இரண்டு",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0050",
+        "nannul-0147",
+        "nannul-0157",
+        "nannul-0198",
+        "nannul-0270",
+        "nannul-0361",
+        "nannul-0363",
+        "nannul-0373",
+        "nannul-0395"
+      ],
+      "numbers_all": [
+        50,
+        147,
+        157,
+        198,
+        270,
+        361,
+        363,
+        373,
+        395
+      ],
+      "structural_units": [
+        {
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "record_ids": [
+            "nannul-0050"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0147"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0157",
+            "nannul-0198"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0270"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0361",
+            "nannul-0363",
+            "nannul-0373",
+            "nannul-0395"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 9,
+      "contexts": [
+        {
+          "record_id": "nannul-0050",
+          "number": 50,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "topic_heading_ta": "1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "தொகுத்தல் விரித்தல் தொகைவிரி மொழிபெயர்ப்பு\nஎனத்தகும் நூல்யாப்பு ஈர் இரண்டு என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 70,
+              "character_end": 76
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0147",
+          "number": 147,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "வடமொழியாக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஏழாம் உயிர் இய்யும் இருவும் ஐ வருக்கத்து\nஇடையின் மூன்றும் அவ்வம் முதலும்\nஎட்டே யவ்வும் முப்பது சயவும்\nமேல் ஒன்று சடவும் இரண்டு சதவும்\nமூன்றே அகவும் ஐந்து இரு கவ்வும்\nஆ ஈறு ஐயும் ஈ ஈறு இகரமும்",
+          "candidate_offsets": [
+            {
+              "character_start": 130,
+              "character_end": 136
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0157",
+          "number": 157,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "புணர்ச்சி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "ஒருபுணர்க்கு இரண்டு மூன்றும் உறப்பெறும்",
+          "candidate_offsets": [
+            {
+              "character_start": 13,
+              "character_end": 19
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0198",
+          "number": 198,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "குற்றுகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "இரண்டு முன்வரின் பத்தின் ஈற்று உயிர்மெய்\nகரந்திட ஒற்று ன ஆகும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 6
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0270",
+          "number": 270,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "சொற் பாகுபாடு",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அதுவே,\nஇயற்சொல் திரிசொல் இயல்பின் பெயர்வினை\nஎன இரண்டு ஆகும் இடை உரி அடுத்து\nநான்குமாம் திசை வடசொல் அணுகா வழி",
+          "candidate_offsets": [
+            {
+              "character_start": 47,
+              "character_end": 53
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0361",
+          "number": 361,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "தொகைநிலைத் தொடர்மொழி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "பெயரொடு பெயரும் வினையும் வேற்றுமை\nமுதலிய பொருளின் அவற்றின் உருபு இடை\nஒழிய இரண்டு முதலாத் தொடர்ந்து ஒரு\nமொழிபோல் நடப்பன தொகைநிலைத் தொடர்ச்சொல்",
+          "candidate_offsets": [
+            {
+              "character_start": 74,
+              "character_end": 80
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0363",
+          "number": 363,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "தொகைநிலைத் தொடர்மொழி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "இரண்டு முதலாம் இடை ஆறு உருபும்\nவெளிப்படல் இல்லது வேற்றுமைத் தொகையே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 6
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0373",
+          "number": 373,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "தொகைநிலைத் தொடர்மொழி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "தொக்குழி மயங்குந இரண்டு முதல் ஏழ்\nஎல்லைப் பொருளின் மயங்கும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 18,
+              "character_end": 24
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0395",
+          "number": 395,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "அசைநிலை பொருள்நிலை இசைநிறைக்கு ஒருசொல்\nஇரண்டு மூன்று நான்கு எல்லை முறை அடுக்கும்",
+          "candidate_offsets": [
+            {
+              "character_start": 39,
+              "character_end": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-2f8273285b40887d",
+      "review_rank": 83,
+      "surface_form_ta": "அ",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0064",
+        "nannul-0066",
+        "nannul-0076",
+        "nannul-0104",
+        "nannul-0105",
+        "nannul-0123",
+        "nannul-0140",
+        "nannul-0244",
+        "nannul-0329"
+      ],
+      "numbers_all": [
+        64,
+        66,
+        76,
+        104,
+        105,
+        123,
+        140,
+        244,
+        329
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0064",
+            "nannul-0066",
+            "nannul-0076",
+            "nannul-0104",
+            "nannul-0105",
+            "nannul-0123"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0140"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0244"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0329"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 9,
+      "contexts": [
+        {
+          "record_id": "nannul-0064",
+          "number": 64,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பெயர்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஅ இ உ எ ஒ குறில் ஐந்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 10,
+              "character_end": 11
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0066",
+          "number": 66,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பெயர்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அ இ உ முதல் தனி வரின் சுட்டே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0076",
+          "number": 76,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nமுயற்சியுள் அ ஆ அங்காப்பு உடைய",
+          "candidate_offsets": [
+            {
+              "character_start": 22,
+              "character_end": 23
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0104",
+          "number": 104,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "முதனிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அ ஆ உ ஊ ஓ ஒள யம்முதல்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0105",
+          "number": 105,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "முதனிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அ ஆ எ ஒவ்வோடு ஆகும் ஞம்முதல்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0123",
+          "number": 123,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "போலி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அ ஐ முதல் இடை ஒக்கும் ச ஞ ய முன்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0140",
+          "number": 140,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "விகுதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "அன் ஆன் அள் ஆள் அர் ஆர் ப மார்\nஅ ஆ கு டு து று என் ஏன் அல் அன்\nஅம் ஆம் எம் ஏம் ஓம் ஒடு உம் ஊர்\nக ட த ற ஐ ஆய் இ மின் இர் ஈர்\nஈயர் கயவும் என்பவும் பிறவும்\nவினையின் விகுதி பெயரினும் சிலவே",
+          "candidate_offsets": [
+            {
+              "character_start": 31,
+              "character_end": 32
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0244",
+          "number": 244,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "சாரியை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "அன் ஆன் இன் அல் அற்று இற்று அத்து அம்\nதம் நம் நும் ஏ அ உ ஐ கு ன\nஇன்ன பிறவும் பொதுச் சாரியையே",
+          "candidate_offsets": [
+            {
+              "character_start": 53,
+              "character_end": 54
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0329",
+          "number": 329,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "முற்று வினை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "அ ஆ ஈற்ற பலவின் படர்க்கை\nஆவே எதிர்மறைக் கண்ணது ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-06f94daf5c38de22",
+      "review_rank": 84,
+      "surface_form_ta": "ஈ",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0065",
+        "nannul-0077",
+        "nannul-0147",
+        "nannul-0162",
+        "nannul-0177",
+        "nannul-0309",
+        "nannul-0407",
+        "nannul-0440"
+      ],
+      "numbers_all": [
+        65,
+        77,
+        147,
+        162,
+        177,
+        309,
+        407,
+        440
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0065",
+            "nannul-0077"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0147"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0162",
+            "nannul-0177"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0309"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0407"
+          ]
+        },
+        {
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "record_ids": [
+            "nannul-0440"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0065",
+          "number": 65,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பெயர்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "ஆ ஈ ஊ ஏ ஐ ஓ ஒள நெடில்",
+          "candidate_offsets": [
+            {
+              "character_start": 2,
+              "character_end": 3
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0077",
+          "number": 77,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "இ ஈ எ ஏ ஐ அங்காப்போடு\nஅண் பல் முதல் நா விளிம்பு உற வருமே",
+          "candidate_offsets": [
+            {
+              "character_start": 2,
+              "character_end": 3
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0147",
+          "number": 147,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "வடமொழியாக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஏழாம் உயிர் இய்யும் இருவும் ஐ வருக்கத்து\nஇடையின் மூன்றும் அவ்வம் முதலும்\nஎட்டே யவ்வும் முப்பது சயவும்\nமேல் ஒன்று சடவும் இரண்டு சதவும்\nமூன்றே அகவும் ஐந்து இரு கவ்வும்\nஆ ஈறு ஐயும் ஈ ஈறு இகரமும்",
+          "candidate_offsets": [
+            {
+              "character_start": 188,
+              "character_end": 189
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0162",
+          "number": 162,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "உயிரீற்றுச் சிறப்புப் புணர்ச்சி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "இ ஈ ஐ வழி யவ்வும் ஏனை\nஉயிர்வழி வவ்வும் ஏ முன் இவ் இருமையும்\nஉயிர்வரின் உடம்படு மெய் என்று ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 2,
+              "character_end": 3
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0177",
+          "number": 177,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "ஈகார வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "ஆ முன் பகர ஈ அனைத்தும் வரக் குறுகும்\nமேலன அல்வழி இயல்பு ஆகும்மே",
+          "candidate_offsets": [
+            {
+              "character_start": 11,
+              "character_end": 12
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0309",
+          "number": 309,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "ரவ்வீற்று உயர் பெயர்க்கு அளபு எழல் ஈற்று அயல்\nஅகரம் இ ஈ ஆதல் ஆண்டை ஆ\nஈ ஆதல் அதனோடு ஏ உறல் ஈற்று ஏ\nமிக்கு அயல் யா கெட்டு அதன் அயல் நீடல்\nஈற்றின் ஈர் உறல் இவையும் ஈண்டு உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 54,
+              "character_end": 55
+            },
+            {
+              "character_start": 69,
+              "character_end": 70
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0407",
+          "number": 407,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "ஈ தா கொடு எனும் மூன்றும் முறையே\nஇழிந்தோன் ஒப்போன் மிக்கோன் இரப்பு உரை",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0440",
+          "number": 440,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "மியா இக மோ மதி அத்தை இத்தை\nவாழிய மாள ஈ யாழ முன்னிலை அசை",
+          "candidate_offsets": [
+            {
+              "character_start": 37,
+              "character_end": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-ab1fdd3b22f3fe17",
+      "review_rank": 85,
+      "surface_form_ta": "சுட்டு",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0106",
+        "nannul-0163",
+        "nannul-0179",
+        "nannul-0235",
+        "nannul-0276",
+        "nannul-0279",
+        "nannul-0280",
+        "nannul-0386"
+      ],
+      "numbers_all": [
+        106,
+        163,
+        179,
+        235,
+        276,
+        279,
+        280,
+        386
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0106"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0163",
+            "nannul-0179"
+          ]
+        },
+        {
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0235"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0276",
+            "nannul-0279",
+            "nannul-0280"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0386"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0106",
+          "number": 106,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "முதனிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "சுட்டு யா எகர வினா வழி அவ்வை\nஒட்டி ஙவ்வும் முதல் ஆகும்மே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 6
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0163",
+          "number": 163,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "உயிரீற்றுச் சிறப்புப் புணர்ச்சி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "எகர வினா முச்சுட்டின் முன்னர்\nஉயிரும் யகரமும் எய்தின் வவ்வும்\nபிறவரின் அவையும் தூக்கில் சுட்டு\nநீளின் யகரமும் தோன்றுதல் நெறியே",
+          "candidate_offsets": [
+            {
+              "character_start": 88,
+              "character_end": 94
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0179",
+          "number": 179,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "முற்றுகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "மூன்று ஆறு உருபு எண் வினைத்தொகை சுட்டு ஈறு\nஆகும் உகரம் முன்னர் இயல்பாம்",
+          "candidate_offsets": [
+            {
+              "character_start": 33,
+              "character_end": 39
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0235",
+          "number": 235,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "topic_heading_ta": "வகர வீறு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md",
+          "source_variant_refs": [],
+          "text_ta": "சுட்டு வகரம் மூ இனம் உற முறையே\nஆய்தமும் மென்மையும் இயல்பும் ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 6
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0276",
+          "number": 276,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nகிளை எண் குழூஉ முதல் பல் பொருள் திணை தேம்\nஊர் வான் அகம் புறம் முதல நிலன் யாண்டு\nஇருது மதி நாள் ஆதிக் காலம்\nதோள் குழல் மார்பு கண் காது முதல் உறுப்பு\nஅளவு அறிவு ஒப்பு வடிவு நிறம் கதி\nசாதி குடி சிறப்பு ஆதிப் பல் குணம்\nஓதல் ஈதல் ஆதிப் பல் வினை\nஇவை அடை சுட்டு வினா பிற மற்றோடு\nஉற்ற னவ்வீறு நம்பி ஆடூஉ\nவிடலை கோ வேள் குரிசில் தோன்றல்\nஇன்னன ஆண் பெயர் ஆகும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 258,
+              "character_end": 264
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0279",
+          "number": 279,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "வினாச் சுட்டு உடனும் வேறும் ஆம் பொருள்\nஆதி உறு து சுட்டு அணை ஆய்தம்\nஒன்றன் எண் இன்னன ஒன்றன் பெயரே",
+          "candidate_offsets": [
+            {
+              "character_start": 7,
+              "character_end": 13
+            },
+            {
+              "character_start": 50,
+              "character_end": 56
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0280",
+          "number": 280,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "முன்னர் அவ்வொடு வரு வை அவ்வும்\nசுட்டு இறு வவ்வும் கள் இறு மொழியும்\nஒன்று அல் எண்ணும் உள்ள இல்ல\nபல்ல சில்ல உள இல பல சில\nஇன்னவும் பலவின் பெயர் ஆகுமே",
+          "candidate_offsets": [
+            {
+              "character_start": 31,
+              "character_end": 37
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0386",
+          "number": 386,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "சுட்டு மறை நேர் ஏவல் வினாதல்\nஉற்றது உரைத்தல் உறுவது கூறல்\nஇனமொழி எனும் எண் இறையுள் இறுதி\nநிலவிய ஐந்தும் அப்பொருண்மையின் நேர்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-0bc7aaac11f19241",
+      "review_rank": 86,
+      "surface_form_ta": "இனம்",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0112",
+        "nannul-0114",
+        "nannul-0136",
+        "nannul-0235",
+        "nannul-0358",
+        "nannul-0390",
+        "nannul-0401",
+        "nannul-0402",
+        "nannul-0434"
+      ],
+      "numbers_all": [
+        112,
+        114,
+        136,
+        235,
+        358,
+        390,
+        401,
+        402,
+        434
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0112",
+            "nannul-0114"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0136"
+          ]
+        },
+        {
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0235"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0358",
+            "nannul-0390",
+            "nannul-0401",
+            "nannul-0402"
+          ]
+        },
+        {
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "record_ids": [
+            "nannul-0434"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 9,
+      "contexts": [
+        {
+          "record_id": "nannul-0112",
+          "number": 112,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "இடைநிலை மயக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "ஞநமுன் தம் இனம் யகரமொடு ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 11,
+              "character_end": 15
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0114",
+          "number": 114,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "இடைநிலை மயக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "ணனமுன் இனம் க ச ஞ ப ம ய வ வரும்",
+          "candidate_offsets": [
+            {
+              "character_start": 7,
+              "character_end": 11
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0136",
+          "number": 136,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பகுதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "ஈறு போதல் இடை உகரம் இ ஆதல்\nஆதி நீடல் அடி அகரம் ஐ ஆதல்\nதன் ஒற்று இரட்டல் முன் நின்ற மெய் திரிதல்\nஇனம் மிகல் இனையவும் பண்பிற்கு இயல்பே",
+          "candidate_offsets": [
+            {
+              "character_start": 96,
+              "character_end": 100
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0235",
+          "number": 235,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "topic_heading_ta": "வகர வீறு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md",
+          "source_variant_refs": [],
+          "text_ta": "சுட்டு வகரம் மூ இனம் உற முறையே\nஆய்தமும் மென்மையும் இயல்பும் ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 16,
+              "character_end": 20
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0358",
+          "number": 358,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "ஒருமொழி ஒழி தன் இனம் கொளற்கு உரித்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 16,
+              "character_end": 20
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0390",
+          "number": 390,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "வினை சார்பு இனம் இடம் மேவி விளங்காப்\nபலபொருள் ஒருசொல் பணிப்பர் சிறப்பு எடுத்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 12,
+              "character_end": 16
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0401",
+          "number": 401,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "பொருள்முதல் ஆறாம் அடைசேர் மொழி இனம்\nஉள்ளவும் இல்லவுமாம் இரு வழக்கினும்",
+          "candidate_offsets": [
+            {
+              "character_start": 31,
+              "character_end": 35
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0402",
+          "number": 402,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "அடைமொழி இனம் அல்லதும் தரும் ஆண்டு உறின்",
+          "candidate_offsets": [
+            {
+              "character_start": 8,
+              "character_end": 12
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0434",
+          "number": 434,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "மற்றையது என்பது சுட்டியதற்கு இனம்",
+          "candidate_offsets": [
+            {
+              "character_start": 29,
+              "character_end": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-a1b95759ebcbbe9e",
+      "review_rank": 87,
+      "surface_form_ta": "பெயர்வினை",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0131",
+        "nannul-0270",
+        "nannul-0322",
+        "nannul-0353",
+        "nannul-0356",
+        "nannul-0357",
+        "nannul-0359",
+        "nannul-0360",
+        "nannul-0442"
+      ],
+      "numbers_all": [
+        131,
+        270,
+        322,
+        353,
+        356,
+        357,
+        359,
+        360,
+        442
+      ],
+      "structural_units": [
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0131"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0270"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0322"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0353",
+            "nannul-0356",
+            "nannul-0357",
+            "nannul-0359",
+            "nannul-0360"
+          ]
+        },
+        {
+          "unit_id": "uriyiyal",
+          "unit_label_ta": "உரியியல்",
+          "record_ids": [
+            "nannul-0442"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 9,
+      "contexts": [
+        {
+          "record_id": "nannul-0131",
+          "number": 131,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பதம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "பகுப்பால் பயன் அற்று இடுகுறி ஆகி\nமுன்னே ஒன்றாய் முடிந்து இயல்கின்ற\nபெயர்வினை இடைஉரி நான்கும் பகாப்பதம்",
+          "candidate_offsets": [
+            {
+              "character_start": 67,
+              "character_end": 76
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0270",
+          "number": 270,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "சொற் பாகுபாடு",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அதுவே,\nஇயற்சொல் திரிசொல் இயல்பின் பெயர்வினை\nஎன இரண்டு ஆகும் இடை உரி அடுத்து\nநான்குமாம் திசை வடசொல் அணுகா வழி",
+          "candidate_offsets": [
+            {
+              "character_start": 34,
+              "character_end": 43
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0322",
+          "number": 322,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "வினைச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "அவைதாம்,\nமுற்றும் பெயர்வினை எச்சமும் ஆகி\nஒன்றற்கு உரியவும் பொதுவும் ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 18,
+              "character_end": 27
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0353",
+          "number": 353,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "பெயர்வினை இடத்து ன ள ர ய ஈற்று அயல்\nஆ ஓ ஆகலும் செய்யுளுள் உரித்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0356",
+          "number": 356,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "உருபு முற்று ஈர் எச்சம் கொள்ளும்\nபெயர்வினை இடைப்பிற வரலுமாம் ஏற்பன",
+          "candidate_offsets": [
+            {
+              "character_start": 33,
+              "character_end": 42
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0357",
+          "number": 357,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "எச்சப் பெயர்வினை எய்தும் ஈற்றினும்",
+          "candidate_offsets": [
+            {
+              "character_start": 7,
+              "character_end": 16
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0359",
+          "number": 359,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "பொதுப்பெயர் வினைகளின் பொதுமை நீக்கும்\nமேல்வரும் சிறப்புப் பெயர்வினை தாமே",
+          "candidate_offsets": [
+            {
+              "character_start": 58,
+              "character_end": 67
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0360",
+          "number": 360,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "பெயர்வினை உம்மைசொல் பிரிப்பு என ஒழியிசை\nஎதிர்மறை இசைஎனும் சொல் ஒழிபு ஒன்பதும்\nகுறிப்பும் தத்தம் எச்சம் கொள்ளும்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0442",
+          "number": 442,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "uriyiyal",
+          "unit_label_ta": "உரியியல்",
+          "topic_heading_ta": "உரியியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-05-uriyiyal/uriyiyal-442-462.md",
+          "source_variant_refs": [],
+          "text_ta": "பல்வகைப் பண்பும் பகர்பெயர் ஆகி\nஒருகுணம் பலகுணம் தழுவிப் பெயர்வினை\nஒருவா செய்யுட்கு உரியன உரிச்சொல்",
+          "candidate_offsets": [
+            {
+              "character_start": 56,
+              "character_end": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-c7048275c4be40ad",
+      "review_rank": 88,
+      "surface_form_ta": "ஏவல்",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0137",
+        "nannul-0138",
+        "nannul-0145",
+        "nannul-0207",
+        "nannul-0337",
+        "nannul-0385",
+        "nannul-0386"
+      ],
+      "numbers_all": [
+        137,
+        138,
+        145,
+        207,
+        337,
+        385,
+        386
+      ],
+      "structural_units": [
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0137",
+            "nannul-0138",
+            "nannul-0145"
+          ]
+        },
+        {
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0207"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0337"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0385",
+            "nannul-0386"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 7,
+      "contexts": [
+        {
+          "record_id": "nannul-0137",
+          "number": 137,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பகுதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "நட வா மடி சீ விடு கூ வே வை\nநொ போ வௌ உரிஞ் உண் பொருந் திரும் தின்\nதேய் பார் செல் வவ் வாழ் கேள் அஃகு என்று\nஎய்திய இருபான் மூன்றாம் ஈற்றவும்\nசெய் என் ஏவல் வினைப் பகாப் பதமே",
+          "candidate_offsets": [
+            {
+              "character_start": 147,
+              "character_end": 151
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0138",
+          "number": 138,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பகுதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "செய் என் வினை வழி வி பி தனி வரின்\nசெய்வி என் ஏவல் இணையின் ஈர் ஏவல்",
+          "candidate_offsets": [
+            {
+              "character_start": 45,
+              "character_end": 49
+            },
+            {
+              "character_start": 62,
+              "character_end": 66
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0145",
+          "number": 145,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "இடைநிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "றவ்வொடு உகர உம்மை நிகழ்பு அல்லவும்\nதவ்வொடு இறப்பும் எதிர்வும் டவ்வொடு\nகழிவும் கவ்வோடு எதிர்வும் மின் ஏவல்\nவியங்கோள் இ மார் எதிர்வும் ப அந்தம்\nசெலவொடு வரவும் செய்யும் நிகழ்பு எதிர்வும்\nஎதிர்மறை மும்மையும் ஏற்கும் ஈங்கே",
+          "candidate_offsets": [
+            {
+              "character_start": 101,
+              "character_end": 105
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0207",
+          "number": 207,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "topic_heading_ta": "மெய்யீற்றின் முன் மெய்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md",
+          "source_variant_refs": [],
+          "text_ta": "ஞ ண ந ம ல வ ள ன ஒற்று இறு தொழிற்பெயர்\nஏவல் வினை நனி ய அல் மெய்வரின்\nஉவ்வுறும் ஏவல் உறா சில சில் வழி",
+          "candidate_offsets": [
+            {
+              "character_start": 39,
+              "character_end": 43
+            },
+            {
+              "character_start": 79,
+              "character_end": 83
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0337",
+          "number": 337,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "முற்று வினை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "இர் ஈர் ஈற்ற இரண்டும் இருதிணைப்\nபன்மை முன்னிலை மின் அவற்று ஏவல்",
+          "candidate_offsets": [
+            {
+              "character_start": 59,
+              "character_end": 63
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0385",
+          "number": 385,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "அறிவு அறியாமை ஐயுறல் கொளல் கொடை\nஏவல் தரும் வினா ஆறும் இழுக்கார்",
+          "candidate_offsets": [
+            {
+              "character_start": 32,
+              "character_end": 36
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0386",
+          "number": 386,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "சுட்டு மறை நேர் ஏவல் வினாதல்\nஉற்றது உரைத்தல் உறுவது கூறல்\nஇனமொழி எனும் எண் இறையுள் இறுதி\nநிலவிய ஐந்தும் அப்பொருண்மையின் நேர்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 16,
+              "character_end": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-94012cb385d09be7",
+      "review_rank": 89,
+      "surface_form_ta": "எச்சம்",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0152",
+        "nannul-0167",
+        "nannul-0330",
+        "nannul-0355",
+        "nannul-0356",
+        "nannul-0360",
+        "nannul-0374",
+        "nannul-0421",
+        "nannul-0425"
+      ],
+      "numbers_all": [
+        152,
+        167,
+        330,
+        355,
+        356,
+        360,
+        374,
+        421,
+        425
+      ],
+      "structural_units": [
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0152",
+            "nannul-0167"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0330"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0355",
+            "nannul-0356",
+            "nannul-0360",
+            "nannul-0374"
+          ]
+        },
+        {
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "record_ids": [
+            "nannul-0421",
+            "nannul-0425"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 9,
+      "contexts": [
+        {
+          "record_id": "nannul-0152",
+          "number": 152,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "புணர்ச்சி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "வேற்றுமை ஐம் முதல் ஆறு ஆம் அல்வழி\nதொழில் பண்பு உவமை உம்மை அன்மொழி\nஎழுவாய் விளி ஈர் எச்சம் முற்று இடை உரி\nதழுவுதொடர் அடுக்கு என ஈர் ஏழே",
+          "candidate_offsets": [
+            {
+              "character_start": 84,
+              "character_end": 90
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0167",
+          "number": 167,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "அகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "செய்யிய என்னும் வினையெச்சம் பல்வகைப்\nபெயரின் எச்சம் முற்று ஆறன் உருபே\nஅஃறிணைப் பன்மை அம்ம முன் இயல்பே",
+          "candidate_offsets": [
+            {
+              "character_start": 45,
+              "character_end": 51
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0330",
+          "number": 330,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "முற்று வினை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "தன்மை முன்னிலை வியங்கோள் வேறு இலை\nஉண்டு ஈர் எச்சம் இருதிணைப் பொதுவினை",
+          "candidate_offsets": [
+            {
+              "character_start": 44,
+              "character_end": 50
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0355",
+          "number": 355,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "உருபுபல அடுக்கினும் வினைவேறு அடுக்கினும்\nஒருதம் எச்சம் ஈறு உற முடியும்",
+          "candidate_offsets": [
+            {
+              "character_start": 48,
+              "character_end": 54
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0356",
+          "number": 356,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "உருபு முற்று ஈர் எச்சம் கொள்ளும்\nபெயர்வினை இடைப்பிற வரலுமாம் ஏற்பன",
+          "candidate_offsets": [
+            {
+              "character_start": 17,
+              "character_end": 23
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0360",
+          "number": 360,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "பெயர்வினை உம்மைசொல் பிரிப்பு என ஒழியிசை\nஎதிர்மறை இசைஎனும் சொல் ஒழிபு ஒன்பதும்\nகுறிப்பும் தத்தம் எச்சம் கொள்ளும்",
+          "candidate_offsets": [
+            {
+              "character_start": 96,
+              "character_end": 102
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0374",
+          "number": 374,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "தொகாநிலைத் தொடர்மொழி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "முற்று ஈர் எச்சம் எழுவாய் விளிப்பொருள்\nஆறு உருபு இடை உரி அடுக்கு இவை தொகாநிலை",
+          "candidate_offsets": [
+            {
+              "character_start": 11,
+              "character_end": 17
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0421",
+          "number": 421,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "தெரிநிலை தேற்றம் ஐயம் முற்று எண் சிறப்பு\nஎதிர்மறை எச்சம் வினா விழைவு ஒழியிசை\nபிரிப்பு கழிவு ஆக்கம் இன்னன இடைப்பொருள்",
+          "candidate_offsets": [
+            {
+              "character_start": 50,
+              "character_end": 56
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0425",
+          "number": 425,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "எதிர்மறை சிறப்பு ஐயம் எச்சம் முற்று அளவை\nதெரிநிலை ஆக்கமோடு உம்மை எட்டே",
+          "candidate_offsets": [
+            {
+              "character_start": 22,
+              "character_end": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-6d38c554eefd9669",
+      "review_rank": 90,
+      "surface_form_ta": "உருபே",
+      "review_priority_score": 5,
+      "occurrence_count": 9,
+      "record_ids_all": [
+        "nannul-0167",
+        "nannul-0240",
+        "nannul-0241",
+        "nannul-0255",
+        "nannul-0302",
+        "nannul-0303",
+        "nannul-0309",
+        "nannul-0310",
+        "nannul-0367"
+      ],
+      "numbers_all": [
+        167,
+        240,
+        241,
+        255,
+        302,
+        303,
+        309,
+        310,
+        367
+      ],
+      "structural_units": [
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0167"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0240",
+            "nannul-0241",
+            "nannul-0255"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0302",
+            "nannul-0303",
+            "nannul-0309",
+            "nannul-0310"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0367"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [
+        "PM147-V002"
+      ],
+      "representative_context_count": 9,
+      "contexts": [
+        {
+          "record_id": "nannul-0167",
+          "number": 167,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "அகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "செய்யிய என்னும் வினையெச்சம் பல்வகைப்\nபெயரின் எச்சம் முற்று ஆறன் உருபே\nஅஃறிணைப் பன்மை அம்ம முன் இயல்பே",
+          "candidate_offsets": [
+            {
+              "character_start": 64,
+              "character_end": 69
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0240",
+          "number": 240,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "உருபுகள்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [
+            "PM147-V002"
+          ],
+          "text_ta": "ஒருவன் ஒருத்தி பலர் ஒன்று பல என\nவருபெயர் ஐந்தொடு பெயர்முதல் இருநான்கு\nஉருபும் உறழ்தர நாற்பதாம் உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 96,
+              "character_end": 101
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0241",
+          "number": 241,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "உருபுகள்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [
+            "PM147-V002"
+          ],
+          "text_ta": "பெயர்வழித் தம்பொருள் தரவரும் உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 29,
+              "character_end": 34
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0255",
+          "number": 255,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "புறனடை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "இயல்பின் விகாரமும் விகாரத்து இயல்பும்\nஉயர்திணை இடத்து விரிந்தும் தொக்கும்\nவிரவுப் பெயரின் விரிந்தும் நின்றும்\nஅன்ன பிறவும் ஆகும் ஐ உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 132,
+              "character_end": 137
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0302",
+          "number": 302,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "கண்கால் கடைஇடை தலைவாய் திசைவயின்\nமுன்சார் வலம் இடம் மேல்கீழ் புடைமுதல்\nபின்பாடு அளைதேம் உழைவழி உழிஉளி\nஉள் அகம் புறம் இல் இடப்பொருள் உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 132,
+              "character_end": 137
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0303",
+          "number": 303,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "எட்டன் உருபே எய்துபெயர் ஈற்றின்\nதிரிபு குன்றல் மிகுதல் இயல்பு அயல்\nதிரிபுமாம் பொருள் படர்க்கை யோரைத்\nதன்முகம் ஆகத் தான் அழைப்பதுவே",
+          "candidate_offsets": [
+            {
+              "character_start": 7,
+              "character_end": 12
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0309",
+          "number": 309,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "ரவ்வீற்று உயர் பெயர்க்கு அளபு எழல் ஈற்று அயல்\nஅகரம் இ ஈ ஆதல் ஆண்டை ஆ\nஈ ஆதல் அதனோடு ஏ உறல் ஈற்று ஏ\nமிக்கு அயல் யா கெட்டு அதன் அயல் நீடல்\nஈற்றின் ஈர் உறல் இவையும் ஈண்டு உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 167,
+              "character_end": 172
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0310",
+          "number": 310,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "லகார ஈற்று உயர்பெயர்க்கு அளபு அயல் நீட்சியும்\nயகார ஈற்றிற்கு அளபுமாம் உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 70,
+              "character_end": 75
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0367",
+          "number": 367,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "தொகைநிலைத் தொடர்மொழி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "போல புரைய ஒப்ப உறழ\nமான கடுப்ப இயைய ஏய்ப்ப\nநேர நிகர அன்ன இன்ன\nஎன்பவும் பிறவும் உவமத்து உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 86,
+              "character_end": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-abef0a958cccba02",
+      "review_rank": 91,
+      "surface_form_ta": "அவற்றுள்,",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0006",
+        "nannul-0064",
+        "nannul-0076",
+        "nannul-0147",
+        "nannul-0276",
+        "nannul-0284",
+        "nannul-0295",
+        "nannul-0344"
+      ],
+      "numbers_all": [
+        6,
+        64,
+        76,
+        147,
+        276,
+        284,
+        295,
+        344
+      ],
+      "structural_units": [
+        {
+          "unit_id": "nool-varalaru",
+          "unit_label_ta": "நூலினது வரலாறு",
+          "record_ids": [
+            "nannul-0006"
+          ]
+        },
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0064",
+            "nannul-0076"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0147"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0276",
+            "nannul-0284",
+            "nannul-0295"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0344"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [
+        "PM147-V005"
+      ],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0006",
+          "number": 6,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "nool-varalaru",
+          "unit_label_ta": "நூலினது வரலாறு",
+          "topic_heading_ta": "1.1 நூலினது வரலாறு (4–25)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nவினையின் நீங்கி விளங்கிய அறிவின்\nமுனைவன் கண்டது முதல்நூல் ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0064",
+          "number": 64,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பெயர்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஅ இ உ எ ஒ குறில் ஐந்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0076",
+          "number": 76,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nமுயற்சியுள் அ ஆ அங்காப்பு உடைய",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0147",
+          "number": 147,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "வடமொழியாக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஏழாம் உயிர் இய்யும் இருவும் ஐ வருக்கத்து\nஇடையின் மூன்றும் அவ்வம் முதலும்\nஎட்டே யவ்வும் முப்பது சயவும்\nமேல் ஒன்று சடவும் இரண்டு சதவும்\nமூன்றே அகவும் ஐந்து இரு கவ்வும்\nஆ ஈறு ஐயும் ஈ ஈறு இகரமும்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0276",
+          "number": 276,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nகிளை எண் குழூஉ முதல் பல் பொருள் திணை தேம்\nஊர் வான் அகம் புறம் முதல நிலன் யாண்டு\nஇருது மதி நாள் ஆதிக் காலம்\nதோள் குழல் மார்பு கண் காது முதல் உறுப்பு\nஅளவு அறிவு ஒப்பு வடிவு நிறம் கதி\nசாதி குடி சிறப்பு ஆதிப் பல் குணம்\nஓதல் ஈதல் ஆதிப் பல் வினை\nஇவை அடை சுட்டு வினா பிற மற்றோடு\nஉற்ற னவ்வீறு நம்பி ஆடூஉ\nவிடலை கோ வேள் குரிசில் தோன்றல்\nஇன்னன ஆண் பெயர் ஆகும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0284",
+          "number": 284,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஒன்றே இருதிணைத் தன்பால் ஏற்கும்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0295",
+          "number": 295,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஎழுவாய் உருபு திரிபு இல் பெயரே\nவினைபெயர் வினாக்கொளல் அதன் பயனிலையே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0344",
+          "number": 344,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "வினையெச்சம்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [
+            "PM147-V005"
+          ],
+          "text_ta": "அவற்றுள்,\nமுதலில் நான்கும் ஈற்றில் மூன்றும்\nவினைமுதல் கொள்ளும் பிறவும் ஏற்கும் பிற\"",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-3bf339c0198f1dc7",
+      "review_rank": 92,
+      "surface_form_ta": "தன்",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0023",
+        "nannul-0051",
+        "nannul-0052",
+        "nannul-0136",
+        "nannul-0206",
+        "nannul-0218",
+        "nannul-0358"
+      ],
+      "numbers_all": [
+        23,
+        51,
+        52,
+        136,
+        206,
+        218,
+        358
+      ],
+      "structural_units": [
+        {
+          "unit_id": "nool-varalaru",
+          "unit_label_ta": "நூலினது வரலாறு",
+          "record_ids": [
+            "nannul-0023"
+          ]
+        },
+        {
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "record_ids": [
+            "nannul-0051",
+            "nannul-0052"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0136"
+          ]
+        },
+        {
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0206",
+            "nannul-0218"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0358"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 7,
+      "contexts": [
+        {
+          "record_id": "nannul-0023",
+          "number": 23,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "nool-varalaru",
+          "unit_label_ta": "நூலினது வரலாறு",
+          "topic_heading_ta": "1.1 நூலினது வரலாறு (4–25)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "சூத்திரத்துள் பொருள் அன்றியும் ஆண்டைக்கு\nஇன்றி யமையா யாவையும் விளங்கத்\nதன் உரையானும் பிற நூலானும்\nஐயம் அகல ஐங் காண்டிகை உறுப்பொடு\nமெய்யினை எஞ்சாது இசைப்பது விருத்தி",
+          "candidate_offsets": [
+            {
+              "character_start": 71,
+              "character_end": 74
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0051",
+          "number": 51,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "topic_heading_ta": "1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "தன் ஆசிரியன் தன்னொடு கற்றோன்\nதன் மாணாக்கன் தகும் உரைகாரன் என்று\nஇன்னோர் பாயிரம் இயம்புதல் கடனே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 3
+            },
+            {
+              "character_start": 29,
+              "character_end": 32
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0052",
+          "number": 52,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "topic_heading_ta": "1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "தோன்றா தோற்றித் துறைபல முடிப்பினும்\nதான் தன் புகழ்தல் தகுதி அன்றே",
+          "candidate_offsets": [
+            {
+              "character_start": 41,
+              "character_end": 44
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0136",
+          "number": 136,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பகுதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "ஈறு போதல் இடை உகரம் இ ஆதல்\nஆதி நீடல் அடி அகரம் ஐ ஆதல்\nதன் ஒற்று இரட்டல் முன் நின்ற மெய் திரிதல்\nஇனம் மிகல் இனையவும் பண்பிற்கு இயல்பே",
+          "candidate_offsets": [
+            {
+              "character_start": 54,
+              "character_end": 57
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0206",
+          "number": 206,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "topic_heading_ta": "மெய்யீற்றின் முன் மெய்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md",
+          "source_variant_refs": [],
+          "text_ta": "தன் ஒழி மெய்முன் யவ்வரின் இகரம்\nதுன்னும் என்று துணிநரும் உளரே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 3
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0218",
+          "number": 218,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "topic_heading_ta": "ணகர னகரவீறு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md",
+          "source_variant_refs": [],
+          "text_ta": "தன் என் என்பவற்று ஈற்று னவ் வன்மையோடு\nஉறழும் நின் ஈறு இயல்பாம் உறவே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 3
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0358",
+          "number": 358,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொதுவியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "ஒருமொழி ஒழி தன் இனம் கொளற்கு உரித்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 12,
+              "character_end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-a5a495703733498b",
+      "review_rank": 93,
+      "surface_form_ta": "காலம்",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0048",
+        "nannul-0132",
+        "nannul-0275",
+        "nannul-0276",
+        "nannul-0320",
+        "nannul-0364",
+        "nannul-0382",
+        "nannul-0431"
+      ],
+      "numbers_all": [
+        48,
+        132,
+        275,
+        276,
+        320,
+        364,
+        382,
+        431
+      ],
+      "structural_units": [
+        {
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "record_ids": [
+            "nannul-0048"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0132"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0275",
+            "nannul-0276"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0320"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0364",
+            "nannul-0382"
+          ]
+        },
+        {
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "record_ids": [
+            "nannul-0431"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0048",
+          "number": 48,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "topic_heading_ta": "1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "காலம் களனே காரணம் என்றுஇம்\nமூவகை ஏற்றி மொழிநரும் உளரே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 5
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0132",
+          "number": 132,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பதம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "பொருள் இடம் காலம் சினை குணம் தொழிலின்\nவரு பெயர் பொழுது கொள் வினை பகுபதமே",
+          "candidate_offsets": [
+            {
+              "character_start": 12,
+              "character_end": 17
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0275",
+          "number": 275,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "இடுகுறி காரணம் மரபோடு ஆக்கம்\nதொடர்ந்து தொழில் அல காலம் தோற்றா\nவேற்றுமைக்கு இடனாய்த் திணைபால் இடத்து ஒன்று\nஏற்பவும் பொதுவும் ஆவன பெயரே",
+          "candidate_offsets": [
+            {
+              "character_start": 51,
+              "character_end": 56
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0276",
+          "number": 276,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nகிளை எண் குழூஉ முதல் பல் பொருள் திணை தேம்\nஊர் வான் அகம் புறம் முதல நிலன் யாண்டு\nஇருது மதி நாள் ஆதிக் காலம்\nதோள் குழல் மார்பு கண் காது முதல் உறுப்பு\nஅளவு அறிவு ஒப்பு வடிவு நிறம் கதி\nசாதி குடி சிறப்பு ஆதிப் பல் குணம்\nஓதல் ஈதல் ஆதிப் பல் வினை\nஇவை அடை சுட்டு வினா பிற மற்றோடு\nஉற்ற னவ்வீறு நம்பி ஆடூஉ\nவிடலை கோ வேள் குரிசில் தோன்றல்\nஇன்னன ஆண் பெயர் ஆகும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 111,
+              "character_end": 116
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0320",
+          "number": 320,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "வினைச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "செய்பவன் கருவி நிலம்செயல் காலம்\nசெய்பொருள் ஆறும் தருவது வினையே",
+          "candidate_offsets": [
+            {
+              "character_start": 26,
+              "character_end": 31
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0364",
+          "number": 364,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "தொகைநிலைத் தொடர்மொழி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "காலம் கரந்த பெயரெச்சம் வினைத்தொகை",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 5
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0382",
+          "number": 382,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "இறப்பு எதிர்வு நிகழ்வு எனக் காலம் மூன்றே",
+          "candidate_offsets": [
+            {
+              "character_start": 28,
+              "character_end": 33
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0431",
+          "number": 431,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "விழைவே காலம் ஒழியிசை தில்லே",
+          "candidate_offsets": [
+            {
+              "character_start": 7,
+              "character_end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-496c2a1107074373",
+      "review_rank": 94,
+      "surface_form_ta": "அளவு",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0049",
+        "nannul-0072",
+        "nannul-0089",
+        "nannul-0101",
+        "nannul-0110",
+        "nannul-0253",
+        "nannul-0257",
+        "nannul-0276"
+      ],
+      "numbers_all": [
+        49,
+        72,
+        89,
+        101,
+        110,
+        253,
+        257,
+        276
+      ],
+      "structural_units": [
+        {
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "record_ids": [
+            "nannul-0049"
+          ]
+        },
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0072",
+            "nannul-0089",
+            "nannul-0101",
+            "nannul-0110"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0253",
+            "nannul-0257"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0276"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0049",
+          "number": 49,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "sirappu-payira-ilakkanam",
+          "unit_label_ta": "சிறப்புப்பாயிர இலக்கணம்",
+          "topic_heading_ta": "1.6 சிறப்புப்பாயிர இலக்கணம் (47–55)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "முதல்நூல் கருத்தன் அளவு மிகுதி\nபொருள் செய்வித்தோன் தன்மை முதல் நிமித்தினும்\nஇடுகுறி யானும் நூற்கு எய்தும் பெயரே",
+          "candidate_offsets": [
+            {
+              "character_start": 19,
+              "character_end": 23
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0072",
+          "number": 72,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பெயர்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "தானம் முயற்சி அளவு பொருள் வடிவு\nஆன ஒன்று ஆதி ஓர் புடை ஒப்பு இனமே",
+          "candidate_offsets": [
+            {
+              "character_start": 14,
+              "character_end": 18
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0089",
+          "number": 89,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "புள்ளி விட்டு அவ்வொடு முன் உரு ஆகியும்\nஏனை உயிரோடு உருவு திரிந்தும்\nஉயிர் அளவு ஆய் அதன் வடிவு ஒழித்து இரு வயின்\nபெயரொடும் ஒற்று முன் ஆய் வரும் உயிர்மெய்",
+          "candidate_offsets": [
+            {
+              "character_start": 74,
+              "character_end": 78
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0101",
+          "number": 101,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "மாத்திரை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "ஆவியும் ஒற்றும் அளவு இறந்து இசைத்தலும்\nமேவும் இசை விளி பண்டமாற்று ஆதியின்",
+          "candidate_offsets": [
+            {
+              "character_start": 16,
+              "character_end": 20
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0110",
+          "number": 110,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "இடைநிலை மயக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "க ச த ப ஒழித்த ஈர் ஏழன் கூட்டம்\nமெய்ம்மயக்கு உடனிலை ர ழ ஒழித்து ஈர் எட்டு\nஆகும் இவ்விரு பால் மயக்கும் மொழி இடை\nமேவும் உயிர் மெய் மயக்கு அளவு இன்றே",
+          "candidate_offsets": [
+            {
+              "character_start": 136,
+              "character_end": 140
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0253",
+          "number": 253,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "புறனடை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "இதற்கு இது சாரியை எனின் அளவு இன்மையின்\nவிகுதியும் பதமும் உருபும் பகுத்து இடை\nநின்ற எழுத்தும் பதமும் இயற்கையும்\nஒன்ற உணர்த்தல் உரவோர் நெறியே",
+          "candidate_offsets": [
+            {
+              "character_start": 24,
+              "character_end": 28
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0257",
+          "number": 257,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "புறனடை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "இதற்கு இது முடிபு என்று எஞ்சாது யாவும்\nவிதிப்ப அளவு இன்மையின் விதித்தவற்று இயலான்\nவகுத்து உரையாதவும் வகுத்தனர் கொளலே",
+          "candidate_offsets": [
+            {
+              "character_start": 47,
+              "character_end": 51
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0276",
+          "number": 276,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nகிளை எண் குழூஉ முதல் பல் பொருள் திணை தேம்\nஊர் வான் அகம் புறம் முதல நிலன் யாண்டு\nஇருது மதி நாள் ஆதிக் காலம்\nதோள் குழல் மார்பு கண் காது முதல் உறுப்பு\nஅளவு அறிவு ஒப்பு வடிவு நிறம் கதி\nசாதி குடி சிறப்பு ஆதிப் பல் குணம்\nஓதல் ஈதல் ஆதிப் பல் வினை\nஇவை அடை சுட்டு வினா பிற மற்றோடு\nஉற்ற னவ்வீறு நம்பி ஆடூஉ\nவிடலை கோ வேள் குரிசில் தோன்றல்\nஇன்னன ஆண் பெயர் ஆகும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 158,
+              "character_end": 162
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-5df3e2351076381c",
+      "review_rank": 95,
+      "surface_form_ta": "உ",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0060",
+        "nannul-0064",
+        "nannul-0066",
+        "nannul-0078",
+        "nannul-0103",
+        "nannul-0104",
+        "nannul-0244",
+        "nannul-0304"
+      ],
+      "numbers_all": [
+        60,
+        64,
+        66,
+        78,
+        103,
+        104,
+        244,
+        304
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0060",
+            "nannul-0064",
+            "nannul-0066",
+            "nannul-0078",
+            "nannul-0103",
+            "nannul-0104"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0244"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0304"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0060",
+          "number": 60,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "எண்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "உயிர்மெய் ஆய்தம் உயிரளபு ஒற்றளபு\nஅஃகிய இ உ ஐ ஒள மஃகான்\nதனிநிலை பத்தும் சார்பெழுத்து ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 41,
+              "character_end": 42
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0064",
+          "number": 64,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பெயர்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஅ இ உ எ ஒ குறில் ஐந்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 14,
+              "character_end": 15
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0066",
+          "number": 66,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பெயர்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அ இ உ முதல் தனி வரின் சுட்டே",
+          "candidate_offsets": [
+            {
+              "character_start": 4,
+              "character_end": 5
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0078",
+          "number": 78,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "உ ஊ ஒ ஓ ஒள இதழ் குவிவே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0103",
+          "number": 103,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "முதனிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "உ ஊ ஒ ஓ அலவொடு வம்முதல்",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0104",
+          "number": 104,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "முதனிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அ ஆ உ ஊ ஓ ஒள யம்முதல்",
+          "candidate_offsets": [
+            {
+              "character_start": 4,
+              "character_end": 5
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0244",
+          "number": 244,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "சாரியை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "அன் ஆன் இன் அல் அற்று இற்று அத்து அம்\nதம் நம் நும் ஏ அ உ ஐ கு ன\nஇன்ன பிறவும் பொதுச் சாரியையே",
+          "candidate_offsets": [
+            {
+              "character_start": 55,
+              "character_end": 56
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0304",
+          "number": 304,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "இ உ ஊவோடு ஐ ஓ ன ள ர ல\nயவ்வீற்று உயர்திணை ஓ ர அல் இவற்றொடு\nணஃகான் ஆ ஈறு ஆகும் பொதுப்பெயர்\nஞ ந ஒழி அனைத்து ஈற்று அஃறிணை விளிப்பன",
+          "candidate_offsets": [
+            {
+              "character_start": 2,
+              "character_end": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-430bfc0719002403",
+      "review_rank": 96,
+      "surface_form_ta": "ற",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0068",
+        "nannul-0140",
+        "nannul-0142",
+        "nannul-0150",
+        "nannul-0183",
+        "nannul-0191",
+        "nannul-0227",
+        "nannul-0332"
+      ],
+      "numbers_all": [
+        68,
+        140,
+        142,
+        150,
+        183,
+        191,
+        227,
+        332
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0068"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0140",
+            "nannul-0142",
+            "nannul-0150"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0183",
+            "nannul-0191"
+          ]
+        },
+        {
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0227"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0332"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0068",
+          "number": 68,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பெயர்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "வல்லினம் க ச ட த ப ற என ஆறே",
+          "candidate_offsets": [
+            {
+              "character_start": 19,
+              "character_end": 20
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0140",
+          "number": 140,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "விகுதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "அன் ஆன் அள் ஆள் அர் ஆர் ப மார்\nஅ ஆ கு டு து று என் ஏன் அல் அன்\nஅம் ஆம் எம் ஏம் ஓம் ஒடு உம் ஊர்\nக ட த ற ஐ ஆய் இ மின் இர் ஈர்\nஈயர் கயவும் என்பவும் பிறவும்\nவினையின் விகுதி பெயரினும் சிலவே",
+          "candidate_offsets": [
+            {
+              "character_start": 101,
+              "character_end": 102
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0142",
+          "number": 142,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "இடைநிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "த ட ற ஒற்று இன்னே ஐம்பால் மூ இடத்து\nஇறந்தகாலம் தரும் தொழில் இடைநிலை",
+          "candidate_offsets": [
+            {
+              "character_start": 4,
+              "character_end": 5
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0150",
+          "number": 150,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "வடமொழியாக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "ற ன ழ எ ஒவ்வும் உயிர்மெய்யும் உயிரளபு\nஅல்லாச் சார்பும் தமிழ் பிற பொதுவே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 1
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0183",
+          "number": 183,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "குற்றுகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "நெடிலோடு உயிர்த்தொடர்க் குற்றுக ரங்களுள்\nட ற ஒற்று இரட்டும் வேற்றுமை மிகவே",
+          "candidate_offsets": [
+            {
+              "character_start": 44,
+              "character_end": 45
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0191",
+          "number": 191,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "குற்றுகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "நான்கன் மெய்யே ல ற ஆகும்மே",
+          "candidate_offsets": [
+            {
+              "character_start": 17,
+              "character_end": 18
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0227",
+          "number": 227,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "topic_heading_ta": "லகர ளகர வீறு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md",
+          "source_variant_refs": [],
+          "text_ta": "ல ள வேற்றுமையில் ற டவும் அல்வழி\nஅவற்றோடு உறழ்வும் வலிவரினாம் மெலி\nமேவின் ன ணவும் இடைவரின் இயல்பும்\nஆகும் இரு வழி யானும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 17,
+              "character_end": 18
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0332",
+          "number": 332,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "முற்று வினை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "அம் ஆம் என்பன முன்னிலை யாரையும்\nஎம் ஏம் ஓம் இவை படர்க்கை யாரையும்\nஉம் ஊர் க ட த ற இருபா லாரையும்\nதன்னொடு படுக்கும் தன்மைப் பன்மை",
+          "candidate_offsets": [
+            {
+              "character_start": 80,
+              "character_end": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-d0db287d26f057d8",
+      "review_rank": 97,
+      "surface_form_ta": "இடம்",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0075",
+        "nannul-0087",
+        "nannul-0132",
+        "nannul-0302",
+        "nannul-0375",
+        "nannul-0380",
+        "nannul-0390"
+      ],
+      "numbers_all": [
+        75,
+        87,
+        132,
+        302,
+        375,
+        380,
+        390
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0075",
+            "nannul-0087"
+          ]
+        },
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0132"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0302"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0375",
+            "nannul-0380",
+            "nannul-0390"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 7,
+      "contexts": [
+        {
+          "record_id": "nannul-0075",
+          "number": 75,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "அவ்வழி,\nஆவி இடைமை இடம் மிடறு ஆகும்\nமேவும் மென்மை மூக்கு உரம் பெறும் வன்மை",
+          "candidate_offsets": [
+            {
+              "character_start": 18,
+              "character_end": 22
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0087",
+          "number": 87,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "ஆய்தக்கு இடம் தலை அங்கா முயற்சி\nசார்பெழுத்து ஏனவும் தம்முதல் அனைய",
+          "candidate_offsets": [
+            {
+              "character_start": 9,
+              "character_end": 13
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0132",
+          "number": 132,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பதம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "பொருள் இடம் காலம் சினை குணம் தொழிலின்\nவரு பெயர் பொழுது கொள் வினை பகுபதமே",
+          "candidate_offsets": [
+            {
+              "character_start": 7,
+              "character_end": 11
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0302",
+          "number": 302,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "கண்கால் கடைஇடை தலைவாய் திசைவயின்\nமுன்சார் வலம் இடம் மேல்கீழ் புடைமுதல்\nபின்பாடு அளைதேம் உழைவழி உழிஉளி\nஉள் அகம் புறம் இல் இடப்பொருள் உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 47,
+              "character_end": 51
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0375",
+          "number": 375,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "திணையே பால் இடம் பொழுது வினா இறை\nமரபாம் ஏழும் மயங்கினாம் வழுவே",
+          "candidate_offsets": [
+            {
+              "character_start": 12,
+              "character_end": 16
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0380",
+          "number": 380,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "ஒருமையின் பன்மையும் பன்மையின் ஒருமையும்\nஓர் இடம் பிற இடம் தழுவலும் உளவே",
+          "candidate_offsets": [
+            {
+              "character_start": 44,
+              "character_end": 48
+            },
+            {
+              "character_start": 53,
+              "character_end": 57
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0390",
+          "number": 390,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "வினை சார்பு இனம் இடம் மேவி விளங்காப்\nபலபொருள் ஒருசொல் பணிப்பர் சிறப்பு எடுத்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 17,
+              "character_end": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-aca5a71e93ab7c03",
+      "review_rank": 98,
+      "surface_form_ta": "முன்னர்",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0090",
+        "nannul-0116",
+        "nannul-0163",
+        "nannul-0166",
+        "nannul-0178",
+        "nannul-0179",
+        "nannul-0280",
+        "nannul-0336"
+      ],
+      "numbers_all": [
+        90,
+        116,
+        163,
+        166,
+        178,
+        179,
+        280,
+        336
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0090",
+            "nannul-0116"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0163",
+            "nannul-0166",
+            "nannul-0178",
+            "nannul-0179"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0280"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0336"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0090",
+          "number": 90,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "பிறப்பு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "குறியதன் முன்னர் ஆய்தப் புள்ளி\nஉயிரொடு புணர்ந்த வல் ஆறன் மிசைத்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 9,
+              "character_end": 16
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0116",
+          "number": 116,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "இடைநிலை மயக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "ய ர ழ முன்னர் மொழிமுதல் மெய்வரும்",
+          "candidate_offsets": [
+            {
+              "character_start": 6,
+              "character_end": 13
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0163",
+          "number": 163,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "உயிரீற்றுச் சிறப்புப் புணர்ச்சி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "எகர வினா முச்சுட்டின் முன்னர்\nஉயிரும் யகரமும் எய்தின் வவ்வும்\nபிறவரின் அவையும் தூக்கில் சுட்டு\nநீளின் யகரமும் தோன்றுதல் நெறியே",
+          "candidate_offsets": [
+            {
+              "character_start": 22,
+              "character_end": 29
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0166",
+          "number": 166,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "உயிரீற்று முன் வல்லினம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "மரப்பெயர் முன்னர் இன மெல்லெழுத்து\nவரப் பெறுனவும் உள வேற்றுமை வழியே",
+          "candidate_offsets": [
+            {
+              "character_start": 10,
+              "character_end": 17
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0178",
+          "number": 178,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "ஈகார வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "பவ்வீ நீ மீ முன்னர் அல்வழி\nஇயல்பாம் வலிமெலி மிகலுமாம் மீக்கே",
+          "candidate_offsets": [
+            {
+              "character_start": 12,
+              "character_end": 19
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0179",
+          "number": 179,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "முற்றுகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "மூன்று ஆறு உருபு எண் வினைத்தொகை சுட்டு ஈறு\nஆகும் உகரம் முன்னர் இயல்பாம்",
+          "candidate_offsets": [
+            {
+              "character_start": 56,
+              "character_end": 63
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0280",
+          "number": 280,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "முன்னர் அவ்வொடு வரு வை அவ்வும்\nசுட்டு இறு வவ்வும் கள் இறு மொழியும்\nஒன்று அல் எண்ணும் உள்ள இல்ல\nபல்ல சில்ல உள இல பல சில\nஇன்னவும் பலவின் பெயர் ஆகுமே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 7
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0336",
+          "number": 336,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "முற்று வினை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "முன்னிலை முன்னர் ஈயும் ஏயும்\nஅந்நிலை மரபின் மெய் ஊர்ந்து வருமே",
+          "candidate_offsets": [
+            {
+              "character_start": 9,
+              "character_end": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-d8dbf0f63eea6caf",
+      "review_rank": 99,
+      "surface_form_ta": "மொழி",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0102",
+        "nannul-0110",
+        "nannul-0169",
+        "nannul-0215",
+        "nannul-0256",
+        "nannul-0326",
+        "nannul-0401",
+        "nannul-0417"
+      ],
+      "numbers_all": [
+        102,
+        110,
+        169,
+        215,
+        256,
+        326,
+        401,
+        417
+      ],
+      "structural_units": [
+        {
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "record_ids": [
+            "nannul-0102",
+            "nannul-0110"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0169"
+          ]
+        },
+        {
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0215"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0256"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0326"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0401",
+            "nannul-0417"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0102",
+          "number": 102,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "முதனிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "பன்னீர் உயிரும் க ச த ந ப ம வ ய\nஞ ங ஈர் ஐந்து உயிர்மெய்யும் மொழி முதல்",
+          "candidate_offsets": [
+            {
+              "character_start": 60,
+              "character_end": 64
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0110",
+          "number": 110,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "ezhuthu-iyal",
+          "unit_label_ta": "எழுத்து இயல்",
+          "topic_heading_ta": "இடைநிலை மயக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-01-ezhuththu-iyal/ezhuththu-iyal-056-127.md",
+          "source_variant_refs": [],
+          "text_ta": "க ச த ப ஒழித்த ஈர் ஏழன் கூட்டம்\nமெய்ம்மயக்கு உடனிலை ர ழ ஒழித்து ஈர் எட்டு\nஆகும் இவ்விரு பால் மயக்கும் மொழி இடை\nமேவும் உயிர் மெய் மயக்கு அளவு இன்றே",
+          "candidate_offsets": [
+            {
+              "character_start": 102,
+              "character_end": 106
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0169",
+          "number": 169,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "அகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "சாவ என் மொழி ஈற்று உயிர்மெய் சாதலும் விதி",
+          "candidate_offsets": [
+            {
+              "character_start": 8,
+              "character_end": 12
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0215",
+          "number": 215,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "topic_heading_ta": "ணகர னகரவீறு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md",
+          "source_variant_refs": [],
+          "text_ta": "மரம் அல் எகின் மொழி இயல்பும் அகரம்\nமருவ வலிமெலி மிகலும் ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 15,
+              "character_end": 19
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0256",
+          "number": 256,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "புறனடை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "புள்ளியும் உயிரும் ஆய் இறு சொல் முன்\nதம்மின் ஆகிய தொழில் மொழி வரினே\nவல்லினம் விகற்பமும் இயல்பும் ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 58,
+              "character_end": 62
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0326",
+          "number": 326,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "முற்று வினை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "அள் ஆள் இறு மொழி பெண்பால் படர்க்கை",
+          "candidate_offsets": [
+            {
+              "character_start": 12,
+              "character_end": 16
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0401",
+          "number": 401,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "பொருள்முதல் ஆறாம் அடைசேர் மொழி இனம்\nஉள்ளவும் இல்லவுமாம் இரு வழக்கினும்",
+          "candidate_offsets": [
+            {
+              "character_start": 26,
+              "character_end": 30
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0417",
+          "number": 417,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "பொருள்கோள்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "செய்யுள் இறுதி மொழி இடை முதலினும்\nஎய்திய பொருள்கோள் அளைமறி பாப்பே",
+          "candidate_offsets": [
+            {
+              "character_start": 15,
+              "character_end": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-4d62645c8771a410",
+      "review_rank": 100,
+      "surface_form_ta": "நான்கும்",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0131",
+        "nannul-0146",
+        "nannul-0282",
+        "nannul-0344",
+        "nannul-0428"
+      ],
+      "numbers_all": [
+        131,
+        146,
+        282,
+        344,
+        428
+      ],
+      "structural_units": [
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0131",
+            "nannul-0146"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0282"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0344"
+          ]
+        },
+        {
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "record_ids": [
+            "nannul-0428"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [
+        "PM147-V005"
+      ],
+      "representative_context_count": 5,
+      "contexts": [
+        {
+          "record_id": "nannul-0131",
+          "number": 131,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பதம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "பகுப்பால் பயன் அற்று இடுகுறி ஆகி\nமுன்னே ஒன்றாய் முடிந்து இயல்கின்ற\nபெயர்வினை இடைஉரி நான்கும் பகாப்பதம்",
+          "candidate_offsets": [
+            {
+              "character_start": 84,
+              "character_end": 92
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0146",
+          "number": 146,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "வடமொழியாக்கம்",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "இடையில் நான்கும் ஈற்றில் இரண்டும்\nஅல்லா அச்சு ஐ வருக்கம் முதல் ஈறு\nயவ்வாதி நான்மை ளவ்வாகும் ஐ ஐம்\nபொது எழுத்து ஒழிந்த நால் ஏழும் திரியும்",
+          "candidate_offsets": [
+            {
+              "character_start": 8,
+              "character_end": 16
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0282",
+          "number": 282,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "முதற்பெயர் நான்கும் சினைப்பெயர் நான்கும்\nசினைமுதற்பெயர் ஒரு நான்கும் முறை இரண்டும்\nதன்மை நான்கும் முன்னிலை ஐந்தும்\nஎல்லாம் தாம் தான் இன்னன பொதுப்பெயர்",
+          "candidate_offsets": [
+            {
+              "character_start": 11,
+              "character_end": 19
+            },
+            {
+              "character_start": 32,
+              "character_end": 40
+            },
+            {
+              "character_start": 60,
+              "character_end": 68
+            },
+            {
+              "character_start": 89,
+              "character_end": 97
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0344",
+          "number": 344,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "வினையெச்சம்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [
+            "PM147-V005"
+          ],
+          "text_ta": "அவற்றுள்,\nமுதலில் நான்கும் ஈற்றில் மூன்றும்\nவினைமுதல் கொள்ளும் பிறவும் ஏற்கும் பிற\"",
+          "candidate_offsets": [
+            {
+              "character_start": 18,
+              "character_end": 26
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0428",
+          "number": 428,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "பெயர்ச்செவ் வெண் ஏ என்றா எனா எண்\nநான்கும் தொகைபெறும் உம்மை என்று என ஓடு\nஇந்நான்கு எண்ணும் அஃது இன்றியும் இயலும்",
+          "candidate_offsets": [
+            {
+              "character_start": 33,
+              "character_end": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-dabe927001ce6df6",
+      "review_rank": 101,
+      "surface_form_ta": "அகரம்",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0136",
+        "nannul-0170",
+        "nannul-0215",
+        "nannul-0252",
+        "nannul-0308",
+        "nannul-0309",
+        "nannul-0327"
+      ],
+      "numbers_all": [
+        136,
+        170,
+        215,
+        252,
+        308,
+        309,
+        327
+      ],
+      "structural_units": [
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0136"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0170"
+          ]
+        },
+        {
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0215"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0252"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0308",
+            "nannul-0309"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0327"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 7,
+      "contexts": [
+        {
+          "record_id": "nannul-0136",
+          "number": 136,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "பகுதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "ஈறு போதல் இடை உகரம் இ ஆதல்\nஆதி நீடல் அடி அகரம் ஐ ஆதல்\nதன் ஒற்று இரட்டல் முன் நின்ற மெய் திரிதல்\nஇனம் மிகல் இனையவும் பண்பிற்கு இயல்பே",
+          "candidate_offsets": [
+            {
+              "character_start": 41,
+              "character_end": 46
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0170",
+          "number": 170,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "அகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "பல சில எனும் இவை தம்முன் தாம்வரின்\nஇயல்பும் மிகலும் அகரம் ஏக\nலகரம் றகரம் ஆகலும் பிறவரின்\nஅகரம் விகற்பம் ஆகலும் உளபிற",
+          "candidate_offsets": [
+            {
+              "character_start": 52,
+              "character_end": 57
+            },
+            {
+              "character_start": 89,
+              "character_end": 94
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0215",
+          "number": 215,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "meyyeetru-punariyal",
+          "unit_label_ta": "மெய்யீற்றுப் புணரியல்",
+          "topic_heading_ta": "ணகர னகரவீறு",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-04-meyyeetru-punariyal/meyyeetru-punariyal-204-239.md",
+          "source_variant_refs": [],
+          "text_ta": "மரம் அல் எகின் மொழி இயல்பும் அகரம்\nமருவ வலிமெலி மிகலும் ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 29,
+              "character_end": 34
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0252",
+          "number": 252,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "உருபு புணர்ச்சிக்குச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "அத்தின் அகரம் அகர முனை இல்லை",
+          "candidate_offsets": [
+            {
+              "character_start": 8,
+              "character_end": 13
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0308",
+          "number": 308,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "ளஃகான் உயர் பெயர்க்கு அளபு ஈறு அழிவு அயல்\nநீட்சி இறுதி யவ்வொற்று ஆதல்\nஅயலில் அகரம் ஏ ஆதலும் விளித்தனு",
+          "candidate_offsets": [
+            {
+              "character_start": 77,
+              "character_end": 82
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0309",
+          "number": 309,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "ரவ்வீற்று உயர் பெயர்க்கு அளபு எழல் ஈற்று அயல்\nஅகரம் இ ஈ ஆதல் ஆண்டை ஆ\nஈ ஆதல் அதனோடு ஏ உறல் ஈற்று ஏ\nமிக்கு அயல் யா கெட்டு அதன் அயல் நீடல்\nஈற்றின் ஈர் உறல் இவையும் ஈண்டு உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 46,
+              "character_end": 51
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0327",
+          "number": 327,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "முற்று வினை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [],
+          "text_ta": "அர் ஆர் ப ஊர் அகரம் மார் ஈற்ற\nபல்லோர் படர்க்கை மார் வினையொடு முடிமே",
+          "candidate_offsets": [
+            {
+              "character_start": 14,
+              "character_end": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-f036af407abc2532",
+      "review_rank": 102,
+      "surface_form_ta": "உம்மை",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0145",
+        "nannul-0152",
+        "nannul-0246",
+        "nannul-0362",
+        "nannul-0399",
+        "nannul-0425",
+        "nannul-0427",
+        "nannul-0428"
+      ],
+      "numbers_all": [
+        145,
+        152,
+        246,
+        362,
+        399,
+        425,
+        427,
+        428
+      ],
+      "structural_units": [
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0145"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0152"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0246"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0362",
+            "nannul-0399"
+          ]
+        },
+        {
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "record_ids": [
+            "nannul-0425",
+            "nannul-0427",
+            "nannul-0428"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0145",
+          "number": 145,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "இடைநிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "றவ்வொடு உகர உம்மை நிகழ்பு அல்லவும்\nதவ்வொடு இறப்பும் எதிர்வும் டவ்வொடு\nகழிவும் கவ்வோடு எதிர்வும் மின் ஏவல்\nவியங்கோள் இ மார் எதிர்வும் ப அந்தம்\nசெலவொடு வரவும் செய்யும் நிகழ்பு எதிர்வும்\nஎதிர்மறை மும்மையும் ஏற்கும் ஈங்கே",
+          "candidate_offsets": [
+            {
+              "character_start": 12,
+              "character_end": 17
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0152",
+          "number": 152,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "புணர்ச்சி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "வேற்றுமை ஐம் முதல் ஆறு ஆம் அல்வழி\nதொழில் பண்பு உவமை உம்மை அன்மொழி\nஎழுவாய் விளி ஈர் எச்சம் முற்று இடை உரி\nதழுவுதொடர் அடுக்கு என ஈர் ஏழே",
+          "candidate_offsets": [
+            {
+              "character_start": 53,
+              "character_end": 58
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0246",
+          "number": 246,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "உருபு புணர்ச்சிக்குச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "எல்லாரும் எல்லீரும் என்பவற்று உம்மை\nதள்ளி நிரலே தம் நும் சாரப்\nபுல்லும் உருபின் பின்னர் உம்மே",
+          "candidate_offsets": [
+            {
+              "character_start": 30,
+              "character_end": 35
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0362",
+          "number": 362,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "தொகைநிலைத் தொடர்மொழி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "வேற்றுமை வினைபண்பு உவமை உம்மை\nஅன்மொழி என அத்தொகை ஆறு ஆகும்",
+          "candidate_offsets": [
+            {
+              "character_start": 24,
+              "character_end": 29
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0399",
+          "number": 399,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "இனைத்து என்று அறிபொருள் உலகின் இலாப்பொருள்\nவினைப்படுத்து உரைப்பின் உம்மை வேண்டும்",
+          "candidate_offsets": [
+            {
+              "character_start": 67,
+              "character_end": 72
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0425",
+          "number": 425,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "எதிர்மறை சிறப்பு ஐயம் எச்சம் முற்று அளவை\nதெரிநிலை ஆக்கமோடு உம்மை எட்டே",
+          "candidate_offsets": [
+            {
+              "character_start": 59,
+              "character_end": 64
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0427",
+          "number": 427,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "செவ்வெண் ஈற்றதாம் எச்ச உம்மை",
+          "candidate_offsets": [
+            {
+              "character_start": 23,
+              "character_end": 28
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0428",
+          "number": 428,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "பெயர்ச்செவ் வெண் ஏ என்றா எனா எண்\nநான்கும் தொகைபெறும் உம்மை என்று என ஓடு\nஇந்நான்கு எண்ணும் அஃது இன்றியும் இயலும்",
+          "candidate_offsets": [
+            {
+              "character_start": 54,
+              "character_end": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-68d36cd806e3a5d5",
+      "review_rank": 103,
+      "surface_form_ta": "ஏற்கும்",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0145",
+        "nannul-0195",
+        "nannul-0197",
+        "nannul-0284",
+        "nannul-0291",
+        "nannul-0293",
+        "nannul-0344",
+        "nannul-0381"
+      ],
+      "numbers_all": [
+        145,
+        195,
+        197,
+        284,
+        291,
+        293,
+        344,
+        381
+      ],
+      "structural_units": [
+        {
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "record_ids": [
+            "nannul-0145"
+          ]
+        },
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0195",
+            "nannul-0197"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0284",
+            "nannul-0291",
+            "nannul-0293"
+          ]
+        },
+        {
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "record_ids": [
+            "nannul-0344"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0381"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [
+        "PM147-V005"
+      ],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0145",
+          "number": 145,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "pathaviyal",
+          "unit_label_ta": "பதவியல்",
+          "topic_heading_ta": "இடைநிலை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-02-pathaviyal/pathaviyal-128-150.md",
+          "source_variant_refs": [],
+          "text_ta": "றவ்வொடு உகர உம்மை நிகழ்பு அல்லவும்\nதவ்வொடு இறப்பும் எதிர்வும் டவ்வொடு\nகழிவும் கவ்வோடு எதிர்வும் மின் ஏவல்\nவியங்கோள் இ மார் எதிர்வும் ப அந்தம்\nசெலவொடு வரவும் செய்யும் நிகழ்பு எதிர்வும்\nஎதிர்மறை மும்மையும் ஏற்கும் ஈங்கே",
+          "candidate_offsets": [
+            {
+              "character_start": 204,
+              "character_end": 211
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0195",
+          "number": 195,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "குற்றுகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "முதல் இரு நான்காம் எண் முனர்ப் பத்தின்\nஇடைஒற்று ஏகல் ஆய்தம் ஆகல்\nஎன இரு விதியும் ஏற்கும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 81,
+              "character_end": 88
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0197",
+          "number": 197,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "குற்றுகர வீற்றுச் சிறப்புவிதி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "ஒன்று முதல் ஈர் ஐந்து ஆயிரம் கோடி\nஎண் நிறை அளவும் பிறவரின் பத்தின்\nஈற்று உயிர்மெய் கெடுத்து இன்னும் இற்றும்\nஏற்பது ஏற்கும் ஒன்பதும் இனைத்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 115,
+              "character_end": 122
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0284",
+          "number": 284,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nஒன்றே இருதிணைத் தன்பால் ஏற்கும்",
+          "candidate_offsets": [
+            {
+              "character_start": 34,
+              "character_end": 41
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0291",
+          "number": 291,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "ஏற்கும் எவ்வகைப் பெயர்க்கும் ஈறாய்ப் பொருள்\nவேற்றுமை செய்வன எட்டே வேற்றுமை",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 7
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0293",
+          "number": 293,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "ஆறன் உருபும் ஏற்கும் அவ்வுருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 13,
+              "character_end": 20
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0344",
+          "number": 344,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "vinaiyiyal",
+          "unit_label_ta": "வினையியல்",
+          "topic_heading_ta": "வினையெச்சம்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-02-vinaiyiyal/vinaiyiyal-320-351.md",
+          "source_variant_refs": [
+            "PM147-V005"
+          ],
+          "text_ta": "அவற்றுள்,\nமுதலில் நான்கும் ஈற்றில் மூன்றும்\nவினைமுதல் கொள்ளும் பிறவும் ஏற்கும் பிற\"",
+          "candidate_offsets": [
+            {
+              "character_start": 71,
+              "character_end": 78
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0381",
+          "number": 381,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "தரல்வரல் கொடைசெலல் சாரும் படர்க்கை\nஎழுவாய் இரண்டும் எஞ்சிய ஏற்கும்",
+          "candidate_offsets": [
+            {
+              "character_start": 59,
+              "character_end": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-f521a06150b17a6c",
+      "review_rank": 104,
+      "surface_form_ta": "உயர்திணை",
+      "review_priority_score": 5,
+      "occurrence_count": 8,
+      "record_ids_all": [
+        "nannul-0159",
+        "nannul-0255",
+        "nannul-0261",
+        "nannul-0262",
+        "nannul-0304",
+        "nannul-0311",
+        "nannul-0372",
+        "nannul-0377"
+      ],
+      "numbers_all": [
+        159,
+        255,
+        261,
+        262,
+        304,
+        311,
+        372,
+        377
+      ],
+      "structural_units": [
+        {
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "record_ids": [
+            "nannul-0159"
+          ]
+        },
+        {
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "record_ids": [
+            "nannul-0255"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0261",
+            "nannul-0262",
+            "nannul-0304",
+            "nannul-0311"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0372",
+            "nannul-0377"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 8,
+      "contexts": [
+        {
+          "record_id": "nannul-0159",
+          "number": 159,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "uyireetru-punariyal",
+          "unit_label_ta": "உயிரீற்றுப் புணரியல்",
+          "topic_heading_ta": "பொதுப்புணர்ச்சி",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-03-uyireetru-punariyal/uyireetru-punariyal-151-203.md",
+          "source_variant_refs": [],
+          "text_ta": "பொதுப்பெயர் உயர்திணைப் பெயர்கள் ஈற்றுமெய்\nவலிவரின் இயல்பாம் ஆவி ய ர முன்\nவன்மை மிகாசில விகாரமாம் உயர்திணை",
+          "candidate_offsets": [
+            {
+              "character_start": 97,
+              "character_end": 105
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0255",
+          "number": 255,
+          "section_id": "ezhuththathikaram",
+          "section_label_ta": "எழுத்ததிகாரம்",
+          "unit_id": "urubu-punariyal",
+          "unit_label_ta": "உருபு புணரியல்",
+          "topic_heading_ta": "புறனடை",
+          "canonical_file": "text/tamil/02-ezhuththathikaram/02-05-urupu-punariyal/urupu-punariyal-240-257.md",
+          "source_variant_refs": [],
+          "text_ta": "இயல்பின் விகாரமும் விகாரத்து இயல்பும்\nஉயர்திணை இடத்து விரிந்தும் தொக்கும்\nவிரவுப் பெயரின் விரிந்தும் நின்றும்\nஅன்ன பிறவும் ஆகும் ஐ உருபே",
+          "candidate_offsets": [
+            {
+              "character_start": 38,
+              "character_end": 46
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0261",
+          "number": 261,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "சொல்லின் பொதுவிலக்கணம்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "மக்கள் தேவர் நரகர் உயர்திணை\nமற்று உயிர் உள்ளவும் இல்லவும் அஃறிணை",
+          "candidate_offsets": [
+            {
+              "character_start": 19,
+              "character_end": 27
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0262",
+          "number": 262,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "சொல்லின் பொதுவிலக்கணம்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "ஆண் பெண் பலர் என முப்பாற்று உயர்திணை",
+          "candidate_offsets": [
+            {
+              "character_start": 28,
+              "character_end": 36
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0304",
+          "number": 304,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "இ உ ஊவோடு ஐ ஓ ன ள ர ல\nயவ்வீற்று உயர்திணை ஓ ர அல் இவற்றொடு\nணஃகான் ஆ ஈறு ஆகும் பொதுப்பெயர்\nஞ ந ஒழி அனைத்து ஈற்று அஃறிணை விளிப்பன",
+          "candidate_offsets": [
+            {
+              "character_start": 32,
+              "character_end": 40
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0311",
+          "number": 311,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "வேற்றுமை",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "னவ்வீற்று உயர்திணை அல் இரு பெயர்க்கண்\nஇறுதி அழிவு அதனோடு அயல் நீட்சி",
+          "candidate_offsets": [
+            {
+              "character_start": 10,
+              "character_end": 18
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0372",
+          "number": 372,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "தொகைநிலைத் தொடர்மொழி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "உயர்திணை உம்மைத்தொகை பலர் ஈறே",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 8
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0377",
+          "number": 377,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "உயர்திணை தொடர்ந்த பொருள்முதல் ஆறும்\nஅதனொடு சார்த்தின் அத்திணை முடிபின",
+          "candidate_offsets": [
+            {
+              "character_start": 0,
+              "character_end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "nannul-term-candidate-e3f784e2f7279b16",
+      "review_rank": 105,
+      "surface_form_ta": "சிறப்பு",
+      "review_priority_score": 5,
+      "occurrence_count": 7,
+      "record_ids_all": [
+        "nannul-0002",
+        "nannul-0274",
+        "nannul-0276",
+        "nannul-0390",
+        "nannul-0421",
+        "nannul-0423",
+        "nannul-0425"
+      ],
+      "numbers_all": [
+        2,
+        274,
+        276,
+        390,
+        421,
+        423,
+        425
+      ],
+      "structural_units": [
+        {
+          "unit_id": "pothu-payiram-intro",
+          "unit_label_ta": "பொதுப்பாயிரம்",
+          "record_ids": [
+            "nannul-0002"
+          ]
+        },
+        {
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "record_ids": [
+            "nannul-0274",
+            "nannul-0276"
+          ]
+        },
+        {
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "record_ids": [
+            "nannul-0390"
+          ]
+        },
+        {
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "record_ids": [
+            "nannul-0421",
+            "nannul-0423",
+            "nannul-0425"
+          ]
+        }
+      ],
+      "source_heading_matches": [],
+      "source_variant_refs": [],
+      "representative_context_count": 7,
+      "contexts": [
+        {
+          "record_id": "nannul-0002",
+          "number": 2,
+          "section_id": "pothu-payiram",
+          "section_label_ta": "பொதுப்பாயிரம்",
+          "unit_id": "pothu-payiram-intro",
+          "unit_label_ta": "பொதுப்பாயிரம்",
+          "topic_heading_ta": "1.0 பொதுப் பாயிரம் (1–3)",
+          "canonical_file": "text/tamil/01-pothuppayiram/pothuppayiram-001-055.md",
+          "source_variant_refs": [],
+          "text_ta": "பாயிரம் பொதுச் சிறப்பு என இரு பாற்றே",
+          "candidate_offsets": [
+            {
+              "character_start": 15,
+              "character_end": 22
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0274",
+          "number": 274,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "சொற் பாகுபாடு",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "பொது எழுத்தானும் சிறப்பு எழுத்தானும்\nஈர் எழுத்தானும் இயைவன வடசொல்",
+          "candidate_offsets": [
+            {
+              "character_start": 17,
+              "character_end": 24
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0276",
+          "number": 276,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "peyariyal",
+          "unit_label_ta": "பெயரியல்",
+          "topic_heading_ta": "பெயர்ச் சொல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-01-peyariyal/peyariyal-258-319.md",
+          "source_variant_refs": [],
+          "text_ta": "அவற்றுள்,\nகிளை எண் குழூஉ முதல் பல் பொருள் திணை தேம்\nஊர் வான் அகம் புறம் முதல நிலன் யாண்டு\nஇருது மதி நாள் ஆதிக் காலம்\nதோள் குழல் மார்பு கண் காது முதல் உறுப்பு\nஅளவு அறிவு ஒப்பு வடிவு நிறம் கதி\nசாதி குடி சிறப்பு ஆதிப் பல் குணம்\nஓதல் ஈதல் ஆதிப் பல் வினை\nஇவை அடை சுட்டு வினா பிற மற்றோடு\nஉற்ற னவ்வீறு நம்பி ஆடூஉ\nவிடலை கோ வேள் குரிசில் தோன்றல்\nஇன்னன ஆண் பெயர் ஆகும் என்ப",
+          "candidate_offsets": [
+            {
+              "character_start": 201,
+              "character_end": 208
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0390",
+          "number": 390,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "pothuviyal",
+          "unit_label_ta": "பொதுவியல்",
+          "topic_heading_ta": "வழாநிலை வழுவமைதி",
+          "canonical_file": "text/tamil/03-sollathikaram/03-03-pothuviyal/pothuviyal-352-419.md",
+          "source_variant_refs": [],
+          "text_ta": "வினை சார்பு இனம் இடம் மேவி விளங்காப்\nபலபொருள் ஒருசொல் பணிப்பர் சிறப்பு எடுத்தே",
+          "candidate_offsets": [
+            {
+              "character_start": 63,
+              "character_end": 70
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0421",
+          "number": 421,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "தெரிநிலை தேற்றம் ஐயம் முற்று எண் சிறப்பு\nஎதிர்மறை எச்சம் வினா விழைவு ஒழியிசை\nபிரிப்பு கழிவு ஆக்கம் இன்னன இடைப்பொருள்",
+          "candidate_offsets": [
+            {
+              "character_start": 33,
+              "character_end": 40
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0423",
+          "number": 423,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "ஒழியிசை வினா சிறப்பு எதிர்மறை தெரிநிலை\nகழிவு அசைநிலை பிரிப்பு என எட்டு ஓவே",
+          "candidate_offsets": [
+            {
+              "character_start": 13,
+              "character_end": 20
+            }
+          ]
+        },
+        {
+          "record_id": "nannul-0425",
+          "number": 425,
+          "section_id": "sollathikaram",
+          "section_label_ta": "சொல்லதிகாரம்",
+          "unit_id": "idaiyiyal",
+          "unit_label_ta": "இடையியல்",
+          "topic_heading_ta": "இடையியல்",
+          "canonical_file": "text/tamil/03-sollathikaram/03-04-idaiyiyal/idaiyiyal-420-441.md",
+          "source_variant_refs": [],
+          "text_ta": "எதிர்மறை சிறப்பு ஐயம் எச்சம் முற்று அளவை\nதெரிநிலை ஆக்கமோடு உம்மை எட்டே",
+          "candidate_offsets": [
+            {
+              "character_start": 9,
+              "character_end": 16
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
