@@ -17,7 +17,7 @@ Each audit identifies source/version, range, verification method, anomalies, unr
 - `HEADING_LEXICAL_CONCORDANCE.md` — source-heading / exact-surface concordance audit.
 - `FREQUENCY_PROFILES.md` — deterministic frequency/profile audit.
 - `TERMINOLOGY_CANDIDATE_DISCOVERY.md` — Phase-1 terminology discovery audit.
-- `TERMINOLOGY_REVIEW_BATCH_001.md` through `TERMINOLOGY_REVIEW_BATCH_007.md` — Phase-2 contextual review audits.
+- `TERMINOLOGY_REVIEW_BATCH_001.md` through `TERMINOLOGY_REVIEW_BATCH_008.md` — Phase-2 contextual review audits.
 
 ## Canonical / mechanical-data status
 
@@ -52,21 +52,22 @@ Batch results:
 - Batch 004 — 25 = **16 accepted + 9 rejected**;
 - Batch 005 — 25 = **18 accepted + 7 rejected**;
 - Batch 006 — 25 = **12 accepted + 13 rejected**;
-- Batch 007 — 25 = **7 accepted + 18 rejected**.
+- Batch 007 — 25 = **7 accepted + 18 rejected**;
+- Batch 008 — 25 = **12 accepted + 13 rejected**.
 
-Whole ledger after Batch 007:
+Whole ledger after Batch 008:
 
 - candidates: **455**;
-- reviewed: **162**;
-- accepted: **104**;
-- rejected: **58**;
+- reviewed: **187**;
+- accepted: **116**;
+- rejected: **71**;
 - needs-context: **0**;
-- unreviewed: **293**;
+- unreviewed: **268**;
 - status: **review-in-progress**.
 
-Validation enforces batch counts **20 + 17 + 25 + 25 + 25 + 25 + 25**, canonical evidence linkage, source-gap exclusion, evidence-subset rules, and exact count/status reconciliation.
+Validation enforces batch counts **20 + 17 + 25 + 25 + 25 + 25 + 25 + 25**, canonical evidence linkage, source-gap exclusion, evidence-subset rules, and exact count/status reconciliation.
 
-Batch 007 demonstrates the increasingly selective frequency-only tier: strong grammatical forms such as `ட`, `அன்`, `தம்`, `ஊர்`, `தொழில்`, `எழுவாய்`, and context-bounded `இசை` were retained, while numeral, pronoun/example, and compositional surfaces were rejected as independent terminology.
+Batch 008 accepted `அது`, `இயல்பு`, `பால்`, `குணம்`, `கு`, `உம்`, `ஐம்பால்`, `எதிர்மறை`, `பொது`, `பன்மை`, `அல்வழி`, and `அயல்`, while retaining exact-form rejection for emphatic, inflected, quantifier, numeral, anaphoric, and verbal rule-language surfaces.
 
 ## Raw-source preservation status
 
