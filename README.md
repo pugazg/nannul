@@ -83,7 +83,7 @@ Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
 ## Grammatical-terminology contextual review
 
-**PHASE 2 — IN PROGRESS; BATCHES 001–005 COMPLETE AND AUDITED**
+**PHASE 2 — IN PROGRESS; BATCHES 001–006 COMPLETE AND AUDITED**
 
 Review policy: `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
 
@@ -92,11 +92,11 @@ Human decision ledger: `data/grammatical-terminology-review.json`.
 Current validated ledger:
 
 - candidates: **455**;
-- reviewed: **112**;
-- accepted: **85**;
-- rejected: **27**;
+- reviewed: **137**;
+- accepted: **97**;
+- rejected: **40**;
 - needs-context: **0**;
-- unreviewed: **343**;
+- unreviewed: **318**;
 - layer status: **review-in-progress**.
 
 Validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
@@ -108,14 +108,19 @@ Validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
 - Batch 003 — **25 reviewed = 18 accepted + 7 rejected**; first frequency-only batch.
 - Batch 004 — **25 reviewed = 16 accepted + 9 rejected**; second frequency-only batch.
 - Batch 005 — **25 reviewed = 18 accepted + 7 rejected**; third frequency-only batch.
+- Batch 006 — **25 reviewed = 12 accepted + 13 rejected**; fourth frequency-only batch.
 
 All **37 source-heading-supported candidates** have explicit decisions.
 
-Batch-005 accepted forms include `ஆய்`, `அ`, `ஈ`, `சுட்டு`, `இனம்`, `பெயர்வினை`, `ஏவல்`, `எச்சம்`, `காலம்`, `அளவு`, `உ`, `ற`, `இடம்`, `மொழி`, `அகரம்`, `உம்மை`, `உயர்திணை`, and `சிறப்பு`.
+Batch-006 accepted forms:
 
-Batch-005 rejected forms are `இரண்டு`, `உருபே`, `அவற்றுள்,`, `தன்`, `முன்னர்`, `நான்கும்`, and `ஏற்கும்`.
+`தன்மை`, `எழுத்து`, `து`, `ஆன்`, `இறு`, `அம்`, `இல்`, `ஏற்புழி`, `ஐயம்`, `வன்மை`, `காரணம்`, `முறை`.
 
-The review continues to preserve exact-form and contextual boundaries: repeated numeral/discourse/rule-language forms are not promoted automatically; mixed-use forms retain separate technical/non-technical evidence; inflected or emphatic surfaces such as `உருபே` do not receive new term identities merely because their base is technical.
+Batch-006 rejected forms:
+
+`மூன்று`, `வேறு`, `இயல்`, `தான்`, `உளவே`, `இடத்து`, `இடத்தும்`, `ஆகலும்`, `நான்கு`, `ஆதல்`, `ஆகி`, `உயிரும்`, `எட்டு`.
+
+Batch 006 reinforces exact-form restraint: inflected/compositional surfaces such as `இடத்து`, `இடத்தும்`, `ஆகலும்`, `ஆதல்`, `ஆகி`, and `உயிரும்` are not promoted merely because their base or surrounding phrase is technical. Mixed-use accepted forms retain separate technical/non-technical evidence.
 
 Audits:
 
@@ -124,6 +129,7 @@ Audits:
 - `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_006.md`
 
 ## Documented source-version findings
 
@@ -152,6 +158,7 @@ See `audit/SOURCE_VARIANTS.md`.
 - `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_006.md`
 
 ## Raw-source preservation
 
@@ -161,4 +168,4 @@ Infrastructure is present, but the raw snapshot is not yet materialized and SHA-
 
 ## Next analytical activity
 
-Continue **Phase 2 Batch 006** with the next **25 highest-priority unreviewed frequency-only candidates**, using the same deterministic context sampling, stable exact-surface identity, internal canonical evidence, mixed-use handling, separate human ledger, and post-review validation.
+Continue **Phase 2 Batch 007** with the next **25 highest-priority unreviewed frequency-only candidates**, using the same deterministic context sampling, stable exact-surface identity, internal canonical evidence, mixed-use handling, separate human ledger, and post-review validation.
