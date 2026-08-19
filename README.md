@@ -83,79 +83,47 @@ Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
 ## Grammatical-terminology contextual review
 
-**PHASE 2 — IN PROGRESS; BATCHES 001–004 COMPLETE AND AUDITED**
+**PHASE 2 — IN PROGRESS; BATCHES 001–005 COMPLETE AND AUDITED**
 
-Review policy:
+Review policy: `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
 
-- `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
-
-Human decision ledger:
-
-- `data/grammatical-terminology-review.json`.
+Human decision ledger: `data/grammatical-terminology-review.json`.
 
 Current validated ledger:
 
 - candidates: **455**;
-- reviewed: **87**;
-- accepted: **67**;
-- rejected: **20**;
+- reviewed: **112**;
+- accepted: **85**;
+- rejected: **27**;
 - needs-context: **0**;
-- unreviewed: **368**;
+- unreviewed: **343**;
 - layer status: **review-in-progress**.
 
-Validation:
+Validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
 
-- `data/grammatical-terminology-review-validation.json` — **PASS**;
-- `scripts/validate_terminology_review.py`;
-- `.github/workflows/validate-terminology-review.yml`.
+### Batch results
 
-### Batch 001 — source-heading-supported
+- Batch 001 — **20 reviewed = 19 accepted + 1 rejected**; source-heading-supported.
+- Batch 002 — **17 reviewed = 14 accepted + 3 rejected**; remaining source-heading-supported.
+- Batch 003 — **25 reviewed = 18 accepted + 7 rejected**; first frequency-only batch.
+- Batch 004 — **25 reviewed = 16 accepted + 9 rejected**; second frequency-only batch.
+- Batch 005 — **25 reviewed = 18 accepted + 7 rejected**; third frequency-only batch.
 
-- **20 reviewed**;
-- **19 accepted**;
-- **1 rejected** — `முன்`.
+All **37 source-heading-supported candidates** have explicit decisions.
 
-### Batch 002 — remaining source-heading-supported
+Batch-005 accepted forms include `ஆய்`, `அ`, `ஈ`, `சுட்டு`, `இனம்`, `பெயர்வினை`, `ஏவல்`, `எச்சம்`, `காலம்`, `அளவு`, `உ`, `ற`, `இடம்`, `மொழி`, `அகரம்`, `உம்மை`, `உயர்திணை`, and `சிறப்பு`.
 
-- **17 reviewed**;
-- **14 accepted**;
-- **3 rejected** — `பொதுப்`, `சொல்லின்`, `சிறப்புப்`.
+Batch-005 rejected forms are `இரண்டு`, `உருபே`, `அவற்றுள்,`, `தன்`, `முன்னர்`, `நான்கும்`, and `ஏற்கும்`.
 
-All **37 source-heading-supported candidates** therefore have explicit decisions.
+The review continues to preserve exact-form and contextual boundaries: repeated numeral/discourse/rule-language forms are not promoted automatically; mixed-use forms retain separate technical/non-technical evidence; inflected or emphatic surfaces such as `உருபே` do not receive new term identities merely because their base is technical.
 
-### Batch 003 — first frequency-only batch
+Audits:
 
-- **25 reviewed**;
-- **18 accepted**;
-- **7 rejected**;
-- **0 needs-context**.
-
-### Batch 004 — second frequency-only batch
-
-Selection: the next **25 highest-priority unreviewed frequency-only candidates**.
-
-Result:
-
-- **25 reviewed**;
-- **16 accepted**;
-- **9 rejected**;
-- **0 needs-context**.
-
-Accepted Batch-004 forms:
-
-`ப`, `ல`, `முன்னிலை`, `ஏ`, `இறுதி`, `ஓ`, `வினா`, `அல்`, `க`, `த`, `ஞ`, `ந`, `அற்று`, `படர்க்கை`, `குறில்`, `வ`.
-
-Rejected Batch-004 forms:
-
-`வழி`, `பிற`, `ஆதி`, `பிறவும்`, `மூ`, `இவை`, `ஓர்`, `எனும்`, `பெயரே`.
-
-Batch 004 reinforces three review rules:
-
-1. frequent ordinary enumerative/discourse forms remain rejected despite occurring inside grammar;
-2. exact letter symbols remain independently useful grammatical terms when Nannūl explicitly enumerates/manipulates them;
-3. inflected/compositional surfaces such as `எனும்` and `பெயரே` do not automatically receive separate term identities from their bases.
-
-Audit: `audit/TERMINOLOGY_REVIEW_BATCH_004.md`.
+- `audit/TERMINOLOGY_REVIEW_BATCH_001.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_002.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
 
 ## Documented source-version findings
 
@@ -183,6 +151,7 @@ See `audit/SOURCE_VARIANTS.md`.
 - `audit/TERMINOLOGY_REVIEW_BATCH_002.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
 
 ## Raw-source preservation
 
@@ -192,6 +161,4 @@ Infrastructure is present, but the raw snapshot is not yet materialized and SHA-
 
 ## Next analytical activity
 
-Continue **Phase 2 Batch 005** with the next roughly **25 highest-priority unreviewed frequency-only candidates**.
-
-Use the same controls established in Batches 003–004: deterministic representative-context sampling, stable exact-surface identity, internal canonical contexts first, explicit mixed-use handling, restraint around purely compositional/inflected surfaces, separate human decision ledger, and post-review structural/provenance validation.
+Continue **Phase 2 Batch 006** with the next **25 highest-priority unreviewed frequency-only candidates**, using the same deterministic context sampling, stable exact-surface identity, internal canonical evidence, mixed-use handling, separate human ledger, and post-review validation.
