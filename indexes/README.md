@@ -55,25 +55,27 @@ Human decisions are stored in:
 
 - `data/grammatical-terminology-review.json`.
 
-Current Phase-2 status after **Batches 001–003**:
+Current Phase-2 status after **Batches 001–004**:
 
-- reviewed: **62**;
-- accepted: **51**;
-- rejected: **11**;
+- reviewed: **87**;
+- accepted: **67**;
+- rejected: **20**;
 - needs-context: **0**;
-- unreviewed: **393**.
+- unreviewed: **368**.
 
 Batch summaries:
 
 - `reviews/terminology/batch-001-decisions.md`;
 - `reviews/terminology/batch-002-decisions.md`;
-- `reviews/terminology/batch-003-decisions.md`.
+- `reviews/terminology/batch-003-decisions.md`;
+- `reviews/terminology/batch-004-decisions.md`.
 
 Context evidence:
 
 - Batch 001: 20 heading-supported candidates;
 - Batch 002: 17 remaining heading-supported candidates;
-- Batch 003: 25 highest-priority frequency-only candidates.
+- Batch 003: first 25 frequency-only candidates;
+- Batch 004: next 25 frequency-only candidates.
 
 Review validation:
 
@@ -83,13 +85,14 @@ Audits:
 
 - `audit/TERMINOLOGY_REVIEW_BATCH_001.md`;
 - `audit/TERMINOLOGY_REVIEW_BATCH_002.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`.
+- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`;
+- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`.
 
 ### Review-tier status
 
 All **37 candidates carrying exact source-heading-token evidence** were reviewed across Batches 001–002.
 
-Batch 003 began the frequency-only tier and demonstrated that frequency remains a prioritization signal only: high-frequency `ஆகும்` was rejected, while forms such as `ஐ`, `ஈர்`, `என`, `என்`, `ஆம்`, `ஒற்று`, `உயிர்மெய்`, and `ஆய்தம்` were accepted only because canonical body contexts explicitly support grammatical use.
+Batches 003–004 are frequency-only review tiers. They confirm that frequency is a prioritization signal only: ordinary enumerative/discourse forms can be rejected even when frequent, while exact letter symbols and grammatical labels are accepted only when internal canonical contexts establish their technical use.
 
 A consolidated reviewed grammatical-term index should be generated only after a larger reviewed sample makes it useful; it must derive from the explicit review ledger, never from frequency/discovery rank alone.
 
