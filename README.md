@@ -83,7 +83,7 @@ Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
 ## Grammatical-terminology contextual review
 
-**PHASE 2 — IN PROGRESS; BATCHES 001–007 COMPLETE AND AUDITED**
+**PHASE 2 — IN PROGRESS; BATCHES 001–008 COMPLETE AND AUDITED**
 
 Review policy: `docs/GRAMMATICAL_TERMINOLOGY_REVIEW_GUIDELINES.md`.
 
@@ -92,11 +92,11 @@ Human decision ledger: `data/grammatical-terminology-review.json`.
 Current validated ledger:
 
 - candidates: **455**;
-- reviewed: **162**;
-- accepted: **104**;
-- rejected: **58**;
+- reviewed: **187**;
+- accepted: **116**;
+- rejected: **71**;
 - needs-context: **0**;
-- unreviewed: **293**;
+- unreviewed: **268**;
 - layer status: **review-in-progress**.
 
 Validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
@@ -110,18 +110,19 @@ Validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
 - Batch 005 — **25 = 18 accepted + 7 rejected**; frequency-only.
 - Batch 006 — **25 = 12 accepted + 13 rejected**; frequency-only.
 - Batch 007 — **25 = 7 accepted + 18 rejected**; frequency-only.
+- Batch 008 — **25 = 12 accepted + 13 rejected**; frequency-only.
 
 All **37 source-heading-supported candidates** have explicit decisions.
 
-Batch-007 accepted forms:
+Batch-008 accepted forms:
 
-`ட`, `இசை`, `தம்`, `அன்`, `ஊர்`, `தொழில்`, `எழுவாய்`.
+`அது`, `இயல்பு`, `பால்`, `குணம்`, `கு`, `உம்`, `ஐம்பால்`, `எதிர்மறை`, `பொது`, `பன்மை`, `அல்வழி`, `அயல்`.
 
-Batch-007 rejected forms:
+Batch-008 rejected forms:
 
-`ஏழ்`, `ஒழி`, `இரண்டும்`, `ஐந்து`, `ஆறும்`, `நெறியே`, `தாம்`, `இயலும்`, `இல`, `மூன்றும்`, `உள`, `பல`, `ஒன்றன்`, `உருபும்`, `புலவர்`, `இன்றி`, `ஆகா`, `வழியே`.
+`பொருளே`, `நின்ற`, `உயர்`, `ஒன்றே`, `உற`, `வருமே`, `அவற்று`, `வவ்வும்`, `ஒன்பதும்`, `சில`, `அனைத்தும்`, `இருமையும்`, `உருபின்`.
 
-Batch 007 reinforces the review boundary: frequency-only candidates increasingly contain numeral, pronoun/example, discourse, and inflected/compositional surfaces. Exact grammatical forms are accepted only where Nannūl itself enumerates or uses them as technical forms, and mixed-use accepted forms retain separate technical/non-technical evidence.
+Batch 008 resolves several deliberately deferred base forms while preserving exact-form restraint. `இயல்பு` is accepted while earlier `இயல்பும்` / `இயல்பே` remain rejected; `பால்`, `ஐம்பால்`, and `பன்மை` are explicit grammatical category terms; `அல்வழி` is established as the recurring technical non-case புணர்ச்சி environment; and inflected/emphatic surfaces such as `பொருளே`, `வவ்வும்`, and `உருபின்` remain separate from their accepted bases.
 
 Audits:
 
@@ -132,6 +133,7 @@ Audits:
 - `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_006.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_007.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_008.md`
 
 ## Documented source-version findings
 
@@ -143,4 +145,4 @@ Exact-byte preservation of the **current** Project Madurai HTML remains a separa
 
 ## Next analytical activity
 
-Continue **Phase 2 Batch 008** with the next **25 highest-priority unreviewed frequency-only candidates**, using deterministic context sampling, stable exact-surface identity, internal canonical evidence, mixed-use handling, separate human decisions, and post-review validation.
+Continue **Phase 2 Batch 009** with the next **25 highest-priority unreviewed frequency-only candidates**, using deterministic context sampling, stable exact-surface identity, internal canonical evidence, mixed-use handling, separate human decisions, and post-review validation.
