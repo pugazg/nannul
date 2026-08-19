@@ -41,13 +41,13 @@ Candidate IDs remain stable SHA-256-derived exact-surface identifiers. The queue
 
 Human decisions: `data/grammatical-terminology-review.json`.
 
-Current Phase-2 status after **Batches 001–005**:
+Current Phase-2 status after **Batches 001–006**:
 
-- reviewed: **112**;
-- accepted: **85**;
-- rejected: **27**;
+- reviewed: **137**;
+- accepted: **97**;
+- rejected: **40**;
 - needs-context: **0**;
-- unreviewed: **343**.
+- unreviewed: **318**.
 
 Batch decision summaries:
 
@@ -56,8 +56,9 @@ Batch decision summaries:
 - `reviews/terminology/batch-003-decisions.md`
 - `reviews/terminology/batch-004-decisions.md`
 - `reviews/terminology/batch-005-decisions.md`
+- `reviews/terminology/batch-006-decisions.md`
 
-Context evidence exists for all five batches under `reviews/terminology/`.
+Context evidence exists for all six batches under `reviews/terminology/`.
 
 Review validation: `data/grammatical-terminology-review-validation.json` — **PASS**.
 
@@ -68,10 +69,13 @@ Audits:
 - `audit/TERMINOLOGY_REVIEW_BATCH_003.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_004.md`
 - `audit/TERMINOLOGY_REVIEW_BATCH_005.md`
+- `audit/TERMINOLOGY_REVIEW_BATCH_006.md`
 
 ### Review-tier status
 
-All **37 source-heading-supported candidates** were reviewed across Batches 001–002. Batches 003–005 continue the frequency-only tier while preserving the rule that frequency is review priority, not termhood.
+All **37 source-heading-supported candidates** were reviewed across Batches 001–002. Batches 003–006 continue the frequency-only tier while preserving the rule that frequency is review priority, not termhood.
+
+Batch 006 adds explicit reviewed terms such as `தன்மை`, `எழுத்து`, `ஏற்புழி`, `ஐயம்`, `வன்மை`, `காரணம்`, and `முறை`, while rejecting numeral, inflected, and compositional exact surfaces when they do not carry an independent term identity.
 
 A consolidated reviewed grammatical-term index should be generated only after a larger reviewed sample makes it useful; it must derive from the explicit review ledger, never directly from mechanical rank.
 
