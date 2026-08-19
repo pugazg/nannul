@@ -40,10 +40,11 @@ jobs:
             reviews/terminology/batch-002-decisions.md \
             reviews/terminology/batch-003-decisions.md \
             reviews/terminology/batch-004-decisions.md \
-            reviews/terminology/batch-005-decisions.md
+            reviews/terminology/batch-005-decisions.md \
+            reviews/terminology/batch-006-decisions.md
           if git diff --cached --quiet; then
             echo 'Terminology review validation outputs unchanged.'
             exit 0
           fi
-          git commit -m 'Validate Nannul terminology review through Batch 5'
+          git commit -m 'Validate Nannul terminology review through Batch 6'
           git push origin HEAD:main
