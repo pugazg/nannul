@@ -76,23 +76,24 @@ Audit: `audit/TERMINOLOGY_CANDIDATE_DISCOVERY.md`.
 
 Separate human/editorial decision ledger.
 
-Current Phase-2 state after **Batches 001–003**:
+Current Phase-2 state after **Batches 001–004**:
 
 - candidates: **455**;
-- reviewed: **62**;
-- accepted: **51**;
-- rejected: **11**;
+- reviewed: **87**;
+- accepted: **67**;
+- rejected: **20**;
 - needs-context: **0**;
-- unreviewed: **393**;
+- unreviewed: **368**;
 - status: **review-in-progress**.
 
 Batch results:
 
 - Batch 001: **20 reviewed = 19 accepted + 1 rejected**;
 - Batch 002: **17 reviewed = 14 accepted + 3 rejected**;
-- Batch 003: **25 reviewed = 18 accepted + 7 rejected**.
+- Batch 003: **25 reviewed = 18 accepted + 7 rejected**;
+- Batch 004: **25 reviewed = 16 accepted + 9 rejected**.
 
-All **37 source-heading-supported candidates** were completed in Batches 001–002. Batch 003 is the first reviewed frequency-only tier.
+All **37 source-heading-supported candidates** were completed in Batches 001–002. Batches 003–004 are frequency-only review tiers.
 
 Mixed-use candidates may carry both `term_use_record_ids` and `non_term_use_record_ids`; acceptance is context-bounded and never silently extended to every occurrence or related surface form.
 
@@ -112,11 +113,12 @@ Checks include:
 - ledger count/status reconciliation;
 - Batch-001 count **20**;
 - Batch-002 count **17**;
-- Batch-003 count **25**.
+- Batch-003 count **25**;
+- Batch-004 count **25**.
 
 Current validated ledger SHA-256:
 
-`f5cd2034a9ce085a1311be0ba856e1954080439c20ec9b9472e313419f04f01e`
+`b8088d9681f304245c19f09843fa111d20c441f492b6ca2c444bbd6846030c48`
 
 Validator: `scripts/validate_terminology_review.py`
 
@@ -126,13 +128,15 @@ Human-readable decision summaries:
 
 - `reviews/terminology/batch-001-decisions.md`;
 - `reviews/terminology/batch-002-decisions.md`;
-- `reviews/terminology/batch-003-decisions.md`.
+- `reviews/terminology/batch-003-decisions.md`;
+- `reviews/terminology/batch-004-decisions.md`.
 
 Audits:
 
 - `audit/TERMINOLOGY_REVIEW_BATCH_001.md`;
 - `audit/TERMINOLOGY_REVIEW_BATCH_002.md`;
-- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`.
+- `audit/TERMINOLOGY_REVIEW_BATCH_003.md`;
+- `audit/TERMINOLOGY_REVIEW_BATCH_004.md`.
 
 ## Derivation and interpretation policy
 
